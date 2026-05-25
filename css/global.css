@@ -1,5 +1,5 @@
 /* ============================================
-   DR. EDGAR NÚÑEZ GARCÍA — DESIGN SYSTEM
+   DR. EDGAR NÚÑEZ GARCÍA - DESIGN SYSTEM
    ============================================ */
 
 /* === FONTS === */
@@ -306,37 +306,40 @@ a { text-decoration: none; }
 
 /* === FOOTER === */
 .footer {
-    background: #0B1420; border-top: 1px solid rgba(42,138,126,0.2);
+    background: #0B1A28; border-top: 1px solid rgba(255,255,255,0.06);
 }
 .footer-content {
     display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
     padding: 60px 0 40px;
 }
-.footer-brand img { height: 50px; margin-bottom: 16px; }
-.footer-brand p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.7; max-width: 280px; }
+.footer-brand-name {
+    font-family: var(--font-heading); font-size: 24px; color: #FFFFFF;
+    margin-bottom: 14px; line-height: 1.2; font-weight: 700; letter-spacing: 0.3px;
+}
+.footer-brand p { font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 320px; }
 .footer-col h5 {
     font-size: 13px; text-transform: uppercase; letter-spacing: 2px;
     color: #5EC4B6; font-weight: 700; margin-bottom: 20px;
 }
 .footer-col a {
-    display: block; color: rgba(255,255,255,0.5); font-size: 14px;
+    display: block; color: rgba(255,255,255,0.6); font-size: 14px;
     padding: 6px 0; transition: color 0.3s; text-decoration: none;
 }
 .footer-col a:hover { color: var(--color-white); }
 .footer-bottom {
-    border-top: 1px solid rgba(42,138,126,0.15); padding: 24px 0;
+    border-top: 1px solid rgba(255,255,255,0.08); padding: 24px 0;
     text-align: center;
 }
-.footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.35); }
+.footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.4); }
 .footer-bottom a { color: #5EC4B6; text-decoration: none; }
-.footer-social { display: flex; gap: 16px; margin-top: 20px; }
+.footer-social { display: flex; gap: 12px; margin-top: 20px; }
 .footer-social a {
     width: 40px; height: 40px; border-radius: 50%;
-    background: rgba(255,255,255,0.05); border: 1px solid rgba(42,138,126,0.25);
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
     display: flex; align-items: center; justify-content: center;
-    color: rgba(255,255,255,0.6); transition: all 0.3s; font-size: 18px;
+    color: rgba(255,255,255,0.7); transition: all 0.3s; font-size: 16px;
 }
-.footer-social a:hover { background: var(--color-teal); color: white; border-color: var(--color-teal); }
+.footer-social a:hover { background: var(--color-teal); color: var(--color-white); border-color: var(--color-teal); }
 
 /* === WHATSAPP FLOAT === */
 .whatsapp-float {

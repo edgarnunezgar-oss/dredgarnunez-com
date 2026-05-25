@@ -1,5 +1,5 @@
 /* ============================================
-   DR. EDGAR NÚÑEZ GARCÍA — MAIN JS
+   DR. EDGAR NÚÑEZ GARCÍA - MAIN JS
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -78,9 +78,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (nav) {
         window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
-                nav.style.background = 'rgba(15,30,45,0.98)';
+                nav.style.background = 'rgba(255,255,255,0.98)';
+                nav.style.boxShadow = '0 2px 14px rgba(0,0,0,0.06)';
             } else {
-                nav.style.background = 'rgba(15,30,45,0.95)';
+                nav.style.background = 'rgba(255,255,255,0.98)';
+                nav.style.boxShadow = '0 1px 8px rgba(0,0,0,0.05)';
             }
         });
     }
