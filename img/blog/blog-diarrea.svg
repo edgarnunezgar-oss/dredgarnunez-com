@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="130" cy="80" r="70" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="690" cy="380" r="90" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="665" cy="95" r="22" fill="#2A8A7E" opacity="0.14"/>
+  <circle cx="90" cy="330" r="14" fill="#2E6B9C" opacity="0.14"/>
+
+  <!-- sombra piso -->
+  <ellipse cx="440" cy="392" rx="180" ry="14" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- rollo de papel -->
+  <rect x="204" y="172" width="52" height="96" rx="4" fill="#FFFFFF"/>
+  <rect x="204" y="256" width="52" height="12" rx="6" fill="#DDEEEB"/>
+  <circle cx="240" cy="172" r="40" fill="#FFFFFF"/>
+  <circle cx="240" cy="172" r="14" fill="#CFE7E3"/>
+
+  <!-- tanque -->
+  <rect x="472" y="128" width="104" height="140" rx="12" fill="#FFFFFF"/>
+  <rect x="458" y="108" width="132" height="30" rx="12" fill="#2E6B9C"/>
+  <circle cx="524" cy="123" r="8" fill="#C69C6D"/>
+
+  <!-- asiento y taza -->
+  <rect x="318" y="252" width="266" height="24" rx="12" fill="#2E6B9C"/>
+  <path d="M340 276 C340 336 388 366 444 366 L466 366 C522 366 564 330 564 276 Z" fill="#FFFFFF"/>
+
+  <!-- pedestal -->
+  <rect x="428" y="360" width="82" height="22" rx="8" fill="#DDEEEB"/>
+  <rect x="410" y="378" width="118" height="14" rx="7" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="140" cy="90" r="70" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="690" cy="360" r="90" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="670" cy="100" r="20" fill="#2A8A7E" opacity="0.14"/>
+  <circle cx="105" cy="330" r="14" fill="#2E6B9C" opacity="0.14"/>
+
+  <!-- sombra piso -->
+  <ellipse cx="400" cy="392" rx="140" ry="12" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- cabeza -->
+  <circle cx="400" cy="105" r="38" fill="#C7B299"/>
+  <path d="M362 100 A38 38 0 0 1 438 100 L438 96 Q400 58 362 96 Z" fill="#2A3441"/>
+
+  <!-- torso -->
+  <rect x="325" y="148" width="150" height="145" rx="42" fill="#2E6B9C"/>
+
+  <!-- piernas -->
+  <rect x="338" y="292" width="54" height="95" rx="22" fill="#1B3D5C"/>
+  <rect x="408" y="292" width="54" height="95" rx="22" fill="#1B3D5C"/>
+
+  <!-- brazos hacia la ingle -->
+  <path d="M338 180 Q306 255 374 316" fill="none" stroke="#245A85" stroke-width="24" stroke-linecap="round"/>
+  <path d="M462 180 Q494 255 426 316" fill="none" stroke="#245A85" stroke-width="24" stroke-linecap="round"/>
+
+  <!-- pelota en la ingle -->
+  <circle cx="400" cy="318" r="32" fill="#2A8A7E"/>
+  <path d="M382 304 A24 24 0 0 1 414 298" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- manos -->
+  <circle cx="379" cy="316" r="13" fill="#C7B299"/>
+  <circle cx="421" cy="316" r="13" fill="#C7B299"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#0B1A28"/>
+  <circle cx="720" cy="100" r="120" fill="#2A8A7E" opacity="0.10"/>
+  <circle cx="490" cy="430" r="90" fill="#2E6B9C" opacity="0.12"/>
+  <circle cx="850" cy="340" r="36" fill="#2A8A7E" opacity="0.16"/>
+  <circle cx="540" cy="120" r="12" fill="#C69C6D" opacity="0.5"/>
+
+  <!-- estetoscopio -->
+  <path d="M540 160 L540 230 Q540 300 605 300 Q670 300 670 230 L670 175" fill="none" stroke="#5EC4B6" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="540" cy="150" r="12" fill="#5EC4B6"/>
+  <circle cx="670" cy="165" r="12" fill="#5EC4B6"/>
+  <path d="M605 300 L605 345" fill="none" stroke="#5EC4B6" stroke-width="11"/>
+  <circle cx="605" cy="372" r="27" fill="none" stroke="#5EC4B6" stroke-width="11"/>
+  <circle cx="605" cy="372" r="9" fill="#5EC4B6"/>
+
+  <!-- maletin medico -->
+  <rect x="700" y="270" width="170" height="120" rx="18" fill="#FFFFFF"/>
+  <path d="M755 270 L755 252 Q755 242 765 242 L805 242 Q815 242 815 252 L815 270" fill="none" stroke="#FFFFFF" stroke-width="12"/>
+  <g transform="translate(785,330)">
+    <rect x="-10" y="-28" width="20" height="56" rx="6" fill="#2A8A7E"/>
+    <rect x="-28" y="-10" width="56" height="20" rx="6" fill="#2A8A7E"/>
+  </g>
+
+  <!-- curita -->
+  <g transform="translate(760,150) rotate(-28)">
+    <rect x="-60" y="-22" width="120" height="44" rx="22" fill="#C69C6D"/>
+    <rect x="-22" y="-22" width="44" height="44" fill="#D8B285"/>
+    <circle cx="-8" cy="-8" r="3" fill="#0B1A28" opacity="0.25"/>
+    <circle cx="8" cy="-8" r="3" fill="#0B1A28" opacity="0.25"/>
+    <circle cx="-8" cy="8" r="3" fill="#0B1A28" opacity="0.25"/>
+    <circle cx="8" cy="8" r="3" fill="#0B1A28" opacity="0.25"/>
+  </g>
+</svg>

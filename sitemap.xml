@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap del sitio del Dr. Edgar Núñez García.
+  Las URL usan la forma de directorio para coincidir con el rel="canonical" de cada página.
+  IMPORTANTE: cada vez que se agregue una página nueva, hay que agregarla aquí.
+  Las subpáginas de padecimientos no están en el menú, así que este archivo es
+  la vía principal por la que Google las descubre.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Principales -->
+  <url>
+    <loc>https://dredgarnunez.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/sobre-mi/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/contacto/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/preguntas-frecuentes/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Landings de cirugía -->
+  <url>
+    <loc>https://dredgarnunez.com/cirugia-hernia-inguinal-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/cirugia-vesicula-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/cirugia-reflujo-gastroesofagico-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/cirugia-hernia-umbilical-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/enfermedades-digestivas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Hub de otros servicios y sus subpáginas de padecimientos -->
+  <url>
+    <loc>https://dredgarnunez.com/otros-servicios/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/cirugia-apendicitis-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/cirugia-lipomas-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/cirugia-quiste-pilonidal-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/quiste-sebaceo-lesiones-piel-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/pancreatitis-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/peritonitis-abdomen-agudo-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/biopsias-cdmx/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://dredgarnunez.com/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/blog/que-es-hernia-inguinal/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/blog/efectos-adversos-omeprazol/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/blog/antibiotico-para-la-diarrea/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

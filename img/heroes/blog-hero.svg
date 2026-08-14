@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#0B1A28"/>
+  <circle cx="700" cy="90" r="120" fill="#2A8A7E" opacity="0.10"/>
+  <circle cx="480" cy="430" r="90" fill="#2E6B9C" opacity="0.12"/>
+  <circle cx="850" cy="330" r="40" fill="#2A8A7E" opacity="0.16"/>
+  <circle cx="560" cy="120" r="14" fill="#5EC4B6" opacity="0.4"/>
+  <circle cx="820, " cy="480" r="12" fill="#C69C6D" opacity="0.5"/>
+
+  <!-- libro abierto -->
+  <path d="M650 250 Q575 232 545 250 L545 372 Q575 354 650 372 Z" fill="#FFFFFF"/>
+  <path d="M650 250 Q725 232 755 250 L755 372 Q725 354 650 372 Z" fill="#EDF5F3"/>
+  <rect x="647" y="248" width="6" height="124" fill="#0B1A28" opacity="0.15"/>
+  <rect x="566" y="272" width="60" height="8" rx="4" fill="#2A8A7E" opacity="0.7"/>
+  <rect x="566" y="292" width="60" height="8" rx="4" fill="#2A8A7E" opacity="0.4"/>
+  <rect x="566" y="312" width="42" height="8" rx="4" fill="#2A8A7E" opacity="0.4"/>
+  <rect x="674" y="272" width="60" height="8" rx="4" fill="#2E6B9C" opacity="0.7"/>
+  <rect x="674" y="292" width="60" height="8" rx="4" fill="#2E6B9C" opacity="0.4"/>
+  <rect x="674" y="312" width="42" height="8" rx="4" fill="#2E6B9C" opacity="0.4"/>
+
+  <!-- capsula -->
+  <g transform="translate(740,130) rotate(-24)">
+    <rect x="0" y="0" width="110" height="44" rx="22" fill="#FFFFFF"/>
+    <path d="M22 0 L55 0 L55 44 L22 44 A22 22 0 0 1 22 0 Z" fill="#C69C6D"/>
+  </g>
+
+  <!-- lupa -->
+  <circle cx="540" cy="170" r="34" fill="none" stroke="#5EC4B6" stroke-width="9"/>
+  <line x1="563" y1="196" x2="590" y2="226" stroke="#5EC4B6" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- cruz medica -->
+  <g transform="translate(800,430)">
+    <rect x="-11" y="-30" width="22" height="60" rx="7" fill="#2A8A7E"/>
+    <rect x="-30" y="-11" width="60" height="22" rx="7" fill="#2A8A7E"/>
+  </g>
+</svg>

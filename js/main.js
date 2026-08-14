@@ -87,3 +87,89 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+/* === CARRUSEL DE HOSPITALES ===
+   Muestra 3 logos, el del centro mas grande. Avanza solo hacia la derecha:
+   el logo que estaba a la izquierda pasa al centro. Loop infinito. */
+(function () {
+    var track = document.getElementById('hcTrack');
+    var carousel = document.getElementById('hospitalsCarousel');
+    if (!track || !carousel) return;
+
+    var LOGOS = [
+        { cls: 'logo-angeles',   name: 'Hospital Ángeles' },
+        { cls: 'logo-sanangel',  name: 'San Ángel Inn' },
+        { cls: 'logo-punta',     name: 'Punta Médica' },
+        { cls: 'logo-servicura', name: 'Servicura' },
+        { cls: 'logo-star',      name: 'Star Médica' },
+        { cls: 'logo-mac',       name: 'Grupo MAC' }
+    ];
+    var SET = LOGOS.length;
+    var COPIES = 3;
+
+    // Construye 3 copias identicas para que el loop no se note
+    var html = '';
+    for (var c = 0; c < COPIES; c++) {
+        for (var i = 0; i < SET; i++) {
+            html += '<div class="hc-item"><span class="hc-logo ' + LOGOS[i].cls + '"></span>' +
+                    '<span class="sr-only">' + LOGOS[i].name + '</span></div>';
+        }
+    }
+    track.innerHTML = html;
+
+    // Ya hay carrusel: el respaldo de texto sobra
+    var fallback = document.querySelector('.hospitals-logos-fallback');
+    if (fallback) fallback.style.display = 'none';
+
+    var items = track.querySelectorAll('.hc-item');
+    var index = SET; // arrancamos en la copia de en medio
+
+    function layout(animate) {
+        if (!animate) track.style.transition = 'none';
+        var slot = items[0].offsetWidth;
+        var offset = (carousel.offsetWidth / 2) - (slot / 2);
+        track.style.transform = 'translateX(' + (offset - index * slot) + 'px)';
+        for (var i = 0; i < items.length; i++) {
+            items[i].classList.toggle('is-active', i === index);
+        }
+        if (!animate) {
+            void track.offsetWidth; // fuerza reflow
+            track.style.transition = '';
+        }
+    }
+
+    // Al terminar la animacion, si salimos de la copia central saltamos
+    // una copia completa: el logo es identico, el brinco no se ve.
+    track.addEventListener('transitionend', function (e) {
+        if (e.propertyName !== 'transform') return;
+        if (index < SET) { index += SET; layout(false); }
+    });
+
+    layout(false);
+
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var timer = null;
+
+    // Si la pestana esta en segundo plano el navegador no anima ni dispara
+    // transitionend, asi que aqui volvemos a la copia central antes de avanzar.
+    // Sin esto el indice se iria a negativo y el carrusel quedaria en blanco.
+    function avanzar() {
+        if (index <= 0) { index += SET; layout(false); }
+        index--;
+        layout(true);
+    }
+    function start() {
+        if (reduce || timer) return;
+        timer = setInterval(avanzar, 2800);
+    }
+    function stop() { clearInterval(timer); timer = null; }
+
+    carousel.addEventListener('mouseenter', stop);
+    carousel.addEventListener('mouseleave', start);
+    window.addEventListener('resize', function () { layout(false); });
+    document.addEventListener('visibilitychange', function () {
+        if (document.hidden) { stop(); } else { start(); }
+    });
+
+    start();
+})();

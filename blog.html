@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Dr. Edgar Núñez García — Cirugía General en CDMX</title>
+    <title>Blog | Dr. Edgar Núñez García, Cirugía General en CDMX</title>
     <meta name="description" content="Artículos sobre cirugía general, hernias, vesícula, reflujo y salud digestiva. Información confiable del Dr. Edgar Núñez García, cirujano certificado en CDMX.">
     <link rel="canonical" href="https://dredgarnunez.com/blog/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css?v=27">
+    <link rel="stylesheet" href="css/pages.css?v=26">
 </head>
 <body>
 
@@ -27,10 +27,13 @@
                         <a href="cirugia-vesicula-cdmx.html">Vesícula</a>
                         <a href="cirugia-reflujo-gastroesofagico-cdmx.html">Reflujo Gastroesofágico</a>
                         <a href="cirugia-hernia-umbilical-cdmx.html">Hernia Umbilical</a>
+                        <a href="enfermedades-digestivas.html">Enfermedades Digestivas</a>
+                        <a href="otros-servicios.html">Otros servicios</a>
                     </div>
                 </li>
                 <li><a href="sobre-mi.html">Sobre Mí</a></li>
                 <li><a href="blog.html">Blog</a></li>
+                <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="https://wa.link/3rll01" class="nav-cta" target="_blank">Agendar Cita</a></li>
             </ul>
@@ -43,20 +46,29 @@
         <a href="cirugia-vesicula-cdmx.html">Vesícula</a>
         <a href="cirugia-reflujo-gastroesofagico-cdmx.html">Reflujo Gastroesofágico</a>
         <a href="cirugia-hernia-umbilical-cdmx.html">Hernia Umbilical</a>
+        <a href="enfermedades-digestivas.html">Enfermedades Digestivas</a>
+        <a href="otros-servicios.html">Otros servicios</a>
         <a href="sobre-mi.html">Sobre Mí</a>
         <a href="blog.html">Blog</a>
+        <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
         <a href="contacto.html">Contacto</a>
         <a href="https://wa.link/3rll01" class="nav-cta" target="_blank">Agendar Cita</a>
     </div>
 
     <!-- PAGE HERO -->
-    <section class="page-hero">
+    <section class="page-hero page-hero-photo">
+        <div class="page-hero-image">
+            <img id="pageHeroImg" src="img/blog-hero.jpg" alt="Blog del Dr. Edgar Núñez García">
+        </div>
+        <script>
+            (function () {
+                var fotos = ['img/blog-hero.jpg', 'img/sobre-hero.jpg', 'img/contacto-hero.jpg', 'img/hero-explicacion-1.jpg', 'img/hero-escribiendo.jpg', 'img/hero-amigable.jpg'];
+                document.getElementById('pageHeroImg').src = fotos[Math.floor(Math.random() * fotos.length)];
+            })();
+        </script>
         <div class="container">
             <div class="page-hero-content">
-                <div class="breadcrumb">
-                    <a href="index.html">Inicio</a> <span>›</span> Blog
-                </div>
-                <h1>Blog de Cirugía General</h1>
+                <h1>Blog</h1>
                 <p>Información confiable sobre hernias, vesícula, reflujo y salud digestiva.</p>
             </div>
         </div>
@@ -69,57 +81,30 @@
             <div>
                 <div class="blog-posts-grid">
                     <article class="blog-card">
-                        <div class="blog-card-image" style="background: linear-gradient(135deg, #E8F5F3, #EEF6FB); display: flex; align-items: center; justify-content: center; font-size: 48px;">🩺</div>
+                        <div class="blog-card-image"><img src="img/blog/blog-diarrea.svg" alt="Ilustración de un inodoro y papel higiénico"></div>
+                        <div class="blog-card-body">
+                            <span class="blog-card-tag">Salud digestiva</span>
+                            <h3><a href="blog-antibiotico-para-la-diarrea.html">Casi ninguna diarrea necesita antibióticos</a></h3>
+                            <p>La mayoría de las diarreas se cura sola en 2 o 3 días. Por qué el metronidazol casi siempre sobra y qué tomar en su lugar.</p>
+                            <span class="blog-card-meta">Dr. Edgar Núñez · 13 agosto 2026</span>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-card-image"><img src="img/blog/blog-omeprazol.svg" alt="Ilustración de un frasco de medicamento y cápsulas"></div>
+                        <div class="blog-card-body">
+                            <span class="blog-card-tag">Reflujo</span>
+                            <h3><a href="blog-omeprazol-efectos-adversos.html">Nadie piensa en los efectos adversos del omeprazol</a></h3>
+                            <p>Bien indicado es útil y seguro. El problema es tomarlo por años sin que nadie se pregunte si sigue siendo necesario.</p>
+                            <span class="blog-card-meta">Dr. Edgar Núñez · 21 julio 2026</span>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-card-image"><img src="img/blog/blog-hernia.svg" alt="Ilustración de una persona con una bolita en la ingle por hernia inguinal"></div>
                         <div class="blog-card-body">
                             <span class="blog-card-tag">Hernias</span>
                             <h3><a href="blog-post.html">¿Qué es una hernia inguinal y cuándo necesitas cirugía?</a></h3>
                             <p>Aprende a identificar los síntomas de una hernia inguinal y cuándo es momento de operarte para evitar complicaciones.</p>
                             <span class="blog-card-meta">Dr. Edgar Núñez · 10 abril 2026</span>
-                        </div>
-                    </article>
-                    <article class="blog-card">
-                        <div class="blog-card-image" style="background: linear-gradient(135deg, #E8F5F3, #EEF6FB); display: flex; align-items: center; justify-content: center; font-size: 48px;">💎</div>
-                        <div class="blog-card-body">
-                            <span class="blog-card-tag">Vesícula</span>
-                            <h3><a href="#">Cálculos biliares: síntomas, riesgos y tratamiento</a></h3>
-                            <p>Todo lo que necesitas saber sobre los cálculos en la vesícula: por qué se forman, qué síntomas causan y cuándo operar.</p>
-                            <span class="blog-card-meta">Dr. Edgar Núñez · 5 abril 2026</span>
-                        </div>
-                    </article>
-                    <article class="blog-card">
-                        <div class="blog-card-image" style="background: linear-gradient(135deg, #E8F5F3, #EEF6FB); display: flex; align-items: center; justify-content: center; font-size: 48px;">🔥</div>
-                        <div class="blog-card-body">
-                            <span class="blog-card-tag">Reflujo</span>
-                            <h3><a href="#">¿Se puede curar el reflujo sin medicamentos?</a></h3>
-                            <p>Si llevas años tomando omeprazol y el reflujo no mejora, la cirugía puede ser la solución definitiva.</p>
-                            <span class="blog-card-meta">Dr. Edgar Núñez · 28 marzo 2026</span>
-                        </div>
-                    </article>
-                    <article class="blog-card">
-                        <div class="blog-card-image" style="background: linear-gradient(135deg, #E8F5F3, #EEF6FB); display: flex; align-items: center; justify-content: center; font-size: 48px;">⭕</div>
-                        <div class="blog-card-body">
-                            <span class="blog-card-tag">Hernias</span>
-                            <h3><a href="#">Hernia umbilical en adultos: lo que debes saber</a></h3>
-                            <p>A diferencia de los niños, las hernias umbilicales en adultos no se resuelven solas. Conoce tus opciones.</p>
-                            <span class="blog-card-meta">Dr. Edgar Núñez · 20 marzo 2026</span>
-                        </div>
-                    </article>
-                    <article class="blog-card">
-                        <div class="blog-card-image" style="background: linear-gradient(135deg, #E8F5F3, #EEF6FB); display: flex; align-items: center; justify-content: center; font-size: 48px;">🔬</div>
-                        <div class="blog-card-body">
-                            <span class="blog-card-tag">Cirugía</span>
-                            <h3><a href="#">¿Qué es la cirugía laparoscópica y cuáles son sus ventajas?</a></h3>
-                            <p>Conoce cómo funciona la cirugía de mínima invasión y por qué ofrece mejores resultados para el paciente.</p>
-                            <span class="blog-card-meta">Dr. Edgar Núñez · 12 marzo 2026</span>
-                        </div>
-                    </article>
-                    <article class="blog-card">
-                        <div class="blog-card-image" style="background: linear-gradient(135deg, #E8F5F3, #EEF6FB); display: flex; align-items: center; justify-content: center; font-size: 48px;">📋</div>
-                        <div class="blog-card-body">
-                            <span class="blog-card-tag">Preparación</span>
-                            <h3><a href="#">Cómo prepararte para una cirugía ambulatoria</a></h3>
-                            <p>Guía paso a paso de lo que necesitas hacer antes, durante y después de tu cirugía ambulatoria.</p>
-                            <span class="blog-card-meta">Dr. Edgar Núñez · 5 marzo 2026</span>
                         </div>
                     </article>
                 </div>
@@ -130,17 +115,14 @@
                 <div class="sidebar-widget">
                     <h4>Categorías</h4>
                     <ul class="sidebar-categories">
-                        <li><a href="#">Hernias <span class="count">4</span></a></li>
-                        <li><a href="#">Vesícula <span class="count">3</span></a></li>
-                        <li><a href="#">Reflujo <span class="count">2</span></a></li>
-                        <li><a href="#">Cirugía General <span class="count">5</span></a></li>
-                        <li><a href="#">Preparación <span class="count">2</span></a></li>
-                        <li><a href="#">Recuperación <span class="count">3</span></a></li>
+                        <li><a href="blog-antibiotico-para-la-diarrea.html">Salud digestiva <span class="count">1</span></a></li>
+                        <li><a href="blog-omeprazol-efectos-adversos.html">Reflujo <span class="count">1</span></a></li>
+                        <li><a href="blog-post.html">Hernias <span class="count">1</span></a></li>
                     </ul>
                 </div>
                 <div class="sidebar-widget">
                     <h4>¿Necesitas Orientación?</h4>
-                    <p style="font-size: 14px; color: var(--color-text-light); line-height: 1.7; margin-bottom: 16px;">Agenda una valoración sin compromiso para resolver tus dudas.</p>
+                    <p style="font-size: 14px; color: var(--color-text-light); line-height: 1.7; margin-bottom: 16px;">Agenda una valoración para resolver tus dudas.</p>
                     <a href="https://wa.link/3rll01" class="btn-primary" target="_blank" style="width: 100%; justify-content: center; padding: 14px 24px; font-size: 14px;">Agendar por WhatsApp</a>
                 </div>
             </aside>
@@ -165,7 +147,8 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3 class="footer-brand-name">Dr. Edgar Núñez García</h3>
-                    <p>Cirugía General · Cirugía Gastrointestinal · Cirugía Laparoscópica y de Mínima Invasión</p>
+                    <p>Cirugía General · Cirugía Gastrointestinal<br>Cirugía Laparoscópica y de Mínima Invasión<br>Experto en Hernias inguinales, umbilicales y de la pared abdominal</p>
+                    <p class="footer-cedulas">Cédula Profesional: 6944303<br>Cédula de Especialidad: 09181211</p>
                 </div>
                 <div class="footer-col">
                     <h5>Cirugías</h5>
@@ -173,12 +156,15 @@
                     <a href="cirugia-vesicula-cdmx.html">Vesícula</a>
                     <a href="cirugia-reflujo-gastroesofagico-cdmx.html">Reflujo Gastroesofágico</a>
                     <a href="cirugia-hernia-umbilical-cdmx.html">Hernia Umbilical</a>
+                    <a href="enfermedades-digestivas.html">Enfermedades Digestivas</a>
+                    <a href="otros-servicios.html">Otros servicios</a>
                 </div>
                 <div class="footer-col">
                     <h5>Navegación</h5>
                     <a href="index.html">Inicio</a>
                     <a href="sobre-mi.html">Sobre Mí</a>
                     <a href="blog.html">Blog</a>
+                    <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
                     <a href="contacto.html">Contacto</a>
                 </div>
                 <div class="footer-col">
@@ -188,8 +174,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Dr. Edgar Abraham Núñez García · Cédula Profesional: 6944303 · Cédula de Especialidad: 09181211<br>
-                <a href="#">Aviso de Privacidad</a> · Aviso de publicidad: 2517012002A00071</p>
+                <p>© 2026 Dr. Edgar Abraham Núñez García · <a href="#">Aviso de Privacidad</a> · Aviso de publicidad: 2517012002A00071</p>
             </div>
         </div>
     </footer>

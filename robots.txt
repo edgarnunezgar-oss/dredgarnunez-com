@@ -1,0 +1,7 @@
+# Sitio del Dr. Edgar Núñez García
+# Cirugía General, Gastrointestinal y Laparoscópica en CDMX
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dredgarnunez.com/sitemap.xml

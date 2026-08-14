@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="680" cy="80" r="70" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="110" cy="370" r="90" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="130" cy="100" r="20" fill="#2A8A7E" opacity="0.14"/>
+  <circle cx="700" cy="330" r="14" fill="#2E6B9C" opacity="0.14"/>
+
+  <!-- sombra -->
+  <ellipse cx="400" cy="392" rx="200" ry="14" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- frasco -->
+  <rect x="320" y="152" width="140" height="234" rx="18" fill="#FFFFFF"/>
+  <rect x="334" y="210" width="112" height="92" rx="10" fill="#DDEEEB"/>
+  <rect x="348" y="228" width="84" height="10" rx="5" fill="#2E6B9C" opacity="0.55"/>
+  <rect x="348" y="250" width="84" height="10" rx="5" fill="#2E6B9C" opacity="0.35"/>
+  <rect x="348" y="272" width="56" height="10" rx="5" fill="#2E6B9C" opacity="0.35"/>
+  <rect x="330" y="112" width="120" height="44" rx="10" fill="#2E6B9C"/>
+
+  <!-- cápsula grande -->
+  <g transform="translate(500,290) rotate(-22)">
+    <rect x="0" y="0" width="130" height="52" rx="26" fill="#FFFFFF"/>
+    <path d="M26 0 L65 0 L65 52 L26 52 A26 26 0 0 1 26 0 Z" fill="#2A8A7E"/>
+  </g>
+
+  <!-- cápsula chica -->
+  <g transform="translate(196,300) rotate(18)">
+    <rect x="0" y="0" width="96" height="40" rx="20" fill="#FFFFFF"/>
+    <path d="M20 0 L48 0 L48 40 L20 40 A20 20 0 0 1 20 0 Z" fill="#C69C6D"/>
+  </g>
+</svg>
