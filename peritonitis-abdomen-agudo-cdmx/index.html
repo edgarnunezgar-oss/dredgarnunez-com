@@ -13,7 +13,7 @@
       gtag('config', 'G-P5Z1TKLXWC');
       document.addEventListener('click', function (e) {
         var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
-        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.getAttribute('data-wa-cta') || a.className || 'enlace'});
       });
     </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -283,7 +283,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.webp" alt="Dr. Edgar Núñez García" width="400" height="204" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -425,7 +425,7 @@
         <div class="container">
             <div class="autor-medico">
                 <div class="autor-medico-foto">
-                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104" loading="lazy" decoding="async">
+                    <img src="/img/doctor-portrait.webp" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104" loading="lazy" decoding="async">
                 </div>
                 <div class="autor-medico-texto">
                     <h2 class="autor-medico-nombre">Dr. Edgar Abraham Núñez García</h2>

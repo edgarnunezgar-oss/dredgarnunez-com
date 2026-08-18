@@ -13,7 +13,7 @@
       gtag('config', 'G-P5Z1TKLXWC');
       document.addEventListener('click', function (e) {
         var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
-        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.getAttribute('data-wa-cta') || a.className || 'enlace'});
       });
     </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -59,6 +59,22 @@
         },
         {
           "@type": "Question",
+          "name": "¿Cómo es la consulta de valoración?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es una consulta presencial en mi consultorio. Te reviso, te explico tu diagnóstico con claridad y juntos decidimos el mejor camino. La consulta de valoración tiene una inversión de $1,000 MXN."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué preparación se necesita antes de la cirugía?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estudios preoperatorios estándar, indicaciones claras de qué hacer y qué evitar los días previos, y resolución de todas tus dudas. Programamos la cirugía en el horario que mejor te funcione."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "¿Cuánto dura la cirugía de hernia inguinal?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -67,7 +83,7 @@
         },
         {
           "@type": "Question",
-          "name": "¿Cuánto tiempo tarda la recuperación?",
+          "name": "¿Cuánto tarda la recuperación de una hernia inguinal?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Los primeros 2-3 días son de reposo en casa. A partir del día 4-5 se empiezan a retomar actividades habituales. En 7-10 días la mayoría hace vida normal. Los esfuerzos pesados se retoman alrededor de las 4-6 semanas."
@@ -75,7 +91,7 @@
         },
         {
           "@type": "Question",
-          "name": "¿La cirugía es ambulatoria?",
+          "name": "¿La cirugía de hernia inguinal es ambulatoria?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Sí. En la gran mayoría de los casos los pacientes se van a casa el mismo día. Solo en muy pocos casos se requiere pasar una noche en el hospital."
@@ -111,6 +127,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "La hernia no se resuelve sola y tiende a crecer con el tiempo. El riesgo principal es que se complique: una hernia encarcelada o estrangulada se convierte en una urgencia quirúrgica donde aumentan los riesgos y los costos. Por eso se recomienda no postergar la valoración."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto dura la cirugía de hernia inguinal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aproximadamente 40 minutos si es de un solo lado. Los pacientes se operan temprano y en la mayoría de los casos se van a casa el mismo día."
           }
         }
       ]
@@ -214,7 +238,7 @@
     <nav class="nav">
         <div class="container">
             <a href="/" class="nav-logo">
-                <img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async">
+                <img src="/img/logo.webp" alt="Dr. Edgar Núñez García" width="400" height="204" decoding="async">
             </a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
@@ -292,7 +316,7 @@
             </div>
         </div>
         <div class="cirugia-hero-image">
-            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, cirujano especialista en hernia inguinal en CDMX" width="1065" height="1600" decoding="async" fetchpriority="high">
+            <img src="/img/hero-cirugias.webp" alt="Dr. Edgar Núñez García, cirujano especialista en hernia inguinal en CDMX" width="1065" height="1600" decoding="async" fetchpriority="high">
         </div>
     </div>
 
@@ -346,7 +370,7 @@
             <div class="techniques-grid">
                 <div class="technique-card">
                     <div class="technique-image">
-                        <img src="/img/cirugia-abierta.jpg" alt="Dr. Edgar Núñez realizando cirugía abierta de hernia inguinal" width="1600" height="2396" loading="lazy" decoding="async">
+                        <img src="/img/cirugia-abierta.webp" alt="Dr. Edgar Núñez realizando cirugía abierta de hernia inguinal" width="1600" height="2396" loading="lazy" decoding="async">
                     </div>
                     <div class="technique-body">
                         <span class="technique-tag">Opción 1</span>
@@ -356,7 +380,7 @@
                 </div>
                 <div class="technique-card">
                     <div class="technique-image">
-                        <img src="/img/laparoscopia.jpg" alt="Dr. Edgar Núñez en quirófano para cirugía laparoscópica" width="1600" height="2396" loading="lazy" decoding="async">
+                        <img src="/img/laparoscopia.webp" alt="Dr. Edgar Núñez en quirófano para cirugía laparoscópica" width="1600" height="2396" loading="lazy" decoding="async">
                     </div>
                     <div class="technique-body">
                         <span class="technique-tag">Opción 2</span>
@@ -441,7 +465,7 @@
     <!-- DOCTOR -->
     <section class="about-section" id="doctor">
         <div class="about-photo">
-            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
+            <img src="/img/doctor-portrait.webp" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
         </div>
         <div class="container">
             <div class="about-content">
@@ -566,15 +590,15 @@
                     <div class="faq-answer"><p>Estudios preoperatorios estándar, indicaciones claras de qué hacer y qué evitar los días previos, y resolución de todas tus dudas. Programamos la cirugía en el horario que mejor te funcione.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuánto dura la cirugía?</button>
+                    <button class="faq-question">¿Cuánto dura la cirugía de hernia inguinal?</button>
                     <div class="faq-answer"><p>Aproximadamente 40 minutos si es de un solo lado. Los pacientes se operan temprano y en la mayoría de los casos se van a casa el mismo día.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuánto tiempo tarda la recuperación?</button>
+                    <button class="faq-question">¿Cuánto tarda la recuperación de una hernia inguinal?</button>
                     <div class="faq-answer"><p>Los primeros 2-3 días son de reposo en casa. A partir del día 4-5 se empiezan a retomar actividades. En 7-10 días la mayoría hace vida normal. Los esfuerzos pesados se retoman alrededor de las 4-6 semanas.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿La cirugía es ambulatoria?</button>
+                    <button class="faq-question">¿La cirugía de hernia inguinal es ambulatoria?</button>
                     <div class="faq-answer"><p>Sí. En la gran mayoría de los casos, especialmente en cirugía laparoscópica, los pacientes se van a casa el mismo día. Solo en muy pocos casos se requiere pasar una noche en el hospital.</p></div>
                 </div>
                 <div class="faq-item">

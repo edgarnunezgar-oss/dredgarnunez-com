@@ -13,7 +13,7 @@
       gtag('config', 'G-P5Z1TKLXWC');
       document.addEventListener('click', function (e) {
         var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
-        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.getAttribute('data-wa-cta') || a.className || 'enlace'});
       });
     </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -166,6 +166,30 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "¿Cómo es la consulta de valoración?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es una consulta presencial en mi consultorio. Te reviso, te explico tu diagnóstico con claridad y juntos decidimos el mejor camino. La consulta de valoración tiene una inversión de $1,000 MXN."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué preparación se necesita antes de la cirugía?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estudios preoperatorios estándar, indicaciones claras de qué hacer y qué evitar los días previos, y resolución de todas tus dudas. Programamos la cirugía en el horario que mejor te funcione."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué operarse antes de que sea urgencia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cuando la cirugía es programada y la vesícula no está complicada, el riesgo de una lesión grave es menor al 1%. La cirugía electiva es de menor riesgo que la de urgencia y permite planear todo el proceso con tranquilidad: estudios, fecha, recuperación y seguimiento."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Si mejoré con medicamento, ¿ya no necesito operarme?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -198,7 +222,7 @@
         },
         {
           "@type": "Question",
-          "name": "¿Qué riesgos tiene la cirugía?",
+          "name": "¿Qué riesgos tiene la cirugía de vesícula?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No te voy a decir que no hay riesgos. Toda cirugía y toda anestesia los tienen, y prefiero ser frontal. Lo importante es qué se hace para reducirlos. Es como manejar: el riesgo de un accidente existe siempre, pero no es igual manejar borracho y sin cinturón que sobrio, con cinturón y respetando los señalamientos. En cirugía el equivalente es: no operar cansado, verificar todo antes de empezar, usar antibióticos cuando corresponde, no intentar cosas heroicas, pedir ayuda a un colega más experimentado cuando el caso lo amerita y, sobre todo, saber cuándo no operar. En tu valoración te explico los riesgos específicos de tu procedimiento y cómo los manejamos."
@@ -243,7 +267,7 @@
     <nav class="nav">
         <div class="container">
             <a href="/" class="nav-logo">
-                <img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async">
+                <img src="/img/logo.webp" alt="Dr. Edgar Núñez García" width="400" height="204" decoding="async">
             </a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
@@ -321,7 +345,7 @@
             </div>
         </div>
         <div class="cirugia-hero-image">
-            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, cirujano especialista en cirugía de vesícula en CDMX" width="1065" height="1600" decoding="async" fetchpriority="high">
+            <img src="/img/hero-cirugias.webp" alt="Dr. Edgar Núñez García, cirujano especialista en cirugía de vesícula en CDMX" width="1065" height="1600" decoding="async" fetchpriority="high">
         </div>
     </div>
 
@@ -376,7 +400,7 @@
             <div class="techniques-grid" style="grid-template-columns: 1fr; max-width: 720px; margin: 0 auto;">
                 <div class="technique-card">
                     <div class="technique-image">
-                        <img src="/img/colecistectomia-laparoscopica.jpg" alt="Dr. Edgar Núñez realizando cirugía laparoscópica de vesícula" width="1201" height="1800" loading="lazy" decoding="async">
+                        <img src="/img/colecistectomia-laparoscopica.webp" alt="Dr. Edgar Núñez realizando cirugía laparoscópica de vesícula" width="1201" height="1800" loading="lazy" decoding="async">
                     </div>
                     <div class="technique-body">
                         <span class="technique-tag">Mínima invasión</span>
@@ -466,7 +490,7 @@
     <!-- DOCTOR -->
     <section class="about-section" id="doctor">
         <div class="about-photo">
-            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
+            <img src="/img/doctor-portrait.webp" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
         </div>
         <div class="container">
             <div class="about-content">
@@ -607,7 +631,7 @@
                     <div class="faq-answer"><p><strong>La recuperación suele ser tranquila.</strong> Los primeros días estás en casa con poco movimiento, aunque caminando un poco. Usualmente los pacientes regresan a sus actividades normales a los 7 o 10 días, excepto ejercicio o cargar objetos pesados, que se retoman pasando un mes después de la cirugía.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué riesgos tiene la cirugía?</button>
+                    <button class="faq-question">¿Qué riesgos tiene la cirugía de vesícula?</button>
                     <div class="faq-answer"><p><strong>No te voy a decir que no hay riesgos.</strong> Toda cirugía y toda anestesia los tienen, y prefiero ser frontal. Lo importante es qué se hace para reducirlos. Es como manejar: el riesgo de un accidente existe siempre, pero no es igual manejar borracho y sin cinturón que sobrio, con cinturón y respetando los señalamientos.</p><p>En cirugía el equivalente es: no operar cansado, verificar todo antes de empezar, usar antibióticos cuando corresponde, no intentar cosas heroicas, pedir ayuda a un colega más experimentado cuando el caso lo amerita y, sobre todo, saber cuándo no operar. En tu valoración te explico los riesgos específicos de tu procedimiento y cómo los manejamos.</p></div>
                 </div>
                 <div class="faq-item">

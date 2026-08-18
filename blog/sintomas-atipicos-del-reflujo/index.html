@@ -13,7 +13,7 @@
       gtag('config', 'G-P5Z1TKLXWC');
       document.addEventListener('click', function (e) {
         var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
-        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.getAttribute('data-wa-cta') || a.className || 'enlace'});
       });
     </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -102,34 +102,34 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "¿Se puede tener reflujo sin agruras?",
+          "name": "¿Qué es el reflujo silencioso o reflujo atípico?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. A eso se le llama reflujo silencioso o reflujo con síntomas atípicos. En lugar de ardor, la persona tiene tos crónica, ronquera, carraspeo, sensación de algo atorado en la garganta, laringitis de repetición o dolor de pecho no cardiaco. Se ha reportado que hasta 75% de los pacientes cuya tos es causada por reflujo no tienen ningún síntoma digestivo."
+            "text": "Los síntomas atípicos, también llamados extraesofágicos, son los que aparecen fuera del esófago; en las vías respiratorias, la garganta, la boca o el pecho. Cuando afectan sobre todo la laringe se le llama reflujo laringofaríngeo. El mecanismo tiene sentido si se piensa un momento; el esófago y la vía aérea comparten vecindario, y lo que sube del estómago no siempre se detiene donde uno esperaría."
           }
         },
         {
           "@type": "Question",
-          "name": "¿El reflujo puede causar tos crónica?",
+          "name": "¿Cuándo sospechar reflujo aunque no haya agruras?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. El reflujo es una de las tres causas principales de tos crónica en adultos, junto con el goteo posnasal y el asma. Es una tos seca, que empeora al acostarse o después de comer, que dura más de 8 semanas y que suele haber pasado ya por varios antibióticos sin éxito. Aun así, no toda tos que no se quita es reflujo."
+            "text": "Hay 5 escenarios donde vale la pena pensar en reflujo aunque el paciente jamás haya tenido agruras. Una tos que dura más de 8 semanas en alguien que no fuma, que no toma medicamentos para la presión del tipo de los IECA (captopril, enalapril, lisinopril, que producen tos como efecto adverso) y a quien ya se le descartó goteo posnasal y asma, deja pocas opciones sobre la mesa. El reflujo es una de las principales."
           }
         },
         {
           "@type": "Question",
-          "name": "¿El omeprazol quita la tos y la ronquera por reflujo?",
+          "name": "¿Funciona el omeprazol para la tos y la ronquera por reflujo?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Menos de lo que se piensa. Para la pirosis los inhibidores de bomba de protones funcionan bien y rápido; para los síntomas atípicos la evidencia es tibia. Un metaanálisis de 8 estudios en laringitis crónica no encontró ventaja sobre el placebo, y en tos crónica 5 estudios tampoco mostraron un beneficio claro. Si un intento bien hecho de hasta 12 semanas no mejoró nada, lo razonable es hacer estudios objetivos, no cambiar de marca."
+            "text": "No como quisiéramos, y esta es probablemente la parte más importante del asunto. Para la pirosis, los inhibidores de bomba funcionan bien y funcionan rápido. Para los síntomas atípicos, la evidencia es bastante más tibia: Eso no significa que el tratamiento no sirva nunca; significa que el grupo de pacientes con síntomas atípicos está mezclado, y que en buena parte de ellos el reflujo no es el problema."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Qué estudios confirman el reflujo cuando los síntomas son atípicos?",
+          "name": "¿Qué estudios sirven para confirmar el reflujo?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "La endoscopia y la pH-impedanciometría de 24 horas, que mide cuánto ácido sube realmente al esófago. Son los estudios que permiten confirmar o descartar el reflujo antes de insistir con medicamento o de considerar una cirugía."
+            "text": "Son los estudios que convierten una sospecha en un diagnóstico, y son especialmente importantes cuando los síntomas son atípicos, justamente porque ahí la sospecha clínica falla más."
           }
         },
         {
@@ -137,7 +137,7 @@
           "name": "¿La cirugía antirreflujo quita la tos?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "En pacientes bien seleccionados sí. En una serie de pacientes con tos crónica por reflujo operados con funduplicatura, la tos se curó en 59.5% y mejoró de forma importante en otro 12.7%. El predictor más fuerte de buen resultado fue tener también síntomas típicos. La funduplicatura corrige el reflujo, no la tos; si la tos no venía del reflujo, operar no la va a quitar."
+            "text": "Con la cirugía pasa algo parecido que con el medicamento. En pacientes bien seleccionados los resultados son buenos. En una serie de pacientes con tos crónica por reflujo operados con funduplicatura, la tos se curó en 59.5% y mejoró de forma importante en otro 12.7%. Pero el predictor más fuerte de que a alguien le vaya bien fue tener también síntomas típicos, con una probabilidad 6 veces mayor de curarse."
           }
         }
       ]
@@ -149,7 +149,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.webp" alt="Dr. Edgar Núñez García" width="400" height="204" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">

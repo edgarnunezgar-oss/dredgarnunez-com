@@ -13,7 +13,7 @@
       gtag('config', 'G-P5Z1TKLXWC');
       document.addEventListener('click', function (e) {
         var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
-        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.getAttribute('data-wa-cta') || a.className || 'enlace'});
       });
     </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -137,7 +137,7 @@
     <nav class="nav">
         <div class="container">
             <a href="/" class="nav-logo">
-                <img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async">
+                <img src="/img/logo.webp" alt="Dr. Edgar Núñez García" width="400" height="204" decoding="async">
             </a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
@@ -181,7 +181,7 @@
     <!-- HERO -->
     <section class="home-hero">
         <div class="home-hero-photo">
-            <img src="/img/hero-cirugia.jpg" alt="Dr. Edgar Núñez García operando en cirugía laparoscópica" width="1335" height="2000" decoding="async" fetchpriority="high">
+            <img src="/img/hero-cirugia.webp" alt="Dr. Edgar Núñez García operando en cirugía laparoscópica" width="1335" height="2000" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="home-hero-content">
@@ -271,7 +271,7 @@
     <!-- ACERCA DE MÍ -->
     <section class="about-section">
         <div class="about-photo">
-            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
+            <img src="/img/doctor-portrait.webp" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
         </div>
         <div class="container">
             <div class="about-content">

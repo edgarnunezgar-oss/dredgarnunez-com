@@ -13,7 +13,7 @@
       gtag('config', 'G-P5Z1TKLXWC');
       document.addEventListener('click', function (e) {
         var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
-        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.getAttribute('data-wa-cta') || a.className || 'enlace'});
       });
     </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -81,6 +81,22 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "¿Cómo es la consulta de valoración?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es una consulta presencial en mi consultorio. Te reviso, te explico tu diagnóstico con claridad y juntos decidimos el mejor camino. La consulta de valoración tiene una inversión de $1,000 MXN."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué preparación se necesita antes de la cirugía?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estudios preoperatorios estándar, indicaciones claras de qué hacer y qué evitar los días previos, y resolución de todas tus dudas. Programamos la cirugía en el horario que mejor te funcione."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "¿Qué está saliendo por la bolita?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -97,7 +113,7 @@
         },
         {
           "@type": "Question",
-          "name": "¿En qué consiste la cirugía?",
+          "name": "¿En qué consiste la cirugía de hernia umbilical?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "En quirófano regresamos el contenido herniario, la bolita, a su lugar. Después cerramos el orificio con sutura y colocamos una malla para reforzar la zona."
@@ -105,7 +121,7 @@
         },
         {
           "@type": "Question",
-          "name": "¿Cuánto dura la cirugía?",
+          "name": "¿Cuánto dura la cirugía de hernia umbilical?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Entre 30 y 45 minutos aproximadamente. Es un procedimiento ambulatorio: te operas por la mañana y regresas a casa el mismo día."
@@ -121,7 +137,7 @@
         },
         {
           "@type": "Question",
-          "name": "¿Cuánto tiempo tarda la recuperación?",
+          "name": "¿Cuánto tarda la recuperación de una hernia umbilical?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Reposo relativo los primeros 2-3 días. Actividades ligeras a partir del día 4-5. Vida normal en 7-10 días. Esfuerzos pesados y abdominales intensos se retoman entre las 4 y 6 semanas según evolución."
@@ -137,7 +153,7 @@
         },
         {
           "@type": "Question",
-          "name": "¿Qué riesgos tiene la cirugía?",
+          "name": "¿Qué riesgos tiene la cirugía de hernia umbilical?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No te voy a decir que no hay riesgos. Toda cirugía y toda anestesia los tienen, y prefiero ser frontal. Lo importante es qué se hace para reducirlos. Es como manejar: el riesgo de un accidente existe siempre, pero no es igual manejar borracho y sin cinturón que sobrio, con cinturón y respetando los señalamientos. En cirugía el equivalente es: no operar cansado, verificar todo antes de empezar, usar antibióticos cuando corresponde, no intentar cosas heroicas, pedir ayuda a un colega más experimentado cuando el caso lo amerita y, sobre todo, saber cuándo no operar. En tu valoración te explico los riesgos específicos de tu procedimiento y cómo los manejamos."
@@ -182,7 +198,7 @@
     <nav class="nav">
         <div class="container">
             <a href="/" class="nav-logo">
-                <img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async">
+                <img src="/img/logo.webp" alt="Dr. Edgar Núñez García" width="400" height="204" decoding="async">
             </a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
@@ -260,7 +276,7 @@
             </div>
         </div>
         <div class="cirugia-hero-image">
-            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, cirujano especialista en hernia umbilical en CDMX" width="1065" height="1600" decoding="async" fetchpriority="high">
+            <img src="/img/hero-cirugias.webp" alt="Dr. Edgar Núñez García, cirujano especialista en hernia umbilical en CDMX" width="1065" height="1600" decoding="async" fetchpriority="high">
         </div>
     </div>
 
@@ -315,7 +331,7 @@
             <div class="techniques-grid">
                 <div class="technique-card">
                     <div class="technique-image">
-                        <img src="/img/cirugia-abierta.jpg" alt="Reparación abierta de hernia umbilical" width="1600" height="2396" loading="lazy" decoding="async">
+                        <img src="/img/cirugia-abierta.webp" alt="Reparación abierta de hernia umbilical" width="1600" height="2396" loading="lazy" decoding="async">
                     </div>
                     <div class="technique-body">
                         <span class="technique-tag">Opción 1</span>
@@ -325,7 +341,7 @@
                 </div>
                 <div class="technique-card">
                     <div class="technique-image">
-                        <img src="/img/laparoscopia.jpg" alt="Reparación laparoscópica de hernia umbilical" width="1600" height="2396" loading="lazy" decoding="async">
+                        <img src="/img/laparoscopia.webp" alt="Reparación laparoscópica de hernia umbilical" width="1600" height="2396" loading="lazy" decoding="async">
                     </div>
                     <div class="technique-body">
                         <span class="technique-tag">Opción 2</span>
@@ -409,7 +425,7 @@
     <!-- DOCTOR -->
     <section class="about-section" id="doctor">
         <div class="about-photo">
-            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
+            <img src="/img/doctor-portrait.webp" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
         </div>
         <div class="container">
             <div class="about-content">
@@ -538,11 +554,11 @@
                     <div class="faq-answer"><p>Si la grasita que se está saliendo se atora, a eso le llamamos que está encarcelada. Si además deja de llegarle sangre, hablamos de estrangulamiento. Afortunadamente es muy poco frecuente: menos del 5% de los pacientes necesitan una cirugía de urgencia por esto. Pero sí pasa, y por eso se recomienda la cirugía electiva antes de que ocurra.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿En qué consiste la cirugía?</button>
+                    <button class="faq-question">¿En qué consiste la cirugía de hernia umbilical?</button>
                     <div class="faq-answer"><p>En quirófano regresamos el contenido herniario, la bolita, a su lugar. Después cerramos el orificio con sutura y colocamos una malla para reforzar la zona.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuánto dura la cirugía?</button>
+                    <button class="faq-question">¿Cuánto dura la cirugía de hernia umbilical?</button>
                     <div class="faq-answer"><p>Entre 30 y 45 minutos aproximadamente. Es un procedimiento ambulatorio: te operas por la mañana y regresas a casa el mismo día.</p></div>
                 </div>
                 <div class="faq-item">
@@ -550,7 +566,7 @@
                     <div class="faq-answer"><p>El objetivo es reparar el defecto manteniendo la estética del ombligo. En la gran mayoría de los casos el resultado cosmético es muy bueno.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuánto tiempo tarda la recuperación?</button>
+                    <button class="faq-question">¿Cuánto tarda la recuperación de una hernia umbilical?</button>
                     <div class="faq-answer"><p>Reposo relativo los primeros 2-3 días. Actividades ligeras a partir del día 4-5. Vida normal en 7-10 días. Esfuerzos pesados y abdominales intensos se retoman entre las 4 y 6 semanas según evolución.</p></div>
                 </div>
                 <div class="faq-item">
@@ -558,7 +574,7 @@
                     <div class="faq-answer"><p>La hernia seguirá creciendo. El riesgo principal es que en algún momento se atore o se estrangule, lo que convierte una cirugía programada y sencilla en una urgencia con mayores riesgos. Siempre que se hace una cirugía de urgencia se piensa que se debió evitar con una cirugía programada electiva.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué riesgos tiene la cirugía?</button>
+                    <button class="faq-question">¿Qué riesgos tiene la cirugía de hernia umbilical?</button>
                     <div class="faq-answer"><p>No te voy a decir que no hay riesgos. Toda cirugía y toda anestesia los tienen, y prefiero ser frontal. Lo importante es qué se hace para reducirlos. Es como manejar: el riesgo de un accidente existe siempre, pero no es igual manejar borracho y sin cinturón que sobrio, con cinturón y respetando los señalamientos.</p><p>En cirugía el equivalente es: no operar cansado, verificar todo antes de empezar, usar antibióticos cuando corresponde, no intentar cosas heroicas, pedir ayuda a un colega más experimentado cuando el caso lo amerita y, sobre todo, saber cuándo no operar. En tu valoración te explico los riesgos específicos de tu procedimiento y cómo los manejamos.</p></div>
                 </div>
                 <div class="faq-item">

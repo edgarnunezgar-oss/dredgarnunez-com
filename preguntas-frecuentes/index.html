@@ -13,7 +13,7 @@
       gtag('config', 'G-P5Z1TKLXWC');
       document.addEventListener('click', function (e) {
         var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
-        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.getAttribute('data-wa-cta') || a.className || 'enlace'});
       });
     </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -168,22 +168,6 @@
         },
         {
           "@type": "Question",
-          "name": "¿Cuánto tiempo toma recuperarse de la cirugía antirreflujo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Desde el primer día puedes tomar líquidos y empezar con fruta o verduras al vapor. Los siguientes días vas progresando la dieta. La gran mayoría de los pacientes regresa a sus actividades habituales entre el día 7 y el día 10."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué riesgos tiene la cirugía antirreflujo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Como toda cirugía tiene riesgos. Los principales son: dificultad para pasar la comida al inicio (por eso usamos calibradores para que la dona no quede demasiado apretada), riesgo de infección y de lesionar estructuras adyacentes. Operamos siempre con protocolos estrictos para minimizarlos."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "¿La cirugía antirreflujo es para siempre?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -220,30 +204,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "En la cirugía abierta se hace una incisión de 5-7 cm en la región inguinal para reparar el defecto y colocar una malla. Por laparoscopía se hacen 3 incisiones pequeñas y se trabaja con cámara e instrumentos especiales. Ambas tienen excelentes resultados; la laparoscopía suele tener una recuperación un poco más rápida y es especialmente útil en pacientes con obesidad o con hernias de ambos lados."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto dura la cirugía de hernia inguinal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Aproximadamente 40 minutos si es de un solo lado. Los pacientes se operan temprano y en la mayoría de los casos se van a casa el mismo día."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto tiempo tarda la recuperación de una hernia inguinal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Los primeros 2-3 días son de reposo en casa. A partir del día 4-5 se empiezan a retomar actividades habituales. En 7-10 días la mayoría hace vida normal. Los esfuerzos pesados se retoman alrededor de las 4-6 semanas."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿La cirugía de hernia inguinal es ambulatoria?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. En la gran mayoría de los casos, especialmente en cirugía laparoscópica, los pacientes se van a casa el mismo día. Solo en muy pocos casos se requiere pasar una noche en el hospital."
           }
         },
         {
@@ -296,34 +256,10 @@
         },
         {
           "@type": "Question",
-          "name": "¿En qué consiste la cirugía de hernia umbilical?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "En quirófano regresamos el contenido herniario (la bolita) a su lugar. Después cerramos el orificio con sutura y colocamos una malla para reforzar la zona."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "¿Qué es la malla y por qué se usa?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Las mallas son elementos de polipropileno. Son como un mosquitero, pero de un plástico médico especial. Se integran a los músculos: tu propio cuerpo forma tejido a través de esos poros, lo que hace que esa zona se vuelva muy fuerte y evita que la hernia vuelva a salir."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto dura la cirugía de hernia umbilical?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Entre 30 y 45 minutos aproximadamente. Es un procedimiento ambulatorio: te operas por la mañana y regresas a casa el mismo día."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto tarda la recuperación de una hernia umbilical?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Reposo relativo los primeros 2-3 días. Actividades ligeras a partir del día 4-5. Vida normal en 7-10 días. Esfuerzos pesados y abdominales intensos se retoman entre las 4 y 6 semanas según evolución."
           }
         },
         {
@@ -540,7 +476,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.webp" alt="Dr. Edgar Núñez García" width="400" height="204" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -581,7 +517,7 @@
     <!-- PAGE HERO -->
     <section class="page-hero page-hero-photo">
         <div class="page-hero-image">
-            <img src="/img/hero-explicacion-1.jpg" alt="Dr. Edgar Núñez García explicando a un paciente" width="1800" height="1201" decoding="async" fetchpriority="high">
+            <img src="/img/hero-explicacion-1.webp" alt="Dr. Edgar Núñez García explicando a un paciente" width="1800" height="1201" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="page-hero-content">
@@ -732,7 +668,7 @@
             <!-- REFLUJO -->
             <div class="faq-topic" id="reflujo">
                 <h2 class="faq-topic-header">
-                    <button class="faq-topic-toggle">Reflujo Gastroesofágico <span class="faq-topic-count">14 preguntas</span><span class="faq-topic-icon">+</span></button>
+                    <button class="faq-topic-toggle">Reflujo Gastroesofágico <span class="faq-topic-count">12 preguntas</span><span class="faq-topic-icon">+</span></button>
                 </h2>
                 <div class="faq-topic-body">
                     <div class="faq-list">
@@ -769,14 +705,6 @@
                             <div class="faq-answer"><p><strong>Por laparoscopía.</strong> Hacemos pequeñas incisiones en el abdomen (de 5 milímetros o 1 centímetro), metemos los trócares y a través de ellos pasamos la cámara y los instrumentos. La cirugía dura aproximadamente 60 a 90 minutos bajo anestesia general.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Cuánto tiempo toma recuperarse de la cirugía antirreflujo?</button>
-                            <div class="faq-answer"><p><strong>Desde el primer día puedes tomar líquidos y empezar con fruta o verduras al vapor.</strong> Los siguientes días vas progresando la dieta. La gran mayoría de los pacientes regresa a sus actividades habituales entre el día 7 y el día 10.</p></div>
-                        </div>
-                        <div class="faq-item">
-                            <button class="faq-question">¿Qué riesgos tiene la cirugía antirreflujo?</button>
-                            <div class="faq-answer"><p><strong>Como toda cirugía tiene riesgos.</strong> Los principales son: dificultad para pasar la comida al inicio (por eso usamos calibradores para que la dona no quede demasiado apretada), riesgo de infección y de lesionar estructuras adyacentes. Operamos siempre con protocolos estrictos para minimizarlos.</p></div>
-                        </div>
-                        <div class="faq-item">
                             <button class="faq-question">¿La cirugía antirreflujo es para siempre?</button>
                             <div class="faq-answer"><p><strong>Si te cuidas (buena alimentación, ejercicio, mantener tu peso), la cirugía puede tener una vida útil de 20 a 30 años.</strong> Si la persona sube mucho de peso o descuida los hábitos, la dona se puede aflojar.</p><p>Las estadísticas señalan que a 10 años cerca del 40% de los pacientes podrían llegar a necesitar antiácidos ocasionales nuevamente. Por eso, mantener los hábitos es clave para conservar el resultado.</p></div>
                         </div>
@@ -800,7 +728,7 @@
             <!-- HERNIA INGUINAL -->
             <div class="faq-topic" id="hernia-inguinal">
                 <h2 class="faq-topic-header">
-                    <button class="faq-topic-toggle">Hernia Inguinal <span class="faq-topic-count">11 preguntas</span><span class="faq-topic-icon">+</span></button>
+                    <button class="faq-topic-toggle">Hernia Inguinal <span class="faq-topic-count">8 preguntas</span><span class="faq-topic-icon">+</span></button>
                 </h2>
                 <div class="faq-topic-body">
                     <div class="faq-list">
@@ -811,18 +739,6 @@
                         <div class="faq-item">
                             <button class="faq-question">¿Cuál es la diferencia entre cirugía abierta y laparoscopía para hernia inguinal?</button>
                             <div class="faq-answer"><p>En la cirugía abierta se hace una incisión de 5-7 cm en la región inguinal para reparar el defecto y colocar una malla. Por laparoscopía se hacen 3 incisiones pequeñas y se trabaja con cámara e instrumentos especiales.</p><p>Ambas tienen excelentes resultados; la laparoscopía suele tener una recuperación un poco más rápida y es especialmente útil en pacientes con obesidad o con hernias de ambos lados.</p></div>
-                        </div>
-                        <div class="faq-item">
-                            <button class="faq-question">¿Cuánto dura la cirugía de hernia inguinal?</button>
-                            <div class="faq-answer"><p><strong>Aproximadamente 40 minutos si es de un solo lado.</strong> Los pacientes se operan temprano y en la mayoría de los casos se van a casa el mismo día.</p></div>
-                        </div>
-                        <div class="faq-item">
-                            <button class="faq-question">¿Cuánto tiempo tarda la recuperación de una hernia inguinal?</button>
-                            <div class="faq-answer"><p><strong>Los primeros 2-3 días son de reposo en casa.</strong> A partir del día 4-5 se empiezan a retomar actividades habituales. En 7-10 días la mayoría hace vida normal. Los esfuerzos pesados se retoman alrededor de las 4-6 semanas.</p></div>
-                        </div>
-                        <div class="faq-item">
-                            <button class="faq-question">¿La cirugía de hernia inguinal es ambulatoria?</button>
-                            <div class="faq-answer"><p><strong>Sí.</strong> En la gran mayoría de los casos, especialmente en cirugía laparoscópica, los pacientes se van a casa el mismo día. Solo en muy pocos casos se requiere pasar una noche en el hospital.</p></div>
                         </div>
                         <div class="faq-item">
                             <button class="faq-question">¿La malla para hernia es segura?</button>
@@ -856,7 +772,7 @@
             <!-- HERNIA UMBILICAL -->
             <div class="faq-topic" id="hernia-umbilical">
                 <h2 class="faq-topic-header">
-                    <button class="faq-topic-toggle">Hernia Umbilical <span class="faq-topic-count">9 preguntas</span><span class="faq-topic-icon">+</span></button>
+                    <button class="faq-topic-toggle">Hernia Umbilical <span class="faq-topic-count">6 preguntas</span><span class="faq-topic-icon">+</span></button>
                 </h2>
                 <div class="faq-topic-body">
                     <div class="faq-list">
@@ -877,20 +793,8 @@
                             <div class="faq-answer"><p><strong>Si la grasita que se está saliendo se atora, a eso le llamamos que está encarcelada.</strong> Si además deja de llegarle sangre, hablamos de estrangulamiento. Afortunadamente es muy poco frecuente: menos del 5% de los pacientes necesitan una cirugía de urgencia por esto. Pero sí pasa, y por eso se recomienda la cirugía electiva antes de que ocurra.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿En qué consiste la cirugía de hernia umbilical?</button>
-                            <div class="faq-answer"><p><strong>En quirófano regresamos el contenido herniario (la bolita) a su lugar.</strong> Después cerramos el orificio con sutura y colocamos una malla para reforzar la zona.</p></div>
-                        </div>
-                        <div class="faq-item">
                             <button class="faq-question">¿Qué es la malla y por qué se usa?</button>
                             <div class="faq-answer"><p><strong>Las mallas son elementos de polipropileno.</strong> Son como un mosquitero, pero de un plástico médico especial. Se integran a los músculos: tu propio cuerpo forma tejido a través de esos poros, lo que hace que esa zona se vuelva muy fuerte y evita que la hernia vuelva a salir.</p></div>
-                        </div>
-                        <div class="faq-item">
-                            <button class="faq-question">¿Cuánto dura la cirugía de hernia umbilical?</button>
-                            <div class="faq-answer"><p><strong>Entre 30 y 45 minutos aproximadamente.</strong> Es un procedimiento ambulatorio: te operas por la mañana y regresas a casa el mismo día.</p></div>
-                        </div>
-                        <div class="faq-item">
-                            <button class="faq-question">¿Cuánto tarda la recuperación de una hernia umbilical?</button>
-                            <div class="faq-answer"><p><strong>Reposo relativo los primeros 2-3 días.</strong> Actividades ligeras a partir del día 4-5. Vida normal en 7-10 días. Esfuerzos pesados y abdominales intensos se retoman entre las 4 y 6 semanas según evolución.</p></div>
                         </div>
                         <div class="faq-item">
                             <button class="faq-question">¿Qué pasa si no me opero una hernia umbilical?</button>

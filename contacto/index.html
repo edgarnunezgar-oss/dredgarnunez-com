@@ -13,7 +13,7 @@
       gtag('config', 'G-P5Z1TKLXWC');
       document.addEventListener('click', function (e) {
         var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
-        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.getAttribute('data-wa-cta') || a.className || 'enlace'});
       });
     </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
@@ -164,7 +164,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.webp" alt="Dr. Edgar Núñez García" width="400" height="204" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -205,11 +205,11 @@
     <!-- PAGE HERO -->
     <section class="page-hero page-hero-photo">
         <div class="page-hero-image">
-            <img id="pageHeroImg" src="/img/contacto-hero.jpg" alt="Contacto Dr. Edgar Núñez García" width="1201" height="1800" decoding="async" fetchpriority="high">
+            <img id="pageHeroImg" src="/img/contacto-hero.webp" alt="Contacto Dr. Edgar Núñez García" width="1201" height="1800" decoding="async" fetchpriority="high">
         </div>
         <script>
             (function () {
-                var fotos = ['img/contacto-hero.jpg', 'img/sobre-hero.jpg', 'img/blog-hero.jpg', 'img/hero-explicacion-1.jpg', 'img/hero-escribiendo.jpg', 'img/hero-amigable.jpg'];
+                var fotos = ['/img/contacto-hero.webp', '/img/sobre-hero.webp', '/img/blog-hero.webp', '/img/hero-explicacion-1.webp', '/img/hero-escribiendo.webp', '/img/hero-amigable.webp'];
                 document.getElementById('pageHeroImg').src = fotos[Math.floor(Math.random() * fotos.length)];
             })();
         </script>
@@ -228,36 +228,19 @@
     <section class="section">
         <div class="container">
             <div class="contact-grid">
-                <!-- FORM -->
+                <!-- CONTACTO POR WHATSAPP -->
                 <div class="contact-form-container">
-                    <h2>Envíame un Mensaje</h2>
-                    <p>Completa el formulario y me pondré en contacto contigo a la brevedad. También puedes contactarme directamente por WhatsApp para una respuesta más rápida.</p>
-                    <form class="contact-form" action="#" method="POST">
-                        <div class="form-group">
-                            <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" placeholder="tu@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="cirugia">Cirugía de interés</label>
-                            <select id="cirugia" name="cirugia">
-                                <option value="">Selecciona una opción</option>
-                                <option value="hernia-inguinal">Hernia Inguinal</option>
-                                <option value="vesicula">Vesícula (Colecistectomía)</option>
-                                <option value="reflujo">Reflujo Gastroesofágico</option>
-                                <option value="hernia-umbilical">Hernia Umbilical</option>
-                                <option value="otra">Otra consulta</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntame brevemente tu caso o tus dudas..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Enviar Mensaje</button>
-                    </form>
+                    <h2>Escríbeme por WhatsApp</h2>
+                    <p>Es la forma más rápida de llegar a mí. Yo leo los mensajes y te respondo con lo que necesites saber antes de decidir si quieres una valoración.</p>
+                    <p>Para responderte mejor desde el primer mensaje, me ayuda que incluyas:</p>
+                    <ul class="contact-hints">
+                        <li>Tu nombre.</li>
+                        <li>Qué te está pasando o qué estudio ya te hicieron.</li>
+                        <li>Desde cuándo lo tienes.</li>
+                        <li>Si ya te vio otro médico y qué te dijo.</li>
+                    </ul>
+                    <p>Si prefieres no dar detalles por escrito, escribe solo tu nombre y te respondo igual.</p>
+                    <a href="https://wa.link/3rll01" target="_blank" rel="noopener" class="btn-primary" data-wa-cta="contacto-principal" style="width: 100%; justify-content: center;">Escribirme por WhatsApp</a>
                 </div>
 
                 <!-- CONTACT INFO -->
@@ -283,7 +266,7 @@
 
                     <!-- MAP -->
                     <div class="contact-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0!2d-99.15!3d19.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCentro+Quir%C3%BArgico+Servicura!5e0!3m2!1ses!2smx!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación Centro Quirúrgico Servicura"></iframe>
+                        <iframe src="https://maps.google.com/maps?q=19.4233434,-99.1536367&z=17&hl=es&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación del consultorio en Av. Cuauhtémoc 52, Col. Doctores, CDMX"></iframe>
                     </div>
                 </div>
             </div>
