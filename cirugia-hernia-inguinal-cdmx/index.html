@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Cirugía de Hernia Inguinal en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Cirugía de hernia inguinal abierta o por laparoscopía en CDMX. Procedimientos ambulatorios. Más de 1,000 cirugías realizadas. Agenda tu valoración.">
+    <title>Cirugía de hernia inguinal en CDMX | Dr. Edgar Núñez</title>
+    <meta name="description" content="Cirugía de hernia inguinal abierta o por laparoscopía en CDMX, ambulatoria y con malla. Valoración para saber si tu dolor en la ingle es hernia.">
     <link rel="canonical" href="https://dredgarnunez.com/cirugia-hernia-inguinal-cdmx/">
-    <meta property="og:title" content="Cirugía de Hernia Inguinal en CDMX, Dr. Edgar Núñez García">
-    <meta property="og:description" content="Operación de hernia inguinal abierta o por laparoscopía. Cirugía ambulatoria, recuperación rápida. Centro Quirúrgico Servicura, CDMX.">
+    <meta property="og:title" content="Cirugía de hernia inguinal en CDMX | Dr. Edgar Núñez">
+    <meta property="og:description" content="Cirugía de hernia inguinal abierta o por laparoscopía en CDMX, ambulatoria y con malla. Valoración para saber si tu dolor en la ingle es hernia.">
     <meta property="og:url" content="https://dredgarnunez.com/cirugia-hernia-inguinal-cdmx/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cirugía de hernia inguinal en CDMX | Dr. Edgar Núñez">
+    <meta name="twitter:description" content="Cirugía de hernia inguinal abierta o por laparoscopía en CDMX, ambulatoria y con malla. Valoración para saber si tu dolor en la ingle es hernia.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/cirugia.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/cirugia.css?v=27">
     <link rel="stylesheet" href="/css/home.css?v=25">
 
     <!-- Schema FAQPage -->
@@ -26,16 +49,70 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "¿Por qué salen las hernias inguinales?", "acceptedAnswer": {"@type": "Answer", "text": "En general, las personas que desarrollan hernias suelen tener tejidos más débiles, ya sea por factores genéticos, tabaquismo, envejecimiento, cirugías previas o factores mecánicos como toser mucho o cargar peso frecuentemente. Sin embargo, en muchos casos no existe una causa única que explique por qué se formó la hernia."}},
-        {"@type": "Question", "name": "¿Se puede curar una hernia sin cirugía?", "acceptedAnswer": {"@type": "Answer", "text": "No. Desafortunadamente no existen medicamentos ni ejercicios que resuelvan una hernia inguinal. Es un defecto en la pared abdominal que requiere reparación quirúrgica. Cuanto antes se atienda, menores son los riesgos de complicación."}},
-        {"@type": "Question", "name": "¿Cuál es la diferencia entre cirugía abierta y laparoscopía?", "acceptedAnswer": {"@type": "Answer", "text": "En la cirugía abierta se hace una incisión de 5-7 cm en la región inguinal para reparar el defecto y colocar una malla. Por laparoscopía se hacen 3 incisiones pequeñas y se trabaja con cámara e instrumentos especiales. Ambas tienen excelentes resultados; la laparoscopía suele tener una recuperación un poco más rápida y es especialmente útil en pacientes con obesidad o con hernias de ambos lados."}},
-        {"@type": "Question", "name": "¿Cuánto dura la cirugía de hernia inguinal?", "acceptedAnswer": {"@type": "Answer", "text": "Aproximadamente 40 minutos si es de un solo lado. Los pacientes se operan temprano y en la mayoría de los casos se van a casa el mismo día."}},
-        {"@type": "Question", "name": "¿Cuánto tiempo tarda la recuperación?", "acceptedAnswer": {"@type": "Answer", "text": "Los primeros 2-3 días son de reposo en casa. A partir del día 4-5 se empiezan a retomar actividades habituales. En 7-10 días la mayoría hace vida normal. Los esfuerzos pesados se retoman alrededor de las 4-6 semanas."}},
-        {"@type": "Question", "name": "¿La cirugía es ambulatoria?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. En la gran mayoría de los casos los pacientes se van a casa el mismo día. Solo en muy pocos casos se requiere pasar una noche en el hospital."}},
-        {"@type": "Question", "name": "¿Qué riesgos tiene la cirugía de hernia inguinal?", "acceptedAnswer": {"@type": "Answer", "text": "No te voy a decir que no hay riesgos. Toda cirugía y toda anestesia los tienen, y prefiero ser frontal. Lo importante es qué se hace para reducirlos. Es como manejar: el riesgo de un accidente existe siempre, pero no es igual manejar borracho y sin cinturón que sobrio, con cinturón y respetando los señalamientos. En cirugía el equivalente es: no operar cansado, verificar todo antes de empezar, usar antibióticos cuando corresponde, no intentar cosas heroicas, pedir ayuda a un colega más experimentado cuando el caso lo amerita y, sobre todo, saber cuándo no operar. En tu valoración te explico los riesgos específicos de tu procedimiento y cómo los manejamos."}},
-        {"@type": "Question", "name": "¿Cuánto cuesta la cirugía de hernia inguinal?", "acceptedAnswer": {"@type": "Answer", "text": "Los paquetes quirúrgicos comienzan a partir de $35,000 MXN e incluyen honorarios del equipo médico, hospitalización, insumos y seguimiento. Ofrecemos financiamiento a 3, 6, 9 y 12 meses. Trabajamos ajustándonos a tabulado con aseguradoras como GNP, Axa, Metlife, Mapfre, Sofía, etc. El precio varía según el caso, la técnica y el lugar (hospital o clínica)."}},
-        {"@type": "Question", "name": "¿La malla es segura?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Las mallas de polipropileno se usan de forma rutinaria a nivel mundial. Se integran progresivamente a los tejidos del cuerpo y refuerzan de forma importante la pared abdominal, disminuyendo la probabilidad de que la hernia regrese."}},
-        {"@type": "Question", "name": "¿Qué pasa si no me opero?", "acceptedAnswer": {"@type": "Answer", "text": "La hernia no se resuelve sola y tiende a crecer con el tiempo. El riesgo principal es que se complique: una hernia encarcelada o estrangulada se convierte en una urgencia quirúrgica donde aumentan los riesgos y los costos. Por eso se recomienda no postergar la valoración."}}
+        {
+          "@type": "Question",
+          "name": "¿Se puede curar una hernia sin cirugía?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Desafortunadamente no existen medicamentos ni ejercicios que resuelvan una hernia inguinal. Es un defecto en la pared abdominal que requiere reparación quirúrgica. Cuanto antes se atienda, menores son los riesgos de complicación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto dura la cirugía de hernia inguinal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aproximadamente 40 minutos si es de un solo lado. Los pacientes se operan temprano y en la mayoría de los casos se van a casa el mismo día."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo tarda la recuperación?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los primeros 2-3 días son de reposo en casa. A partir del día 4-5 se empiezan a retomar actividades habituales. En 7-10 días la mayoría hace vida normal. Los esfuerzos pesados se retoman alrededor de las 4-6 semanas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La cirugía es ambulatoria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. En la gran mayoría de los casos los pacientes se van a casa el mismo día. Solo en muy pocos casos se requiere pasar una noche en el hospital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué riesgos tiene la cirugía de hernia inguinal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No te voy a decir que no hay riesgos. Toda cirugía y toda anestesia los tienen, y prefiero ser frontal. Lo importante es qué se hace para reducirlos. Es como manejar: el riesgo de un accidente existe siempre, pero no es igual manejar borracho y sin cinturón que sobrio, con cinturón y respetando los señalamientos. En cirugía el equivalente es: no operar cansado, verificar todo antes de empezar, usar antibióticos cuando corresponde, no intentar cosas heroicas, pedir ayuda a un colega más experimentado cuando el caso lo amerita y, sobre todo, saber cuándo no operar. En tu valoración te explico los riesgos específicos de tu procedimiento y cómo los manejamos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta la cirugía de hernia inguinal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los paquetes quirúrgicos comienzan a partir de $35,000 MXN e incluyen honorarios del equipo médico, hospitalización, insumos y seguimiento. Ofrecemos financiamiento a 3, 6, 9 y 12 meses. Trabajamos ajustándonos a tabulado con aseguradoras como GNP, Axa, Metlife, Mapfre, Sofía, etc. El precio varía según el caso, la técnica y el lugar (hospital o clínica)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La malla es segura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Las mallas de polipropileno se usan de forma rutinaria a nivel mundial. Se integran progresivamente a los tejidos del cuerpo y refuerzan de forma importante la pared abdominal, disminuyendo la probabilidad de que la hernia regrese."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si no me opero?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La hernia no se resuelve sola y tiende a crecer con el tiempo. El riesgo principal es que se complique: una hernia encarcelada o estrangulada se convierte en una urgencia quirúrgica donde aumentan los riesgos y los costos. Por eso se recomienda no postergar la valoración."
+          }
+        }
       ]
     }
     </script>
@@ -51,9 +128,83 @@
         "@type": "Physician",
         "name": "Dr. Edgar Abraham Núñez García",
         "url": "https://dredgarnunez.com/",
-        "medicalSpecialty": {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        "address": {"@type": "PostalAddress", "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52", "addressLocality": "Ciudad de México", "postalCode": "06720", "addressCountry": "MX"}
+        "medicalSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
+          "addressLocality": "Ciudad de México",
+          "addressRegion": "Ciudad de México",
+          "postalCode": "06720",
+          "addressCountry": "MX"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 19.4233434,
+          "longitude": -99.1536367
+        },
+        "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "11:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "16:00",
+            "closes": "20:00"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Ciudad de México"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Zona Metropolitana del Valle de México"
+          }
+        ],
+        "@id": "https://dredgarnunez.com/#cirujano"
       }
+    }
+    </script>
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://dredgarnunez.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cirugía de hernia inguinal",
+          "item": "https://dredgarnunez.com/cirugia-hernia-inguinal-cdmx/"
+        }
+      ]
     }
     </script>
 </head>
@@ -63,7 +214,7 @@
     <nav class="nav">
         <div class="container">
             <a href="/" class="nav-logo">
-                <img src="/img/logo.png" alt="Dr. Edgar Núñez García">
+                <img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async">
             </a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
@@ -108,6 +259,9 @@
     <div class="cirugia-hero">
         <div class="container">
             <div class="cirugia-hero-content">
+                <div class="breadcrumb">
+                    <a href="/">Inicio</a> <span>&rsaquo;</span> Cirugía de hernia inguinal
+                </div>
                 <p class="cirugia-hero-eyebrow">¿Una bola en la ingle? ¿Dolor al cargar o toser?</p>
                 <h1>Cirugía de hernia inguinal en CDMX</h1>
                 <p class="cirugia-hero-sub">Cirugía enfocada en colocar una malla y, dependiendo la técnica, cerrar el orificio de la hernia, para evitar que se vuelva a formar la hernia. El objetivo es que vuelvas a cargar, entrenar y moverte sin miedo.</p>
@@ -138,7 +292,7 @@
             </div>
         </div>
         <div class="cirugia-hero-image">
-            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, cirujano especialista en hernia inguinal en CDMX">
+            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, cirujano especialista en hernia inguinal en CDMX" width="1065" height="1600" decoding="async" fetchpriority="high">
         </div>
     </div>
 
@@ -192,7 +346,7 @@
             <div class="techniques-grid">
                 <div class="technique-card">
                     <div class="technique-image">
-                        <img src="/img/cirugia-abierta.jpg" alt="Dr. Edgar Núñez realizando cirugía abierta de hernia inguinal">
+                        <img src="/img/cirugia-abierta.jpg" alt="Dr. Edgar Núñez realizando cirugía abierta de hernia inguinal" width="1600" height="2396" loading="lazy" decoding="async">
                     </div>
                     <div class="technique-body">
                         <span class="technique-tag">Opción 1</span>
@@ -202,7 +356,7 @@
                 </div>
                 <div class="technique-card">
                     <div class="technique-image">
-                        <img src="/img/laparoscopia.jpg" alt="Dr. Edgar Núñez en quirófano para cirugía laparoscópica">
+                        <img src="/img/laparoscopia.jpg" alt="Dr. Edgar Núñez en quirófano para cirugía laparoscópica" width="1600" height="2396" loading="lazy" decoding="async">
                     </div>
                     <div class="technique-body">
                         <span class="technique-tag">Opción 2</span>
@@ -218,13 +372,15 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">¿Por qué sí hacer una cirugía de hernia inguinal?</h2>
+                <h2 class="section-title">¿Cuándo se opera la hernia inguinal?</h2>
             </div>
             <div class="problem-content">
-                <h3>Porque se pueden complicar</h3>
-                <p>La complicación que hay que evitar es que la hernia se atore. Cuando el contenido de la hernia, grasa o intestino, queda atrapado en el orificio y ya no regresa a su lugar. Si además se corta el flujo de sangre, eso es una urgencia quirúrgica: hay que operar de inmediato porque el intestino o grasa puede dañarse.</p>
-                <h3>Porque crecen</h3>
-                <p>El orificio en la ingle tiende a agrandarse con el tiempo, sobre todo con los esfuerzos de todos los días: cargar peso, toser, pujar, hacer ejercicio. Conforme el orificio crece, la bola en la ingle se hace más grande y más molesta. Mientras más grande es la hernia, más difícil se vuelve la cirugía. Operar una hernia pequeña casi siempre es más sencillo que operar una que se dejó crecer durante años.</p>
+                <p>Una hernia no se cierra sola, y el orificio tiende a agrandarse con los esfuerzos de todos los días. Operar una hernia pequeña casi siempre es más sencillo que operar una que se dejó crecer durante años.</p>
+                <ul>
+                    <li><strong>La hernia se atora.</strong> Cuando la grasa o el intestino quedan atrapados en el orificio y ya no regresan a su lugar. Si además se corta el flujo de sangre, es una urgencia quirúrgica y hay que operar de inmediato.</li>
+                    <li><strong>La bola crece y estorba más.</strong> El orificio se agranda con cargar peso, toser, pujar o hacer ejercicio, y la hernia se vuelve más grande y más molesta.</li>
+                    <li><strong>La reparación se complica con el tiempo.</strong> Mientras más grande es la hernia, más difícil se vuelve la cirugía.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -236,8 +392,12 @@
                 <h2 class="section-title">No cualquier dolor en la ingle es una hernia</h2>
             </div>
             <div class="problem-content">
-                <p>No todo dolor en la ingle es una hernia, y no toda hernia necesita operarse de inmediato. Me llegan pacientes con un ultrasonido que reporta hernia inguinal, muchas veces referidos por dolor en la ingle, y al explorarlos no hay hernia palpable. En esos casos busco la causa real del dolor, que muchas veces es muscular, y el problema se resuelve sin cirugía.</p>
-                <p>Si tienes dolor en la ingle y no sabes si es una hernia, en la valoración te reviso y te digo con claridad qué tienes y qué conviene hacer.</p>
+                <ul>
+                    <li><strong>El ultrasonido reporta hernia pero no la hay.</strong> Me llegan pacientes referidos por dolor en la ingle y al explorarlos no encuentro hernia palpable. Ahí busco la causa real, que muchas veces es muscular, y el problema se resuelve sin cirugía.</li>
+                    <li><strong>Lo que se palpa son ganglios inflamados</strong> en la ingle, no una hernia.</li>
+                    <li><strong>El dolor es muscular</strong> y se extiende hacia la pierna, o hay ardor e inflamación en la zona sin ninguna bolita visible.</li>
+                </ul>
+                <p>El dolor puede estar en la ingle derecha o en la ingle izquierda, y aparece tanto en hombres como en mujeres. Son cuadros distintos y se tratan distinto, y por eso la exploración pesa más que el estudio de imagen.</p>
                 <p style="text-align: center; margin-top: 28px;"><a href="https://wa.link/3rll01" class="btn-primary" target="_blank">Agenda tu valoración por WhatsApp</a></p>
             </div>
         </div>
@@ -281,7 +441,7 @@
     <!-- DOCTOR -->
     <section class="about-section" id="doctor">
         <div class="about-photo">
-            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800">
+            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
         </div>
         <div class="container">
             <div class="about-content">
@@ -394,16 +554,8 @@
             </div>
             <div class="faq-list">
                 <div class="faq-item active">
-                    <button class="faq-question">¿Por qué salen las hernias inguinales?</button>
-                    <div class="faq-answer"><p>En general, las personas que desarrollan hernias suelen tener tejidos más débiles, ya sea por factores genéticos, tabaquismo, envejecimiento, cirugías previas o factores mecánicos como toser mucho o cargar peso frecuentemente. Sin embargo, en muchos casos no existe una causa única que explique por qué se formó la hernia.</p></div>
-                </div>
-                <div class="faq-item">
                     <button class="faq-question">¿Se puede curar una hernia sin cirugía?</button>
                     <div class="faq-answer"><p>No. Desafortunadamente no existen medicamentos ni ejercicios que resuelvan una hernia inguinal. Es un defecto en la pared abdominal que requiere reparación quirúrgica. Cuanto antes se atienda, menores son los riesgos de complicación.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿Cuál es la diferencia entre cirugía abierta y laparoscopía?</button>
-                    <div class="faq-answer"><p>En la cirugía abierta se hace una incisión de 5-7 cm en la región inguinal para reparar el defecto y colocar una malla. Por laparoscopía se hacen 3 incisiones pequeñas y se trabaja con cámara e instrumentos especiales. Ambas tienen excelentes resultados; la laparoscopía suele tener una recuperación un poco más rápida y es especialmente útil en pacientes con obesidad o con hernias de ambos lados.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo es la consulta de valoración?</button>
@@ -440,6 +592,25 @@
                 <div class="faq-item">
                     <button class="faq-question">¿Qué pasa si no me opero?</button>
                     <div class="faq-answer"><p>La hernia no se resuelve sola y tiende a crecer con el tiempo. El riesgo principal es que se complique: una hernia encarcelada o estrangulada se convierte en una urgencia quirúrgica donde aumentan los riesgos y los costos. Por eso se recomienda no postergar la valoración.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- RELACIONADOS -->
+    <section class="section">
+        <div class="container">
+            <div class="servicios-cierre">
+                <h2>Otros padecimientos que atiendo</h2>
+                <p>Si lo tuyo no es una hernia inguinal, es probable que esté aquí. Y si no aparece, escríbeme y te oriento.</p>
+                <div class="cierre-links">
+                    <a href="/cirugia-hernia-umbilical-cdmx/">Hernia umbilical</a>
+                    <a href="/blog/que-es-hernia-inguinal/">Qué es una hernia inguinal</a>
+                    <a href="/cirugia-vesicula-cdmx/">Cirugía de vesícula</a>
+                    <a href="/cirugia-reflujo-gastroesofagico-cdmx/">Reflujo y hernia de hiato</a>
+                    <a href="/preguntas-frecuentes/">Preguntas frecuentes</a>
+                    <a href="/otros-servicios/">Ver todos los servicios</a>
                 </div>
             </div>
         </div>

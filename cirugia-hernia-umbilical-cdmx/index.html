@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Cirugía de Hernia Umbilical en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Cirugía de hernia umbilical en CDMX con el Dr. Edgar Núñez García. Técnica abierta o laparoscópica con malla, ambulatoria, recuperación en 7-10 días. Desde $25,000* MXN.">
+    <title>Cirugía de hernia umbilical en CDMX | Dr. Edgar Núñez</title>
+    <meta name="description" content="Hernia umbilical: plastia con malla, abierta o laparoscópica, en CDMX. Ambulatoria, recuperación de 7 a 10 días. Desde $25,000 MXN.">
     <link rel="canonical" href="https://dredgarnunez.com/cirugia-hernia-umbilical-cdmx/">
-    <meta property="og:title" content="Cirugía de Hernia Umbilical en CDMX | Dr. Edgar Núñez García">
-    <meta property="og:description" content="Repara tu hernia umbilical con cirugía ambulatoria y recuperación rápida. Certificado por el Consejo Mexicano de Cirugía General. Desde $25,000* MXN todo incluido.">
+    <meta property="og:title" content="Cirugía de hernia umbilical en CDMX | Dr. Edgar Núñez">
+    <meta property="og:description" content="Hernia umbilical: plastia con malla, abierta o laparoscópica, en CDMX. Ambulatoria, recuperación de 7 a 10 días. Desde $25,000 MXN.">
     <meta property="og:url" content="https://dredgarnunez.com/cirugia-hernia-umbilical-cdmx/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cirugía de hernia umbilical en CDMX | Dr. Edgar Núñez">
+    <meta name="twitter:description" content="Hernia umbilical: plastia con malla, abierta o laparoscópica, en CDMX. Ambulatoria, recuperación de 7 a 10 días. Desde $25,000 MXN.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/cirugia.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/cirugia.css?v=27">
     <link rel="stylesheet" href="/css/home.css?v=25">
 
     <!-- MedicalWebPage Schema -->
@@ -43,7 +66,8 @@
         "@type": "Physician",
         "name": "Dr. Edgar Abraham Núñez García",
         "url": "https://dredgarnunez.com/",
-        "medicalSpecialty": "Cirugía General"
+        "medicalSpecialty": "Cirugía General",
+        "@id": "https://dredgarnunez.com/#cirujano"
       },
       "lastReviewed": "2026-04-14"
     }
@@ -55,22 +79,6 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Por qué sale una hernia umbilical?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Todos tenemos un orificio en la zona del ombligo por donde pasaba el cordón umbilical cuando éramos bebés. En algunas personas este anillo umbilical no se cierra por completo al nacer, y con el tiempo factores como embarazo, obesidad, tos crónica o esfuerzos repetidos aumentan la presión del abdomen y hacen que ese pequeño orificio se separe cada vez más."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Una hernia umbilical puede cerrarse sola?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "En adultos, no. A diferencia de los bebés, en quienes algunas hernias cierran espontáneamente, en adultos el defecto no se repara solo. De hecho, las hernias tienden a crecer con el tiempo."
-          }
-        },
         {
           "@type": "Question",
           "name": "¿Qué está saliendo por la bolita?",
@@ -93,14 +101,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "En quirófano regresamos el contenido herniario, la bolita, a su lugar. Después cerramos el orificio con sutura y colocamos una malla para reforzar la zona."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué es la malla y por qué se usa?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Las mallas son elementos de polipropileno. Son como un mosquitero, pero de un plástico médico especial. Se integran a los músculos: tu propio cuerpo forma tejido a través de esos poros, lo que hace que esa zona se vuelva muy fuerte y evita que la hernia vuelva a salir."
           }
         },
         {
@@ -154,6 +154,27 @@
       ]
     }
     </script>
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://dredgarnunez.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cirugía de hernia umbilical",
+          "item": "https://dredgarnunez.com/cirugia-hernia-umbilical-cdmx/"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -161,7 +182,7 @@
     <nav class="nav">
         <div class="container">
             <a href="/" class="nav-logo">
-                <img src="/img/logo.png" alt="Dr. Edgar Núñez García">
+                <img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async">
             </a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
@@ -206,6 +227,9 @@
     <div class="cirugia-hero">
         <div class="container">
             <div class="cirugia-hero-content">
+                <div class="breadcrumb">
+                    <a href="/">Inicio</a> <span>&rsaquo;</span> Cirugía de hernia umbilical
+                </div>
                 <p class="cirugia-hero-eyebrow">¿Una bolita en el ombligo? ¿Un ombligo que se salió?</p>
                 <h1>Cirugía de hernia umbilical en CDMX</h1>
                 <p class="cirugia-hero-sub">Cirugía enfocada en colocar una malla y, dependiendo la técnica, cerrar el orificio del ombligo, para evitar que la hernia se vuelva a formar. Ambulatoria y con recuperación tranquila.</p>
@@ -236,7 +260,7 @@
             </div>
         </div>
         <div class="cirugia-hero-image">
-            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, cirujano especialista en hernia umbilical en CDMX">
+            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, cirujano especialista en hernia umbilical en CDMX" width="1065" height="1600" decoding="async" fetchpriority="high">
         </div>
     </div>
 
@@ -274,7 +298,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">¿Qué es la hernia umbilical?</h2>
-                <p class="section-subtitle">La hernia umbilical sucede cuando hay un orificio en los músculos del abdomen, justo en el ombligo. A través de ese orificio puede salir grasa o intestino. Eso por fuera se ve como una bola en el ombligo, o como un ombligo que se salió y ya no se mete. En sí, la hernia es el orificio y la bola es el contenido de la hernia.</p>
+                <p class="section-subtitle">La hernia umbilical sucede cuando hay un orificio en los músculos del abdomen, justo en el ombligo. A través de ese orificio puede salir grasa o intestino.</p><p>Eso por fuera se ve como una bola en el ombligo, o como un ombligo que se salió y ya no se mete. En sí, la hernia es el orificio y la bola es el contenido de la hernia.</p>
                 <p class="section-subtitle">En los bebés muchas hernias umbilicales se cierran solas conforme crecen. En los adultos no: el orificio ya no cierra por sí mismo.</p>
             </div>
         </div>
@@ -286,12 +310,12 @@
             <div class="section-header">
                 <p class="section-label">La cirugía</p>
                 <h2 class="section-title">En qué consiste la cirugía de hernia umbilical</h2>
-                <p class="section-subtitle">De manera general el objetivo es regresar la grasa o el intestino a su lugar, cerrar el orificio y colocar una malla para evitar que la hernia se vuelva a formar. Se puede hacer con dos técnicas:</p>
+                <p class="section-subtitle">De manera general el objetivo es regresar la grasa o el intestino a su lugar, cerrar el orificio y colocar una malla para evitar que la hernia se vuelva a formar. A esa reparación se le llama plastia umbilical con malla, y se puede hacer con dos técnicas:</p>
             </div>
             <div class="techniques-grid">
                 <div class="technique-card">
                     <div class="technique-image">
-                        <img src="/img/cirugia-abierta.jpg" alt="Reparación abierta de hernia umbilical">
+                        <img src="/img/cirugia-abierta.jpg" alt="Reparación abierta de hernia umbilical" width="1600" height="2396" loading="lazy" decoding="async">
                     </div>
                     <div class="technique-body">
                         <span class="technique-tag">Opción 1</span>
@@ -301,7 +325,7 @@
                 </div>
                 <div class="technique-card">
                     <div class="technique-image">
-                        <img src="/img/laparoscopia.jpg" alt="Reparación laparoscópica de hernia umbilical">
+                        <img src="/img/laparoscopia.jpg" alt="Reparación laparoscópica de hernia umbilical" width="1600" height="2396" loading="lazy" decoding="async">
                     </div>
                     <div class="technique-body">
                         <span class="technique-tag">Opción 2</span>
@@ -317,13 +341,15 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">¿Por qué sí hacer una cirugía de hernia umbilical?</h2>
+                <h2 class="section-title">¿Cuándo se opera la hernia umbilical?</h2>
             </div>
             <div class="problem-content">
-                <h3>Porque se pueden complicar</h3>
-                <p>La complicación que hay que evitar es que la hernia se atore. Cuando el contenido de la hernia, grasa o intestino, queda atrapado en el orificio y ya no regresa a su lugar. Si además se corta el flujo de sangre, es una urgencia quirúrgica: hay que operar de inmediato porque el intestino o grasa puede dañarse. El orificio de las hernias umbilicales suele ser estrecho, y eso hace que atrapar contenido sea un riesgo real.</p>
-                <h3>Porque crecen</h3>
-                <p>El orificio del ombligo tiende a agrandarse con el tiempo, sobre todo con los esfuerzos de todos los días: cargar peso, toser, pujar, hacer ejercicio. Conforme el orificio crece, la bola del ombligo se hace más grande, más visible y más molesta. Mientras más grande es la hernia, más difícil se vuelve la cirugía. Operar una hernia pequeña casi siempre es más sencillo que operar una que se dejó crecer durante años.</p>
+                <p>En adultos el orificio del ombligo no se cierra solo, y tiende a agrandarse con los esfuerzos de todos los días. Operar una hernia pequeña casi siempre es más sencillo que operar una que se dejó crecer durante años.</p>
+                <ul>
+                    <li><strong>La hernia se atora.</strong> Cuando la grasa o el intestino quedan atrapados en el orificio y ya no regresan. En las hernias umbilicales el orificio suele ser estrecho, y eso hace que atrapar contenido sea un riesgo real. Si se corta el flujo de sangre, es una urgencia quirúrgica.</li>
+                    <li><strong>La bola del ombligo crece.</strong> Se hace más grande, más visible y más molesta conforme el orificio se agranda con cargar peso, toser, pujar o hacer ejercicio.</li>
+                    <li><strong>La reparación se complica con el tiempo.</strong> Mientras más grande es la hernia, más difícil se vuelve la cirugía.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -335,7 +361,11 @@
                 <h2 class="section-title">No toda hernia umbilical se opera de inmediato</h2>
             </div>
             <div class="problem-content">
-                <p>Una hernia umbilical pequeña, que no da síntomas y que se mete sin problema, muchas veces se puede vigilar. En la valoración te digo con claridad en cuál de los dos escenarios estás: si conviene operarla ahora, o si podemos observarla y en qué señales fijarte.</p>
+                <ul>
+                    <li><strong>Es pequeña, no da síntomas y se mete sin problema.</strong> Muchas veces se puede vigilar en lugar de operarla.</li>
+                    <li><strong>Decides observarla por ahora.</strong> Es una opción válida, siempre que sepas en qué señales fijarte para no dejarla pasar.</li>
+                </ul>
+                <p>En la valoración te digo con claridad en cuál de los dos escenarios estás: si conviene operarla ahora, o si podemos observarla y qué vigilar mientras tanto.</p>
                 <p style="text-align: center; margin-top: 28px;"><a href="https://wa.link/3rll01" class="btn-primary" target="_blank">Agenda tu valoración por WhatsApp</a></p>
             </div>
         </div>
@@ -379,7 +409,7 @@
     <!-- DOCTOR -->
     <section class="about-section" id="doctor">
         <div class="about-photo">
-            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800">
+            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
         </div>
         <div class="container">
             <div class="about-content">
@@ -500,14 +530,6 @@
                     <div class="faq-answer"><p>Estudios preoperatorios estándar, indicaciones claras de qué hacer y qué evitar los días previos, y resolución de todas tus dudas. Programamos la cirugía en el horario que mejor te funcione.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Por qué sale una hernia umbilical?</button>
-                    <div class="faq-answer"><p>Todos tenemos un orificio en la zona del ombligo por donde pasaba el cordón umbilical cuando éramos bebés. En algunas personas este anillo umbilical no se cierra por completo al nacer, y con el tiempo factores como embarazo, obesidad, tos crónica o esfuerzos repetidos aumentan la presión del abdomen y hacen que ese pequeño orificio se separe cada vez más.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿Una hernia umbilical puede cerrarse sola?</button>
-                    <div class="faq-answer"><p>En adultos, no. A diferencia de los bebés, en quienes algunas hernias cierran espontáneamente, en adultos el defecto no se repara solo. De hecho, las hernias tienden a crecer con el tiempo.</p></div>
-                </div>
-                <div class="faq-item">
                     <button class="faq-question">¿Qué está saliendo por la bolita?</button>
                     <div class="faq-answer"><p>Cuando las hernias se ven pequeñas, usualmente protruye grasa del interior del abdomen. Cuando son hernias más grandes, puede protruir un pedazo de intestino. En una tomografía se puede ver con claridad el orificio y qué está protruyendo.</p></div>
                 </div>
@@ -518,10 +540,6 @@
                 <div class="faq-item">
                     <button class="faq-question">¿En qué consiste la cirugía?</button>
                     <div class="faq-answer"><p>En quirófano regresamos el contenido herniario, la bolita, a su lugar. Después cerramos el orificio con sutura y colocamos una malla para reforzar la zona.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿Qué es la malla y por qué se usa?</button>
-                    <div class="faq-answer"><p>Las mallas son elementos de polipropileno. Son como un mosquitero, pero de un plástico médico especial. Se integran a los músculos: tu propio cuerpo forma tejido a través de esos poros, lo que hace que esa zona se vuelva muy fuerte y evita que la hernia vuelva a salir.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuánto dura la cirugía?</button>
@@ -546,6 +564,25 @@
                 <div class="faq-item">
                     <button class="faq-question">¿Cuánto cuesta la cirugía de hernia umbilical?</button>
                     <div class="faq-answer"><p>Los paquetes quirúrgicos comienzan desde $25,000* MXN e incluyen honorarios del cirujano, anestesiólogo, hospitalización, insumos y seguimiento. Ofrecemos financiamiento a 3, 6, 9 y 12 meses. Trabajamos ajustándonos a tabulado con aseguradoras como GNP, Axa, Metlife, Mapfre y Sofía. (*El precio desde $25,000 aplica en ciertas clínicas.)</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- RELACIONADOS -->
+    <section class="section">
+        <div class="container">
+            <div class="servicios-cierre">
+                <h2>Otros padecimientos que atiendo</h2>
+                <p>Si lo tuyo no es una hernia umbilical, es probable que esté aquí. Y si no aparece, escríbeme y te oriento.</p>
+                <div class="cierre-links">
+                    <a href="/cirugia-hernia-inguinal-cdmx/">Hernia inguinal</a>
+                    <a href="/cirugia-vesicula-cdmx/">Cirugía de vesícula</a>
+                    <a href="/cirugia-lipomas-cdmx/">Lipomas</a>
+                    <a href="/cirugia-reflujo-gastroesofagico-cdmx/">Reflujo y hernia de hiato</a>
+                    <a href="/preguntas-frecuentes/">Preguntas frecuentes</a>
+                    <a href="/otros-servicios/">Ver todos los servicios</a>
                 </div>
             </div>
         </div>

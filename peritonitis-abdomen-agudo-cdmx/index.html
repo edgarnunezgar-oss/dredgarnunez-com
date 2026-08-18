@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Peritonitis y abdomen agudo en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Cuándo el dolor abdominal es una urgencia quirúrgica. Qué es el abdomen agudo, qué es la peritonitis y qué señales no admiten espera. Dr. Edgar Núñez García.">
+    <title>Peritonitis y abdomen agudo en CDMX | Dr. Edgar Núñez</title>
+    <meta name="description" content="Cuándo el dolor abdominal es una urgencia quirúrgica. Qué es el abdomen agudo, qué es la peritonitis y qué señales no admiten espera.">
     <link rel="canonical" href="https://dredgarnunez.com/peritonitis-abdomen-agudo-cdmx/">
-    <meta property="og:title" content="Peritonitis y abdomen agudo en CDMX | Dr. Edgar Núñez García">
-    <meta property="og:description" content="Cuándo el dolor abdominal es una urgencia quirúrgica. Qué es el abdomen agudo y qué señales no admiten espera. Dr. Edgar Núñez García, CDMX.">
+    <meta property="og:title" content="Peritonitis y abdomen agudo en CDMX | Dr. Edgar Núñez">
+    <meta property="og:description" content="Cuándo el dolor abdominal es una urgencia quirúrgica. Qué es el abdomen agudo, qué es la peritonitis y qué señales no admiten espera.">
     <meta property="og:url" content="https://dredgarnunez.com/peritonitis-abdomen-agudo-cdmx/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Peritonitis y abdomen agudo en CDMX | Dr. Edgar Núñez">
+    <meta name="twitter:description" content="Cuándo el dolor abdominal es una urgencia quirúrgica. Qué es el abdomen agudo, qué es la peritonitis y qué señales no admiten espera.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/pages.css?v=26">
-    <link rel="stylesheet" href="/css/cirugia.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/pages.css?v=28">
+    <link rel="stylesheet" href="/css/cirugia.css?v=27">
 
     <!-- JSON-LD: MedicalWebPage -->
     <script type="application/ld+json">
@@ -29,18 +52,43 @@
       "description": "Qué es el abdomen agudo, qué es la peritonitis y cuándo el dolor abdominal requiere valoración quirúrgica inmediata.",
       "url": "https://dredgarnunez.com/peritonitis-abdomen-agudo-cdmx/",
       "inLanguage": "es-MX",
-      "medicalAudience": {"@type": "PatientAudience", "audienceType": "Patient"},
-      "author": {"@type": "Physician", "name": "Dr. Edgar Abraham Núñez García", "url": "https://dredgarnunez.com/sobre-mi/"},
-      "reviewedBy": {"@type": "Physician", "name": "Dr. Edgar Abraham Núñez García", "url": "https://dredgarnunez.com/sobre-mi/"},
+      "medicalAudience": {
+        "@type": "PatientAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Physician",
+        "name": "Dr. Edgar Abraham Núñez García",
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
+      },
+      "reviewedBy": {
+        "@type": "Physician",
+        "name": "Dr. Edgar Abraham Núñez García",
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
+      },
       "about": {
         "@type": "MedicalCondition",
         "name": "Abdomen agudo y peritonitis",
         "alternateName": "Dolor abdominal de urgencia quirúrgica",
         "signOrSymptom": [
-          {"@type": "MedicalSignOrSymptom", "name": "Dolor abdominal intenso que no cede"},
-          {"@type": "MedicalSignOrSymptom", "name": "Abdomen duro como tabla"},
-          {"@type": "MedicalSignOrSymptom", "name": "Dolor que aumenta al moverse o al toser"},
-          {"@type": "MedicalSignOrSymptom", "name": "Fiebre y vómito persistente"}
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Dolor abdominal intenso que no cede"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Abdomen duro como tabla"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Dolor que aumenta al moverse o al toser"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Fiebre y vómito persistente"
+          }
         ],
         "possibleTreatment": {
           "@type": "MedicalProcedure",
@@ -75,22 +123,84 @@
       "url": "https://dredgarnunez.com/",
       "image": "https://dredgarnunez.com/img/doctor-portrait.jpg",
       "medicalSpecialty": [
-        {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Gastrointestinal"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Laparoscópica y de Mínima Invasión"}
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Gastrointestinal"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Laparoscópica y de Mínima Invasión"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
         "addressLocality": "Ciudad de México",
+        "addressRegion": "Ciudad de México",
         "postalCode": "06720",
         "addressCountry": "MX"
       },
       "alumniOf": [
-        {"@type": "EducationalOrganization", "name": "Universidad La Salle"},
-        {"@type": "EducationalOrganization", "name": "Centro Médico ABC / UNAM"}
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad La Salle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Médico ABC / UNAM"
+        }
       ],
-      "memberOf": {"@type": "MedicalOrganization", "name": "Consejo Mexicano de Cirugía General"}
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Consejo Mexicano de Cirugía General"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4233434,
+        "longitude": -99.1536367
+      },
+      "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "11:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "16:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Metropolitana del Valle de México"
+        }
+      ],
+      "@id": "https://dredgarnunez.com/#cirujano"
     }
     </script>
 
@@ -173,7 +283,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -214,7 +324,7 @@
     <!-- PAGE HERO -->
     <section class="page-hero page-hero-photo">
         <div class="page-hero-image">
-            <img src="/img/heroes/servicios-hero.svg" alt="">
+            <img src="/img/heroes/servicios-hero.svg" alt="" width="900" height="520" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="page-hero-content">
@@ -271,7 +381,7 @@
             <div class="section-header">
                 <h2 class="section-title">¿Qué es el abdomen agudo y qué es la peritonitis?</h2>
                 <p class="section-subtitle">Abdomen agudo no es una enfermedad, es una forma de presentarse. Es el nombre que damos a un dolor abdominal intenso y de aparición reciente que obliga a decidir con rapidez si hay que operar. Detrás puede haber causas muy distintas, y el término describe la urgencia, no el diagnóstico.</p>
-                <p class="section-subtitle">La peritonitis sí es un diagnóstico. El peritoneo es la membrana delgada que recubre por dentro el abdomen y envuelve los órganos. La peritonitis es su inflamación, y casi siempre ocurre porque algo que debía estar contenido dentro de un órgano salió hacia la cavidad: contenido intestinal, bilis, jugo gástrico o pus. El cuerpo reacciona poniendo el abdomen rígido, lo que se conoce como abdomen en tabla.</p>
+                <p class="section-subtitle">La peritonitis sí es un diagnóstico. El peritoneo es la membrana delgada que recubre por dentro el abdomen y envuelve los órganos.</p><p>La peritonitis es su inflamación, y casi siempre ocurre porque algo que debía estar contenido dentro de un órgano salió hacia la cavidad: contenido intestinal, bilis, jugo gástrico o pus. El cuerpo reacciona poniendo el abdomen rígido, lo que se conoce como abdomen en tabla.</p>
             </div>
         </div>
     </section>
@@ -284,7 +394,7 @@
             </div>
             <div class="problem-content">
                 <h3>La evolución dice más que la intensidad</h3>
-                <p>Un dolor que va y viene, que cambia de lugar y que termina cediendo, rara vez es una urgencia quirúrgica. Lo que enciende la alarma es un dolor que lleva horas, que no cede con nada, que va aumentando de forma sostenida y que empeora al moverse, al toser o al caminar. Ese patrón es el que hay que tomar en serio.</p>
+                <p>Un dolor que va y viene, que cambia de lugar y que termina cediendo, rara vez es una urgencia quirúrgica.</p><p>Lo que enciende la alarma es un dolor que lleva horas, que no cede con nada, que va aumentando de forma sostenida y que empeora al moverse, al toser o al caminar. Ese patrón es el que hay que tomar en serio.</p>
                 <h3>Las señales que ya no admiten espera</h3>
                 <p>Abdomen duro o que duele mucho al tocarlo, fiebre, vómito que no para, dejar de evacuar y de expulsar gases, sangre en el vómito o en las evacuaciones, piel u ojos amarillos, o sentirse muy mal en general con presión baja y mucho sudor. Cualquiera de estas señales, acompañando al dolor, es motivo de ir a urgencias en ese momento.</p>
                 <h3>Las causas más frecuentes</h3>
@@ -304,7 +414,7 @@
                 <p>Una parte importante de los casos se resuelve sin cirugía, con manejo médico y vigilancia estrecha. Hay cuadros en los que observar unas horas es exactamente lo correcto, porque la evolución aclara el diagnóstico mejor que cualquier estudio aislado. Y hay cuadros en los que esperar es peligroso.</p>
                 <p>Distinguir uno del otro es el trabajo del cirujano, y se hace con exploración física repetida, laboratorios y estudios de imagen. Mi maestro lo decía así: el mejor cirujano sabe cuándo no operar.</p>
                 <h3>Un argumento para no posponer lo que sí es programable</h3>
-                <p>La cirugía de urgencia es más riesgosa que la programada, y la diferencia es real. En una cirugía programada se llega con estudios completos, en ayuno, con las condiciones optimizadas y con todo planeado. En una urgencia se opera con lo que hay y con un cuerpo que ya lleva horas inflamado. Por eso una <a href="/cirugia-hernia-inguinal-cdmx/">hernia</a> o una <a href="/cirugia-vesicula-cdmx/">vesícula con piedras</a> que se dejan pasar terminan, con frecuencia, operándose en el peor escenario posible.</p>
+                <p>La cirugía de urgencia es más riesgosa que la programada, y la diferencia es real. En una cirugía programada se llega con estudios completos, en ayuno, con las condiciones optimizadas y con todo planeado. En una urgencia se opera con lo que hay y con un cuerpo que ya lleva horas inflamado.</p><p>Por eso una <a href="/cirugia-hernia-inguinal-cdmx/">hernia</a> o una <a href="/cirugia-vesicula-cdmx/">vesícula con piedras</a> que se dejan pasar terminan, con frecuencia, operándose en el peor escenario posible.</p>
                 <p style="text-align: center; margin-top: 28px;"><a href="https://wa.link/3rll01" class="btn-primary" target="_blank">Escríbeme por WhatsApp</a></p>
             </div>
         </div>
@@ -315,7 +425,7 @@
         <div class="container">
             <div class="autor-medico">
                 <div class="autor-medico-foto">
-                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104">
+                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104" loading="lazy" decoding="async">
                 </div>
                 <div class="autor-medico-texto">
                     <h2 class="autor-medico-nombre">Dr. Edgar Abraham Núñez García</h2>
@@ -342,27 +452,27 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">¿Qué es el abdomen agudo?</button>
-                    <div class="faq-answer"><p>No es una enfermedad, es una forma de presentarse. Abdomen agudo es el nombre que damos a un dolor abdominal intenso, de aparición reciente, que obliga a decidir con rapidez si hay que operar o no. Detrás puede haber muchas causas distintas: apendicitis, vesícula complicada, una perforación del estómago o del intestino, una obstrucción intestinal, una hernia atorada o un problema ginecológico. El término describe la urgencia, no el diagnóstico.</p></div>
+                    <div class="faq-answer"><p><strong>No es una enfermedad, es una forma de presentarse.</strong> Abdomen agudo es el nombre que damos a un dolor abdominal intenso, de aparición reciente, que obliga a decidir con rapidez si hay que operar o no.</p><p>Detrás puede haber muchas causas distintas: apendicitis, vesícula complicada, una perforación del estómago o del intestino, una obstrucción intestinal, una hernia atorada o un problema ginecológico. El término describe la urgencia, no el diagnóstico.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué es la peritonitis?</button>
-                    <div class="faq-answer"><p>El peritoneo es la membrana delgada que recubre por dentro el abdomen y envuelve los órganos. La peritonitis es su inflamación, y casi siempre ocurre porque algo que debía estar dentro de un órgano salió hacia la cavidad: contenido intestinal, bilis, jugo gástrico o pus. Es una urgencia real. El cuerpo reacciona poniendo el abdomen rígido, y de ahí la expresión de abdomen en tabla.</p></div>
+                    <div class="faq-answer"><p><strong>El peritoneo es la membrana delgada que recubre por dentro el abdomen y envuelve los órganos.</strong> La peritonitis es su inflamación, y casi siempre ocurre porque algo que debía estar dentro de un órgano salió hacia la cavidad: contenido intestinal, bilis, jugo gástrico o pus.</p><p>Es una urgencia real. El cuerpo reacciona poniendo el abdomen rígido, y de ahí la expresión de abdomen en tabla.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo saber si mi dolor de estómago es una urgencia?</button>
-                    <div class="faq-answer"><p>Un dolor que va y viene y luego se quita rara vez es una urgencia quirúrgica. Lo que enciende la alarma es un dolor que lleva horas, que no cede con nada, que va aumentando y que empeora al moverse, al toser o al caminar. Si además el abdomen se pone duro, hay fiebre, vómito que no para, o dejaste de evacuar y de expulsar gases, no lo dejes pasar: acude a urgencias. Ninguna de esas señales mejora sola.</p></div>
+                    <div class="faq-answer"><p><strong>Un dolor que va y viene y luego se quita rara vez es una urgencia quirúrgica.</strong> Lo que enciende la alarma es un dolor que lleva horas, que no cede con nada, que va aumentando y que empeora al moverse, al toser o al caminar.</p><p>Si además el abdomen se pone duro, hay fiebre, vómito que no para, o dejaste de evacuar y de expulsar gases, no lo dejes pasar: acude a urgencias. Ninguna de esas señales mejora sola.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuáles son las causas más frecuentes de abdomen agudo?</button>
-                    <div class="faq-answer"><p>Las más comunes son la apendicitis, la vesícula complicada, la obstrucción intestinal, la perforación de una úlcera, la diverticulitis y las hernias atoradas. En mujeres hay que considerar además las causas ginecológicas, como un quiste de ovario que se torció o un embarazo fuera del útero. Cada una se maneja distinto, y por eso lo primero no es operar, es diagnosticar bien.</p></div>
+                    <div class="faq-answer"><p>Las más comunes son la <a href="/cirugia-apendicitis-cdmx/">apendicitis</a>, la <a href="/cirugia-vesicula-cdmx/">vesícula complicada</a>, la obstrucción intestinal, la perforación de una úlcera, la diverticulitis y las hernias atoradas.</p><p>En mujeres hay que considerar además las causas ginecológicas, como un quiste de ovario que se torció o un embarazo fuera del útero. Cada una se maneja distinto, y por eso lo primero no es operar, es diagnosticar bien.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Todo abdomen agudo se opera?</button>
-                    <div class="faq-answer"><p>No. Una parte importante se resuelve sin cirugía, con manejo médico y vigilancia estrecha en el hospital. Hay casos en los que observar unas horas es lo correcto, porque la evolución aclara el diagnóstico. Y hay casos en los que esperar es peligroso. Distinguir uno del otro es exactamente el trabajo del cirujano, y se hace con exploración física repetida, laboratorios y estudios de imagen.</p></div>
+                    <div class="faq-answer"><p><strong>No.</strong> Una parte importante se resuelve sin cirugía, con manejo médico y vigilancia estrecha en el hospital. Hay casos en los que observar unas horas es lo correcto, porque la evolución aclara el diagnóstico.</p><p>Y hay casos en los que esperar es peligroso. Distinguir uno del otro es exactamente el trabajo del cirujano, y se hace con exploración física repetida, laboratorios y estudios de imagen.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Por qué me piden estudios en lugar de operarme de inmediato?</button>
-                    <div class="faq-answer"><p>Porque operar sin saber qué se busca es un mal plan. Los laboratorios y los estudios de imagen, junto con la exploración física, permiten saber qué órgano está afectado y qué tipo de cirugía se necesita. La excepción son los cuadros en que el paciente está inestable o el abdomen ya está en tabla: ahí el tiempo pesa más que el estudio y se va a quirófano.</p></div>
+                    <div class="faq-answer"><p><strong>Porque operar sin saber qué se busca es un mal plan.</strong> Los laboratorios y los estudios de imagen, junto con la exploración física, permiten saber qué órgano está afectado y qué tipo de cirugía se necesita.</p><p>La excepción son los cuadros en que el paciente está inestable o el abdomen ya está en tabla: ahí el tiempo pesa más que el estudio y se va a quirófano.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Es peligroso tomar analgésicos mientras espero valoración?</button>
@@ -370,7 +480,7 @@
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿La cirugía de urgencia es más riesgosa que la programada?</button>
-                    <div class="faq-answer"><p>Sí, y es una diferencia importante. En una cirugía programada se llega con estudios completos, en ayuno, con las condiciones optimizadas y con todo planeado. En una urgencia se opera con lo que hay y con un cuerpo que ya lleva horas inflamado. Ese es el argumento de fondo para no posponer las cirugías electivas: una hernia o una vesícula que se dejan pasar pueden terminar operándose de urgencia.</p></div>
+                    <div class="faq-answer"><p><strong>Sí, y es una diferencia importante.</strong> En una cirugía programada se llega con estudios completos, en ayuno, con las condiciones optimizadas y con todo planeado.</p><p>En una urgencia se opera con lo que hay y con un cuerpo que ya lleva horas inflamado. Ese es el argumento de fondo para no posponer las cirugías electivas: una hernia o una vesícula que se dejan pasar pueden terminar operándose de urgencia.</p></div>
                 </div>
             </div>
         </div>

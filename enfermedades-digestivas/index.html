@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Especialista en Gastritis, Colitis y Colon Irritable en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="¿Gastritis que no se quita con omeprazol? ¿Colitis nerviosa o colon irritable? Especialista del aparato digestivo en CDMX. Diagnóstico correcto y plan claro. Agenda por WhatsApp.">
+    <title>Especialista en gastritis y colitis en CDMX</title>
+    <meta name="description" content="¿Gastritis que no se quita con omeprazol? ¿Colitis nerviosa o colon irritable? Especialista del aparato digestivo en CDMX. Agenda por WhatsApp.">
     <link rel="canonical" href="https://dredgarnunez.com/enfermedades-digestivas/">
-    <meta property="og:title" content="Especialista en Gastritis, Colitis y Colon Irritable en CDMX, Dr. Edgar Núñez García">
-    <meta property="og:description" content="Cuando el estómago gobierna tu vida, lo primero no es otra pastilla: es un diagnóstico correcto. Gastritis, colitis nerviosa y colon irritable en CDMX.">
+    <meta property="og:title" content="Especialista en gastritis y colitis en CDMX">
+    <meta property="og:description" content="¿Gastritis que no se quita con omeprazol? ¿Colitis nerviosa o colon irritable? Especialista del aparato digestivo en CDMX. Agenda por WhatsApp.">
     <meta property="og:url" content="https://dredgarnunez.com/enfermedades-digestivas/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Especialista en gastritis y colitis en CDMX">
+    <meta name="twitter:description" content="¿Gastritis que no se quita con omeprazol? ¿Colitis nerviosa o colon irritable? Especialista del aparato digestivo en CDMX. Agenda por WhatsApp.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/cirugia.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/cirugia.css?v=27">
     <link rel="stylesheet" href="/css/home.css?v=25">
 
     <!-- Schema MedicalWebPage -->
@@ -32,8 +55,61 @@
         "@type": "Physician",
         "name": "Dr. Edgar Abraham Núñez García",
         "url": "https://dredgarnunez.com/",
-        "medicalSpecialty": {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        "address": {"@type": "PostalAddress", "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52", "addressLocality": "Ciudad de México", "postalCode": "06720", "addressCountry": "MX"}
+        "medicalSpecialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
+          "addressLocality": "Ciudad de México",
+          "addressRegion": "Ciudad de México",
+          "postalCode": "06720",
+          "addressCountry": "MX"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 19.4233434,
+          "longitude": -99.1536367
+        },
+        "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "11:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "16:00",
+            "closes": "20:00"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Ciudad de México"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Zona Metropolitana del Valle de México"
+          }
+        ],
+        "@id": "https://dredgarnunez.com/#cirujano"
       }
     }
     </script>
@@ -44,14 +120,75 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "¿Cómo sé si es gastritis o algo más serio?", "acceptedAnswer": {"@type": "Answer", "text": "El ardor en la boca del estómago es el síntoma clásico de la gastritis, pero también puede venir de piedras en la vesícula, de reflujo por hernia de hiato o de otras causas. Por eso el primer paso es una historia clínica completa y una exploración, no otra pastilla. En la consulta te digo con claridad qué estudios necesitas, si es que necesitas alguno."}},
-        {"@type": "Question", "name": "Llevo meses con gastritis y no se me quita con omeprazol, ¿qué hago?", "acceptedAnswer": {"@type": "Answer", "text": "Si el omeprazol no te hace efecto o el malestar regresa cada vez que lo dejas, lo que falta no es una dosis más alta: es encontrar la causa. Puede ser una bacteria (Helicobacter pylori), piedras en la vesícula, una hernia de hiato o un intestino irritable, y cada una se trata diferente. Ese es exactamente el tipo de caso que veo en consulta."}},
-        {"@type": "Question", "name": "¿La colitis y el colon irritable son lo mismo?", "acceptedAnswer": {"@type": "Answer", "text": "En México usamos la palabra colitis para casi cualquier inflamación o cólico abdominal. El colon irritable (síndrome de intestino irritable) es un diagnóstico específico: dolor o cólico que se relaciona con cambios al ir al baño, temporadas de estreñimiento o de diarrea, e inflamación. Distinguirlos importa porque el tratamiento es diferente."}},
-        {"@type": "Question", "name": "¿La colitis nerviosa se cura o se controla?", "acceptedAnswer": {"@type": "Answer", "text": "La colitis nerviosa (cuando el estrés dispara los síntomas del colon) no se quita con una pastilla única, pero se controla muy bien: con diagnóstico correcto, ajustes de alimentación, manejo del estrés y medicamento cuando hace falta, la mayoría de los pacientes recupera su vida normal. El primer paso es confirmar que de verdad es eso y no otra causa."}},
-        {"@type": "Question", "name": "¿Necesito endoscopia o estudios?", "acceptedAnswer": {"@type": "Answer", "text": "No siempre. Pido estudios cuando la historia clínica lo amerita o cuando hay señales de alarma: pérdida de peso sin explicación, sangrado, anemia, dificultad para tragar o síntomas nuevos después de los 45 años. Si no hacen falta, no te los pido."}},
-        {"@type": "Question", "name": "¿Qué pasa si mi problema resulta ser quirúrgico?", "acceptedAnswer": {"@type": "Answer", "text": "Algunos problemas que parecen gastritis en realidad son piedras en la vesícula o reflujo por hernia de hiato, y esos sí pueden necesitar cirugía. Soy cirujano del aparato digestivo: si tu caso es quirúrgico, te explico las opciones con pros y contras. Y si tu caso lo debe llevar otro especialista, te refiero con la persona correcta."}},
-        {"@type": "Question", "name": "¿Qué doctor trata la gastritis y la colitis?", "acceptedAnswer": {"@type": "Answer", "text": "Tanto el gastroenterólogo como el cirujano del aparato digestivo tratan gastritis, colitis y colon irritable. Yo soy cirujano especializado en el sistema digestivo: diagnostico y trato estos padecimientos en consulta, y la mayoría se resuelve sin cirugía. La ventaja es que si detrás del síntoma hay algo quirúrgico, como piedras en la vesícula o una hernia de hiato, puedo llevar tu caso completo. Y si tu caso lo debe llevar otro especialista, te refiero con la persona correcta."}},
-        {"@type": "Question", "name": "¿Cuánto cuesta la consulta?", "acceptedAnswer": {"@type": "Answer", "text": "La consulta tiene una inversión de $1,000 MXN. Incluye historia clínica completa, exploración y un plan claro: qué tienes, qué estudios necesitas si aplica, y cuál es el tratamiento."}}
+        {
+          "@type": "Question",
+          "name": "¿Cómo sé si es gastritis o algo más serio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El ardor en la boca del estómago es el síntoma clásico de la gastritis, pero también puede venir de piedras en la vesícula, de reflujo por hernia de hiato o de otras causas. Por eso el primer paso es una historia clínica completa y una exploración, no otra pastilla. En la consulta te digo con claridad qué estudios necesitas, si es que necesitas alguno."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Llevo meses con gastritis y no se me quita con omeprazol, ¿qué hago?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Si el omeprazol no te hace efecto o el malestar regresa cada vez que lo dejas, lo que falta no es una dosis más alta: es encontrar la causa. Puede ser una bacteria (Helicobacter pylori), piedras en la vesícula, una hernia de hiato o un intestino irritable, y cada una se trata diferente. Ese es exactamente el tipo de caso que veo en consulta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito endoscopia o estudios?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No siempre. Pido estudios cuando la historia clínica lo amerita o cuando hay señales de alarma: pérdida de peso sin explicación, sangrado, anemia, dificultad para tragar o síntomas nuevos después de los 45 años. Si no hacen falta, no te los pido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si mi problema resulta ser quirúrgico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Algunos problemas que parecen gastritis en realidad son piedras en la vesícula o reflujo por hernia de hiato, y esos sí pueden necesitar cirugía. Soy cirujano del aparato digestivo: si tu caso es quirúrgico, te explico las opciones con pros y contras. Y si tu caso lo debe llevar otro especialista, te refiero con la persona correcta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué doctor trata la gastritis y la colitis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tanto el gastroenterólogo como el cirujano del aparato digestivo tratan gastritis, colitis y colon irritable. Yo soy cirujano especializado en el sistema digestivo: diagnostico y trato estos padecimientos en consulta, y la mayoría se resuelve sin cirugía. La ventaja es que si detrás del síntoma hay algo quirúrgico, como piedras en la vesícula o una hernia de hiato, puedo llevar tu caso completo. Y si tu caso lo debe llevar otro especialista, te refiero con la persona correcta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta la consulta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La consulta tiene una inversión de $1,000 MXN. Incluye historia clínica completa, exploración y un plan claro: qué tienes, qué estudios necesitas si aplica, y cuál es el tratamiento."
+          }
+        }
+      ]
+    }
+    </script>
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://dredgarnunez.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Enfermedades digestivas",
+          "item": "https://dredgarnunez.com/enfermedades-digestivas/"
+        }
       ]
     }
     </script>
@@ -62,7 +199,7 @@
     <nav class="nav">
         <div class="container">
             <a href="/" class="nav-logo">
-                <img src="/img/logo.png" alt="Dr. Edgar Núñez García">
+                <img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async">
             </a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
@@ -107,6 +244,9 @@
     <div class="cirugia-hero">
         <div class="container">
             <div class="cirugia-hero-content">
+                <div class="breadcrumb">
+                    <a href="/">Inicio</a> <span>&rsaquo;</span> Enfermedades digestivas
+                </div>
                 <p class="cirugia-hero-eyebrow">¿Gastritis que no se quita? ¿Colitis nerviosa? ¿Colon irritable?</p>
                 <h1>Especialista en gastritis, colitis y colon irritable en CDMX</h1>
                 <p class="cirugia-hero-sub">Cuando el estómago gobierna tu vida (qué comes, cómo duermes, a dónde sales), lo primero no es otra pastilla. Es un diagnóstico correcto.</p>
@@ -119,7 +259,7 @@
             </div>
         </div>
         <div class="cirugia-hero-image">
-            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, especialista del aparato digestivo en CDMX">
+            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, especialista del aparato digestivo en CDMX" width="1065" height="1600" decoding="async" fetchpriority="high">
         </div>
     </div>
 
@@ -161,12 +301,20 @@
             </div>
             <div class="problem-content">
                 <h3>Gastritis</h3>
-                <p>Es la inflamación del recubrimiento interno del estómago. Se siente como ardor o dolor en la boca del estómago, a veces con náusea o sensación de llenado rápido. Tiene causas concretas: desde una bacteria (Helicobacter pylori) hasta medicamentos como los antiinflamatorios, alcohol o periodos de mucho estrés (la que muchos llaman gastritis nerviosa). Cuando lleva meses o años se le llama gastritis crónica. Y sí: con la causa identificada, la gastritis se cura. Por eso identificar la causa es lo que permite tratarla de verdad, en lugar de solo apagar el síntoma.</p>
+                <p><strong>Es la inflamación del recubrimiento interno del estómago.</strong> Se siente como ardor o dolor en la boca del estómago, a veces con náusea, con el estómago inflamado después de comer o con sensación de llenado rápido.</p>
+                <p>Tiene causas concretas: una bacteria (Helicobacter pylori), medicamentos como los antiinflamatorios, el alcohol o periodos de mucho estrés, que es la que muchos llaman gastritis nerviosa. Cuando lleva meses o años se le llama gastritis crónica.</p>
+                <p><strong>Con la causa identificada, la gastritis se cura.</strong> Por eso encontrarla es lo que permite tratarla de verdad, en lugar de solo apagar el síntoma.</p>
+
                 <h3>Colitis, colitis nerviosa y colon irritable</h3>
-                <p>En México le decimos colitis a casi todo: inflamación, cólicos, gases. A la que se dispara con el estrés le llamamos colitis nerviosa, y muchas veces es lo mismo que el colon irritable (síndrome de intestino irritable), un diagnóstico específico: dolor o cólico en el vientre, con frecuencia del lado izquierdo, que se relaciona con cambios al ir al baño, con temporadas de estreñimiento o de diarrea. Es muy frecuente y no se quita con una pastilla única, pero se controla muy bien. Eso sí: es un diagnóstico que solo se hace bien después de descartar otras causas.</p>
+                <p><strong>En México le decimos colitis a casi todo:</strong> inflamación, cólicos, gases. A la que se dispara con el estrés le llamamos colitis nerviosa, y muchas veces es lo mismo que el colon irritable (síndrome de intestino irritable).</p>
+                <p>Ese sí es un diagnóstico específico: dolor o cólico en el vientre, con frecuencia del lado izquierdo, que se relaciona con cambios al ir al baño, con temporadas de estreñimiento o de diarrea.</p>
+                <p><strong>Es muy frecuente y se controla muy bien</strong>, aunque no se quita con una pastilla única. Eso sí: es un diagnóstico que solo se hace bien después de descartar otras causas.</p>
+
                 <h3>Reflujo</h3>
-                <p>Agruras, ardor en el pecho, sabor amargo, la comida que se regresa. El reflujo tiene su propio terreno: cuando es constante o lleva años con omeprazol, hay que revisar si existe una hernia de hiato detrás. De eso hablo a fondo en la página de <a href="/cirugia-reflujo-gastroesofagico-cdmx/">cirugía de reflujo y hernia de hiato</a>.</p>
-                <div class="problem-highlight">Ojo: no todo dolor "de gastritis" es gastritis. El dolor en la boca del estómago después de comer grasoso, sobre todo si se corre hacia la espalda, puede ser de piedras en la vesícula (colelitiasis). Es de los errores de diagnóstico que más veo en consulta, y el tratamiento es completamente distinto.</div>
+                <p><strong>Agruras, ardor en el pecho, sabor amargo, la comida que se regresa.</strong> El reflujo tiene su propio terreno: cuando es constante o lleva años con omeprazol, hay que revisar si existe una hernia de hiato detrás.</p>
+                <p>De eso hablo a fondo en la página de <a href="/cirugia-reflujo-gastroesofagico-cdmx/">cirugía de reflujo y hernia de hiato</a>.</p>
+
+                <div class="problem-highlight">Ojo: <strong>no todo dolor "de gastritis" es gastritis.</strong> El dolor en la boca del estómago después de comer grasoso, sobre todo si se corre hacia la espalda, puede ser de <a href="/cirugia-vesicula-cdmx/">piedras en la vesícula</a> (colelitiasis). Es de los errores de diagnóstico que más veo en consulta, y el tratamiento es completamente distinto.</div>
             </div>
         </div>
     </section>
@@ -225,7 +373,7 @@
     <!-- DOCTOR -->
     <section class="about-section" id="doctor">
         <div class="about-photo">
-            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800">
+            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
         </div>
         <div class="container">
             <div class="about-content">
@@ -281,23 +429,15 @@
             <div class="faq-list">
                 <div class="faq-item active">
                     <button class="faq-question">¿Cómo sé si es gastritis o algo más serio?</button>
-                    <div class="faq-answer"><p>El ardor en la boca del estómago es el síntoma clásico de la gastritis, pero también puede venir de piedras en la vesícula, de reflujo por hernia de hiato o de otras causas. Por eso el primer paso es una historia clínica completa y una exploración, no otra pastilla. En la consulta te digo con claridad qué estudios necesitas, si es que necesitas alguno.</p></div>
+                    <div class="faq-answer"><p>El ardor en la boca del estómago es el síntoma clásico de la gastritis, pero también puede venir de piedras en la vesícula, de <a href="/cirugia-reflujo-gastroesofagico-cdmx/">reflujo por hernia de hiato</a> o de otras causas.</p><p>Por eso el primer paso es una historia clínica completa y una exploración, no otra pastilla. En la consulta te digo con claridad qué estudios necesitas, si es que necesitas alguno.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">Llevo meses con gastritis y no se me quita con omeprazol, ¿qué hago?</button>
-                    <div class="faq-answer"><p>Si el omeprazol no te hace efecto o el malestar regresa cada vez que lo dejas, lo que falta no es una dosis más alta: es encontrar la causa. Puede ser una bacteria (Helicobacter pylori), piedras en la vesícula, una hernia de hiato o un intestino irritable, y cada una se trata diferente. Ese es exactamente el tipo de caso que veo en consulta. Si quieres entender por qué el omeprazol de largo plazo no es la solución, lo explico en <a href="/blog/efectos-adversos-omeprazol/">este artículo del blog</a>.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿La colitis y el colon irritable son lo mismo?</button>
-                    <div class="faq-answer"><p>En México usamos la palabra colitis para casi cualquier inflamación o cólico abdominal. El colon irritable (síndrome de intestino irritable) es un diagnóstico específico: dolor o cólico que se relaciona con cambios al ir al baño, temporadas de estreñimiento o de diarrea, e inflamación. Distinguirlos importa porque el tratamiento es diferente.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿La colitis nerviosa se cura o se controla?</button>
-                    <div class="faq-answer"><p>La colitis nerviosa (cuando el estrés dispara los síntomas del colon) no se quita con una pastilla única, pero se controla muy bien: con diagnóstico correcto, ajustes de alimentación, manejo del estrés y medicamento cuando hace falta, la mayoría de los pacientes recupera su vida normal. El primer paso es confirmar que de verdad es eso y no otra causa.</p></div>
+                    <div class="faq-answer"><p>Si el omeprazol no te hace efecto o el malestar regresa cada vez que lo dejas, lo que falta no es una dosis más alta: es encontrar la causa. Puede ser una bacteria (Helicobacter pylori), piedras en la vesícula, una hernia de hiato o un intestino irritable, y cada una se trata diferente.</p><p>Ese es exactamente el tipo de caso que veo en consulta. Si quieres entender por qué el omeprazol de largo plazo no es la solución, lo explico en <a href="/blog/efectos-adversos-omeprazol/">este artículo del blog</a>.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Necesito endoscopia o estudios?</button>
-                    <div class="faq-answer"><p>No siempre. Pido estudios cuando la historia clínica lo amerita o cuando hay señales de alarma: pérdida de peso sin explicación, sangrado, anemia, dificultad para tragar o síntomas nuevos después de los 45 años. Si no hacen falta, no te los pido.</p></div>
+                    <div class="faq-answer"><p><strong>No siempre.</strong> Pido estudios cuando la historia clínica lo amerita o cuando hay señales de alarma: pérdida de peso sin explicación, sangrado, anemia, dificultad para tragar o síntomas nuevos después de los 45 años. Si no hacen falta, no te los pido.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué pasa si mi problema resulta ser quirúrgico?</button>
@@ -305,11 +445,30 @@
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué doctor trata la gastritis y la colitis?</button>
-                    <div class="faq-answer"><p>Tanto el gastroenterólogo como el cirujano del aparato digestivo tratan gastritis, colitis y colon irritable. Yo soy cirujano especializado en el sistema digestivo: diagnostico y trato estos padecimientos en consulta, y la mayoría se resuelve sin cirugía. La ventaja es que si detrás del síntoma hay algo quirúrgico, como piedras en la vesícula o una hernia de hiato, puedo llevar tu caso completo. Y si tu caso lo debe llevar otro especialista, te refiero con la persona correcta.</p></div>
+                    <div class="faq-answer"><p><strong>Tanto el gastroenterólogo como el cirujano del aparato digestivo tratan gastritis, colitis y colon irritable.</strong> Yo soy cirujano especializado en el sistema digestivo: diagnostico y trato estos padecimientos en consulta, y la mayoría se resuelve sin cirugía.</p><p>La ventaja es que si detrás del síntoma hay algo quirúrgico, como piedras en la vesícula o una hernia de hiato, puedo llevar tu caso completo. Y si tu caso lo debe llevar otro especialista, te refiero con la persona correcta.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuánto cuesta la consulta?</button>
-                    <div class="faq-answer"><p>La consulta tiene una inversión de $1,000 MXN. Incluye historia clínica completa, exploración y un plan claro: qué tienes, qué estudios necesitas si aplica, y cuál es el tratamiento.</p></div>
+                    <div class="faq-answer"><p><strong>La consulta tiene una inversión de $1,000 MXN.</strong> Incluye historia clínica completa, exploración y un plan claro: qué tienes, qué estudios necesitas si aplica, y cuál es el tratamiento.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- RELACIONADOS -->
+    <section class="section">
+        <div class="container">
+            <div class="servicios-cierre">
+                <h2>Otros padecimientos que atiendo</h2>
+                <p>Si lo tuyo no es gastritis ni colitis, es probable que esté aquí. Y si no aparece, escríbeme y te oriento.</p>
+                <div class="cierre-links">
+                    <a href="/cirugia-reflujo-gastroesofagico-cdmx/">Reflujo y hernia de hiato</a>
+                    <a href="/cirugia-vesicula-cdmx/">Cirugía de vesícula</a>
+                    <a href="/pancreatitis-cdmx/">Pancreatitis</a>
+                    <a href="/blog/efectos-adversos-omeprazol/">Efectos adversos del omeprazol</a>
+                    <a href="/blog/antibiotico-para-la-diarrea/">Antibiótico para la diarrea</a>
+                    <a href="/otros-servicios/">Ver todos los servicios</a>
                 </div>
             </div>
         </div>

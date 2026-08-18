@@ -302,3 +302,11 @@
     .risk-grid { grid-template-columns: 1fr; }
     .price-banner .price { font-size: 36px; }
 }
+
+/* Listas dentro de las secciones de indicaciones (cuándo se opera y cuándo no) */
+.problem-content ul { margin: 0 0 18px; padding-left: 22px; }
+.problem-content li {
+    margin-bottom: 12px; color: var(--color-text);
+    font-size: 16px; line-height: 1.8;
+}
+.problem-content li::marker { color: var(--color-teal); }

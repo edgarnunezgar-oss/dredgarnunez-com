@@ -345,18 +345,6 @@
     font-size: 15px; font-weight: 600; color: var(--color-teal);
 }
 .servicio-cta:hover { color: var(--color-teal-hover); }
-.servicios-cierre {
-    margin-top: 56px; padding: 44px 32px; text-align: center;
-    background: var(--color-bg-section); border-radius: 14px;
-}
-.servicios-cierre h2 {
-    font-family: var(--font-heading); font-size: 27px;
-    color: var(--color-bg-dark); margin-bottom: 14px;
-}
-.servicios-cierre p {
-    max-width: 620px; margin: 0 auto 26px;
-    font-size: 17px; line-height: 1.7; color: var(--color-text-light);
-}
 /* Tarjeta "Otros servicios" en la home */
 .surgery-card-more { border-style: dashed; }
 
@@ -471,19 +459,6 @@
 }
 
 /* === ENLACES A PADECIMIENTOS RELACIONADOS === */
-.cierre-links {
-    display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
-    margin-top: 22px;
-}
-.cierre-links a {
-    padding: 9px 18px; border: 1px solid var(--color-border);
-    border-radius: 100px; font-size: 14px; color: var(--color-text-light);
-    text-decoration: none; background: var(--color-white);
-    transition: all 0.2s;
-}
-.cierre-links a:hover {
-    background: var(--color-teal-light); color: var(--color-teal); border-color: var(--color-teal);
-}
 
 /* === TARJETA DE SERVICIO: título enlazado y "más información" === */
 .servicio-card h2 a { color: inherit; text-decoration: none; }
@@ -496,3 +471,8 @@
     text-decoration: none;
 }
 .servicio-mas:hover { color: var(--color-blue-hover); text-decoration: underline; }
+
+/* Listas dentro de una respuesta del acordeón */
+.faq-answer ul { margin: 0 0 14px; padding-left: 20px; }
+.faq-answer li { margin-bottom: 8px; line-height: 1.7; }
+.faq-answer li::marker { color: var(--color-teal); }

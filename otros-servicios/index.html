@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Otros servicios de cirugía general en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Apendicitis, pancreatitis, peritonitis, lipomas, quiste pilonidal, quistes y biopsias. Cirugía general y gastrointestinal en CDMX con el Dr. Edgar Núñez.">
+    <title>Otros servicios de cirugía general en CDMX</title>
+    <meta name="description" content="Apendicitis, pancreatitis, peritonitis, lipomas, quiste pilonidal, quistes sebáceos y biopsias. Cirugía general en CDMX con el Dr. Edgar Núñez.">
     <link rel="canonical" href="https://dredgarnunez.com/otros-servicios/">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/pages.css?v=26">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/pages.css?v=28">
 
     <!-- JSON-LD: CollectionPage con el listado de padecimientos -->
     <script type="application/ld+json">
@@ -24,17 +45,57 @@
       "description": "Apendicitis, pancreatitis, peritonitis, lipomas, quiste pilonidal, quistes sebáceos y biopsias.",
       "url": "https://dredgarnunez.com/otros-servicios/",
       "inLanguage": "es-MX",
-      "author": {"@type": "Physician", "name": "Dr. Edgar Abraham Núñez García", "url": "https://dredgarnunez.com/sobre-mi/"},
+      "author": {
+        "@type": "Physician",
+        "name": "Dr. Edgar Abraham Núñez García",
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
+      },
       "mainEntity": {
         "@type": "ItemList",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Cirugía de apendicitis", "url": "https://dredgarnunez.com/cirugia-apendicitis-cdmx/"},
-          {"@type": "ListItem", "position": 2, "name": "Pancreatitis", "url": "https://dredgarnunez.com/pancreatitis-cdmx/"},
-          {"@type": "ListItem", "position": 3, "name": "Peritonitis y abdomen agudo", "url": "https://dredgarnunez.com/peritonitis-abdomen-agudo-cdmx/"},
-          {"@type": "ListItem", "position": 4, "name": "Cirugía para quitar lipomas", "url": "https://dredgarnunez.com/cirugia-lipomas-cdmx/"},
-          {"@type": "ListItem", "position": 5, "name": "Cirugía de quiste pilonidal", "url": "https://dredgarnunez.com/cirugia-quiste-pilonidal-cdmx/"},
-          {"@type": "ListItem", "position": 6, "name": "Quistes sebáceos y lesiones de piel", "url": "https://dredgarnunez.com/quiste-sebaceo-lesiones-piel-cdmx/"},
-          {"@type": "ListItem", "position": 7, "name": "Biopsias", "url": "https://dredgarnunez.com/biopsias-cdmx/"}
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Cirugía de apendicitis",
+            "url": "https://dredgarnunez.com/cirugia-apendicitis-cdmx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pancreatitis",
+            "url": "https://dredgarnunez.com/pancreatitis-cdmx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Peritonitis y abdomen agudo",
+            "url": "https://dredgarnunez.com/peritonitis-abdomen-agudo-cdmx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Cirugía para quitar lipomas",
+            "url": "https://dredgarnunez.com/cirugia-lipomas-cdmx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Cirugía de quiste pilonidal",
+            "url": "https://dredgarnunez.com/cirugia-quiste-pilonidal-cdmx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Quistes sebáceos y lesiones de piel",
+            "url": "https://dredgarnunez.com/quiste-sebaceo-lesiones-piel-cdmx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Biopsias",
+            "url": "https://dredgarnunez.com/biopsias-cdmx/"
+          }
         ]
       }
     }
@@ -57,7 +118,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -98,7 +159,7 @@
     <!-- PAGE HERO -->
     <section class="page-hero page-hero-photo">
         <div class="page-hero-image">
-            <img src="/img/heroes/servicios-hero.svg" alt="">
+            <img src="/img/heroes/servicios-hero.svg" alt="" width="900" height="520" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="page-hero-content">

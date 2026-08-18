@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
     <title>Pancreatitis en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Pancreatitis: qué es, por qué la causa más frecuente son las piedras en la vesícula y qué sigue después del episodio. Dr. Edgar Núñez García, cirujano en CDMX.">
+    <meta name="description" content="Pancreatitis: qué es, por qué la causa más frecuente son las piedras en la vesícula y qué sigue después del episodio. Cirujano en CDMX.">
     <link rel="canonical" href="https://dredgarnunez.com/pancreatitis-cdmx/">
-    <meta property="og:title" content="Pancreatitis en CDMX: causas y tratamiento | Dr. Edgar Núñez García">
-    <meta property="og:description" content="Pancreatitis: qué es, por qué casi siempre hay que revisar la vesícula y qué sigue después del episodio. Dr. Edgar Núñez García, CDMX.">
+    <meta property="og:title" content="Pancreatitis en CDMX | Dr. Edgar Núñez García">
+    <meta property="og:description" content="Pancreatitis: qué es, por qué la causa más frecuente son las piedras en la vesícula y qué sigue después del episodio. Cirujano en CDMX.">
     <meta property="og:url" content="https://dredgarnunez.com/pancreatitis-cdmx/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pancreatitis en CDMX | Dr. Edgar Núñez García">
+    <meta name="twitter:description" content="Pancreatitis: qué es, por qué la causa más frecuente son las piedras en la vesícula y qué sigue después del episodio. Cirujano en CDMX.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/pages.css?v=26">
-    <link rel="stylesheet" href="/css/cirugia.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/pages.css?v=28">
+    <link rel="stylesheet" href="/css/cirugia.css?v=27">
 
     <!-- JSON-LD: MedicalWebPage -->
     <script type="application/ld+json">
@@ -29,22 +52,53 @@
       "description": "Qué es la pancreatitis, por qué la causa más frecuente son las piedras en la vesícula y qué sigue después del episodio.",
       "url": "https://dredgarnunez.com/pancreatitis-cdmx/",
       "inLanguage": "es-MX",
-      "medicalAudience": {"@type": "PatientAudience", "audienceType": "Patient"},
-      "author": {"@type": "Physician", "name": "Dr. Edgar Abraham Núñez García", "url": "https://dredgarnunez.com/sobre-mi/"},
-      "reviewedBy": {"@type": "Physician", "name": "Dr. Edgar Abraham Núñez García", "url": "https://dredgarnunez.com/sobre-mi/"},
+      "medicalAudience": {
+        "@type": "PatientAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Physician",
+        "name": "Dr. Edgar Abraham Núñez García",
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
+      },
+      "reviewedBy": {
+        "@type": "Physician",
+        "name": "Dr. Edgar Abraham Núñez García",
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
+      },
       "about": {
         "@type": "MedicalCondition",
         "name": "Pancreatitis aguda",
         "alternateName": "Inflamación del páncreas",
         "signOrSymptom": [
-          {"@type": "MedicalSignOrSymptom", "name": "Dolor intenso en la boca del estómago que se va hacia la espalda"},
-          {"@type": "MedicalSignOrSymptom", "name": "Náusea y vómito persistente"},
-          {"@type": "MedicalSignOrSymptom", "name": "Distensión abdominal"}
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Dolor intenso en la boca del estómago que se va hacia la espalda"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Náusea y vómito persistente"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Distensión abdominal"
+          }
         ],
         "riskFactor": [
-          {"@type": "MedicalRiskFactor", "name": "Piedras en la vesícula (litiasis biliar)"},
-          {"@type": "MedicalRiskFactor", "name": "Consumo de alcohol"},
-          {"@type": "MedicalRiskFactor", "name": "Triglicéridos muy elevados"}
+          {
+            "@type": "MedicalRiskFactor",
+            "name": "Piedras en la vesícula (litiasis biliar)"
+          },
+          {
+            "@type": "MedicalRiskFactor",
+            "name": "Consumo de alcohol"
+          },
+          {
+            "@type": "MedicalRiskFactor",
+            "name": "Triglicéridos muy elevados"
+          }
         ],
         "possibleTreatment": {
           "@type": "MedicalProcedure",
@@ -79,22 +133,84 @@
       "url": "https://dredgarnunez.com/",
       "image": "https://dredgarnunez.com/img/doctor-portrait.jpg",
       "medicalSpecialty": [
-        {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Gastrointestinal"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Laparoscópica y de Mínima Invasión"}
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Gastrointestinal"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Laparoscópica y de Mínima Invasión"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
         "addressLocality": "Ciudad de México",
+        "addressRegion": "Ciudad de México",
         "postalCode": "06720",
         "addressCountry": "MX"
       },
       "alumniOf": [
-        {"@type": "EducationalOrganization", "name": "Universidad La Salle"},
-        {"@type": "EducationalOrganization", "name": "Centro Médico ABC / UNAM"}
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad La Salle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Médico ABC / UNAM"
+        }
       ],
-      "memberOf": {"@type": "MedicalOrganization", "name": "Consejo Mexicano de Cirugía General"}
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Consejo Mexicano de Cirugía General"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4233434,
+        "longitude": -99.1536367
+      },
+      "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "11:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "16:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Metropolitana del Valle de México"
+        }
+      ],
+      "@id": "https://dredgarnunez.com/#cirujano"
     }
     </script>
 
@@ -185,7 +301,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -226,7 +342,7 @@
     <!-- PAGE HERO -->
     <section class="page-hero page-hero-photo">
         <div class="page-hero-image">
-            <img src="/img/heroes/servicios-hero.svg" alt="">
+            <img src="/img/heroes/servicios-hero.svg" alt="" width="900" height="520" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="page-hero-content">
@@ -234,7 +350,7 @@
                     <a href="/">Inicio</a> <span>&rsaquo;</span> <a href="/otros-servicios/">Otros servicios</a> <span>&rsaquo;</span> Pancreatitis
                 </div>
                 <h1>Pancreatitis: qué es y qué sigue después</h1>
-                <p>La pancreatitis es la inflamación del páncreas. Su causa más frecuente en México son las piedras en la vesícula, y por eso resolver el episodio es solo la mitad del trabajo: falta quitar la causa para que no se repita.</p>
+                <p>La pancreatitis es la inflamación del páncreas. Su causa más frecuente en México son las <a href="/cirugia-vesicula-cdmx/">piedras en la vesícula</a>, y por eso resolver el episodio es solo la mitad del trabajo: falta quitar la causa para que no se repita.</p>
             </div>
         </div>
     </section>
@@ -297,7 +413,7 @@
             </div>
             <div class="problem-content">
                 <h3>Los dos conductos desembocan juntos</h3>
-                <p>El conducto que saca la bilis desde la vesícula y el conducto que saca las enzimas desde el páncreas terminan en el mismo punto del intestino. Cuando una piedra pequeña sale de la vesícula y se atora justo en esa salida común, tapa también la del páncreas. Las enzimas no pueden salir, se quedan adentro y se activan ahí. Eso es una pancreatitis biliar, y es la causa más frecuente en México.</p>
+                <p>El conducto que saca la bilis desde la vesícula y el conducto que saca las enzimas desde el páncreas terminan en el mismo punto del intestino.</p><p>Cuando una piedra pequeña sale de la vesícula y se atora justo en esa salida común, tapa también la del páncreas. Las enzimas no pueden salir, se quedan adentro y se activan ahí. Eso es una pancreatitis biliar, y es la causa más frecuente en México.</p>
                 <h3>Si la vesícula sigue ahí, la causa sigue ahí</h3>
                 <p>Resolver el episodio en el hospital es la primera mitad del trabajo. La segunda es quitar la causa. Una vesícula que ya formó piedras las sigue formando, y el riesgo de repetir el cuadro es alto mientras siga puesta. Una segunda pancreatitis puede ser más grave que la primera.</p>
                 <h3>Por eso, después del episodio, se retira la vesícula</h3>
@@ -312,7 +428,7 @@
         <div class="container">
             <div class="autor-medico">
                 <div class="autor-medico-foto">
-                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104">
+                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104" loading="lazy" decoding="async">
                 </div>
                 <div class="autor-medico-texto">
                     <h2 class="autor-medico-nombre">Dr. Edgar Abraham Núñez García</h2>
@@ -339,39 +455,39 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">¿Qué es la pancreatitis?</button>
-                    <div class="faq-answer"><p>Es la inflamación del páncreas, la glándula que está detrás del estómago y que produce las enzimas que digieren la comida, además de la insulina. En la pancreatitis esas enzimas se activan antes de tiempo, dentro del propio páncreas, y empiezan a digerir el tejido de la glándula. Por eso duele tanto y por eso es un cuadro que se maneja en el hospital.</p></div>
+                    <div class="faq-answer"><p>Es la inflamación del páncreas, la glándula que está detrás del estómago y que produce las enzimas que digieren la comida, además de la insulina.</p><p>En la pancreatitis esas enzimas se activan antes de tiempo, dentro del propio páncreas, y empiezan a digerir el tejido de la glándula. Por eso duele tanto y por eso es un cuadro que se maneja en el hospital.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuáles son los síntomas de la pancreatitis?</button>
-                    <div class="faq-answer"><p>El síntoma principal es un dolor intenso en la boca del estómago que muchas veces se va hacia la espalda, como si atravesara. Suele empezar de forma más o menos súbita, no cede con lo que uno toma en casa y empeora al comer o al acostarse boca arriba. Se acompaña de náusea y vómito que no alivian el dolor, y a veces de distensión del abdomen y fiebre. Es un cuadro para acudir a urgencias, no para esperar.</p></div>
+                    <div class="faq-answer"><p>El síntoma principal es un dolor intenso en la boca del estómago que muchas veces se va hacia la espalda, como si atravesara. Suele empezar de forma más o menos súbita, no cede con lo que uno toma en casa y empeora al comer o al acostarse boca arriba.</p><p>Se acompaña de náusea y vómito que no alivian el dolor, y a veces de distensión del abdomen y fiebre. Es un cuadro para acudir a urgencias, no para esperar.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Por qué da pancreatitis?</button>
-                    <div class="faq-answer"><p>Las dos causas más frecuentes con diferencia son las piedras en la vesícula y el consumo de alcohol. En México la causa biliar, es decir la de las piedras, es la más común. Le siguen los triglicéridos muy elevados, algunos medicamentos, procedimientos sobre la vía biliar y, con menos frecuencia, otras causas. Identificar cuál fue la causa es lo que define qué hacer después, y por eso siempre se investiga.</p></div>
+                    <div class="faq-answer"><p><strong>Las dos causas más frecuentes con diferencia son las piedras en la vesícula y el consumo de alcohol.</strong> En México la causa biliar, es decir la de las piedras, es la más común.</p><p>Le siguen los triglicéridos muy elevados, algunos medicamentos, procedimientos sobre la vía biliar y, con menos frecuencia, otras causas. Identificar cuál fue la causa es lo que define qué hacer después, y por eso siempre se investiga.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué tienen que ver las piedras en la vesícula con el páncreas?</button>
-                    <div class="faq-answer"><p>El conducto que saca la bilis de la vesícula y el conducto que saca las enzimas del páncreas desembocan juntos en el intestino. Cuando una piedra pequeña sale de la vesícula y se atora justo en esa salida común, tapa también la del páncreas. Las enzimas no pueden salir, se quedan adentro y se activan ahí. Ese es el mecanismo de la pancreatitis biliar.</p></div>
+                    <div class="faq-answer"><p>El conducto que saca la bilis de la vesícula y el conducto que saca las enzimas del páncreas desembocan juntos en el intestino.</p><p>Cuando una piedra pequeña sale de la vesícula y se atora justo en esa salida común, tapa también la del páncreas. Las enzimas no pueden salir, se quedan adentro y se activan ahí. Ese es el mecanismo de la pancreatitis biliar.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">Si ya tuve pancreatitis por piedras, ¿me tengo que operar de la vesícula?</button>
-                    <div class="faq-answer"><p>En general sí, y es de las indicaciones más claras que hay en cirugía de vesícula. Si la causa fue una piedra y la vesícula sigue ahí produciendo piedras, el riesgo de repetir el cuadro es alto, y una segunda pancreatitis puede ser más grave que la primera. Por eso, una vez que el episodio cede y estás estable, se recomienda retirar la vesícula. La cirugía es la misma colecistectomía laparoscópica de siempre.</p></div>
+                    <div class="faq-answer"><p><strong>En general sí, y es de las indicaciones más claras que hay en cirugía de vesícula.</strong> Si la causa fue una piedra y la vesícula sigue ahí produciendo piedras, el riesgo de repetir el cuadro es alto, y una segunda pancreatitis puede ser más grave que la primera.</p><p>Por eso, una vez que el episodio cede y estás estable, se recomienda retirar la vesícula. La cirugía es la misma colecistectomía laparoscópica de siempre.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuándo se opera después de una pancreatitis?</button>
-                    <div class="faq-answer"><p>Depende de qué tan grave fue el episodio. Cuando la pancreatitis fue leve, lo habitual y lo recomendado es operar pronto, muchas veces durante la misma hospitalización o poco después, porque esperar deja la ventana abierta a que se repita. Cuando fue grave o hubo colecciones alrededor del páncreas, conviene esperar a que todo se resuelva antes de operar. En la valoración reviso tus estudios y te digo en cuál de los dos escenarios estás.</p></div>
+                    <div class="faq-answer"><p><strong>Depende de qué tan grave fue el episodio.</strong> Cuando la pancreatitis fue leve, lo habitual y lo recomendado es operar pronto, muchas veces durante la misma hospitalización o poco después, porque esperar deja la ventana abierta a que se repita.</p><p>Cuando fue grave o hubo colecciones alrededor del páncreas, conviene esperar a que todo se resuelva antes de operar. En la valoración reviso tus estudios y te digo en cuál de los dos escenarios estás.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿La pancreatitis se opera?</button>
-                    <div class="faq-answer"><p>El páncreas inflamado en sí no se opera. El tratamiento del episodio agudo es hospitalario y consiste en reposo digestivo, líquidos por vena, control del dolor y vigilancia estrecha. La cirugía entra en escena por la causa, no por el páncreas: si fueron las piedras, se retira la vesícula. Solo en casos graves y poco frecuentes, cuando se forman colecciones o tejido muerto que se infecta, se requiere un procedimiento sobre el propio páncreas.</p></div>
+                    <div class="faq-answer"><p><strong>El páncreas inflamado en sí no se opera.</strong> El tratamiento del episodio agudo es hospitalario y consiste en reposo digestivo, líquidos por vena, control del dolor y vigilancia estrecha.</p><p>La cirugía entra en escena por la causa, no por el páncreas: si fueron las piedras, se retira la vesícula. Solo en casos graves y poco frecuentes, cuando se forman colecciones o tejido muerto que se infecta, se requiere un procedimiento sobre el propio páncreas.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Se puede prevenir que vuelva a dar?</button>
-                    <div class="faq-answer"><p>Sí, y depende de cuál haya sido la causa. Si fue biliar, retirar la vesícula es la medida que más reduce el riesgo de repetición. Si fue por alcohol, suspenderlo. Si fue por triglicéridos altos, controlarlos con dieta y tratamiento. Atacar la causa es lo que evita el siguiente episodio: sin eso, el riesgo sigue presente.</p></div>
+                    <div class="faq-answer"><p><strong>Sí, y depende de cuál haya sido la causa.</strong> Si fue biliar, retirar la vesícula es la medida que más reduce el riesgo de repetición. Si fue por alcohol, suspenderlo. Si fue por triglicéridos altos, controlarlos con dieta y tratamiento. Atacar la causa es lo que evita el siguiente episodio: sin eso, el riesgo sigue presente.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué puedo comer después de una pancreatitis?</button>
-                    <div class="faq-answer"><p>Al principio la alimentación se reintroduce de forma gradual y baja en grasas, siguiendo las indicaciones del equipo que te atendió. Después, la dieta depende de la causa: si fue biliar y ya se retiró la vesícula, se sigue el mismo cuidado que después de cualquier cirugía de vesícula. Si fue por alcohol o por triglicéridos, la indicación es más estricta y a largo plazo. Es un punto que conviene resolver en consulta y no por internet.</p></div>
+                    <div class="faq-answer"><p><strong>Al principio la alimentación se reintroduce de forma gradual y baja en grasas, siguiendo las indicaciones del equipo que te atendió.</strong> Después, la dieta depende de la causa: si fue biliar y ya se retiró la vesícula, se sigue el mismo cuidado que después de cualquier cirugía de vesícula.</p><p>Si fue por alcohol o por triglicéridos, la indicación es más estricta y a largo plazo. Es un punto que conviene resolver en consulta y no por internet.</p></div>
                 </div>
             </div>
         </div>

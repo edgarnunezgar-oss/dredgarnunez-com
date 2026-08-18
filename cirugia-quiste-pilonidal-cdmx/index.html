@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Cirugía de quiste pilonidal en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Quiste pilonidal o sacrocoxígeo: por qué vuelve después del antibiótico y cuál es la cirugía que lo resuelve de forma definitiva. Dr. Edgar Núñez García, CDMX.">
+    <title>Cirugía de quiste pilonidal en CDMX | Dr. Edgar Núñez</title>
+    <meta name="description" content="Quiste pilonidal o sacrocoxígeo: por qué vuelve tras el antibiótico y cuál es la cirugía que lo resuelve de forma definitiva. CDMX.">
     <link rel="canonical" href="https://dredgarnunez.com/cirugia-quiste-pilonidal-cdmx/">
-    <meta property="og:title" content="Cirugía de quiste pilonidal en CDMX | Dr. Edgar Núñez García">
-    <meta property="og:description" content="Quiste pilonidal o sacrocoxígeo: por qué vuelve después del antibiótico y cuál es la cirugía que lo resuelve. Dr. Edgar Núñez García, CDMX.">
+    <meta property="og:title" content="Cirugía de quiste pilonidal en CDMX | Dr. Edgar Núñez">
+    <meta property="og:description" content="Quiste pilonidal o sacrocoxígeo: por qué vuelve tras el antibiótico y cuál es la cirugía que lo resuelve de forma definitiva. CDMX.">
     <meta property="og:url" content="https://dredgarnunez.com/cirugia-quiste-pilonidal-cdmx/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cirugía de quiste pilonidal en CDMX | Dr. Edgar Núñez">
+    <meta name="twitter:description" content="Quiste pilonidal o sacrocoxígeo: por qué vuelve tras el antibiótico y cuál es la cirugía que lo resuelve de forma definitiva. CDMX.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/pages.css?v=26">
-    <link rel="stylesheet" href="/css/cirugia.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/pages.css?v=28">
+    <link rel="stylesheet" href="/css/cirugia.css?v=27">
 
     <!-- JSON-LD: MedicalWebPage -->
     <script type="application/ld+json">
@@ -36,22 +59,36 @@
       "author": {
         "@type": "Physician",
         "name": "Dr. Edgar Abraham Núñez García",
-        "url": "https://dredgarnunez.com/sobre-mi/"
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
       },
       "reviewedBy": {
         "@type": "Physician",
         "name": "Dr. Edgar Abraham Núñez García",
-        "url": "https://dredgarnunez.com/sobre-mi/"
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
       },
       "about": {
         "@type": "MedicalCondition",
         "name": "Quiste pilonidal",
         "alternateName": "Quiste sacrocoxígeo",
         "signOrSymptom": [
-          {"@type": "MedicalSignOrSymptom", "name": "Bolita dolorosa en la parte baja de la espalda"},
-          {"@type": "MedicalSignOrSymptom", "name": "Salida de pus o líquido con mal olor"},
-          {"@type": "MedicalSignOrSymptom", "name": "Enrojecimiento e inflamación sobre el coxis"},
-          {"@type": "MedicalSignOrSymptom", "name": "Dolor al sentarse"}
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Bolita dolorosa en la parte baja de la espalda"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Salida de pus o líquido con mal olor"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Enrojecimiento e inflamación sobre el coxis"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Dolor al sentarse"
+          }
         ],
         "possibleTreatment": {
           "@type": "MedicalProcedure",
@@ -86,22 +123,84 @@
       "url": "https://dredgarnunez.com/",
       "image": "https://dredgarnunez.com/img/doctor-portrait.jpg",
       "medicalSpecialty": [
-        {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Gastrointestinal"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Laparoscópica y de Mínima Invasión"}
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Gastrointestinal"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Laparoscópica y de Mínima Invasión"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
         "addressLocality": "Ciudad de México",
+        "addressRegion": "Ciudad de México",
         "postalCode": "06720",
         "addressCountry": "MX"
       },
       "alumniOf": [
-        {"@type": "EducationalOrganization", "name": "Universidad La Salle"},
-        {"@type": "EducationalOrganization", "name": "Centro Médico ABC / UNAM"}
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad La Salle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Médico ABC / UNAM"
+        }
       ],
-      "memberOf": {"@type": "MedicalOrganization", "name": "Consejo Mexicano de Cirugía General"}
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Consejo Mexicano de Cirugía General"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4233434,
+        "longitude": -99.1536367
+      },
+      "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "11:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "16:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Metropolitana del Valle de México"
+        }
+      ],
+      "@id": "https://dredgarnunez.com/#cirujano"
     }
     </script>
 
@@ -208,7 +307,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -249,7 +348,7 @@
     <!-- PAGE HERO -->
     <section class="page-hero page-hero-photo">
         <div class="page-hero-image">
-            <img src="/img/heroes/servicios-hero.svg" alt="">
+            <img src="/img/heroes/servicios-hero.svg" alt="" width="900" height="520" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="page-hero-content">
@@ -315,7 +414,7 @@
                 <h3>Lo que lo favorece</h3>
                 <p>Pasar muchas horas sentado, tener vello abundante y grueso en la zona, el sobrepeso, la sudoración y la fricción repetida. Es más frecuente en hombres y aparece sobre todo entre los 15 y los 35 años. No es un problema de falta de higiene, aunque mantener la zona seca y limpia sí ayuda a que se infecte menos.</p>
                 <h3>Por qué el antibiótico no lo cura</h3>
-                <p>Esta es la parte que más conviene entender, porque es la que hace que la gente pierda meses. El antibiótico controla la infección y desinflama. Es útil y a veces necesario. Pero la cavidad y sus túneles bajo la piel siguen exactamente igual después del tratamiento. Mientras ese espacio exista, se vuelve a llenar de pelo y detritus, y se vuelve a infectar. El antibiótico apaga el fuego, no repara lo que lo provoca.</p>
+                <p>Esta es la parte que más conviene entender, porque es la que hace que la gente pierda meses. El antibiótico controla la infección y desinflama. Es útil y a veces necesario.</p><p>Pero la cavidad y sus túneles bajo la piel siguen exactamente igual después del tratamiento. Mientras ese espacio exista, se vuelve a llenar de pelo y detritus, y se vuelve a infectar. El antibiótico apaga el fuego, no repara lo que lo provoca.</p>
                 <h3>El drenaje resuelve la crisis, no la enfermedad</h3>
                 <p>Cuando hay un absceso, drenarlo es lo correcto y quita el dolor de inmediato. Pero el drenaje solo abre y vacía; no retira la cavidad. Por eso una parte importante de los pacientes drenados vuelve a presentar el mismo cuadro semanas o meses después.</p>
                 <div class="problem-highlight">Cada episodio nuevo suele dejar más trayectos y más tejido cicatricial. Eso hace que la cirugía posterior sea más extensa y la recuperación más larga. Operar en frío, después de que la infección cedió y antes de acumular episodios, es lo que da el mejor resultado.</div>
@@ -332,11 +431,11 @@
             </div>
             <div class="problem-content">
                 <h3>Cierre directo con la sutura fuera del surco</h3>
-                <p>Se retira el quiste y se cierra la herida en el mismo momento, pero desplazando la línea de sutura fuera de la línea media del surco. Es un detalle técnico que importa: la línea media es una zona de mucha tensión, poca ventilación y humedad constante, y ahí las heridas cicatrizan mal. Al mover la sutura hacia un lado, cicatriza mejor y baja el riesgo de que vuelva a aparecer. La recuperación es más rápida porque no requiere curaciones prolongadas.</p>
+                <p>Se retira el quiste y se cierra la herida en el mismo momento, pero desplazando la línea de sutura fuera de la línea media del surco. Es un detalle técnico que importa: la línea media es una zona de mucha tensión, poca ventilación y humedad constante, y ahí las heridas cicatrizan mal.</p><p>Al mover la sutura hacia un lado, cicatriza mejor y baja el riesgo de que vuelva a aparecer. La recuperación es más rápida porque no requiere curaciones prolongadas.</p>
                 <h3>Herida abierta, cierre por segunda intención</h3>
                 <p>Se retira el quiste y la herida se deja abierta para que cierre poco a poco desde el fondo. Tarda semanas y necesita curaciones periódicas, lo cual es más pesado para el paciente. A cambio, en casos con mucha infección o con enfermedad muy extensa, es la opción más segura.</p>
                 <h3>Cuál te conviene</h3>
-                <p>Depende del tamaño del quiste, de cuántos trayectos tenga, de si hay infección activa y de cuántos episodios previos hubo. No hay una técnica que sea la mejor para todos, y desconfía de quien te diga lo contrario. En la valoración reviso la zona, te explico qué opciones aplican a tu caso con sus pros y sus contras, y decides con información.</p>
+                <p>Depende del tamaño del quiste, de cuántos trayectos tenga, de si hay infección activa y de cuántos episodios previos hubo. No hay una técnica que sea la mejor para todos, y desconfía de quien te diga lo contrario.</p><p>En la valoración reviso la zona, te explico qué opciones aplican a tu caso con sus pros y sus contras, y decides con información.</p>
             </div>
         </div>
     </section>
@@ -349,7 +448,7 @@
             </div>
             <div class="problem-content">
                 <p>El quiste pilonidal es de los padecimientos con recaída conocida. No te voy a prometer que no vuelva, porque en medicina no se garantizan resultados y porque sería faltarte al respeto.</p>
-                <p>Lo que sí está en nuestras manos es reducir esa probabilidad: retirar todos los trayectos y no solo el quiste visible, elegir la técnica de cierre que corresponde a tu caso, y después cuidar los factores que lo provocan. Mantener la zona sin vello, seca y limpia es la medida que más ayuda a largo plazo, y es algo que sí depende de ti.</p>
+                <p>Lo que sí está en nuestras manos es reducir esa probabilidad: retirar todos los trayectos y no solo el quiste visible, elegir la técnica de cierre que corresponde a tu caso, y después cuidar los factores que lo provocan.</p><p>Mantener la zona sin vello, seca y limpia es la medida que más ayuda a largo plazo, y es algo que sí depende de ti.</p>
                 <p>Y si tu quiste está tranquilo, nunca se ha infectado y solo se ven los hoyitos, es de los casos en que se puede vigilar sin operar. No opero a nadie que no lo necesite.</p>
                 <p style="text-align: center; margin-top: 28px;"><a href="https://wa.link/3rll01" class="btn-primary" target="_blank">Agenda tu valoración por WhatsApp</a></p>
             </div>
@@ -361,7 +460,7 @@
         <div class="container">
             <div class="autor-medico">
                 <div class="autor-medico-foto">
-                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104">
+                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104" loading="lazy" decoding="async">
                 </div>
                 <div class="autor-medico-texto">
                     <h2 class="autor-medico-nombre">Dr. Edgar Abraham Núñez García</h2>
@@ -388,43 +487,43 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">¿Qué es un quiste pilonidal?</button>
-                    <div class="faq-answer"><p>Es una cavidad que se forma bajo la piel en la parte baja de la espalda, justo en el surco entre los glúteos, sobre el coxis. Adentro quedan atrapados pelos y restos de piel. Mientras está tranquilo puede notarse solo como uno o varios hoyitos en la piel. Cuando se infecta, se inflama, duele, y muchas veces drena pus o un líquido con mal olor.</p></div>
+                    <div class="faq-answer"><p>Es una cavidad que se forma bajo la piel en la parte baja de la espalda, justo en el surco entre los glúteos, sobre el coxis. Adentro quedan atrapados pelos y restos de piel.</p><p>Mientras está tranquilo puede notarse solo como uno o varios hoyitos en la piel. Cuando se infecta, se inflama, duele, y muchas veces drena pus o un líquido con mal olor.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Es lo mismo quiste pilonidal, sacrocoxígeo, coxígeo o piramidal?</button>
-                    <div class="faq-answer"><p>Sí, la gente le dice de muchas maneras y todas se refieren al mismo problema. El nombre médico es quiste o seno pilonidal. Como está sobre el hueso sacro y el coxis, también se le llama sacrocoxígeo o coxígeo. Y es muy común que se escuche o se escriba como quiste piramidal, que es una deformación de pilonidal. Si tienes una bolita dolorosa en esa zona, hablamos de lo mismo.</p></div>
+                    <div class="faq-answer"><p><strong>Sí, la gente le dice de muchas maneras y todas se refieren al mismo problema.</strong> El nombre médico es quiste o seno pilonidal. Como está sobre el hueso sacro y el coxis, también se le llama sacrocoxígeo o coxígeo.</p><p>Y es muy común que se escuche o se escriba como quiste piramidal, que es una deformación de pilonidal. Si tienes una bolita dolorosa en esa zona, hablamos de lo mismo.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Por qué sale el quiste pilonidal?</button>
-                    <div class="faq-answer"><p>La explicación más aceptada es que un pelo de la zona se mete hacia adentro por la fricción y el roce de esa área. El cuerpo lo reconoce como algo extraño e intenta aislarlo, y así se forma la cavidad. Los factores que más lo favorecen son pasar muchas horas sentado, el vello abundante y grueso, el sobrepeso, la sudoración y la fricción constante. Aparece sobre todo entre los 15 y los 35 años y es más frecuente en hombres.</p></div>
+                    <div class="faq-answer"><p>La explicación más aceptada es que un pelo de la zona se mete hacia adentro por la fricción y el roce de esa área. El cuerpo lo reconoce como algo extraño e intenta aislarlo, y así se forma la cavidad.</p><p>Los factores que más lo favorecen son pasar muchas horas sentado, el vello abundante y grueso, el sobrepeso, la sudoración y la fricción constante. Aparece sobre todo entre los 15 y los 35 años y es más frecuente en hombres.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Hay crema, pomada o antibiótico que cure el quiste pilonidal?</button>
-                    <div class="faq-answer"><p>El antibiótico controla la infección y desinflama, y las cremas alivian la molestia de la piel. Ninguno de los dos cura el problema, y es importante que lo sepas antes de gastar meses intentándolo. La razón es sencilla: el antibiótico apaga el fuego, pero la cavidad y sus trayectos bajo la piel siguen ahí. Mientras ese túnel exista, vuelve a llenarse y vuelve a infectarse. Lo único que resuelve de forma definitiva es retirar el quiste con todos sus trayectos.</p></div>
+                    <div class="faq-answer"><p><strong>El antibiótico controla la infección y desinflama, y las cremas alivian la molestia de la piel.</strong> Ninguno de los dos cura el problema, y es importante que lo sepas antes de gastar meses intentándolo.</p><p>La razón es sencilla: el antibiótico apaga el fuego, pero la cavidad y sus trayectos bajo la piel siguen ahí. Mientras ese túnel exista, vuelve a llenarse y vuelve a infectarse. Lo único que resuelve de forma definitiva es retirar el quiste con todos sus trayectos.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">Si me drenaron el absceso, ¿ya quedé curado?</button>
-                    <div class="faq-answer"><p>No necesariamente. El drenaje de urgencia es lo correcto cuando hay un absceso: saca el pus y quita el dolor de inmediato. Pero es un procedimiento para resolver la crisis, no la enfermedad. Una parte importante de los pacientes drenados vuelve a presentar el cuadro, porque la cavidad no se retiró. Por eso, después de que el episodio agudo cede, conviene valorar la cirugía definitiva en frío.</p></div>
+                    <div class="faq-answer"><p><strong>No necesariamente.</strong> El drenaje de urgencia es lo correcto cuando hay un absceso: saca el pus y quita el dolor de inmediato. Pero es un procedimiento para resolver la crisis, no la enfermedad.</p><p>Una parte importante de los pacientes drenados vuelve a presentar el cuadro, porque la cavidad no se retiró. Por eso, después de que el episodio agudo cede, conviene valorar la cirugía definitiva en frío.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿En qué consiste la cirugía de quiste pilonidal?</button>
-                    <div class="faq-answer"><p>Consiste en retirar por completo el quiste junto con todos sus trayectos bajo la piel. Lo que cambia entre técnicas es cómo se maneja la herida después: puede dejarse abierta para que cierre poco a poco por sí sola, o cerrarse en el mismo momento desplazando la línea de sutura fuera del surco, que es lo que reduce las recaídas. Cuál conviene depende del tamaño, de cuántos trayectos haya y de si hay infección activa. Te explico las opciones con sus pros y sus contras antes de decidir.</p></div>
+                    <div class="faq-answer"><p><strong>Consiste en retirar por completo el quiste junto con todos sus trayectos bajo la piel.</strong> Lo que cambia entre técnicas es cómo se maneja la herida después: puede dejarse abierta para que cierre poco a poco por sí sola, o cerrarse en el mismo momento desplazando la línea de sutura fuera del surco, que es lo que reduce las recaídas.</p><p>Cuál conviene depende del tamaño, de cuántos trayectos haya y de si hay infección activa. Te explico las opciones con sus pros y sus contras antes de decidir.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo es la recuperación de la cirugía de quiste pilonidal?</button>
-                    <div class="faq-answer"><p>Depende de la técnica. Con cierre directo, la mayoría vuelve a actividades de escritorio en una o dos semanas, cuidando cómo se sienta. Con herida abierta, el cierre completo tarda semanas y requiere curaciones periódicas, pero baja el riesgo de recaída en ciertos casos. En ambos casos hay que evitar estar sentado mucho tiempo seguido durante los primeros días y mantener la zona limpia y seca.</p></div>
+                    <div class="faq-answer"><p><strong>Depende de la técnica.</strong> Con cierre directo, la mayoría vuelve a actividades de escritorio en una o dos semanas, cuidando cómo se sienta.</p><p>Con herida abierta, el cierre completo tarda semanas y requiere curaciones periódicas, pero baja el riesgo de recaída en ciertos casos. En ambos casos hay que evitar estar sentado mucho tiempo seguido durante los primeros días y mantener la zona limpia y seca.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Puede volver a salir después de la cirugía?</button>
-                    <div class="faq-answer"><p>Puede. El quiste pilonidal es de los padecimientos con recaída conocida, y no voy a decirte que hay garantía de que no regrese. Lo que sí se puede hacer es reducir mucho esa probabilidad: retirar todos los trayectos, elegir bien la técnica de cierre y, después, cuidar los factores que lo provocan. Mantener la zona sin vello, seca y limpia es la medida que más ayuda a largo plazo.</p></div>
+                    <div class="faq-answer"><p><strong>Puede.</strong> El quiste pilonidal es de los padecimientos con recaída conocida, y no voy a decirte que hay garantía de que no regrese.</p><p>Lo que sí se puede hacer es reducir mucho esa probabilidad: retirar todos los trayectos, elegir bien la técnica de cierre y, después, cuidar los factores que lo provocan. Mantener la zona sin vello, seca y limpia es la medida que más ayuda a largo plazo.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué pasa si no me opero?</button>
-                    <div class="faq-answer"><p>Lo más común es entrar en un ciclo: se infecta, se drena o se toma antibiótico, mejora unas semanas o meses, y vuelve. Con cada episodio suele haber más trayectos y más tejido cicatricial, lo que hace la cirugía posterior más extensa. No es un problema que ponga en riesgo la vida, pero sí uno que empeora con el tiempo y que va limitando cosas cotidianas como sentarse, manejar o hacer ejercicio.</p></div>
+                    <div class="faq-answer"><p><strong>Lo más común es entrar en un ciclo:</strong> se infecta, se drena o se toma antibiótico, mejora unas semanas o meses, y vuelve. Con cada episodio suele haber más trayectos y más tejido cicatricial, lo que hace la cirugía posterior más extensa.</p><p>No es un problema que ponga en riesgo la vida, pero sí uno que empeora con el tiempo y que va limitando cosas cotidianas como sentarse, manejar o hacer ejercicio.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué médico opera el quiste pilonidal?</button>
-                    <div class="faq-answer"><p>El cirujano general. Forma parte de la cirugía de piel y tejidos blandos y del área coloproctológica, que son terreno de la especialidad. Es un procedimiento que se hace con frecuencia y que tiene técnicas bien establecidas.</p></div>
+                    <div class="faq-answer"><p><strong>El cirujano general.</strong> Forma parte de la cirugía de piel y tejidos blandos y del área coloproctológica, que son terreno de la especialidad. Es un procedimiento que se hace con frecuencia y que tiene técnicas bien establecidas.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuánto cuesta la cirugía de quiste pilonidal?</button>

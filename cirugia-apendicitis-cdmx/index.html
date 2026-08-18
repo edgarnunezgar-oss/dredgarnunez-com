@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Cirugía de apendicitis en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Apendicitis: síntomas, por qué se inflama el apéndice y cómo es la cirugía por laparoscopía. Cirujano general certificado en CDMX, Dr. Edgar Núñez García.">
+    <title>Cirugía de apendicitis en CDMX | Dr. Edgar Núñez</title>
+    <meta name="description" content="Dolor en el lado derecho del abdomen bajo: cuándo es apendicitis. Cirugía por laparoscopía en CDMX con cirujano general certificado.">
     <link rel="canonical" href="https://dredgarnunez.com/cirugia-apendicitis-cdmx/">
-    <meta property="og:title" content="Cirugía de apendicitis en CDMX | Dr. Edgar Núñez García">
-    <meta property="og:description" content="Apendicitis: síntomas, por qué se inflama el apéndice y cómo es la cirugía por laparoscopía. Dr. Edgar Núñez García, cirujano general en CDMX.">
+    <meta property="og:title" content="Cirugía de apendicitis en CDMX | Dr. Edgar Núñez">
+    <meta property="og:description" content="Dolor en el lado derecho del abdomen bajo: cuándo es apendicitis. Cirugía por laparoscopía en CDMX con cirujano general certificado.">
     <meta property="og:url" content="https://dredgarnunez.com/cirugia-apendicitis-cdmx/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cirugía de apendicitis en CDMX | Dr. Edgar Núñez">
+    <meta name="twitter:description" content="Dolor en el lado derecho del abdomen bajo: cuándo es apendicitis. Cirugía por laparoscopía en CDMX con cirujano general certificado.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/pages.css?v=26">
-    <link rel="stylesheet" href="/css/cirugia.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/pages.css?v=28">
+    <link rel="stylesheet" href="/css/cirugia.css?v=27">
 
     <!-- JSON-LD: MedicalWebPage -->
     <script type="application/ld+json">
@@ -36,22 +59,36 @@
       "author": {
         "@type": "Physician",
         "name": "Dr. Edgar Abraham Núñez García",
-        "url": "https://dredgarnunez.com/sobre-mi/"
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
       },
       "reviewedBy": {
         "@type": "Physician",
         "name": "Dr. Edgar Abraham Núñez García",
-        "url": "https://dredgarnunez.com/sobre-mi/"
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
       },
       "about": {
         "@type": "MedicalCondition",
         "name": "Apendicitis aguda",
         "alternateName": "Inflamación del apéndice",
         "signOrSymptom": [
-          {"@type": "MedicalSignOrSymptom", "name": "Dolor en la parte baja derecha del abdomen"},
-          {"@type": "MedicalSignOrSymptom", "name": "Náusea y vómito"},
-          {"@type": "MedicalSignOrSymptom", "name": "Falta de apetito"},
-          {"@type": "MedicalSignOrSymptom", "name": "Fiebre"}
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Dolor en la parte baja derecha del abdomen"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Náusea y vómito"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Falta de apetito"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Fiebre"
+          }
         ],
         "possibleTreatment": {
           "@type": "MedicalProcedure",
@@ -86,22 +123,84 @@
       "url": "https://dredgarnunez.com/",
       "image": "https://dredgarnunez.com/img/doctor-portrait.jpg",
       "medicalSpecialty": [
-        {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Gastrointestinal"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Laparoscópica y de Mínima Invasión"}
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Gastrointestinal"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Laparoscópica y de Mínima Invasión"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
         "addressLocality": "Ciudad de México",
+        "addressRegion": "Ciudad de México",
         "postalCode": "06720",
         "addressCountry": "MX"
       },
       "alumniOf": [
-        {"@type": "EducationalOrganization", "name": "Universidad La Salle"},
-        {"@type": "EducationalOrganization", "name": "Centro Médico ABC / UNAM"}
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad La Salle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Médico ABC / UNAM"
+        }
       ],
-      "memberOf": {"@type": "MedicalOrganization", "name": "Consejo Mexicano de Cirugía General"}
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Consejo Mexicano de Cirugía General"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4233434,
+        "longitude": -99.1536367
+      },
+      "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "11:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "16:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Metropolitana del Valle de México"
+        }
+      ],
+      "@id": "https://dredgarnunez.com/#cirujano"
     }
     </script>
 
@@ -200,7 +299,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -241,7 +340,7 @@
     <!-- PAGE HERO -->
     <section class="page-hero page-hero-photo">
         <div class="page-hero-image">
-            <img src="/img/heroes/servicios-hero.svg" alt="">
+            <img src="/img/heroes/servicios-hero.svg" alt="" width="900" height="520" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="page-hero-content">
@@ -311,7 +410,7 @@
             </div>
             <div class="problem-content">
                 <h3>El dolor se mueve</h3>
-                <p>La señal más característica de la apendicitis no es dónde duele, es cómo se mueve el dolor. Empieza vago, alrededor del ombligo o en la boca del estómago, difícil de señalar con un dedo. Con las horas se va corriendo hacia la parte baja derecha del abdomen y ahí se queda, ya bien localizado. Cuando llega a ese punto, normalmente duele al moverse, al toser o al caminar.</p>
+                <p>La señal más característica de la apendicitis no es dónde duele, es cómo se mueve el dolor. Empieza vago, alrededor del ombligo o en la boca del estómago, difícil de señalar con un dedo.</p><p>Con las horas se va corriendo hacia el lado derecho del abdomen bajo y ahí se queda, ya bien localizado. Cuando llega a ese punto, normalmente duele al moverse, al toser o al caminar.</p>
                 <h3>Casi siempre viene acompañado</h3>
                 <p>Junto con el dolor suele aparecer falta de apetito, náusea y a veces vómito. La fiebre no siempre está desde el principio: muchas veces aparece después, y no es baja ni alta de manera predecible. Perder el hambre es un dato que en consulta pesa más de lo que la gente imagina.</p>
                 <h3>Lo que más importa: la evolución</h3>
@@ -330,7 +429,7 @@
             </div>
             <div class="problem-content">
                 <h3>Cómo se hace</h3>
-                <p>Se hacen incisiones pequeñas en el abdomen. Por una de ellas entra una cámara que proyecta el interior del abdomen a una pantalla, y por las otras entran los instrumentos con los que se trabaja. Se localiza el apéndice, se sella su base para que no salga contenido intestinal y se retira. Es una de las cirugías que más he realizado a lo largo de mi trayectoria.</p>
+                <p>Se hacen incisiones pequeñas en el abdomen. Por una de ellas entra una cámara que proyecta el interior del abdomen a una pantalla, y por las otras entran los instrumentos con los que se trabaja.</p><p>Se localiza el apéndice, se sella su base para que no salga contenido intestinal y se retira. Es una de las cirugías que más he realizado a lo largo de mi trayectoria.</p>
                 <h3>Por qué laparoscopía y no cirugía abierta</h3>
                 <p>Las incisiones pequeñas duelen menos, se infectan menos y permiten levantarse a caminar el mismo día. Hay además una ventaja diagnóstica: con la cámara se revisa el resto del abdomen. Si el problema resultó no ser el apéndice, se identifica en el mismo momento y se resuelve, en lugar de tener que volver a operar.</p>
                 <h3>Cuánto dura y cuánto tiempo de hospital</h3>
@@ -364,7 +463,7 @@
                 <h2 class="section-title">No todo dolor del lado derecho es apendicitis</h2>
             </div>
             <div class="problem-content">
-                <p>En esa misma zona dan síntomas los problemas de ovario y de trompa, los cálculos del riñón o del uréter, la infección urinaria, una hernia inguinal, la inflamación del intestino y hasta una gastroenteritis. He tenido pacientes que llegaron con sospecha de apendicitis, los valoré, los mantuve en observación y no había que operar. Se fueron a su casa sin cirugía.</p>
+                <p>En esa misma zona dan síntomas los problemas de ovario y de trompa, los cálculos del riñón o del uréter, la infección urinaria, una hernia inguinal, la inflamación del intestino y hasta una gastroenteritis.</p><p>He tenido pacientes que llegaron con sospecha de apendicitis, los valoré, los mantuve en observación y no había que operar. Se fueron a su casa sin cirugía.</p>
                 <p>Distinguir un cuadro del otro es exactamente el trabajo del cirujano, y se hace con exploración física, laboratorios y estudios de imagen, no con una sola prueba mágica. Mi maestro lo decía así: el mejor cirujano sabe cuándo no operar.</p>
                 <p style="text-align: center; margin-top: 28px;"><a href="https://wa.link/3rll01" class="btn-primary" target="_blank">Escríbeme por WhatsApp</a></p>
             </div>
@@ -376,7 +475,7 @@
         <div class="container">
             <div class="autor-medico">
                 <div class="autor-medico-foto">
-                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104">
+                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104" loading="lazy" decoding="async">
                 </div>
                 <div class="autor-medico-texto">
                     <h2 class="autor-medico-nombre">Dr. Edgar Abraham Núñez García</h2>
@@ -403,31 +502,31 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo saber si tengo apendicitis?</button>
-                    <div class="faq-answer"><p>El cuadro clásico empieza con un dolor vago alrededor del ombligo o en la boca del estómago, que en unas horas se va corriendo hacia la parte baja derecha del abdomen y ahí se queda. Suele acompañarse de falta de apetito, náusea y a veces fiebre. Lo que más orienta no es un solo síntoma, es que el dolor no cede y va aumentando con las horas. Aun así, no hay forma de confirmarlo en casa: el diagnóstico se hace con una exploración física y estudios. Si el dolor va en aumento, acude a urgencias.</p></div>
+                    <div class="faq-answer"><p>El cuadro clásico empieza con un dolor vago alrededor del ombligo o en la boca del estómago, que en unas horas se va corriendo hacia la parte baja derecha del abdomen y ahí se queda. Suele acompañarse de falta de apetito, náusea y a veces fiebre.</p><p>Lo que más orienta no es un solo síntoma, es que el dolor no cede y va aumentando con las horas. Aun así, no hay forma de confirmarlo en casa: el diagnóstico se hace con una exploración física y estudios. Si el dolor va en aumento, acude a urgencias.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Por qué se inflama el apéndice?</button>
-                    <div class="faq-answer"><p>El apéndice es un tubito cerrado por un extremo que sale del inicio del intestino grueso. Cuando su salida se tapa, casi siempre por materia fecal endurecida o por inflamación de su propio tejido, adentro se acumula moco y bacterias. La presión sube, deja de llegarle sangre bien y el apéndice se inflama y se infecta. Ese es el mecanismo. No lo provoca comer picante, ni tragar chicle, ni correr después de comer.</p></div>
+                    <div class="faq-answer"><p><strong>El apéndice es un tubito cerrado por un extremo que sale del inicio del intestino grueso.</strong> Cuando su salida se tapa, casi siempre por materia fecal endurecida o por inflamación de su propio tejido, adentro se acumula moco y bacterias.</p><p>La presión sube, deja de llegarle sangre bien y el apéndice se inflama y se infecta. Ese es el mecanismo. No lo provoca comer picante, ni tragar chicle, ni correr después de comer.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Todo dolor en la parte baja derecha del abdomen es apendicitis?</button>
-                    <div class="faq-answer"><p>No, y esta es una de las razones por las que vale la pena una valoración. En esa zona también dan síntomas los problemas de ovario y de trompa, los cálculos en el riñón o el uréter, la infección urinaria, una hernia inguinal, la inflamación del intestino y hasta un cuadro de gastroenteritis. He tenido pacientes que llegaron con sospecha de apendicitis y no lo era, y no se operaron. Distinguirlo es justamente el trabajo del cirujano.</p></div>
+                    <div class="faq-answer"><p><strong>No, y esta es una de las razones por las que vale la pena una valoración.</strong> En esa zona también dan síntomas los problemas de ovario y de trompa, los cálculos en el riñón o el uréter, la infección urinaria, una hernia inguinal, la inflamación del intestino y hasta un cuadro de gastroenteritis.</p><p>He tenido pacientes que llegaron con sospecha de apendicitis y no lo era, y no se operaron. Distinguirlo es justamente el trabajo del cirujano.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Se puede curar la apendicitis con antibiótico, sin operar?</button>
-                    <div class="faq-answer"><p>En casos seleccionados de apendicitis no complicada, el antibiótico puede resolver el episodio. El problema es que una parte importante de esos pacientes vuelve a presentar apendicitis después y termina operándose de todos modos, a veces en peores condiciones. Por eso el tratamiento estándar en la mayoría de los casos sigue siendo la cirugía. Si tu caso es de los que se pueden manejar con antibiótico, te lo digo y te explico los pros y los contras.</p></div>
+                    <div class="faq-answer"><p><strong>En casos seleccionados de apendicitis no complicada, el antibiótico puede resolver el episodio.</strong> El problema es que una parte importante de esos pacientes vuelve a presentar apendicitis después y termina operándose de todos modos, a veces en peores condiciones.</p><p>Por eso el tratamiento estándar en la mayoría de los casos sigue siendo la cirugía. Si tu caso es de los que se pueden manejar con antibiótico, te lo digo y te explico los pros y los contras.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo es la cirugía de apendicitis?</button>
-                    <div class="faq-answer"><p>Se llama apendicectomía y yo la hago por laparoscopía, con anestesia general. Se hacen incisiones pequeñas por las que se introducen una cámara y los instrumentos, se localiza el apéndice, se sella su base y se retira. Al mismo tiempo se revisa el resto del abdomen, que es una ventaja de la laparoscopía: si el problema resultó ser otro, se ve en el mismo acto quirúrgico.</p></div>
+                    <div class="faq-answer"><p><strong>Se llama apendicectomía y yo la hago por laparoscopía, con anestesia general.</strong> Se hacen incisiones pequeñas por las que se introducen una cámara y los instrumentos, se localiza el apéndice, se sella su base y se retira.</p><p>Al mismo tiempo se revisa el resto del abdomen, que es una ventaja de la laparoscopía: si el problema resultó ser otro, se ve en el mismo acto quirúrgico.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuánto dura la cirugía de apendicitis y cuánto tiempo me quedo en el hospital?</button>
-                    <div class="faq-answer"><p>La cirugía suele tomar entre 45 y 60 minutos cuando el apéndice no está complicado. La estancia en el hospital depende de en qué momento se operó: si el apéndice estaba solo inflamado, suele ser de uno o dos días. Si ya estaba perforado o había pus en el abdomen, la estancia es más larga y se requieren antibióticos por más tiempo. Esa diferencia es la razón principal para no esperar.</p></div>
+                    <div class="faq-answer"><p><strong>La cirugía suele tomar entre 45 y 60 minutos cuando el apéndice no está complicado.</strong> La estancia en el hospital depende de en qué momento se operó: si el apéndice estaba solo inflamado, suele ser de uno o dos días.</p><p>Si ya estaba perforado o había pus en el abdomen, la estancia es más larga y se requieren antibióticos por más tiempo. Esa diferencia es la razón principal para no esperar.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué pasa si dejo pasar la apendicitis?</button>
-                    <div class="faq-answer"><p>El apéndice inflamado y con la presión alta acaba perforándose. Cuando eso pasa, el contenido intestinal sale al abdomen y provoca una peritonitis, o se forma un absceso. Ahí el cuadro deja de ser una cirugía sencilla y se vuelve un problema serio: más tiempo de hospital, más antibióticos, más riesgo. El tiempo es el factor que más cambia el resultado.</p></div>
+                    <div class="faq-answer"><p><strong>El apéndice inflamado y con la presión alta acaba perforándose.</strong> Cuando eso pasa, el contenido intestinal sale al abdomen y provoca una peritonitis, o se forma un absceso.</p><p>Ahí el cuadro deja de ser una cirugía sencilla y se vuelve un problema serio: más tiempo de hospital, más antibióticos, más riesgo. El tiempo es el factor que más cambia el resultado.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo es la recuperación después de una apendicectomía?</button>
@@ -435,7 +534,7 @@
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Se puede vivir sin apéndice?</button>
-                    <div class="faq-answer"><p>Sí. El apéndice participa en el sistema inmune del intestino, pero no cumple una función que el cuerpo no pueda suplir. Vivir sin él no te obliga a cambiar la dieta ni a tomar ningún medicamento de por vida.</p></div>
+                    <div class="faq-answer"><p><strong>Sí.</strong> El apéndice participa en el sistema inmune del intestino, pero no cumple una función que el cuerpo no pueda suplir. Vivir sin él no te obliga a cambiar la dieta ni a tomar ningún medicamento de por vida.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuánto cuesta la cirugía de apendicitis?</button>

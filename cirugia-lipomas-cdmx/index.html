@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Cirugía para quitar lipomas en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Lipomas en cuello, espalda, brazos o abdomen. Qué son, por qué salen y cómo se quitan con un procedimiento ambulatorio. Dr. Edgar Núñez, cirujano en CDMX.">
+    <title>Cirugía para quitar lipomas en CDMX | Dr. Edgar Núñez</title>
+    <meta name="description" content="Lipomas en cuello, espalda, brazos o abdomen. Qué son, por qué salen y cómo se quitan en un procedimiento ambulatorio en CDMX.">
     <link rel="canonical" href="https://dredgarnunez.com/cirugia-lipomas-cdmx/">
-    <meta property="og:title" content="Cirugía para quitar lipomas en CDMX | Dr. Edgar Núñez García">
-    <meta property="og:description" content="Lipomas en cuello, espalda, brazos o abdomen. Qué son, por qué salen y cómo se quitan. Dr. Edgar Núñez García, cirujano general en CDMX.">
+    <meta property="og:title" content="Cirugía para quitar lipomas en CDMX | Dr. Edgar Núñez">
+    <meta property="og:description" content="Lipomas en cuello, espalda, brazos o abdomen. Qué son, por qué salen y cómo se quitan en un procedimiento ambulatorio en CDMX.">
     <meta property="og:url" content="https://dredgarnunez.com/cirugia-lipomas-cdmx/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cirugía para quitar lipomas en CDMX | Dr. Edgar Núñez">
+    <meta name="twitter:description" content="Lipomas en cuello, espalda, brazos o abdomen. Qué son, por qué salen y cómo se quitan en un procedimiento ambulatorio en CDMX.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/pages.css?v=26">
-    <link rel="stylesheet" href="/css/cirugia.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/pages.css?v=28">
+    <link rel="stylesheet" href="/css/cirugia.css?v=27">
 
     <!-- JSON-LD: MedicalWebPage -->
     <script type="application/ld+json">
@@ -36,21 +59,32 @@
       "author": {
         "@type": "Physician",
         "name": "Dr. Edgar Abraham Núñez García",
-        "url": "https://dredgarnunez.com/sobre-mi/"
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
       },
       "reviewedBy": {
         "@type": "Physician",
         "name": "Dr. Edgar Abraham Núñez García",
-        "url": "https://dredgarnunez.com/sobre-mi/"
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
       },
       "about": {
         "@type": "MedicalCondition",
         "name": "Lipoma",
         "alternateName": "Tumor benigno de grasa bajo la piel",
         "signOrSymptom": [
-          {"@type": "MedicalSignOrSymptom", "name": "Bolita blanda bajo la piel"},
-          {"@type": "MedicalSignOrSymptom", "name": "Bulto que se mueve al tocarlo"},
-          {"@type": "MedicalSignOrSymptom", "name": "Crecimiento lento y progresivo"}
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Bolita blanda bajo la piel"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Bulto que se mueve al tocarlo"
+          },
+          {
+            "@type": "MedicalSignOrSymptom",
+            "name": "Crecimiento lento y progresivo"
+          }
         ],
         "possibleTreatment": {
           "@type": "MedicalProcedure",
@@ -86,22 +120,84 @@
       "url": "https://dredgarnunez.com/",
       "image": "https://dredgarnunez.com/img/doctor-portrait.jpg",
       "medicalSpecialty": [
-        {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Gastrointestinal"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Laparoscópica y de Mínima Invasión"}
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Gastrointestinal"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Laparoscópica y de Mínima Invasión"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
         "addressLocality": "Ciudad de México",
+        "addressRegion": "Ciudad de México",
         "postalCode": "06720",
         "addressCountry": "MX"
       },
       "alumniOf": [
-        {"@type": "EducationalOrganization", "name": "Universidad La Salle"},
-        {"@type": "EducationalOrganization", "name": "Centro Médico ABC / UNAM"}
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad La Salle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Médico ABC / UNAM"
+        }
       ],
-      "memberOf": {"@type": "MedicalOrganization", "name": "Consejo Mexicano de Cirugía General"}
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Consejo Mexicano de Cirugía General"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4233434,
+        "longitude": -99.1536367
+      },
+      "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "11:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "16:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Metropolitana del Valle de México"
+        }
+      ],
+      "@id": "https://dredgarnunez.com/#cirujano"
     }
     </script>
 
@@ -172,7 +268,7 @@
           "name": "¿Cuánto dura la cirugía y cómo es la recuperación?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Un lipoma común toma entre 20 y 45 minutos y te vas a tu casa el mismo día. La molestia posterior es leve y se controla con analgésicos sencillos. Los puntos se retiran entre 7 y 14 días según la zona, y en general se puede volver al trabajo de escritorio al día siguiente. El ejercicio y cargar peso se retoman cuando la herida está bien cerrada."
+            "text": "Un lipoma común toma entre 20 y 45 minutos y te vas a tu casa el mismo día. La molestia posterior es leve y se controla con lo que te indico para los primeros días. Los puntos se retiran entre 7 y 14 días según la zona, y en general se puede volver al trabajo de escritorio al día siguiente. El ejercicio y cargar peso se retoman cuando la herida está bien cerrada."
           }
         },
         {
@@ -208,7 +304,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -249,7 +345,7 @@
     <!-- PAGE HERO -->
     <section class="page-hero page-hero-photo">
         <div class="page-hero-image">
-            <img src="/img/heroes/servicios-hero.svg" alt="">
+            <img src="/img/heroes/servicios-hero.svg" alt="" width="900" height="520" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="page-hero-content">
@@ -310,7 +406,7 @@
             </div>
             <div class="problem-content">
                 <h3>Hay un componente hereditario</h3>
-                <p>No existe una causa única demostrada. Lo que sí se observa con claridad es que se agrupan en familias: es común que un paciente cuente que su papá, su mamá o sus hermanos también tienen. Hay personas que desarrollan uno solo en toda su vida y personas que desarrollan varios, en distintas partes del cuerpo, a lo largo de los años.</p>
+                <p>No existe una causa única demostrada. Lo que sí se observa con claridad es que se agrupan en familias: es común que un paciente cuente que su papá, su mamá o sus hermanos también tienen.</p><p>Hay personas que desarrollan uno solo en toda su vida y personas que desarrollan varios, en distintas partes del cuerpo, a lo largo de los años.</p>
                 <h3>Lo que no los causa</h3>
                 <p>No los provoca comer grasa ni tener sobrepeso. Tampoco son consecuencia de un golpe, aunque es frecuente que la persona los note por primera vez justo después de golpearse esa zona, simplemente porque se puso a tocarla. Y no son contagiosos.</p>
                 <h3>Crecen despacio, pero crecen</h3>
@@ -361,7 +457,7 @@
         <div class="container">
             <div class="autor-medico">
                 <div class="autor-medico-foto">
-                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104">
+                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104" loading="lazy" decoding="async">
                 </div>
                 <div class="autor-medico-texto">
                     <h2 class="autor-medico-nombre">Dr. Edgar Abraham Núñez García</h2>
@@ -388,47 +484,47 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">¿Qué es un lipoma?</button>
-                    <div class="faq-answer"><p>Es un tumor benigno formado por células de grasa que crece entre la piel y el músculo, envuelto en una cápsula delgada. Se siente como una bolita blanda que se mueve cuando la empujas con el dedo y que normalmente no duele. La palabra tumor asusta, pero aquí solo significa bulto: la enorme mayoría de los lipomas son benignos y no se vuelven cáncer.</p></div>
+                    <div class="faq-answer"><p><strong>Es un tumor benigno formado por células de grasa que crece entre la piel y el músculo, envuelto en una cápsula delgada.</strong> Se siente como una bolita blanda que se mueve cuando la empujas con el dedo y que normalmente no duele.</p><p>La palabra tumor asusta, pero aquí solo significa bulto: la enorme mayoría de los lipomas son benignos y no se vuelven cáncer.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Por qué salen los lipomas?</button>
-                    <div class="faq-answer"><p>No hay una causa única identificada. Lo que sí está bien documentado es que hay un componente hereditario: es común que en una misma familia varias personas tengan lipomas, y algunas personas desarrollan varios a lo largo de la vida. No los provoca comer grasa, ni el sobrepeso por sí solo, ni un golpe, aunque a veces un golpe es lo que hace que la persona note uno que ya estaba ahí.</p></div>
+                    <div class="faq-answer"><p><strong>No hay una causa única identificada.</strong> Lo que sí está bien documentado es que hay un componente hereditario: es común que en una misma familia varias personas tengan lipomas, y algunas personas desarrollan varios a lo largo de la vida.</p><p>No los provoca comer grasa, ni el sobrepeso por sí solo, ni un golpe, aunque a veces un golpe es lo que hace que la persona note uno que ya estaba ahí.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo se quita un lipoma?</button>
-                    <div class="faq-answer"><p>Con una cirugía menor. En la mayoría de los casos se hace con anestesia local y de forma ambulatoria: se duerme la zona, se hace una incisión sobre el lipoma, se libera de los tejidos de alrededor y se retira completo, con su cápsula. Después se cierra la piel con puntos. Retirar la cápsula completa es importante, porque es lo que evita que vuelva a salir en el mismo sitio.</p></div>
+                    <div class="faq-answer"><p><strong>Con una cirugía menor.</strong> En la mayoría de los casos se hace con anestesia local y de forma ambulatoria: se duerme la zona, se hace una incisión sobre el lipoma, se libera de los tejidos de alrededor y se retira completo, con su cápsula.</p><p>Después se cierra la piel con puntos. Retirar la cápsula completa es importante, porque es lo que evita que vuelva a salir en el mismo sitio.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Se puede quitar un lipoma sin cirugía, con cremas o inyecciones?</button>
-                    <div class="faq-answer"><p>No hay crema ni pomada que disuelva un lipoma: la grasa está encapsulada bajo la piel y nada aplicado por fuera llega ahí. Existen técnicas de inyección y de liposucción que reducen el volumen, pero como no retiran la cápsula, el lipoma tiende a volver a crecer y además no queda tejido íntegro para analizarlo. Por eso la extirpación completa sigue siendo el tratamiento de elección.</p></div>
+                    <div class="faq-answer"><p><strong>No hay crema ni pomada que disuelva un lipoma:</strong> la grasa está encapsulada bajo la piel y nada aplicado por fuera llega ahí.</p><p>Existen técnicas de inyección y de liposucción que reducen el volumen, pero como no retiran la cápsula, el lipoma tiende a volver a crecer y además no queda tejido íntegro para analizarlo. Por eso la extirpación completa sigue siendo el tratamiento de elección.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Es peligroso dejarse un lipoma?</button>
-                    <div class="faq-answer"><p>Un lipoma confirmado, pequeño y que no molesta se puede dejar en paz y vigilar. No todos hay que quitarlos. Lo que sí conviene revisar es cualquier bulto que crezca rápido, que se ponga duro o fijo, que duela o que mida más de 5 centímetros, porque esas características obligan a descartar que se trate de otra cosa.</p></div>
+                    <div class="faq-answer"><p><strong>Un lipoma confirmado, pequeño y que no molesta se puede dejar en paz y vigilar.</strong> No todos hay que quitarlos. Lo que sí conviene revisar es cualquier bulto que crezca rápido, que se ponga duro o fijo, que duela o que mida más de 5 centímetros, porque esas características obligan a descartar que se trate de otra cosa.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Toda bolita bajo la piel es un lipoma?</button>
-                    <div class="faq-answer"><p>No. En esa misma zona pueden aparecer quistes sebáceos, ganglios inflamados, hernias de la pared abdominal y, con poca frecuencia pero es lo importante de descartar, tumores malignos de tejidos blandos. Por eso la valoración empieza por explorar el bulto y, cuando hace falta, pedir un ultrasonido. Y por eso lo que se retira siempre se manda a patología.</p></div>
+                    <div class="faq-answer"><p><strong>No.</strong> En esa misma zona pueden aparecer quistes sebáceos, ganglios inflamados, hernias de la pared abdominal y, con poca frecuencia pero es lo importante de descartar, tumores malignos de tejidos blandos. Por eso la valoración empieza por explorar el bulto y, cuando hace falta, pedir un ultrasonido. Y por eso lo que se retira siempre se manda a patología.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿La cirugía de lipoma deja cicatriz?</button>
-                    <div class="faq-answer"><p>Sí, cualquier incisión deja cicatriz. Lo que se puede controlar es su tamaño y su orientación: la incisión se planea del largo mínimo necesario y siguiendo las líneas naturales de la piel, para que quede lo más discreta posible. En zonas visibles como el cuello o la cara eso se cuida especialmente. Te explico dónde quedaría la cicatriz antes de operar.</p></div>
+                    <div class="faq-answer"><p><strong>Sí, cualquier incisión deja cicatriz.</strong> Lo que se puede controlar es su tamaño y su orientación: la incisión se planea del largo mínimo necesario y siguiendo las líneas naturales de la piel, para que quede lo más discreta posible.</p><p>En zonas visibles como el cuello o la cara eso se cuida especialmente. Te explico dónde quedaría la cicatriz antes de operar.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuánto dura la cirugía y cómo es la recuperación?</button>
-                    <div class="faq-answer"><p>Un lipoma común toma entre 20 y 45 minutos y te vas a tu casa el mismo día. La molestia posterior es leve y se controla con analgésicos sencillos. Los puntos se retiran entre 7 y 14 días según la zona, y en general se puede volver al trabajo de escritorio al día siguiente. El ejercicio y cargar peso se retoman cuando la herida está bien cerrada.</p></div>
+                    <div class="faq-answer"><p><strong>Un lipoma común toma entre 20 y 45 minutos y te vas a tu casa el mismo día.</strong> La molestia posterior es leve y se controla con lo que te indico para los primeros días.</p><p>Los puntos se retiran entre 7 y 14 días según la zona, y en general se puede volver al trabajo de escritorio al día siguiente. El ejercicio y cargar peso se retoman cuando la herida está bien cerrada.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué médico quita los lipomas?</button>
-                    <div class="faq-answer"><p>El cirujano general. Es un procedimiento que forma parte de la cirugía de piel y tejidos blandos, que es terreno de la especialidad. Cuando la lesión está en una zona que conviene manejar con otro especialista, te lo digo y te oriento hacia quien corresponda.</p></div>
+                    <div class="faq-answer"><p><strong>El cirujano general.</strong> Es un procedimiento que forma parte de la cirugía de piel y tejidos blandos, que es terreno de la especialidad. Cuando la lesión está en una zona que conviene manejar con otro especialista, te lo digo y te oriento hacia quien corresponda.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Los lipomas vuelven a salir después de operados?</button>
-                    <div class="faq-answer"><p>En el mismo sitio es poco frecuente, siempre que se haya retirado completo con su cápsula. Lo que sí puede pasar, sobre todo en personas con tendencia familiar a tenerlos, es que aparezcan lipomas nuevos en otras partes del cuerpo. Eso no significa que el anterior haya regresado.</p></div>
+                    <div class="faq-answer"><p><strong>En el mismo sitio es poco frecuente, siempre que se haya retirado completo con su cápsula.</strong> Lo que sí puede pasar, sobre todo en personas con tendencia familiar a tenerlos, es que aparezcan lipomas nuevos en otras partes del cuerpo. Eso no significa que el anterior haya regresado.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuánto cuesta quitarse un lipoma?</button>
-                    <div class="faq-answer"><p>Depende del tamaño del lipoma, de en qué parte del cuerpo está, de si son uno o varios y de si se puede hacer con anestesia local o requiere sedación. Por eso no manejo un precio único: en la valoración te reviso y te doy un presupuesto claro y cerrado, que incluye el estudio de patología. Escríbeme por WhatsApp y platicamos tu caso.</p></div>
+                    <div class="faq-answer"><p>Depende del tamaño del lipoma, de en qué parte del cuerpo está, de si son uno o varios y de si se puede hacer con anestesia local o requiere sedación.</p><p>Por eso no manejo un precio único: en la valoración te reviso y te doy un presupuesto claro y cerrado, que incluye el estudio de patología. Escríbeme por WhatsApp y platicamos tu caso.</p></div>
                 </div>
             </div>
         </div>

@@ -3,20 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Dr. Edgar Núñez García | Cirujano General en CDMX</title>
-    <meta name="description" content="Cirujano general certificado en CDMX. Especialista en hernias, vesícula, reflujo y cirugía laparoscópica. Más de 2,000 cirugías exitosas. Agenda tu valoración.">
+    <title>Cirujano General en CDMX | Dr. Edgar Núñez García</title>
+    <meta name="description" content="Cirujano general certificado en CDMX. Hernias, vesícula, reflujo y cirugía laparoscópica. Más de 2,000 cirugías. Agenda tu valoración.">
     <link rel="canonical" href="https://dredgarnunez.com/">
-    <meta property="og:title" content="Dr. Edgar Núñez García | Cirugía General y Laparoscópica en CDMX">
-    <meta property="og:description" content="Cirujano general certificado. Hernias, vesícula, reflujo. +2,000 cirugías. Centro Quirúrgico Servicura, CDMX.">
+    <meta property="og:title" content="Cirujano General en CDMX | Dr. Edgar Núñez García">
+    <meta property="og:description" content="Cirujano general certificado en CDMX. Hernias, vesícula, reflujo y cirugía laparoscópica. Más de 2,000 cirugías. Agenda tu valoración.">
     <meta property="og:url" content="https://dredgarnunez.com/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cirujano General en CDMX | Dr. Edgar Núñez García">
+    <meta name="twitter:description" content="Cirujano general certificado en CDMX. Hernias, vesícula, reflujo y cirugía laparoscópica. Más de 2,000 cirugías. Agenda tu valoración.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
+    <link rel="stylesheet" href="/css/global.css?v=29">
     <link rel="stylesheet" href="/css/home.css?v=25">
 
     <script type="application/ld+json">
@@ -27,22 +50,84 @@
       "url": "https://dredgarnunez.com/",
       "image": "https://dredgarnunez.com/img/doctor-hero.jpg",
       "medicalSpecialty": [
-        {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Gastrointestinal"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Laparoscópica y de Mínima Invasión"}
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Gastrointestinal"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Laparoscópica y de Mínima Invasión"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
         "addressLocality": "Ciudad de México",
+        "addressRegion": "Ciudad de México",
         "postalCode": "06720",
         "addressCountry": "MX"
       },
       "alumniOf": [
-        {"@type": "EducationalOrganization", "name": "Universidad La Salle"},
-        {"@type": "EducationalOrganization", "name": "Centro Médico ABC / UNAM"}
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad La Salle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Médico ABC / UNAM"
+        }
       ],
-      "memberOf": {"@type": "MedicalOrganization", "name": "Consejo Mexicano de Cirugía General"}
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Consejo Mexicano de Cirugía General"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4233434,
+        "longitude": -99.1536367
+      },
+      "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "11:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "16:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Metropolitana del Valle de México"
+        }
+      ],
+      "@id": "https://dredgarnunez.com/#cirujano"
     }
     </script>
 </head>
@@ -52,7 +137,7 @@
     <nav class="nav">
         <div class="container">
             <a href="/" class="nav-logo">
-                <img src="/img/logo.png" alt="Dr. Edgar Núñez García">
+                <img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async">
             </a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
@@ -96,7 +181,7 @@
     <!-- HERO -->
     <section class="home-hero">
         <div class="home-hero-photo">
-            <img src="/img/hero-cirugia.jpg" alt="Dr. Edgar Núñez García operando en cirugía laparoscópica" width="1335" height="2000">
+            <img src="/img/hero-cirugia.jpg" alt="Dr. Edgar Núñez García operando en cirugía laparoscópica" width="1335" height="2000" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="home-hero-content">
@@ -186,7 +271,7 @@
     <!-- ACERCA DE MÍ -->
     <section class="about-section">
         <div class="about-photo">
-            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800">
+            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
         </div>
         <div class="container">
             <div class="about-content">

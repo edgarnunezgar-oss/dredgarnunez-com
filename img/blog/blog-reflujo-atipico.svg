@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="676" cy="92" r="74" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="108" cy="372" r="94" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="150" cy="112" r="18" fill="#2E6B9C" opacity="0.14"/>
+  <circle cx="716" cy="330" r="13" fill="#2A8A7E" opacity="0.16"/>
+
+  <!-- busto de perfil, mirando a la izquierda -->
+  <path d="M470 400
+           L470 372
+           C470 350 456 336 434 330
+           L378 314
+           C366 310 360 302 360 292
+           L360 268
+           C392 254 414 222 414 184
+           C414 132 376 92 328 92
+           C286 92 254 120 246 160
+           L230 194
+           C226 202 230 208 238 210
+           L250 212
+           L250 240
+           C250 252 258 258 270 258
+           L282 258
+           L282 292
+           C282 302 276 310 264 314
+           L208 330
+           C186 336 172 350 172 372
+           L172 400 Z"
+        fill="#FFFFFF"/>
+
+  <!-- ojo -->
+  <circle cx="286" cy="176" r="8" fill="#1B3D5C"/>
+  <!-- boca abierta por la tos -->
+  <path d="M250 232 C262 240 276 240 288 234" stroke="#1B3D5C" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- tos saliendo de la boca -->
+  <path d="M214 214 C190 206 168 208 148 218" stroke="#2A8A7E" stroke-width="9" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M212 240 C186 242 164 252 146 266" stroke="#2A8A7E" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.55"/>
+  <path d="M220 188 C198 174 174 168 152 170" stroke="#2A8A7E" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.45"/>
+
+  <!-- esofago -->
+  <path d="M330 268 L330 400" stroke="#2E6B9C" stroke-width="30" stroke-linecap="round" fill="none" opacity="0.16"/>
+
+  <!-- acido que sube hacia la garganta -->
+  <path d="M330 400 L330 296" stroke="#C69C6D" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M330 264 L312 300 L348 300 Z" fill="#C69C6D"/>
+
+  <!-- laringe irritada -->
+  <circle cx="322" cy="262" r="30" fill="#C69C6D" opacity="0.20"/>
+  <circle cx="322" cy="262" r="14" fill="#C69C6D" opacity="0.42"/>
+
+  <!-- pulmones esquematicos -->
+  <g opacity="0.45">
+    <path d="M600 220 C566 220 548 252 548 292 C548 330 566 350 592 350 C610 350 618 336 620 316 L624 254 Z" fill="#2E6B9C" opacity="0.4"/>
+    <path d="M650 220 C684 220 702 252 702 292 C702 330 684 350 658 350 C640 350 632 336 630 316 L626 254 Z" fill="#2E6B9C" opacity="0.4"/>
+    <path d="M625 186 L625 254" stroke="#2E6B9C" stroke-width="14" stroke-linecap="round"/>
+    <path d="M625 196 L601 224 M625 196 L649 224" stroke="#2E6B9C" stroke-width="10" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

@@ -3,32 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>¿Qué es una hernia inguinal y cuándo necesitas cirugía? | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Aprende a identificar los síntomas de una hernia inguinal, por qué se forma y cuándo es momento de operarte. Guía completa del Dr. Edgar Núñez García.">
+    <title>¿Qué es una hernia inguinal y cuándo se opera?</title>
+    <meta name="description" content="Cómo identificar los síntomas de una hernia inguinal, por qué se forma, por qué duele la ingle y cuándo es momento de operarse.">
     <link rel="canonical" href="https://dredgarnunez.com/blog/que-es-hernia-inguinal/">
-    <meta property="og:title" content="¿Qué es una hernia inguinal y cuándo necesitas cirugía?">
-    <meta property="og:description" content="Aprende a identificar los síntomas de una hernia inguinal, por qué se forma y cuándo es momento de operarte.">
+    <meta property="og:title" content="¿Qué es una hernia inguinal y cuándo se opera?">
+    <meta property="og:description" content="Cómo identificar los síntomas de una hernia inguinal, por qué se forma, por qué duele la ingle y cuándo es momento de operarse.">
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://dredgarnunez.com/img/blog/og-blog-hernia.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="¿Qué es una hernia inguinal y cuándo se opera?">
+    <meta name="twitter:description" content="Cómo identificar los síntomas de una hernia inguinal, por qué se forma, por qué duele la ingle y cuándo es momento de operarse.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/blog/og-blog-hernia.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/pages.css?v=26">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/pages.css?v=28">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "¿Qué es una hernia inguinal y cuándo necesitas cirugía?",
-      "author": {"@type": "Physician", "name": "Dr. Edgar Abraham Núñez García"},
+      "author": {
+        "@type": "Physician",
+        "name": "Dr. Edgar Abraham Núñez García",
+        "@id": "https://dredgarnunez.com/#cirujano"
+      },
       "datePublished": "2026-04-10",
       "url": "https://dredgarnunez.com/blog/que-es-hernia-inguinal/"
+    }
+    </script>
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://dredgarnunez.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://dredgarnunez.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Hernia Inguinal",
+          "item": "https://dredgarnunez.com/blog/que-es-hernia-inguinal/"
+        }
+      ]
     }
     </script>
 </head>
@@ -37,7 +88,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -90,7 +141,7 @@
 
     <!-- ARTICLE -->
     <article class="blog-post-content">
-        <div class="post-illustration"><img src="/img/blog/blog-hernia.svg" alt="Ilustración de una persona con una bolita en la ingle por hernia inguinal"></div>
+        <div class="post-illustration"><img src="/img/blog/blog-hernia.svg" alt="Ilustración de una persona con una bolita en la ingle por hernia inguinal" width="800" height="450" loading="lazy" decoding="async"></div>
         <p>Una hernia inguinal es uno de los problemas quirúrgicos más frecuentes. Se estima que alrededor del 27% de los hombres y el 3% de las mujeres desarrollarán una hernia inguinal en algún momento de su vida. A pesar de su frecuencia, muchos pacientes tienen dudas sobre qué es exactamente, cómo se forma y cuándo es necesario operarse.</p>
 
         <h2>¿Qué es una hernia inguinal?</h2>
@@ -127,7 +178,7 @@
         </ul>
 
         <h2>¿Qué pasa si no me opero?</h2>
-        <p>Una hernia inguinal no se resuelve sola y tiende a crecer con el tiempo. El principal riesgo de no operarse es la complicación: una hernia que se encarcela (el contenido queda atrapado y no se puede reducir) o se estrangula (se compromete el flujo sanguíneo). En estos casos, la cirugía pasa de ser electiva a urgente, con mayores riesgos y costos.</p>
+        <p>Una hernia inguinal no se resuelve sola y tiende a crecer con el tiempo. El principal riesgo de no operarse es la complicación: una hernia que se encarcela (el contenido queda atrapado y no se puede reducir) o se estrangula (se compromete el flujo sanguíneo).</p><p>En estos casos, la cirugía pasa de ser electiva a urgente, con mayores riesgos y costos.</p>
 
         <h2>Opciones quirúrgicas</h2>
         <p>Existen dos técnicas principales para reparar una hernia inguinal:</p>
@@ -142,6 +193,23 @@
             <p style="margin: 16px 0 0;"><a href="/cirugia-hernia-inguinal-cdmx/" style="color: #2A8A7E; font-weight: 600;">Conoce más sobre la cirugía de hernia inguinal →</a></p>
         </div>
     </article>
+
+
+    <!-- RELACIONADOS -->
+    <section class="section">
+        <div class="container">
+            <div class="servicios-cierre">
+                <h2>Otros padecimientos que atiendo</h2>
+                <p>Si quieres ver el procedimiento completo o leer sobre otro padecimiento, empieza por aquí.</p>
+                <div class="cierre-links">
+                    <a href="/cirugia-hernia-inguinal-cdmx/">Cirugía de hernia inguinal</a>
+                    <a href="/cirugia-hernia-umbilical-cdmx/">Hernia umbilical</a>
+                    <a href="/preguntas-frecuentes/">Preguntas frecuentes</a>
+                    <a href="/otros-servicios/">Ver todos los servicios</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- CTA FINAL -->
     <section class="cta-final">

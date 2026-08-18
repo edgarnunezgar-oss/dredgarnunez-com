@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Sobre Mí | Dr. Edgar Núñez García, Cirujano General en CDMX</title>
-    <meta name="description" content="Cirujano general con especialidad en cirugía gastrointestinal. Más de 2,000 cirugías, formación en Centro Médico ABC y UNAM, certificado por el Consejo Mexicano de Cirugía General. Opero en CDMX con precios transparentes y seguimiento incluido.">
+    <title>Sobre mí | Dr. Edgar Núñez García, cirujano en CDMX</title>
+    <meta name="description" content="Cirujano general con especialidad en cirugía gastrointestinal. Más de 2,000 cirugías, formación en Centro Médico ABC y UNAM. Opero en CDMX.">
     <link rel="canonical" href="https://dredgarnunez.com/sobre-mi/">
-    <meta property="og:title" content="Dr. Edgar Núñez García, Cirujano General Certificado en CDMX">
-    <meta property="og:description" content="Cirujano gastrointestinal en CDMX. Método, explicación clara y seguimiento incluido. +2,000 cirugías.">
+    <meta property="og:title" content="Sobre mí | Dr. Edgar Núñez García, cirujano en CDMX">
+    <meta property="og:description" content="Cirujano general con especialidad en cirugía gastrointestinal. Más de 2,000 cirugías, formación en Centro Médico ABC y UNAM. Opero en CDMX.">
     <meta property="og:url" content="https://dredgarnunez.com/sobre-mi/">
     <meta property="og:type" content="profile">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sobre mí | Dr. Edgar Núñez García, cirujano en CDMX">
+    <meta name="twitter:description" content="Cirujano general con especialidad en cirugía gastrointestinal. Más de 2,000 cirugías, formación en Centro Médico ABC y UNAM. Opero en CDMX.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/pages.css?v=26">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/pages.css?v=28">
 
     <script type="application/ld+json">
     {
@@ -28,9 +51,18 @@
       "image": "https://dredgarnunez.com/img/doctor-hero.jpg",
       "description": "Cirujano general con especialidad en cirugía gastrointestinal y de mínima invasión en CDMX. Más de 2,000 cirugías. Formado en Centro Médico ABC y UNAM, y en Universidad La Salle. Certificado por el Consejo Mexicano de Cirugía General.",
       "medicalSpecialty": [
-        {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Gastrointestinal"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Laparoscópica y de Mínima Invasión"}
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Gastrointestinal"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Laparoscópica y de Mínima Invasión"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
@@ -41,20 +73,108 @@
         "addressCountry": "MX"
       },
       "alumniOf": [
-        {"@type": "EducationalOrganization", "name": "Universidad La Salle"},
-        {"@type": "EducationalOrganization", "name": "Centro Médico ABC / UNAM"}
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad La Salle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Médico ABC / UNAM"
+        }
       ],
       "memberOf": {
         "@type": "MedicalOrganization",
         "name": "Consejo Mexicano de Cirugía General"
       },
       "hospitalAffiliation": [
-        {"@type": "Hospital", "name": "Centro Quirúrgico Servicura"},
-        {"@type": "Hospital", "name": "Hospitales Ángeles"},
-        {"@type": "Hospital", "name": "Hospital San Ángel Inn"},
-        {"@type": "Hospital", "name": "Hospital Punta Médica"},
-        {"@type": "Hospital", "name": "Star Médica"},
-        {"@type": "Hospital", "name": "Grupo MAC"}
+        {
+          "@type": "Hospital",
+          "name": "Centro Quirúrgico Servicura"
+        },
+        {
+          "@type": "Hospital",
+          "name": "Hospitales Ángeles"
+        },
+        {
+          "@type": "Hospital",
+          "name": "Hospital San Ángel Inn"
+        },
+        {
+          "@type": "Hospital",
+          "name": "Hospital Punta Médica"
+        },
+        {
+          "@type": "Hospital",
+          "name": "Star Médica"
+        },
+        {
+          "@type": "Hospital",
+          "name": "Grupo MAC"
+        }
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4233434,
+        "longitude": -99.1536367
+      },
+      "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "11:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "16:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Metropolitana del Valle de México"
+        }
+      ],
+      "@id": "https://dredgarnunez.com/#cirujano"
+    }
+    </script>
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://dredgarnunez.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sobre mí",
+          "item": "https://dredgarnunez.com/sobre-mi/"
+        }
       ]
     }
     </script>
@@ -64,7 +184,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -106,6 +226,9 @@
     <section class="page-hero page-hero-brand">
         <div class="container">
             <div class="page-hero-content">
+                <div class="breadcrumb">
+                    <a href="/">Inicio</a> <span>&rsaquo;</span> Sobre mí
+                </div>
                 <p class="page-hero-eyebrow">Cirujano General Certificado</p>
                 <h1>Dr. Edgar Núñez García</h1>
                 <p>Cirugía General y Gastrointestinal. Cirugía Laparoscópica y de Mínima Invasión. Experto en hernias inguinales, umbilicales y de pared abdominal.</p>
@@ -118,7 +241,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="/img/doctor-hero.jpg" alt="Dr. Edgar Núñez García, Cirujano General" loading="lazy">
+                    <img src="/img/doctor-hero.jpg" alt="Dr. Edgar Núñez García, Cirujano General" width="1201" height="1800" decoding="async" fetchpriority="high">
                 </div>
                 <div class="about-content">
                     <h2>Mi enfoque</h2>
@@ -127,7 +250,7 @@
                     <p>Mi convicción, después de más de una década operando, es simple: la cirugía bien hecha es el único tratamiento verdaderamente resolutivo para muchas enfermedades. Y la única forma de hacerla bien es entender la enfermedad a fondo, explicártela con honestidad y ejecutarla con método.</p>
                     <p>Mi consulta funciona más como una consultoría que como una cadena de órdenes. Yo pongo el conocimiento y la experiencia. La decisión sobre tu cuerpo es tuya. Me tienes de aliado, no de superior. No creo en la medicina de recetar sin explicar.</p>
                     <p>Por eso mi consulta siempre sigue el mismo orden. La cirugía, los mismos pasos. El seguimiento postoperatorio no es un servicio extra, está incluido en todos mis paquetes, porque un paciente bien informado y bien acompañado se recupera mejor.</p>
-                    <p>No opero a nadie que no necesite cirugía. Si tu caso se resuelve mejor con otro tratamiento o con otro especialista, te lo digo con toda honestidad y te oriento hacia la mejor alternativa. Cuando la cirugía sí es necesaria, me aseguro de que sepas exactamente qué tienes, qué vamos a hacer, cuánto cuesta y qué esperar en la recuperación, antes de que firmes nada.</p>
+                    <p>No opero a nadie que no necesite cirugía. Si tu caso se resuelve mejor con otro tratamiento o con otro especialista, te lo digo con toda honestidad y te oriento hacia la mejor alternativa.</p><p>Cuando la cirugía sí es necesaria, me aseguro de que sepas exactamente qué tienes, qué vamos a hacer, cuánto cuesta y qué esperar en la recuperación, antes de que firmes nada.</p>
 
                     <!-- FORMACIÓN -->
                     <h2 style="margin-top: 48px;">Formación Académica</h2>
@@ -255,7 +378,7 @@
                 <h2 class="section-title">Más allá del quirófano</h2>
             </div>
             <div style="font-size: 17px; line-height: 1.8; color: var(--color-text-light);">
-                <p style="margin-bottom: 20px;">Además de mi práctica quirúrgica, soy profesor de medicina y acompaño a estudiantes en su formación clínica. Fundé el área médica y fui Director Médico de Sofía Salud, la primera aseguradora de salud 100% digital en México, proyecto que me dio una perspectiva amplia sobre cómo construir sistemas de atención médica que combinen calidad clínica con accesibilidad real. Actualmente dirijo Calino, una empresa enfocada en dictaminación de siniestros médicos a través de tecnología.</p>
+                <p style="margin-bottom: 20px;">Además de mi práctica quirúrgica, soy profesor de medicina y acompaño a estudiantes en su formación clínica. Fundé el área médica y fui Director Médico de Sofía Salud, la primera aseguradora de salud 100% digital en México, proyecto que me dio una perspectiva amplia sobre cómo construir sistemas de atención médica que combinen calidad clínica con accesibilidad real.</p><p>Actualmente dirijo Calino, una empresa enfocada en dictaminación de siniestros médicos a través de tecnología.</p>
                 <p>La convicción de que la atención médica de calidad no tiene que ser inaccesible guía la forma en que estructuro mis paquetes quirúrgicos.</p>
             </div>
         </div>

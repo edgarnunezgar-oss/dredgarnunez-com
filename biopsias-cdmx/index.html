@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
     <title>Biopsias en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Qué es una biopsia, por qué se pide, cómo se toma y cuánto tarda el resultado. Biopsias de piel, ganglio y tejidos blandos con el Dr. Edgar Núñez García, CDMX.">
+    <meta name="description" content="Qué es una biopsia, por qué se pide, cómo se toma y cuánto tarda el resultado. Biopsias de piel, ganglio y tejidos blandos en CDMX.">
     <link rel="canonical" href="https://dredgarnunez.com/biopsias-cdmx/">
-    <meta property="og:title" content="Biopsias en CDMX: cuándo se necesitan | Dr. Edgar Núñez García">
-    <meta property="og:description" content="Qué es una biopsia, por qué se pide, cómo se toma y cuánto tarda el resultado. Dr. Edgar Núñez García, cirujano general en CDMX.">
+    <meta property="og:title" content="Biopsias en CDMX | Dr. Edgar Núñez García">
+    <meta property="og:description" content="Qué es una biopsia, por qué se pide, cómo se toma y cuánto tarda el resultado. Biopsias de piel, ganglio y tejidos blandos en CDMX.">
     <meta property="og:url" content="https://dredgarnunez.com/biopsias-cdmx/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Biopsias en CDMX | Dr. Edgar Núñez García">
+    <meta name="twitter:description" content="Qué es una biopsia, por qué se pide, cómo se toma y cuánto tarda el resultado. Biopsias de piel, ganglio y tejidos blandos en CDMX.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/pages.css?v=26">
-    <link rel="stylesheet" href="/css/cirugia.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/pages.css?v=28">
+    <link rel="stylesheet" href="/css/cirugia.css?v=27">
 
     <!-- JSON-LD: MedicalWebPage -->
     <script type="application/ld+json">
@@ -29,9 +52,22 @@
       "description": "Qué es una biopsia, por qué se pide, cómo se toma y cuánto tarda el resultado.",
       "url": "https://dredgarnunez.com/biopsias-cdmx/",
       "inLanguage": "es-MX",
-      "medicalAudience": {"@type": "PatientAudience", "audienceType": "Patient"},
-      "author": {"@type": "Physician", "name": "Dr. Edgar Abraham Núñez García", "url": "https://dredgarnunez.com/sobre-mi/"},
-      "reviewedBy": {"@type": "Physician", "name": "Dr. Edgar Abraham Núñez García", "url": "https://dredgarnunez.com/sobre-mi/"},
+      "medicalAudience": {
+        "@type": "PatientAudience",
+        "audienceType": "Patient"
+      },
+      "author": {
+        "@type": "Physician",
+        "name": "Dr. Edgar Abraham Núñez García",
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
+      },
+      "reviewedBy": {
+        "@type": "Physician",
+        "name": "Dr. Edgar Abraham Núñez García",
+        "url": "https://dredgarnunez.com/sobre-mi/",
+        "@id": "https://dredgarnunez.com/#cirujano"
+      },
       "about": {
         "@type": "MedicalProcedure",
         "name": "Biopsia",
@@ -66,22 +102,84 @@
       "url": "https://dredgarnunez.com/",
       "image": "https://dredgarnunez.com/img/doctor-portrait.jpg",
       "medicalSpecialty": [
-        {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Gastrointestinal"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Laparoscópica y de Mínima Invasión"}
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Gastrointestinal"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Laparoscópica y de Mínima Invasión"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
         "addressLocality": "Ciudad de México",
+        "addressRegion": "Ciudad de México",
         "postalCode": "06720",
         "addressCountry": "MX"
       },
       "alumniOf": [
-        {"@type": "EducationalOrganization", "name": "Universidad La Salle"},
-        {"@type": "EducationalOrganization", "name": "Centro Médico ABC / UNAM"}
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad La Salle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Médico ABC / UNAM"
+        }
       ],
-      "memberOf": {"@type": "MedicalOrganization", "name": "Consejo Mexicano de Cirugía General"}
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Consejo Mexicano de Cirugía General"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4233434,
+        "longitude": -99.1536367
+      },
+      "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "11:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "16:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Metropolitana del Valle de México"
+        }
+      ],
+      "@id": "https://dredgarnunez.com/#cirujano"
     }
     </script>
 
@@ -120,7 +218,7 @@
           "name": "¿Duele hacerse una biopsia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "La zona se duerme con anestesia local antes de empezar, así que durante el procedimiento se siente presión y movimiento, pero no dolor. Lo que sí llega a molestar es el piquete inicial de la anestesia. Después queda una molestia leve que cede con analgésicos sencillos en uno o dos días."
+            "text": "La zona se duerme con anestesia local antes de empezar, así que durante el procedimiento se siente presión y movimiento, pero no dolor. Lo que sí llega a molestar es el piquete inicial de la anestesia. Después queda una molestia leve que cede en uno o dos días con lo que te indico."
           }
         },
         {
@@ -164,7 +262,7 @@
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
-            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García"></a>
+            <a href="/" class="nav-logo"><img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async"></a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
                 <li class="nav-dropdown">
@@ -205,7 +303,7 @@
     <!-- PAGE HERO -->
     <section class="page-hero page-hero-photo">
         <div class="page-hero-image">
-            <img src="/img/heroes/servicios-hero.svg" alt="">
+            <img src="/img/heroes/servicios-hero.svg" alt="" width="900" height="520" decoding="async" fetchpriority="high">
         </div>
         <div class="container">
             <div class="page-hero-content">
@@ -253,7 +351,7 @@
             <div class="section-header">
                 <h2 class="section-title">¿Qué es una biopsia y para qué sirve?</h2>
                 <p class="section-subtitle">Una biopsia es la toma de una muestra de tejido para estudiarla al microscopio en el laboratorio de patología. Sirve para pasar de una sospecha a un diagnóstico.</p>
-                <p class="section-subtitle">Los estudios de imagen, como el ultrasonido, la tomografía o la resonancia, muestran dónde está una lesión, qué tamaño tiene y qué forma. Lo que no pueden decir es de qué está hecha. Esa respuesta solo la da el tejido visto al microscopio. Por eso, cuando la decisión de tratamiento depende de saber exactamente qué es algo, se toma una biopsia.</p>
+                <p class="section-subtitle">Los estudios de imagen, como el ultrasonido, la tomografía o la resonancia, muestran dónde está una lesión, qué tamaño tiene y qué forma. Lo que no pueden decir es de qué está hecha.</p><p>Esa respuesta solo la da el tejido visto al microscopio. Por eso, cuando la decisión de tratamiento depende de saber exactamente qué es algo, se toma una biopsia.</p>
                 <p class="section-subtitle">Que te pidan una biopsia no significa que tengas cáncer. Es la primera preocupación que escucho y conviene aclararla: la biopsia se pide precisamente porque todavía no se sabe qué es, y la mayoría de las veces el resultado es benigno. También sirve para confirmar infecciones y enfermedades inflamatorias. Pedirla no es una sospecha grave, es no querer adivinar.</p>
             </div>
         </div>
@@ -267,13 +365,13 @@
             </div>
             <div class="problem-content">
                 <h3>Con aguja o quirúrgica</h3>
-                <p>Depende de qué se quiere estudiar y de dónde está. La biopsia por aguja obtiene un fragmento pequeño y se hace en el consultorio con anestesia local. La biopsia quirúrgica puede ser incisional, cuando se toma solo un pedazo de una lesión grande, o excisional, cuando se retira la lesión completa y esa misma pieza se manda a estudiar. En muchos casos la excisional resuelve el diagnóstico y el tratamiento en un solo tiempo, que es lo que ocurre por ejemplo al retirar un <a href="/cirugia-lipomas-cdmx/">lipoma</a> o un <a href="/quiste-sebaceo-lesiones-piel-cdmx/">quiste sebáceo</a>.</p>
+                <p>Depende de qué se quiere estudiar y de dónde está. La biopsia por aguja obtiene un fragmento pequeño y se hace en el consultorio con anestesia local. La biopsia quirúrgica puede ser incisional, cuando se toma solo un pedazo de una lesión grande, o excisional, cuando se retira la lesión completa y esa misma pieza se manda a estudiar.</p><p>En muchos casos la excisional resuelve el diagnóstico y el tratamiento en un solo tiempo, que es lo que ocurre por ejemplo al retirar un <a href="/cirugia-lipomas-cdmx/">lipoma</a> o un <a href="/quiste-sebaceo-lesiones-piel-cdmx/">quiste sebáceo</a>.</p>
                 <h3>La zona se duerme antes</h3>
-                <p>Se aplica anestesia local, así que durante el procedimiento se siente presión y movimiento, pero no dolor. Lo que sí llega a molestar es el piquete inicial de la anestesia. Después queda una molestia leve que cede con analgésicos sencillos en uno o dos días.</p>
+                <p>Se aplica anestesia local, así que durante el procedimiento se siente presión y movimiento, pero no dolor. Lo que sí llega a molestar es el piquete inicial de la anestesia. Después queda una molestia leve que cede en uno o dos días con lo que te indico.</p>
                 <h3>El resultado tarda entre 5 y 10 días hábiles</h3>
                 <p>El tejido tiene que procesarse, cortarse en láminas muy delgadas, teñirse y ser revisado por el patólogo. Cuando el caso requiere estudios adicionales sobre la misma muestra, puede tardar más. Prefiero decirte un plazo realista desde el inicio en lugar de prometerte algo que no depende de mí. Esa espera es incómoda y prefiero que sepas de cuánto es.</p>
                 <h3>Qué biopsias hace un cirujano general</h3>
-                <p>Las de piel y tejidos blandos, las de ganglios crecidos sin explicación, las de masas superficiales y las que se toman durante una cirugía abdominal. Las que requieren un endoscopio, como las del estómago o el colon, las toma el gastroenterólogo durante el estudio. Y las de lesiones pigmentadas de la piel corresponden a dermatología. Si tu caso es de esos, te lo digo y te oriento hacia quien corresponde.</p>
+                <p>Las de piel y tejidos blandos, las de ganglios crecidos sin explicación, las de masas superficiales y las que se toman durante una cirugía abdominal.</p><p>Las que requieren un endoscopio, como las del estómago o el colon, las toma el gastroenterólogo durante el estudio. Y las de lesiones pigmentadas de la piel corresponden a dermatología. Si tu caso es de esos, te lo digo y te oriento hacia quien corresponde.</p>
                 <div class="problem-highlight">Un resultado siempre se interpreta junto con la exploración física y los estudios de imagen, nunca de forma aislada. Si la muestra se tomó de una zona no representativa, puede no reflejar lo que está pasando. Cuando lo que se ve y lo que dice el reporte no concuerdan, lo correcto es volver a estudiar, no darlo por cerrado.</div>
             </div>
         </div>
@@ -284,7 +382,7 @@
         <div class="container">
             <div class="autor-medico">
                 <div class="autor-medico-foto">
-                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104">
+                    <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García, cirujano general en CDMX" width="104" height="104" loading="lazy" decoding="async">
                 </div>
                 <div class="autor-medico-texto">
                     <h2 class="autor-medico-nombre">Dr. Edgar Abraham Núñez García</h2>
@@ -311,35 +409,35 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">¿Qué es una biopsia y para qué sirve?</button>
-                    <div class="faq-answer"><p>Es la toma de una muestra de tejido para estudiarla al microscopio en el laboratorio de patología. Sirve para pasar de una sospecha a un diagnóstico. Los estudios de imagen, como el ultrasonido o la tomografía, muestran la forma y el tamaño de una lesión, pero no dicen de qué está hecha. La biopsia sí. Es la única forma de saber con certeza qué es algo, y por eso se pide.</p></div>
+                    <div class="faq-answer"><p><strong>Es la toma de una muestra de tejido para estudiarla al microscopio en el laboratorio de patología.</strong> Sirve para pasar de una sospecha a un diagnóstico.</p><p>Los estudios de imagen, como el ultrasonido o la tomografía, muestran la forma y el tamaño de una lesión, pero no dicen de qué está hecha. La biopsia sí. Es la única forma de saber con certeza qué es algo, y por eso se pide.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Que me pidan una biopsia significa que tengo cáncer?</button>
-                    <div class="faq-answer"><p>No. Es la primera preocupación que escucho y conviene aclararla. La biopsia se pide justamente porque todavía no se sabe qué es, y la mayoría de las veces el resultado es benigno. También se usa para confirmar infecciones, enfermedades inflamatorias y muchos procesos que no tienen nada que ver con cáncer. Pedirla no es una sospecha grave: es no querer adivinar.</p></div>
+                    <div class="faq-answer"><p><strong>No.</strong> Es la primera preocupación que escucho y conviene aclararla. La biopsia se pide justamente porque todavía no se sabe qué es, y la mayoría de las veces el resultado es benigno.</p><p>También se usa para confirmar infecciones, enfermedades inflamatorias y muchos procesos que no tienen nada que ver con cáncer. Pedirla no es una sospecha grave: es no querer adivinar.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo se toma una biopsia?</button>
-                    <div class="faq-answer"><p>Depende de qué se quiere estudiar y dónde está. Puede tomarse con una aguja, que obtiene un fragmento pequeño y se hace en el consultorio con anestesia local, o de forma quirúrgica. La biopsia quirúrgica puede ser incisional, cuando se toma solo un pedazo de una lesión grande, o excisional, cuando se retira la lesión completa y esa misma pieza se manda a estudiar. En muchos casos esta última resuelve el diagnóstico y el tratamiento en un solo tiempo.</p></div>
+                    <div class="faq-answer"><p><strong>Depende de qué se quiere estudiar y dónde está.</strong> Puede tomarse con una aguja, que obtiene un fragmento pequeño y se hace en el consultorio con anestesia local, o de forma quirúrgica.</p><p>La biopsia quirúrgica puede ser incisional, cuando se toma solo un pedazo de una lesión grande, o excisional, cuando se retira la lesión completa y esa misma pieza se manda a estudiar. En muchos casos esta última resuelve el diagnóstico y el tratamiento en un solo tiempo.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Duele hacerse una biopsia?</button>
-                    <div class="faq-answer"><p>La zona se duerme con anestesia local antes de empezar, así que durante el procedimiento se siente presión y movimiento, pero no dolor. Lo que sí llega a molestar es el piquete inicial de la anestesia. Después queda una molestia leve que cede con analgésicos sencillos en uno o dos días.</p></div>
+                    <div class="faq-answer"><p>La zona se duerme con anestesia local antes de empezar, así que durante el procedimiento se siente presión y movimiento, pero no dolor. Lo que sí llega a molestar es el piquete inicial de la anestesia. Después queda una molestia leve que cede en uno o dos días con lo que te indico.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuánto tarda el resultado de una biopsia?</button>
-                    <div class="faq-answer"><p>Lo habitual es entre 5 y 10 días hábiles. El tejido tiene que procesarse, cortarse en láminas muy delgadas, teñirse y ser revisado por el patólogo. Cuando el caso requiere estudios adicionales sobre la misma muestra, puede tardar más. Prefiero decirte un plazo realista desde el inicio en lugar de prometerte algo que no depende de mí.</p></div>
+                    <div class="faq-answer"><p><strong>Lo habitual es entre 5 y 10 días hábiles.</strong> El tejido tiene que procesarse, cortarse en láminas muy delgadas, teñirse y ser revisado por el patólogo. Cuando el caso requiere estudios adicionales sobre la misma muestra, puede tardar más. Prefiero decirte un plazo realista desde el inicio en lugar de prometerte algo que no depende de mí.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué tipos de biopsia realiza un cirujano general?</button>
-                    <div class="faq-answer"><p>Las de piel y tejidos blandos, las de ganglios crecidos que no se explican, las de masas superficiales y las que se toman durante una cirugía abdominal. Las biopsias que requieren un endoscopio, como las del estómago o el colon, las toma el gastroenterólogo durante el estudio. Y las de lesiones pigmentadas de la piel corresponden a dermatología. Si tu caso es de esos, te lo digo y te oriento hacia quien corresponde.</p></div>
+                    <div class="faq-answer"><p>Las de piel y tejidos blandos, las de ganglios crecidos que no se explican, las de masas superficiales y las que se toman durante una cirugía abdominal.</p><p>Las biopsias que requieren un endoscopio, como las del estómago o el colon, las toma el gastroenterólogo durante el estudio. Y las de lesiones pigmentadas de la piel corresponden a dermatología. Si tu caso es de esos, te lo digo y te oriento hacia quien corresponde.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué cuidados necesito después de una biopsia?</button>
-                    <div class="faq-answer"><p>Mantener la herida limpia y seca, seguir las indicaciones de curación y evitar mojarla los primeros días. Si hubo puntos, se retiran entre 7 y 14 días según la zona. Se puede hacer vida normal casi de inmediato, evitando ejercicio intenso o cargar peso mientras la herida cierra. Si aparece enrojecimiento que aumenta, salida de material o fiebre, hay que avisar.</p></div>
+                    <div class="faq-answer"><p><strong>Mantener la herida limpia y seca, seguir las indicaciones de curación y evitar mojarla los primeros días.</strong> Si hubo puntos, se retiran entre 7 y 14 días según la zona.</p><p>Se puede hacer vida normal casi de inmediato, evitando ejercicio intenso o cargar peso mientras la herida cierra. Si aparece enrojecimiento que aumenta, salida de material o fiebre, hay que avisar.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Puede una biopsia salir negativa y aun así haber algo?</button>
-                    <div class="faq-answer"><p>Sí, y es importante saberlo. Si la muestra se tomó de una zona que no era representativa de la lesión, el resultado puede no reflejar lo que está pasando. Por eso el resultado siempre se interpreta junto con la exploración física y los estudios de imagen, no de forma aislada. Cuando lo que se ve y lo que dice el reporte no concuerdan, lo correcto es volver a estudiar, no darlo por cerrado.</p></div>
+                    <div class="faq-answer"><p><strong>Sí, y es importante saberlo.</strong> Si la muestra se tomó de una zona que no era representativa de la lesión, el resultado puede no reflejar lo que está pasando.</p><p>Por eso el resultado siempre se interpreta junto con la exploración física y los estudios de imagen, no de forma aislada. Cuando lo que se ve y lo que dice el reporte no concuerdan, lo correcto es volver a estudiar, no darlo por cerrado.</p></div>
                 </div>
             </div>
         </div>

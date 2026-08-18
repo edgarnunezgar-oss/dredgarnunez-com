@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5Z1TKLXWC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P5Z1TKLXWC');
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a[href*="wa.link"], a[href*="wa.me"]');
+        if (a) gtag('event', 'click_whatsapp', {link_url: a.href, ubicacion: a.className || 'enlace'});
+      });
+    </script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
     <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-    <title>Cirugía de Vesícula en CDMX | Dr. Edgar Núñez García</title>
-    <meta name="description" content="Colecistectomía laparoscópica ambulatoria en CDMX. A partir de $45,000. Recuperación 7-10 días. Dr. Edgar Núñez García, certificado por el Consejo Mexicano de Cirugía General.">
+    <title>Cirugía de vesícula en CDMX | Dr. Edgar Núñez García</title>
+    <meta name="description" content="Piedras en la vesícula: cirugía laparoscópica ambulatoria en CDMX. Desde $45,000, recuperación de 7 a 10 días. Cirujano certificado.">
     <link rel="canonical" href="https://dredgarnunez.com/cirugia-vesicula-cdmx/">
-    <meta property="og:title" content="Cirugía de Vesícula en CDMX | Dr. Edgar Núñez García">
-    <meta property="og:description" content="Colecistectomía laparoscópica ambulatoria en CDMX. A partir de $45,000. Dr. Edgar Núñez García.">
+    <meta property="og:title" content="Cirugía de vesícula en CDMX | Dr. Edgar Núñez García">
+    <meta property="og:description" content="Piedras en la vesícula: cirugía laparoscópica ambulatoria en CDMX. Desde $45,000, recuperación de 7 a 10 días. Cirujano certificado.">
     <meta property="og:url" content="https://dredgarnunez.com/cirugia-vesicula-cdmx/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dredgarnunez.com/img/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Dr. Edgar Núñez García, cirugía general, gastrointestinal y laparoscópica">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Dr. Edgar Núñez García">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cirugía de vesícula en CDMX | Dr. Edgar Núñez García">
+    <meta name="twitter:description" content="Piedras en la vesícula: cirugía laparoscópica ambulatoria en CDMX. Desde $45,000, recuperación de 7 a 10 días. Cirujano certificado.">
+    <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=27">
-    <link rel="stylesheet" href="/css/cirugia.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=29">
+    <link rel="stylesheet" href="/css/cirugia.css?v=27">
     <link rel="stylesheet" href="/css/home.css?v=25">
 
     <!-- JSON-LD: MedicalWebPage -->
@@ -54,22 +77,84 @@
       "url": "https://dredgarnunez.com/",
       "image": "https://dredgarnunez.com/img/doctor-portrait.jpg",
       "medicalSpecialty": [
-        {"@type": "MedicalSpecialty", "name": "Cirugía General"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Gastrointestinal"},
-        {"@type": "MedicalSpecialty", "name": "Cirugía Laparoscópica y de Mínima Invasión"}
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Gastrointestinal"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Laparoscópica y de Mínima Invasión"
+        }
       ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
         "addressLocality": "Ciudad de México",
+        "addressRegion": "Ciudad de México",
         "postalCode": "06720",
         "addressCountry": "MX"
       },
       "alumniOf": [
-        {"@type": "EducationalOrganization", "name": "Universidad La Salle"},
-        {"@type": "EducationalOrganization", "name": "Centro Médico ABC / UNAM"}
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad La Salle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Médico ABC / UNAM"
+        }
       ],
-      "memberOf": {"@type": "MedicalOrganization", "name": "Consejo Mexicano de Cirugía General"}
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Consejo Mexicano de Cirugía General"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4233434,
+        "longitude": -99.1536367
+      },
+      "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "11:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "16:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Metropolitana del Valle de México"
+        }
+      ],
+      "@id": "https://dredgarnunez.com/#cirujano"
     }
     </script>
 
@@ -79,46 +164,6 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿La vesícula produce la bilis?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Es un mito común. El hígado es el órgano que produce la bilis, aproximadamente entre 800 ml y 1 litro diarios. La vesícula solo la almacena durante los periodos de ayuno para que, cuando comemos sobre todo grasas y proteína, se contraiga y la bilis salga al intestino a ayudar a digerir."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Por qué se forman las piedras en la vesícula?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Cuando la bilis es más espesa de lo normal y tiene más colesterol, la vesícula forma piedras. Primero se forma lodo y después ese lodo, que usualmente es de colesterol, se precipita y se forman las piedras. Los factores de riesgo más comunes son obesidad, sexo femenino, edad en etapa fértil y genética."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Se pueden disolver las piedras con medicamento?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No de forma efectiva. Actualmente no existe un tratamiento médico que destruya las piedras una vez formadas. Antes de que se formen, se pueden hacer cambios en hábitos o factores de riesgo, pero una vez que están ahí, la única opción definitiva es quitar la vesícula."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Por qué no sólo quitar las piedras y dejar la vesícula?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Porque no funciona: se vuelven a formar. Desde hace mucho sabemos que el problema está en parte en la bilis y en parte en la vesícula. Una vesícula que forma piedras es una vesícula que ya no funciona bien."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué es un cólico biliar y qué es una colecistitis?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Generalmente las piedras dan síntomas cuando una se atora en el conducto cístico, que comunica la vesícula con el intestino. Si se desatora y se regresa a la vesícula, le llamamos cólico biliar. Si se atora y ya no se regresa, se vuelve una urgencia y se conoce como colecistitis aguda."
-          }
-        },
         {
           "@type": "Question",
           "name": "Si mejoré con medicamento, ¿ya no necesito operarme?",
@@ -132,7 +177,7 @@
           "name": "¿Qué complicaciones graves puede haber si no me opero?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Las piedras pueden salirse de la vesícula y causar coledocolitiasis (piedras en la vía biliar) o pancreatitis biliar. Son complicaciones graves. La principal razón para hacer una cirugía electiva es evitar que la enfermedad progrese y que en cualquier momento se vuelva una urgencia."
+            "text": "Las piedras pueden salirse de la vesícula y causar coledocolitiasis (piedras en la vía biliar), que tapa la salida de la bilis y pone la piel y los ojos amarillos, o pancreatitis biliar, que es la inflamación del páncreas. La vesícula también se puede infectar (colecistitis) y volverse una urgencia. Son complicaciones graves. La principal razón para hacer una cirugía electiva es evitar que la enfermedad progrese y que en cualquier momento se vuelva una urgencia."
           }
         },
         {
@@ -149,14 +194,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "La recuperación suele ser tranquila. Los primeros días estás en casa con poco movimiento, aunque caminando un poco. Usualmente los pacientes regresan a sus actividades normales a los 7 o 10 días, excepto ejercicio o cargar objetos pesados, que se retoman pasando un mes después de la cirugía."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué puedo comer después de la cirugía?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Durante los primeros dos meses es importante una dieta baja en grasas, tanto animales como vegetales. Al inicio el cuerpo no se ha adaptado a no tener vesícula, y la comida grasosa puede provocar diarrea. Después de 2 a 3 meses el colédoco se dilata y el cuerpo se adapta; eventualmente podrás comer de todo, pero lo ideal es consumir grasas en cantidades moderadas."
           }
         },
         {
@@ -178,6 +215,27 @@
       ]
     }
     </script>
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://dredgarnunez.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cirugía de vesícula",
+          "item": "https://dredgarnunez.com/cirugia-vesicula-cdmx/"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -185,7 +243,7 @@
     <nav class="nav">
         <div class="container">
             <a href="/" class="nav-logo">
-                <img src="/img/logo.png" alt="Dr. Edgar Núñez García">
+                <img src="/img/logo.png" alt="Dr. Edgar Núñez García" width="957" height="489" decoding="async">
             </a>
             <ul class="nav-links">
                 <li><a href="/">Inicio</a></li>
@@ -230,6 +288,9 @@
     <div class="cirugia-hero">
         <div class="container">
             <div class="cirugia-hero-content">
+                <div class="breadcrumb">
+                    <a href="/">Inicio</a> <span>&rsaquo;</span> Cirugía de vesícula
+                </div>
                 <p class="cirugia-hero-eyebrow">¿Piedras en la vesícula? ¿Dolor después de comer?</p>
                 <h1>Cirugía de vesícula en CDMX</h1>
                 <p class="cirugia-hero-sub">Cirugía laparoscópica para retirar la vesícula con las piedras dentro, a través de incisiones pequeñas. Para que vuelvas a comer sin miedo al cólico.</p>
@@ -260,7 +321,7 @@
             </div>
         </div>
         <div class="cirugia-hero-image">
-            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, cirujano especialista en cirugía de vesícula en CDMX">
+            <img src="/img/hero-cirugias.jpg" alt="Dr. Edgar Núñez García, cirujano especialista en cirugía de vesícula en CDMX" width="1065" height="1600" decoding="async" fetchpriority="high">
         </div>
     </div>
 
@@ -298,7 +359,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">¿Qué son las piedras en la vesícula?</h2>
-                <p class="section-subtitle">La vesícula es una bolsita que está debajo del hígado y que guarda la bilis, un líquido que ayuda a digerir las grasas. Cuando la bilis se concentra de más, se forman piedras dentro de la vesícula. A eso se le llama piedras en la vesícula (colelitiasis).</p>
+                <p class="section-subtitle">La vesícula es una bolsita que está debajo del hígado y que guarda la bilis, un líquido que ayuda a digerir las grasas. Cuando la bilis se concentra de más, se forman piedras dentro de la vesícula (cálculos biliares). A eso se le llama piedras en la vesícula (colelitiasis).</p>
                 <p class="section-subtitle">El problema aparece cuando una de esas piedras tapa la salida de la vesícula. Ahí es cuando duele: un dolor fuerte del lado derecho, arriba del abdomen o en la boca del estómago, que muchas veces empieza después de comer algo grasoso y puede irse hacia la espalda o el hombro derecho. Ese cuadro es el cólico biliar.</p>
             </div>
         </div>
@@ -315,7 +376,7 @@
             <div class="techniques-grid" style="grid-template-columns: 1fr; max-width: 720px; margin: 0 auto;">
                 <div class="technique-card">
                     <div class="technique-image">
-                        <img src="/img/colecistectomia-laparoscopica.jpg" alt="Dr. Edgar Núñez realizando cirugía laparoscópica de vesícula">
+                        <img src="/img/colecistectomia-laparoscopica.jpg" alt="Dr. Edgar Núñez realizando cirugía laparoscópica de vesícula" width="1201" height="1800" loading="lazy" decoding="async">
                     </div>
                     <div class="technique-body">
                         <span class="technique-tag">Mínima invasión</span>
@@ -331,13 +392,17 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">¿Por qué sí hacer una cirugía de vesícula?</h2>
+                <h2 class="section-title">¿Cuándo se opera la vesícula?</h2>
             </div>
             <div class="problem-content">
-                <h3>Porque se pueden complicar</h3>
-                <p>Mientras la piedra solo tapa y destapa, hay cólicos. El problema es cuando la piedra se queda atorada o se sale de la vesícula. De ahí salen las complicaciones que sí son serias: la vesícula se inflama e infecta (colecistitis), una piedra se va al conducto de la bilis y pone la piel amarilla, o llega al páncreas y provoca pancreatitis, que es una complicación grave.</p>
-                <h3>Porque las piedras no se disuelven ni se van solas</h3>
-                <p>Una vez que la vesícula formó piedras, no desaparecen con dieta ni con medicamento. La dieta ayuda a tener menos episodios de dolor, pero no quita las piedras.</p>
+                <p>Las piedras no desaparecen con dieta ni con medicamento, y el riesgo no está en el cólico sino en lo que viene si una se atora. Operar de forma programada, antes de que eso pase, no es la misma cirugía que operar de urgencia.</p>
+                <ul>
+                    <li><strong>Las piedras ya te dieron síntomas.</strong> Aunque haya sido un solo cólico y se te haya quitado con medicamento. Después del primer episodio la probabilidad de que vuelva es muy alta.</li>
+                    <li><strong>La vesícula ya se infectó.</strong> Ahí la cirugía deja de ser opcional, y entre más pronto se resuelva, mejor.</li>
+                    <li><strong>Una piedra se salió de la vesícula</strong> y tapó el conducto de la bilis o llegó al páncreas. Primero se resuelve eso y después se quita la vesícula, para que no vuelva a ocurrir.</li>
+                    <li><strong>La vesícula ya dejó de funcionar</strong> de tanto inflamarse, aunque el dolor sea leve y lleve años.</li>
+                    <li><strong>El ultrasonido encontró pólipos</strong> que por su tamaño o porque van creciendo conviene no dejar ahí.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -349,7 +414,15 @@
                 <h2 class="section-title">No toda piedra en la vesícula se opera hoy</h2>
             </div>
             <div class="problem-content">
-                <p>Si tu cuadro no está agudo, también existe la opción de no operarte todavía, cuidando la dieta y conociendo los riesgos. Te explico esa opción igual que las demás, con sus pros y sus contras, para que decidas con información y con confianza. Hay casos en que observar es razonable, y hay casos en que esperar es apostar. En la valoración te digo con honestidad en cuál estás.</p>
+                <ul>
+                    <li><strong>Te encontraron las piedras por casualidad</strong> en un ultrasonido que te hicieron por otra cosa, nunca te han dado síntomas y el resto del estudio está normal. Ahí lo que corresponde es vigilancia, no quirófano.</li>
+                    <li><strong>Tu cuadro no está agudo y prefieres esperar.</strong> Es una opción real: cuidar la dieta, conocer los riesgos y decidir más adelante.</li>
+                </ul>
+                <blockquote class="no-operar-quote">
+                    <p>"Hay casos en que observar es razonable y casos en que esperar es apostar."</p>
+                    <cite>En la valoración te digo con honestidad en cuál estás.</cite>
+                </blockquote>
+                <p>No vas a salir de mi consulta con fecha de cirugía solo por tener piedras.</p>
                 <p style="text-align: center; margin-top: 28px;"><a href="https://wa.link/3rll01" class="btn-primary" target="_blank">Agenda tu valoración por WhatsApp</a></p>
             </div>
         </div>
@@ -393,7 +466,7 @@
     <!-- DOCTOR -->
     <section class="about-section" id="doctor">
         <div class="about-photo">
-            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800">
+            <img src="/img/doctor-portrait.jpg" alt="Dr. Edgar Núñez García" width="1201" height="1800" loading="lazy" decoding="async">
         </div>
         <div class="container">
             <div class="about-content">
@@ -507,7 +580,7 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo es la consulta de valoración?</button>
-                    <div class="faq-answer"><p>Es una consulta presencial en mi consultorio. Te reviso, te explico tu diagnóstico con claridad y juntos decidimos el mejor camino. La consulta de valoración tiene una inversión de $1,000 MXN.</p></div>
+                    <div class="faq-answer"><p><strong>Es una consulta presencial en mi consultorio.</strong> Te reviso, te explico tu diagnóstico con claridad y juntos decidimos el mejor camino. La consulta de valoración tiene una inversión de $1,000 MXN.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué preparación se necesita antes de la cirugía?</button>
@@ -515,27 +588,7 @@
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Por qué operarse antes de que sea urgencia?</button>
-                    <div class="faq-answer"><p>Cuando la cirugía es programada y la vesícula no está complicada, el riesgo de una lesión grave es menor al 1%. La cirugía electiva es de menor riesgo que la de urgencia y permite planear todo el proceso con tranquilidad: estudios, fecha, recuperación y seguimiento.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿La vesícula produce la bilis?</button>
-                    <div class="faq-answer"><p>No. Es un mito común. El hígado es el órgano que produce la bilis, aproximadamente entre 800 ml y 1 litro diarios. La vesícula solo la almacena durante los periodos de ayuno para que, cuando comemos sobre todo grasas y proteína, se contraiga y la bilis salga al intestino a ayudar a digerir.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿Por qué se forman las piedras en la vesícula?</button>
-                    <div class="faq-answer"><p>Cuando la bilis es más espesa de lo normal y tiene más colesterol, la vesícula forma piedras. Primero se forma lodo y después ese lodo, que usualmente es de colesterol, se precipita y se forman las piedras. Los factores de riesgo más comunes son obesidad, sexo femenino, edad en etapa fértil y genética.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿Se pueden disolver las piedras con medicamento?</button>
-                    <div class="faq-answer"><p>No de forma efectiva. Actualmente no existe un tratamiento médico que destruya las piedras una vez formadas. Antes de que se formen, se pueden hacer cambios en hábitos o factores de riesgo, pero una vez que están ahí, la única opción definitiva es quitar la vesícula.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿Por qué no sólo quitar las piedras y dejar la vesícula?</button>
-                    <div class="faq-answer"><p>Porque no funciona: se vuelven a formar. Desde hace mucho sabemos que el problema está en parte en la bilis y en parte en la vesícula. Una vesícula que forma piedras es una vesícula que ya no funciona bien.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿Qué es un cólico biliar y qué es una colecistitis?</button>
-                    <div class="faq-answer"><p>Generalmente las piedras dan síntomas cuando una se atora en el conducto cístico, que comunica la vesícula con el intestino. Si se desatora y se regresa a la vesícula, le llamamos cólico biliar. Si se atora y ya no se regresa, se vuelve una urgencia y se conoce como colecistitis aguda.</p></div>
+                    <div class="faq-answer"><p><strong>Cuando la cirugía es programada y la vesícula no está complicada, el riesgo de una lesión grave es menor al 1%.</strong> La cirugía electiva es de menor riesgo que la de urgencia y permite planear todo el proceso con tranquilidad: estudios, fecha, recuperación y seguimiento.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">Si mejoré con medicamento, ¿ya no necesito operarme?</button>
@@ -543,27 +596,42 @@
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué complicaciones graves puede haber si no me opero?</button>
-                    <div class="faq-answer"><p>Las piedras pueden salirse de la vesícula y causar coledocolitiasis (piedras en la vía biliar) o pancreatitis biliar. Son complicaciones graves. La principal razón para hacer una cirugía electiva es evitar que la enfermedad progrese y que en cualquier momento se vuelva una urgencia.</p></div>
+                    <div class="faq-answer"><p>Las piedras pueden salirse de la vesícula y causar coledocolitiasis (piedras en la vía biliar), que tapa la salida de la bilis y pone la piel y los ojos amarillos, o <a href="/pancreatitis-cdmx/">pancreatitis biliar</a>, que es la inflamación del páncreas. </p><p>La vesícula también se puede infectar (colecistitis) y volverse una urgencia. Son complicaciones graves. La principal razón para hacer una cirugía electiva es evitar que la enfermedad progrese y que en cualquier momento se vuelva una urgencia.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo es la cirugía de vesícula?</button>
-                    <div class="faq-answer"><p>La colecistectomía se hace por laparoscopía, con anestesia general. Se hacen 3 o 4 incisiones pequeñas de 1 cm o 5 mm, y a través de ellas se introducen los instrumentos para hacer la cirugía y extraer la vesícula.</p></div>
+                    <div class="faq-answer"><p><strong>La colecistectomía se hace por laparoscopía, con anestesia general.</strong> Se hacen 3 o 4 incisiones pequeñas de 1 cm o 5 mm, y a través de ellas se introducen los instrumentos para hacer la cirugía y extraer la vesícula.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cómo es la recuperación y cuándo regreso a mis actividades?</button>
-                    <div class="faq-answer"><p>La recuperación suele ser tranquila. Los primeros días estás en casa con poco movimiento, aunque caminando un poco. Usualmente los pacientes regresan a sus actividades normales a los 7 o 10 días, excepto ejercicio o cargar objetos pesados, que se retoman pasando un mes después de la cirugía.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">¿Qué puedo comer después de la cirugía?</button>
-                    <div class="faq-answer"><p>Durante los primeros dos meses es importante una dieta baja en grasas, tanto animales como vegetales. Al inicio el cuerpo no se ha adaptado a no tener vesícula, y la comida grasosa puede provocar diarrea. Después de 2 a 3 meses el colédoco se dilata y el cuerpo se adapta; eventualmente podrás comer de todo, pero lo ideal es consumir grasas en cantidades moderadas.</p></div>
+                    <div class="faq-answer"><p><strong>La recuperación suele ser tranquila.</strong> Los primeros días estás en casa con poco movimiento, aunque caminando un poco. Usualmente los pacientes regresan a sus actividades normales a los 7 o 10 días, excepto ejercicio o cargar objetos pesados, que se retoman pasando un mes después de la cirugía.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Qué riesgos tiene la cirugía?</button>
-                    <div class="faq-answer"><p>No te voy a decir que no hay riesgos. Toda cirugía y toda anestesia los tienen, y prefiero ser frontal. Lo importante es qué se hace para reducirlos. Es como manejar: el riesgo de un accidente existe siempre, pero no es igual manejar borracho y sin cinturón que sobrio, con cinturón y respetando los señalamientos.</p><p>En cirugía el equivalente es: no operar cansado, verificar todo antes de empezar, usar antibióticos cuando corresponde, no intentar cosas heroicas, pedir ayuda a un colega más experimentado cuando el caso lo amerita y, sobre todo, saber cuándo no operar. En tu valoración te explico los riesgos específicos de tu procedimiento y cómo los manejamos.</p></div>
+                    <div class="faq-answer"><p><strong>No te voy a decir que no hay riesgos.</strong> Toda cirugía y toda anestesia los tienen, y prefiero ser frontal. Lo importante es qué se hace para reducirlos. Es como manejar: el riesgo de un accidente existe siempre, pero no es igual manejar borracho y sin cinturón que sobrio, con cinturón y respetando los señalamientos.</p><p>En cirugía el equivalente es: no operar cansado, verificar todo antes de empezar, usar antibióticos cuando corresponde, no intentar cosas heroicas, pedir ayuda a un colega más experimentado cuando el caso lo amerita y, sobre todo, saber cuándo no operar. En tu valoración te explico los riesgos específicos de tu procedimiento y cómo los manejamos.</p></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">¿Cuánto cuesta la cirugía de vesícula?</button>
                     <div class="faq-answer"><p>Los paquetes quirúrgicos comienzan desde $45,000* MXN e incluyen honorarios del cirujano, anestesiólogo, hospitalización, insumos y seguimiento. Ofrecemos financiamiento a 3, 6, 9 y 12 meses. Trabajamos ajustándonos a tabulado con aseguradoras como GNP, Axa, Metlife, Mapfre y Sofía. (*El precio desde $45,000 aplica en ciertas clínicas.)</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- RELACIONADOS -->
+    <section class="section">
+        <div class="container">
+            <div class="servicios-cierre">
+                <h2>Otros padecimientos que atiendo</h2>
+                <p>Si lo tuyo no es la vesícula, es probable que esté aquí. Y si no aparece, escríbeme y te oriento.</p>
+                <div class="cierre-links">
+                    <a href="/pancreatitis-cdmx/">Pancreatitis</a>
+                    <a href="/enfermedades-digestivas/">Gastritis, colitis y colon irritable</a>
+                    <a href="/cirugia-reflujo-gastroesofagico-cdmx/">Reflujo y hernia de hiato</a>
+                    <a href="/cirugia-apendicitis-cdmx/">Cirugía de apendicitis</a>
+                    <a href="/preguntas-frecuentes/">Preguntas frecuentes</a>
+                    <a href="/otros-servicios/">Ver todos los servicios</a>
                 </div>
             </div>
         </div>
