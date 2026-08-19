@@ -467,3 +467,19 @@ a { text-decoration: none; }
 }
 .section-header li { margin-bottom: 10px; line-height: 1.7; color: var(--color-text-light); }
 .section-header li::marker { color: var(--color-teal); }
+
+/* Ilustración dentro de una sección de contenido */
+.ilustracion-seccion {
+    max-width: 620px; margin: 8px auto 0;
+    border-radius: 16px; overflow: hidden; background: var(--color-teal-light);
+}
+.ilustracion-seccion img { width: 100%; height: auto; display: block; }
+
+/* Frase de entrada del cierre: un escalón por debajo del título de esa sección */
+.cta-final .cta-final-lead {
+    font-size: clamp(20px, 2.4vw, 26px);
+    line-height: 1.55;
+    color: var(--color-text);
+    max-width: 680px;
+    margin-bottom: 18px;
+}

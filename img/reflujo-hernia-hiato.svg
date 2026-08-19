@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="676" cy="92" r="74" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="108" cy="372" r="94" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="150" cy="112" r="18" fill="#2E6B9C" opacity="0.14"/>
+  <circle cx="716" cy="330" r="13" fill="#2A8A7E" opacity="0.16"/>
+
+  <g transform="translate(78,0)">
+    <!-- busto de perfil, el mismo del blog, con el torso hasta abajo -->
+    <path d="M470 450
+             L470 372
+             C470 350 456 336 434 330
+             L378 314
+             C366 310 360 302 360 292
+             L360 268
+             C392 254 414 222 414 184
+             C414 132 376 92 328 92
+             C286 92 254 120 246 160
+             L230 194
+             C226 202 230 208 238 210
+             L250 212
+             L250 240
+             C250 252 258 258 270 258
+             L282 258
+             L282 292
+             C282 302 276 310 264 314
+             L208 330
+             C186 336 172 350 172 372
+             L172 450 Z"
+          fill="#FFFFFF"/>
+
+    <!-- ojo y boca -->
+    <circle cx="286" cy="176" r="8" fill="#1B3D5C"/>
+    <path d="M250 232 C262 240 276 240 288 234" stroke="#1B3D5C" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+
+    <!-- estomago -->
+    <path d="M330 352 C286 354 258 378 258 406
+             C258 434 288 452 330 452
+             C372 452 402 434 402 406
+             C402 378 374 354 330 352 Z"
+          fill="#2E6B9C" opacity="0.32"/>
+
+    <!-- el acido sube del estomago hasta la boca -->
+    <path d="M332 402 L306 268" stroke="#C69C6D" stroke-width="13" stroke-linecap="round" fill="none"/>
+    <path d="M298 238 L319 266 L290 272 Z" fill="#C69C6D"/>
+
+    <!-- tejido irritado donde llega el acido -->
+    <circle cx="292" cy="246" r="29" fill="#C69C6D" opacity="0.18"/>
+  </g>
+</svg>
