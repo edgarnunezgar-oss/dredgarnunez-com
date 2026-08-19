@@ -55,6 +55,13 @@ a.prueba-item:hover { background: rgba(42,138,126,0.18); border-color: rgba(42,1
 }
 .cirugia-hero-stat:last-child { border-right: none; }
 .cirugia-hero-stats-uno { display: inline-grid; grid-template-columns: auto; }
+/* Orden de lectura del precio: primero la salvedad, luego la cifra, luego
+   que incluye. El asterisco remite a la nota del paquete quirurgico. */
+.precio-desde {
+    display: block; font-size: 13px; font-weight: 600;
+    color: rgba(255,255,255,0.6); text-transform: uppercase;
+    letter-spacing: 1px; margin-bottom: 2px;
+}
 .cirugia-hero-stats-uno .cirugia-hero-stat { padding: 18px 40px; }
 .cirugia-hero-stat-number {
     font-family: var(--font-heading); font-size: 28px; font-weight: 700;
@@ -126,6 +133,11 @@ a.prueba-item:hover { background: rgba(42,138,126,0.18); border-color: rgba(42,1
     font-family: var(--font-heading); font-size: 22px; margin-bottom: 12px; color: var(--color-blue-dark);
 }
 .technique-body p { color: var(--color-text-light); font-size: 15px; line-height: 1.7; }
+.technique-body ul { margin: 12px 0 0; padding-left: 20px; }
+.technique-body li {
+    color: var(--color-text-light); font-size: 15px; line-height: 1.7; margin-bottom: 10px;
+}
+.technique-body li::marker { color: var(--color-teal); }
 
 /* Featured technique (single, vertical layout) */
 .technique-featured {
