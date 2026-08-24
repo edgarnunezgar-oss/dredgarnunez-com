@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="666" cy="98" r="76" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="104" cy="374" r="92" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="140" cy="118" r="18" fill="#2E6B9C" opacity="0.14"/>
+  <circle cx="722" cy="336" r="13" fill="#2A8A7E" opacity="0.16"/>
+
+  <!-- sombra -->
+  <ellipse cx="330" cy="412" rx="118" ry="12" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- figura de pie -->
+  <circle cx="330" cy="96" r="40" fill="#FFFFFF"/>
+  <path d="M330 142
+           C374 142 404 168 408 208
+           L416 282
+           C418 296 410 304 398 304
+           L262 304
+           C250 304 242 296 244 282
+           L252 208
+           C256 168 286 142 330 142 Z"
+        fill="#FFFFFF"/>
+  <!-- brazos -->
+  <path d="M254 200 L230 288" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round"/>
+  <path d="M406 200 L430 288" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round"/>
+  <!-- piernas -->
+  <path d="M300 304 L296 400" stroke="#FFFFFF" stroke-width="46" stroke-linecap="round"/>
+  <path d="M360 304 L364 400" stroke="#FFFFFF" stroke-width="46" stroke-linecap="round"/>
+
+  <!-- zona de dolor en la ingle -->
+  <circle cx="330" cy="300" r="46" fill="#C69C6D" opacity="0.16"/>
+  <circle cx="330" cy="300" r="26" fill="#C69C6D" opacity="0.30"/>
+  <circle cx="330" cy="300" r="12" fill="#C69C6D"/>
+  <path d="M262 256 C246 274 246 306 260 328" stroke="#C69C6D" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M398 256 C414 274 414 306 400 328" stroke="#C69C6D" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- signos de interrogacion: el dolor puede venir de varios lados -->
+  <g fill="#2A8A7E" opacity="0.55">
+    <path d="M508 214 C508 196 522 186 538 186 C556 186 568 197 568 212 C568 230 550 234 546 246 L534 246 C536 230 554 226 554 212 C554 203 547 198 538 198 C528 198 522 204 522 214 Z"/>
+    <circle cx="540" cy="262" r="7"/>
+  </g>
+  <g fill="#2E6B9C" opacity="0.4">
+    <path d="M596 310 C596 298 606 291 617 291 C629 291 638 299 638 309 C638 322 626 325 623 333 L614 333 C616 322 628 319 628 309 C628 303 623 300 617 300 C610 300 606 304 606 310 Z"/>
+    <circle cx="618" cy="345" r="5"/>
+  </g>
+  <g fill="#2A8A7E" opacity="0.32">
+    <path d="M596 148 C596 137 605 131 615 131 C626 131 634 138 634 147 C634 158 623 161 620 168 L612 168 C614 158 625 155 625 147 C625 142 621 139 615 139 C609 139 605 142 605 148 Z"/>
+    <circle cx="616" cy="179" r="5"/>
+  </g>
+</svg>
