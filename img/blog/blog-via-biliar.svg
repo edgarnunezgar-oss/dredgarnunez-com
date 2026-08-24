@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="672" cy="90" r="74" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="106" cy="366" r="92" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="706" cy="330" r="20" fill="#2A8A7E" opacity="0.14"/>
+  <circle cx="126" cy="112" r="14" fill="#2E6B9C" opacity="0.15"/>
+
+  <!-- higado: lobulo derecho grande, adelgaza hacia la izquierda de la imagen -->
+  <path d="M196 128
+           C218 92 286 70 372 64
+           C470 58 556 70 596 94
+           C630 114 634 152 608 176
+           C580 202 520 220 462 226
+           L436 229
+           C418 231 406 240 396 252
+           C387 262 372 262 364 250
+           C354 236 338 229 316 226
+           C256 218 212 196 200 170
+           C193 155 191 139 196 128 Z"
+        fill="#2E6B9C" opacity="0.26"/>
+  <path d="M470 222 C486 200 494 172 492 142" stroke="#2E6B9C" stroke-width="6" opacity="0.16" fill="none"/>
+
+  <!-- conductos dentro del higado, blancos sobre el azul -->
+  <g stroke="#FFFFFF" stroke-linecap="round" fill="none">
+    <path d="M256 122 C298 152 330 178 358 202" stroke-width="12"/>
+    <path d="M228 170 C282 190 326 200 358 206" stroke-width="10"/>
+    <path d="M330 96 C344 138 350 176 360 200" stroke-width="9"/>
+    <path d="M552 112 C500 146 452 178 414 202" stroke-width="12"/>
+    <path d="M588 166 C524 188 458 200 414 206" stroke-width="10"/>
+  </g>
+  <path d="M358 202 C372 212 380 224 386 240" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round" fill="none"/>
+  <path d="M414 202 C400 212 392 224 386 240" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round" fill="none"/>
+
+  <!-- hepatico comun y coledoco, fuera del higado: en azul para que contrasten -->
+  <path d="M386 240 C386 292 392 340 406 380 C412 400 422 412 434 420"
+        stroke="#2E6B9C" stroke-width="17" stroke-linecap="round" fill="none" opacity="0.85"/>
+
+  <!-- vesicula -->
+  <path d="M248 300
+           C222 314 212 348 222 376
+           C233 408 266 422 296 412
+           C324 402 336 372 326 344
+           C317 318 294 302 272 298 Z"
+        fill="#FFFFFF" stroke="#2E6B9C" stroke-width="7" stroke-linejoin="round" opacity="0.98"/>
+  <path d="M276 296 L292 272" stroke="#2E6B9C" stroke-width="15" stroke-linecap="round"/>
+
+  <!-- el mismo conducto cistico, tres lugares donde puede insertarse -->
+  <path d="M296 268 C334 246 362 240 382 244" stroke="#C69C6D" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <path d="M302 284 C344 298 372 316 390 332" stroke="#C69C6D" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.45"/>
+  <path d="M306 300 C350 336 384 368 408 394" stroke="#C69C6D" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.24"/>
+
+  <!-- el punto donde el cirujano decide que cortar -->
+  <circle cx="386" cy="244" r="34" fill="#C69C6D" opacity="0.18"/>
+  <circle cx="386" cy="244" r="19" fill="#C69C6D" opacity="0.32"/>
+  <circle cx="386" cy="244" r="9" fill="#C69C6D"/>
+</svg>
