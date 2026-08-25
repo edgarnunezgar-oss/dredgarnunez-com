@@ -461,6 +461,13 @@ a { text-decoration: none; }
     .servicios-cierre { padding: 34px 22px; }
 }
 
+/* Encabezado de sección con varios párrafos: el título se centra, el cuerpo se alinea
+   a la izquierda. Un bloque de cuatro renglones centrados queda con las dos orillas
+   irregulares y se lee mal. */
+.section-header.section-texto { max-width: 640px; }
+.section-texto .section-subtitle { text-align: left; margin-bottom: 18px; }
+.section-texto .section-subtitle:last-child { margin-bottom: 0; }
+
 /* Listas dentro de un encabezado de sección centrado: el bloque se centra, el texto no */
 .section-header ul {
     display: inline-block; text-align: left; margin: 0 auto 18px; padding-left: 22px;
