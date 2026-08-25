@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="676" cy="92" r="72" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="104" cy="366" r="92" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="128" cy="112" r="18" fill="#2E6B9C" opacity="0.15"/>
+  <circle cx="712" cy="334" r="14" fill="#2A8A7E" opacity="0.15"/>
+
+  <!-- campo del microscopio -->
+  <circle cx="360" cy="225" r="164" fill="#FFFFFF"/>
+  <circle cx="360" cy="225" r="164" fill="none" stroke="#2E6B9C" stroke-width="10" opacity="0.85"/>
+
+  <!-- los tres quistes, identicos entre si -->
+  <g>
+    <circle cx="360" cy="146" r="34" fill="#DDEEEB"/>
+    <circle cx="360" cy="146" r="11" fill="#2E6B9C" opacity="0.7"/>
+    <circle cx="292" cy="272" r="34" fill="#DDEEEB"/>
+    <circle cx="292" cy="272" r="11" fill="#2E6B9C" opacity="0.7"/>
+    <circle cx="430" cy="272" r="34" fill="#DDEEEB"/>
+    <circle cx="430" cy="272" r="11" fill="#2E6B9C" opacity="0.7"/>
+  </g>
+
+  <!-- uno de los tres enferma, y no se sabe cual -->
+  <circle cx="360" cy="225" r="128" fill="#C69C6D" opacity="0.14"/>
+  <circle cx="360" cy="146" r="46" fill="#C69C6D" opacity="0.20"/>
+  <circle cx="292" cy="272" r="46" fill="#C69C6D" opacity="0.20"/>
+  <circle cx="430" cy="272" r="46" fill="#C69C6D" opacity="0.20"/>
+
+  <!-- la barra diagonal del reporte -->
+  <path d="M596 156 L664 296" stroke="#C69C6D" stroke-width="15" stroke-linecap="round"/>
+  <g fill="#C69C6D" opacity="0.34">
+    <rect x="556" y="176" width="52" height="12" rx="6"/>
+    <rect x="556" y="200" width="34" height="12" rx="6"/>
+    <rect x="656" y="248" width="52" height="12" rx="6"/>
+    <rect x="672" y="272" width="34" height="12" rx="6"/>
+  </g>
+</svg>

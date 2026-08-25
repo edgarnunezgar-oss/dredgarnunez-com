@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="670" cy="92" r="72" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="106" cy="368" r="92" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="132" cy="110" r="20" fill="#2A8A7E" opacity="0.14"/>
+  <circle cx="708" cy="334" r="14" fill="#2E6B9C" opacity="0.15"/>
+
+  <!-- sombra -->
+  <ellipse cx="400" cy="366" rx="212" ry="14" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- blister de doce meses -->
+  <rect x="172" y="112" width="456" height="242" rx="26" fill="#FFFFFF"/>
+  <rect x="172" y="112" width="456" height="40" rx="26" fill="#2E6B9C" opacity="0.16"/>
+  <rect x="172" y="132" width="456" height="20" fill="#2E6B9C" opacity="0.16"/>
+
+  <!-- doce celdas, dos filas de seis -->
+  <g>
+    <circle cx="230" cy="222" r="25" fill="#DDEEEB"/>
+    <circle cx="298" cy="222" r="25" fill="#DDEEEB"/>
+    <circle cx="366" cy="222" r="25" fill="#DDEEEB"/>
+    <circle cx="434" cy="222" r="25" fill="#DDEEEB"/>
+    <circle cx="502" cy="222" r="25" fill="#DDEEEB"/>
+    <circle cx="570" cy="222" r="25" fill="#DDEEEB"/>
+    <circle cx="230" cy="298" r="25" fill="#DDEEEB"/>
+    <circle cx="298" cy="298" r="25" fill="#DDEEEB"/>
+    <circle cx="366" cy="298" r="25" fill="#DDEEEB"/>
+    <circle cx="434" cy="298" r="25" fill="#DDEEEB"/>
+    <circle cx="502" cy="298" r="25" fill="#DDEEEB"/>
+    <circle cx="570" cy="298" r="25" fill="#DDEEEB"/>
+  </g>
+
+  <!-- las dos dosis del ano -->
+  <circle cx="230" cy="222" r="42" fill="#C69C6D" opacity="0.16"/>
+  <circle cx="230" cy="222" r="25" fill="#C69C6D"/>
+  <circle cx="230" cy="298" r="42" fill="#C69C6D" opacity="0.16"/>
+  <circle cx="230" cy="298" r="25" fill="#C69C6D"/>
+
+</svg>
