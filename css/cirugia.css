@@ -278,6 +278,9 @@ a.prueba-item:hover { background: rgba(42,138,126,0.18); border-color: rgba(42,1
     display: flex; flex-direction: column; align-items: flex-start; gap: 14px;
 }
 .pain-cards li:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.07); }
+/* Si la ultima tarjeta queda sola en su renglon, se centra en vez de quedar
+   descuadrada a la izquierda. */
+.pain-cards li:last-child:nth-child(3n + 1) { grid-column: 2; }
 .pain-icon {
     width: 44px; height: 44px; border-radius: 10px; flex-shrink: 0;
     background: var(--color-teal-light); color: var(--color-teal);
