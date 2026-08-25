@@ -89,7 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /* === CARRUSEL DE HOSPITALES ===
-   Muestra 3 logos, el del centro mas grande. Avanza solo hacia la derecha:
+   El del centro va mas grande y por las orillas asoman el anterior y el
+   siguiente, para que se vea que viene otro. Avanza solo hacia la derecha:
    el logo que estaba a la izquierda pasa al centro. Loop infinito. */
 (function () {
     var track = document.getElementById('hcTrack');
@@ -160,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     function start() {
         if (reduce || timer) return;
-        timer = setInterval(avanzar, 2800);
+        timer = setInterval(avanzar, 1500);
     }
     function stop() { clearInterval(timer); timer = null; }
 
