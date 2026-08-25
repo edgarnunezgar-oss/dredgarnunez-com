@@ -348,3 +348,21 @@ a.prueba-item:hover { background: rgba(42,138,126,0.18); border-color: rgba(42,1
     font-size: 16px; line-height: 1.8;
 }
 .problem-content li::marker { color: var(--color-teal); }
+
+/* Fotos de caso clínico */
+.foto-caso, .antes-despues { margin: 36px auto 0; max-width: 640px; }
+.antes-despues { max-width: 760px; }
+.foto-caso img { width: 100%; height: auto; display: block; border-radius: 14px; }
+.foto-caso figcaption, .antes-despues figcaption {
+    margin-top: 14px; font-size: 14px; line-height: 1.6;
+    color: var(--color-text-muted); text-align: center;
+}
+.antes-despues-par { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.antes-despues-item img { width: 100%; height: auto; display: block; border-radius: 14px; }
+.antes-despues-rotulo {
+    font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--color-blue-dark); margin-bottom: 10px; text-align: center;
+}
+@media (max-width: 560px) {
+    .antes-despues-par { grid-template-columns: 1fr; gap: 22px; }
+}
