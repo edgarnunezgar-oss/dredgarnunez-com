@@ -357,12 +357,15 @@ a.prueba-item:hover { background: rgba(42,138,126,0.18); border-color: rgba(42,1
     margin-top: 14px; font-size: 14px; line-height: 1.6;
     color: var(--color-text-muted); text-align: center;
 }
-.antes-despues-par { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+/* minmax(0,1fr) y min-width:0: sin eso cada columna toma como minimo el ancho real
+   de la imagen (800px) y el bloque desborda la pantalla, cortando el texto. */
+.antes-despues-par { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.antes-despues-item { min-width: 0; }
 .antes-despues-item img { width: 100%; height: auto; display: block; border-radius: 14px; }
 .antes-despues-rotulo {
     font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
     color: var(--color-blue-dark); margin-bottom: 10px; text-align: center;
 }
 @media (max-width: 560px) {
-    .antes-despues-par { grid-template-columns: 1fr; gap: 22px; }
+    .antes-despues-par { grid-template-columns: minmax(0, 1fr); gap: 22px; }
 }

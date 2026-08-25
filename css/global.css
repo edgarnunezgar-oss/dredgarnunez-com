@@ -254,7 +254,7 @@ a { text-decoration: none; }
 .faq-answer {
     max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease;
 }
-.faq-item.active .faq-answer { max-height: 1200px; padding-top: 16px; }
+.faq-item.active .faq-answer { max-height: 4000px; padding-top: 16px; }
 .faq-answer p { font-size: 15px; color: var(--color-text-light); line-height: 1.8; }
 .faq-answer p + p { margin-top: 12px; }
 
@@ -460,6 +460,11 @@ a { text-decoration: none; }
 @media (max-width: 820px) {
     .servicios-cierre { padding: 34px 22px; }
 }
+
+/* Red de seguridad contra texto cortado: una palabra sin espacios mas ancha que su
+   caja (una URL, un correo) empuja el bloque y lo saca de la pantalla. */
+body { overflow-wrap: break-word; }
+img, svg, video { max-width: 100%; }
 
 /* Encabezado de sección con varios párrafos: el título se centra, el cuerpo se alinea
    a la izquierda. Un bloque de cuatro renglones centrados queda con las dos orillas
