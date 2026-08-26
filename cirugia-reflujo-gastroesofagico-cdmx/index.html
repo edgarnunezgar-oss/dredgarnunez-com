@@ -39,7 +39,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=35">
+    <link rel="stylesheet" href="/css/global.css?v=36">
     <link rel="stylesheet" href="/css/cirugia.css?v=35">
     <link rel="stylesheet" href="/css/home.css?v=25">
 
@@ -215,6 +215,170 @@
       ]
     }
     </script>
+
+    <!-- Physician Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "@id": "https://dredgarnunez.com/#cirujano",
+      "name": "Dr. Edgar Abraham Núñez García",
+      "url": "https://dredgarnunez.com/",
+      "image": "https://dredgarnunez.com/img/doctor-portrait.jpg",
+      "sameAs": [
+        "https://maps.google.com/?cid=4008210364658483372",
+        "https://www.doctoralia.com.mx/perfil/edgar-nunez-garcia"
+      ],
+      "telephone": "+52 56 2528 0312",
+      "medicalSpecialty": [
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía General"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Gastrointestinal"
+        },
+        {
+          "@type": "MedicalSpecialty",
+          "name": "Cirugía Laparoscópica y de Mínima Invasión"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad La Salle"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Centro Médico ABC / UNAM"
+        }
+      ],
+      "memberOf": {
+        "@type": "MedicalOrganization",
+        "name": "Consejo Mexicano de Cirugía General"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ciudad de México"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Zona Metropolitana del Valle de México"
+        }
+      ],
+      "location": [
+        {
+          "@type": "MedicalClinic",
+          "name": "Centro Quirúrgico Servicura",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Cuauhtémoc, Eje 1 Pte 52",
+            "addressLocality": "Ciudad de México",
+            "addressRegion": "Ciudad de México",
+            "postalCode": "06720",
+            "addressCountry": "MX"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 19.4233434,
+            "longitude": -99.1536367
+          },
+          "hasMap": "https://maps.google.com/?cid=4008210364658483372",
+          "telephone": "+52 56 2528 0312",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "11:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "16:00",
+              "closes": "20:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Saturday"
+              ],
+              "opens": "09:00",
+              "closes": "14:00"
+            }
+          ]
+        },
+        {
+          "@type": "Hospital",
+          "name": "Hospital Punta Médica",
+          "alternateName": "Hospital Punta Médica Alta Especialidad",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. de la Herradura 10, Country Club",
+            "addressLocality": "Naucalpan de Juárez",
+            "addressRegion": "Estado de México",
+            "postalCode": "53930",
+            "addressCountry": "MX"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 19.4300595,
+            "longitude": -99.2404768
+          },
+          "hasMap": "https://maps.google.com/?cid=17176086319591366992",
+          "telephone": "+52 56 2528 0312",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "09:00",
+              "closes": "11:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
+              "opens": "16:00",
+              "closes": "20:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Saturday"
+              ],
+              "opens": "09:00",
+              "closes": "14:00"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -239,7 +403,7 @@
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/preguntas-frecuentes/">Preguntas Frecuentes</a></li>
                 <li><a href="/contacto/">Contacto</a></li>
-                <li><a href="https://wa.link/3rll01" class="nav-cta" target="_blank">Agendar Cita</a></li>
+                <li><a href="https://wa.link/3rll01" class="nav-cta" target="_blank" data-wa-cta="nav">Agendar Cita</a></li>
             </ul>
             <button class="nav-mobile" aria-label="Menú"><span></span><span></span><span></span></button>
         </div>
@@ -256,7 +420,7 @@
         <a href="/blog/">Blog</a>
         <a href="/preguntas-frecuentes/">Preguntas Frecuentes</a>
         <a href="/contacto/">Contacto</a>
-        <a href="https://wa.link/3rll01" class="nav-cta" target="_blank">Agendar Cita</a>
+        <a href="https://wa.link/3rll01" class="nav-cta" target="_blank" data-wa-cta="nav-movil">Agendar Cita</a>
     </div>
 
     <!-- HERO -->
@@ -288,7 +452,7 @@
                     </div>
                 </div>
                 <div class="cirugia-hero-ctas">
-                    <a href="https://wa.link/3rll01" class="btn-primary" target="_blank">
+                    <a href="https://wa.link/3rll01" class="btn-primary" target="_blank" data-wa-cta="hero">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.649-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.17 0-4.207-.578-5.963-1.588l-.427-.254-2.759.867.828-2.67-.279-.444A9.72 9.72 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
                         Agendar Valoración
                     </a>
@@ -446,7 +610,7 @@
                     <p>"Si tu caso se resuelve mejor sin cirugía, te lo voy a decir."</p>
                     <cite>Es la regla con la que ejerzo.</cite>
                 </blockquote>
-                <p style="text-align: center; margin-top: 28px;"><a href="https://wa.link/3rll01" class="btn-primary" target="_blank">Agenda tu valoración por WhatsApp</a></p>
+                <p style="text-align: center; margin-top: 28px;"><a href="https://wa.link/3rll01" class="btn-primary" target="_blank" data-wa-cta="honestidad">Agenda tu valoración por WhatsApp</a></p>
             </div>
         </div>
     </section>
@@ -599,7 +763,7 @@
             <p class="cta-final-lead">Si llevas años dependiendo de medicamentos y el reflujo no se va, la funduplicatura puede resolver el problema de raíz.</p>
             <p>El primer paso es una valoración: te reviso, revisamos tus estudios y te explico con claridad qué opciones hay para tu caso.</p>
             <div class="cta-final-buttons">
-                <a href="https://wa.link/3rll01" class="btn-primary" target="_blank">
+                <a href="https://wa.link/3rll01" class="btn-primary" target="_blank" data-wa-cta="cierre">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.649-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.17 0-4.207-.578-5.963-1.588l-.427-.254-2.759.867.828-2.67-.279-.444A9.72 9.72 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
                     Agendar por WhatsApp
                 </a>
@@ -656,18 +820,18 @@
                 </div>
                 <div class="footer-col">
                     <h5>Contacto</h5>
-                    <a href="https://wa.link/3rll01" target="_blank">WhatsApp</a>
+                    <a href="https://wa.link/3rll01" target="_blank" data-wa-cta="pie">WhatsApp</a>
                     <a href="/contacto/">Ubicación</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Dr. Edgar Abraham Núñez García · <a href="#">Aviso de Privacidad</a> · Aviso de publicidad: 2517012002A00071</p>
+                <p>© 2026 Dr. Edgar Abraham Núñez García · <a href="/aviso-de-privacidad/">Aviso de Privacidad</a> · Aviso de publicidad: 2517012002A00071</p>
             </div>
         </div>
     </footer>
 
     <!-- WHATSAPP FLOAT -->
-    <a href="https://wa.link/3rll01" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <a href="https://wa.link/3rll01" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp" data-wa-cta="flotante">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.649-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.17 0-4.207-.578-5.963-1.588l-.427-.254-2.759.867.828-2.67-.279-.444A9.72 9.72 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
     </a>
 

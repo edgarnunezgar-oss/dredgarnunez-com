@@ -511,3 +511,21 @@ img, svg, video { max-width: 100%; }
     max-width: 680px;
     margin-bottom: 18px;
 }
+
+/* === AVISO DE PRIVACIDAD === */
+.aviso-legal { max-width: 760px; margin: 0 auto; }
+.aviso-bloque { margin-bottom: 44px; }
+.aviso-bloque h2 {
+    font-family: var(--font-heading); font-size: 24px; font-weight: 700;
+    color: var(--color-blue-dark); margin-bottom: 14px; line-height: 1.25;
+}
+.aviso-bloque p { margin-bottom: 14px; line-height: 1.75; color: var(--color-text-light); }
+.aviso-bloque p:last-child { margin-bottom: 0; }
+.aviso-bloque strong { color: var(--color-text); }
+.aviso-bloque ul { margin: 0 0 16px; padding-left: 22px; }
+.aviso-bloque li { margin-bottom: 10px; line-height: 1.7; color: var(--color-text-light); }
+.aviso-bloque li::marker { color: var(--color-teal); }
+.aviso-fecha {
+    margin-top: 8px; padding-top: 22px; border-top: 1px solid var(--color-border);
+    font-size: 14px; color: var(--color-text-muted);
+}
