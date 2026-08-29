@@ -25,10 +25,10 @@
     --color-bg-section: #F5F8FA;
     --color-text: #2A3441;
     --color-text-light: #5A6A7A;
-    --color-text-muted: #7A8A9A;
+    --color-text-muted: #687889;  /* 4.53:1 sobre blanco, cumple AA */
     --color-white: #FFFFFF;
     --color-border: #DAE3EC;
-    --color-star: #C69C6D;
+    --color-star: #A16A18;  /* 4.57:1 sobre blanco; el dorado de marca solo va sobre fondo oscuro */
     --font-body: 'Lato', system-ui, sans-serif;
     --font-heading: 'Varela Round', sans-serif;
     --max-width: 1200px;
@@ -152,14 +152,6 @@ a { text-decoration: none; }
 }
 .btn-secondary:hover { border-color: #5EC4B6; color: #5EC4B6; }
 
-.btn-gold {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--color-gold); color: var(--color-white);
-    padding: 16px 32px; border-radius: 8px; text-decoration: none;
-    font-weight: 600; font-size: 16px; transition: all 0.3s;
-    border: 2px solid var(--color-gold); cursor: pointer;
-}
-.btn-gold:hover { background: var(--color-gold-hover); border-color: var(--color-gold-hover); transform: translateY(-1px); }
 
 .btn-outline {
     display: inline-flex; align-items: center; gap: 8px;
@@ -245,6 +237,8 @@ a { text-decoration: none; }
     cursor: pointer; display: flex; justify-content: space-between; align-items: center;
     gap: 16px; background: none; border: none; width: 100%; text-align: left;
     font-family: var(--font-body);
+    /* min-height para que el area tactil llegue al minimo recomendado */
+    min-height: 44px; padding: 4px 0;
 }
 .faq-question::after {
     content: '+'; font-size: 24px; color: var(--color-teal); flex-shrink: 0;
@@ -284,7 +278,7 @@ a { text-decoration: none; }
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
     max-width: 800px; margin: 0 auto; text-align: center;
 }
-.cta-contact-item h4 { font-size: 14px; color: var(--color-teal); font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.cta-contact-item h3 { font-size: 14px; color: var(--color-teal); font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
 .cta-contact-item p { font-size: 14px; color: var(--color-text-light); line-height: 1.6; }
 .cta-contact-item a { color: var(--color-teal); text-decoration: none; }
 
@@ -302,13 +296,13 @@ a { text-decoration: none; }
 }
 .footer-brand p { font-size: 14px; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 320px; }
 .footer-brand .footer-cedulas { font-size: 13px; color: rgba(255,255,255,0.45); margin-top: 12px; }
-.footer-col h5 {
+.footer-col h4 {
     font-size: 13px; text-transform: uppercase; letter-spacing: 2px;
     color: #5EC4B6; font-weight: 700; margin-bottom: 20px;
 }
 .footer-col a {
     display: block; color: rgba(255,255,255,0.6); font-size: 14px;
-    padding: 6px 0; transition: color 0.3s; text-decoration: none;
+    padding: 11px 0; transition: color 0.3s; text-decoration: none;
 }
 .footer-col a:hover { color: var(--color-white); }
 .footer-bottom {
@@ -416,6 +410,16 @@ a { text-decoration: none; }
     font-family: var(--font-heading); font-size: 19px; font-weight: 600;
     color: var(--color-text-muted);
 }
+
+/* Salto al contenido: solo aparece al navegar con teclado */
+.salto-contenido {
+    position: absolute; left: 12px; top: -60px; z-index: 2000;
+    background: var(--color-teal); color: var(--color-white);
+    padding: 12px 20px; border-radius: 0 0 8px 8px;
+    font-weight: 700; text-decoration: none;
+    transition: top .18s ease;
+}
+.salto-contenido:focus { top: 0; }
 
 .sr-only {
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;

@@ -38,10 +38,11 @@
     <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=36">
-    <link rel="stylesheet" href="/css/cirugia.css?v=35">
-    <link rel="stylesheet" href="/css/home.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=37">
+    <link rel="stylesheet" href="/css/cirugia.css?v=37">
+    <link rel="stylesheet" href="/css/home.css?v=37">
 
     <!-- MedicalWebPage Schema -->
     <script type="application/ld+json">
@@ -364,6 +365,7 @@
     </script>
 </head>
 <body>
+    <a class="salto-contenido" href="#contenido">Ir al contenido</a>
     <!-- NAV -->
     <nav class="nav">
         <div class="container">
@@ -464,7 +466,7 @@
     </section>
 
 <!-- SOCIAL PROOF BAR -->
-    <section class="social-proof-bar">
+    <section id="contenido" class="social-proof-bar">
         <div class="container">
             <div class="logos-row">
                 <span class="logos-row-label">Formado en:</span>
@@ -632,47 +634,47 @@
             </div>
             <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-question">¿Cómo es la consulta de valoración?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cómo es la consulta de valoración?</button>
                     <div class="faq-answer"><p><strong>Es una consulta presencial en mi consultorio.</strong> Te reviso, te explico tu diagnóstico con claridad y juntos decidimos el mejor camino. La consulta de valoración tiene una inversión de $1,000 MXN.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Todo sangrado por el ano es por hemorroides?</button>
+                    <button class="faq-question" aria-expanded="false">¿Todo sangrado por el ano es por hemorroides?</button>
                     <div class="faq-answer"><p><strong>No.</strong> Las hemorroides son la causa más común, pero no la única. Fisuras, pólipos y otras causas más serias también sangran, y algunas se ven igual desde afuera. Por eso el sangrado se estudia antes de asumir de qué se trata, sobre todo si tienes más de 45 años, si hay antecedentes de cáncer en tu familia o si además bajaste de peso o cambió tu hábito intestinal.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué grados de hemorroides existen?</button>
+                    <button class="faq-question" aria-expanded="false">¿Qué grados de hemorroides existen?</button>
                     <div class="faq-answer"><p><strong>Se clasifican en cuatro grados según si se salen y si se pueden meter.</strong> Grado 1: sangran pero no salen. Grado 2: salen al pujar y se meten solas. Grado 3: salen y hay que meterlas con la mano. Grado 4: están fuera todo el tiempo y ya no se pueden meter. El grado es lo que define el tratamiento.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cómo se revisan las hemorroides en la consulta?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cómo se revisan las hemorroides en la consulta?</button>
                     <div class="faq-answer"><p><strong>Con una exploración de la zona y una anoscopia.</strong> La anoscopia es una revisión con un instrumento corto que permite ver el canal anal por dentro. Toma unos minutos y es lo que permite saber el grado real, que muchas veces no coincide con lo que se siente desde afuera.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Se pueden quitar las hemorroides sin cirugía?</button>
+                    <button class="faq-question" aria-expanded="false">¿Se pueden quitar las hemorroides sin cirugía?</button>
                     <div class="faq-answer"><p><strong>En los grados iniciales, muchas veces sí.</strong> Los cambios en la dieta, la fibra, el agua y el hábito de no pasar mucho tiempo en el baño resuelven buena parte de los casos. Y cuando eso no basta, la ligadura con banda elástica se hace en el consultorio, sin quirófano.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuál es el mejor medicamento para las hemorroides?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cuál es el mejor medicamento para las hemorroides?</button>
                     <div class="faq-answer"><p><strong>No hay un medicamento ideal.</strong> Existen varios que atacan diversos síntomas, por eso es importante valorar cada caso. Lo que sí es común a todos los casos es corregir el estreñimiento: mientras sigas pujando, cualquier tratamiento rinde menos.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué es una hemorroide trombosada?</button>
+                    <button class="faq-question" aria-expanded="false">¿Qué es una hemorroide trombosada?</button>
                     <div class="faq-answer"><p><strong>Es cuando se forma un coágulo dentro de una hemorroide externa.</strong> Aparece de un día para otro como una bola morada y muy dolorosa en el borde del ano. Es la situación en la que más rápido conviene una valoración, porque en los primeros días hay opciones que después ya no aplican.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Duele mucho la cirugía de hemorroides?</button>
+                    <button class="faq-question" aria-expanded="false">¿Duele mucho la cirugía de hemorroides?</button>
                     <div class="faq-answer"><p><strong>Es una cirugía que sí duele en el postoperatorio, y prefiero decírtelo desde antes.</strong> La zona es muy sensible y las primeras evacuaciones son las más molestas. Se maneja con analgesia y con indicaciones para que las evacuaciones sean suaves. En la valoración te explico qué esperar día por día.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuánto tarda la recuperación de la cirugía de hemorroides?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cuánto tarda la recuperación de la cirugía de hemorroides?</button>
                     <div class="faq-answer"><p><strong>Las primeras dos semanas son las de más molestias.</strong> La cicatrización completa de la zona toma más tiempo que la de otras cirugías. La reincorporación al trabajo depende de qué tan físico sea, y eso lo definimos en tu caso.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Las hemorroides vuelven a salir después de la cirugía?</button>
+                    <button class="faq-question" aria-expanded="false">¿Las hemorroides vuelven a salir después de la cirugía?</button>
                     <div class="faq-answer"><p><strong>La cirugía quita las hemorroides que se operaron, pero no cambia lo que las provocó.</strong> Si el estreñimiento y el esfuerzo al evacuar siguen igual, el problema puede regresar con el tiempo. Por eso el tratamiento no termina en el quirófano.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuánto cuesta la cirugía de hemorroides?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cuánto cuesta la cirugía de hemorroides?</button>
                     <div class="faq-answer"><p><strong>El costo depende del grado y de la técnica que corresponda a tu caso.</strong> No es lo mismo una ligadura en consultorio que una hemorroidectomía en quirófano. La consulta de valoración tiene una inversión de $1,000 MXN, y ahí te doy el costo exacto de tu caso por escrito.</p></div>
                 </div>
             </div>
@@ -694,15 +696,15 @@
             <div class="cta-contact">
                 <div class="cta-contact-grid">
                     <div class="cta-contact-item">
-                        <h4>Centro Quirúrgico Servicura</h4>
+                        <h3>Centro Quirúrgico Servicura</h3>
                         <p>Av. Cuauhtémoc, Eje 1 Pte 52<br>Col. Doctores, 06720<br>Ciudad de México</p>
                     </div>
                     <div class="cta-contact-item">
-                        <h4>Hospital Punta Médica</h4>
+                        <h3>Hospital Punta Médica</h3>
                         <p>Av. de la Herradura 10<br>Country Club, 53930<br>Naucalpan de Juárez, Méx.</p>
                     </div>
                     <div class="cta-contact-item">
-                        <h4>Horarios</h4>
+                        <h3>Horarios</h3>
                         <p>Lunes a Viernes<br>9:00 - 11:00 am · 4:00 - 8:00 pm<br>Sábado: 9:00 am - 2:00 pm</p>
                     </div>
                 </div>
@@ -725,7 +727,7 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h5>Cirugías</h5>
+                    <h4>Cirugías</h4>
                     <a href="/cirugia-hernia-inguinal-cdmx/">Hernia Inguinal</a>
                     <a href="/cirugia-vesicula-cdmx/">Vesícula</a>
                     <a href="/cirugia-reflujo-gastroesofagico-cdmx/">Reflujo Gastroesofágico</a>
@@ -734,7 +736,7 @@
                     <a href="/otros-servicios/">Otros servicios</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Navegación</h5>
+                    <h4>Navegación</h4>
                     <a href="/">Inicio</a>
                     <a href="/sobre-mi/">Sobre Mí</a>
                     <a href="/blog/">Blog</a>
@@ -742,7 +744,7 @@
                     <a href="/contacto/">Contacto</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Contacto</h5>
+                    <h4>Contacto</h4>
                     <a href="https://wa.link/3rll01" target="_blank" data-wa-cta="pie">WhatsApp</a>
                     <a href="/contacto/">Ubicación</a>
                 </div>
@@ -758,6 +760,6 @@
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.649-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.17 0-4.207-.578-5.963-1.588l-.427-.254-2.759.867.828-2.67-.279-.444A9.72 9.72 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
     </a>
 
-    <script src="/js/main.js?v=3"></script>
+    <script src="/js/main.js?v=4"></script>
 </body>
 </html>

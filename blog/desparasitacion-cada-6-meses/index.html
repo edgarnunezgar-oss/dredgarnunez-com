@@ -38,9 +38,10 @@
     <meta name="twitter:image" content="https://dredgarnunez.com/img/blog/og-blog-desparasitacion.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=36">
-    <link rel="stylesheet" href="/css/pages.css?v=28">
+    <link rel="stylesheet" href="/css/global.css?v=37">
+    <link rel="stylesheet" href="/css/pages.css?v=37">
 
     <script type="application/ld+json">
 {
@@ -155,6 +156,7 @@
 </head>
 </head>
 <body>
+    <a class="salto-contenido" href="#contenido">Ir al contenido</a>
 
     <!-- NAV -->
     <nav class="nav">
@@ -231,7 +233,7 @@
     </section>
 
     <!-- ARTICLE -->
-    <article class="blog-post-content">
+    <article id="contenido" class="blog-post-content">
         <div class="post-illustration"><img src="/img/blog/blog-desparasitacion.svg" alt="Ilustración de un blíster de doce pastillas con solo dos marcadas, separadas por seis meses" width="800" height="450" loading="lazy" decoding="async"></div>
 
         <p>Me llegan 2 tipos de consulta con el mismo tema.</p>
@@ -494,23 +496,23 @@
             </div>
             <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-question">¿Hay que desparasitarse cada 6 meses?</button>
+                    <button class="faq-question" aria-expanded="false">¿Hay que desparasitarse cada 6 meses?</button>
                     <div class="faq-answer"><p><strong>No, si no hay síntomas ni estudio que lo justifique.</strong> El "cada 6 meses" salió de una recomendación de la Organización Mundial de la Salud para programas poblacionales en zonas donde la prevalencia de geohelmintos pasa de 50%, no de una indicación clínica individual. México ya no cumple ese criterio; la OMS lo clasifica como país que no requiere quimioterapia preventiva.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Por qué en México se recomendaba desparasitar cada 6 meses?</button>
+                    <button class="faq-question" aria-expanded="false">¿Por qué en México se recomendaba desparasitar cada 6 meses?</button>
                     <div class="faq-answer"><p><strong>Desde 1993 se administró albendazol en las Semanas Nacionales de Salud a niños de 2 a 14 años, y la Cartilla Nacional de Salud llegó a imprimir la línea de desparasitación intestinal 2 veces al año. Fue una buena política de salud pública para el país que entonces éramos. Lo que la volvió innecesaria fue el saneamiento: entre 1990 y 2020 el drenaje rural pasó de 18.1% a 83.2%.</strong></p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Sirve desparasitar a los niños de rutina?</button>
+                    <button class="faq-question" aria-expanded="false">¿Sirve desparasitar a los niños de rutina?</button>
                     <div class="faq-answer"><p><strong>La revisión Cochrane con 51 ensayos y 84,336 participantes no encontró efecto del tratamiento regular cada 3 o 6 meses sobre talla, hemoglobina, cognición, desempeño escolar ni mortalidad. Tratar una infección diagnosticada sigue siendo apropiado; lo que no se sostiene es el tratamiento masivo indiscriminado en niños sin síntomas.</strong></p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Por qué me dio diarrea después de desparasitarme?</button>
+                    <button class="faq-question" aria-expanded="false">¿Por qué me dio diarrea después de desparasitarme?</button>
                     <div class="faq-answer"><p><strong>Por tres razones distintas.</strong> La diarrea está listada como efecto adverso directo de varios de estos fármacos. Puede haber cambios en la microbiota, aunque con el albendazol son modestos. Y después de una infección intestinal una fracción de las personas desarrolla síndrome de intestino irritable posinfeccioso, sobre todo tras protozoarios, donde la prevalencia llega a 41.9%.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuándo sí hay que sospechar parásitos?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cuándo sí hay que sospechar parásitos?</button>
                     <div class="faq-answer"><p><strong>Diarrea de más de 2 semanas, eosinofilia mayor a 450 por microlitro, anemia por deficiencia de hierro sin causa evidente, prurito anal nocturno, expulsión visible de un gusano, dolor abdominal con pérdida de peso, viaje o residencia en zona endémica, y cualquier síntoma digestivo en una persona inmunocomprometida.</strong></p></div>
                 </div>
             </div>
@@ -556,7 +558,7 @@
                     <p class="footer-cedulas">Cédula Profesional: 6944303<br>Cédula de Especialidad: 09181211</p>
                 </div>
                 <div class="footer-col">
-                    <h5>Cirugías</h5>
+                    <h4>Cirugías</h4>
                     <a href="/cirugia-hernia-inguinal-cdmx/">Hernia Inguinal</a>
                     <a href="/cirugia-vesicula-cdmx/">Vesícula</a>
                     <a href="/cirugia-reflujo-gastroesofagico-cdmx/">Reflujo Gastroesofágico</a>
@@ -565,7 +567,7 @@
                     <a href="/otros-servicios/">Otros servicios</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Navegación</h5>
+                    <h4>Navegación</h4>
                     <a href="/">Inicio</a>
                     <a href="/sobre-mi/">Sobre Mí</a>
                     <a href="/blog/">Blog</a>
@@ -573,7 +575,7 @@
                     <a href="/contacto/">Contacto</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Contacto</h5>
+                    <h4>Contacto</h4>
                     <a href="https://wa.link/3rll01" target="_blank" data-wa-cta="pie">WhatsApp</a>
                     <a href="/contacto/">Ubicación</a>
                 </div>
@@ -588,6 +590,6 @@
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.584-1.167A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.239 0-4.308-.724-5.993-1.953l-.42-.306-2.716.691.72-2.628-.336-.438A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
     </a>
 
-    <script src="/js/main.js?v=3"></script>
+    <script src="/js/main.js?v=4"></script>
 </body>
 </html>

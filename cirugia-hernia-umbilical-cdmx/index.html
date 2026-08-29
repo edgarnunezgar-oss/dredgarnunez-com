@@ -38,10 +38,11 @@
     <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=36">
-    <link rel="stylesheet" href="/css/cirugia.css?v=35">
-    <link rel="stylesheet" href="/css/home.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=37">
+    <link rel="stylesheet" href="/css/cirugia.css?v=37">
+    <link rel="stylesheet" href="/css/home.css?v=37">
 
     <!-- MedicalWebPage Schema -->
     <script type="application/ld+json">
@@ -365,6 +366,7 @@
     </script>
 </head>
 <body>
+    <a class="salto-contenido" href="#contenido">Ir al contenido</a>
 
     <!-- NAV -->
     <nav class="nav">
@@ -472,7 +474,7 @@
     </section>
 
 <!-- SOCIAL PROOF BAR -->
-    <section class="social-proof-bar">
+    <section id="contenido" class="social-proof-bar">
         <div class="container">
             <div class="logos-row">
                 <span class="logos-row-label">Formado en:</span>
@@ -628,22 +630,22 @@
             <div class="includes-grid">
                 <div class="include-card">
                     <div class="include-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-                    <h4>Honorarios del equipo médico</h4>
+                    <h3>Honorarios del equipo médico</h3>
                     <p>Cirujano, Anestesiólogo, Ayudantes</p>
                 </div>
                 <div class="include-card">
                     <div class="include-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/><path d="M12 7v4"/><path d="M10 9h4"/><path d="M10 21v-4h4v4"/></svg></div>
-                    <h4>Hospitalización ambulatoria</h4>
+                    <h3>Hospitalización ambulatoria</h3>
                     <p>Quirófano y habitación privada</p>
                 </div>
                 <div class="include-card">
                     <div class="include-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M12 11v4"/><path d="M10 13h4"/></svg></div>
-                    <h4>Medicamentos, malla y materiales</h4>
+                    <h3>Medicamentos, malla y materiales</h3>
                     <p>Todo lo que se usa en quirófano y durante tu estancia</p>
                 </div>
                 <div class="include-card">
                     <div class="include-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 15 2 2 4-4"/></svg></div>
-                    <h4>Consultas postoperatorias incluidas</h4>
+                    <h3>Consultas postoperatorias incluidas</h3>
                     <p>Revisiones de seguimiento hasta tu recuperación, sin costo extra</p>
                 </div>
             </div>
@@ -694,51 +696,51 @@
             </div>
             <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-question">¿Cómo es la consulta de valoración?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cómo es la consulta de valoración?</button>
                     <div class="faq-answer"><p><strong>Es una consulta presencial en mi consultorio.</strong> Te reviso, te explico tu diagnóstico con claridad y juntos decidimos el mejor camino. La consulta de valoración tiene una inversión de $1,000 MXN.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué preparación se necesita antes de la cirugía?</button>
+                    <button class="faq-question" aria-expanded="false">¿Qué preparación se necesita antes de la cirugía?</button>
                     <div class="faq-answer"><p><strong>Estudios preoperatorios estándar</strong>, indicaciones claras de qué hacer y qué evitar los días previos, y resolución de todas tus dudas. Programamos la cirugía en el horario que mejor te funcione.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué está saliendo por la bolita?</button>
+                    <button class="faq-question" aria-expanded="false">¿Qué está saliendo por la bolita?</button>
                     <div class="faq-answer"><p><strong>Cuando las hernias se ven pequeñas, usualmente sale grasa del interior del abdomen.</strong> Cuando son hernias más grandes, puede protruir un pedazo de intestino. En una tomografía se puede ver con claridad el orificio y qué está protruyendo.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué significa que se encarcele o estrangule una hernia?</button>
+                    <button class="faq-question" aria-expanded="false">¿Qué significa que se encarcele o estrangule una hernia?</button>
                     <div class="faq-answer"><p><strong>Si lo que se sale se atora, le llamamos que está encarcelada.</strong> Si además deja de llegarle sangre, hablamos de estrangulamiento. Afortunadamente es muy poco frecuente: menos del 5% de los pacientes necesitan una cirugía de urgencia por esto. Pero sí pasa, y por eso se recomienda la cirugía electiva antes de que ocurra.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿En qué consiste la cirugía de hernia umbilical?</button>
+                    <button class="faq-question" aria-expanded="false">¿En qué consiste la cirugía de hernia umbilical?</button>
                     <div class="faq-answer"><p><strong>Regresamos el contenido de la hernia, la bolita, a su lugar.</strong> Después cerramos el orificio con sutura y colocamos una malla para reforzar la zona.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuánto dura la cirugía de hernia umbilical?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cuánto dura la cirugía de hernia umbilical?</button>
                     <div class="faq-answer"><p><strong>Entre 30 y 45 minutos aproximadamente.</strong> Es un procedimiento ambulatorio: te operas por la mañana y regresas a casa el mismo día.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Van a cambiar la forma de mi ombligo?</button>
+                    <button class="faq-question" aria-expanded="false">¿Van a cambiar la forma de mi ombligo?</button>
                     <div class="faq-answer"><p><strong>El objetivo es reparar el defecto manteniendo la estética del ombligo.</strong> En la gran mayoría de los casos el resultado cosmético es muy bueno.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuánto tarda la recuperación de una hernia umbilical?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cuánto tarda la recuperación de una hernia umbilical?</button>
                     <div class="faq-answer"><p><strong>Reposo relativo los primeros 2-3 días.</strong> Actividades ligeras a partir del día 4-5. Vida normal en 7-10 días. Esfuerzos pesados y abdominales intensos se retoman entre las 4 y 6 semanas según evolución.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué pasa si no me opero?</button>
+                    <button class="faq-question" aria-expanded="false">¿Qué pasa si no me opero?</button>
                     <div class="faq-answer"><p><strong>La hernia seguirá creciendo.</strong> El riesgo principal es que en algún momento se atore o se estrangule, lo que convierte una cirugía programada y sencilla en una urgencia con mayores riesgos. Siempre que se hace una cirugía de urgencia se piensa que se debió evitar con una cirugía programada electiva.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué riesgos tiene la cirugía de hernia umbilical?</button>
+                    <button class="faq-question" aria-expanded="false">¿Qué riesgos tiene la cirugía de hernia umbilical?</button>
                     <div class="faq-answer"><p><strong>No te voy a decir que no hay riesgos.</strong> Toda cirugía y toda anestesia los tienen, y prefiero ser frontal. Lo importante es qué se hace para reducirlos. Es como manejar: el riesgo de un accidente existe siempre, pero no es igual manejar borracho y sin cinturón que sobrio, con cinturón y respetando los señalamientos.</p><p>En cirugía el equivalente es: no operar cansado, verificar todo antes de empezar, usar antibióticos cuando corresponde, no intentar cosas heroicas, pedir ayuda a un colega más experimentado cuando el caso lo amerita y, sobre todo, saber cuándo no operar. En tu valoración te explico los riesgos específicos de tu procedimiento y cómo los manejamos.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuánto cuesta la cirugía de hernia umbilical?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cuánto cuesta la cirugía de hernia umbilical?</button>
                     <div class="faq-answer"><p><strong>Los paquetes quirúrgicos comienzan desde $30,000* MXN</strong> e incluyen honorarios del cirujano, anestesiólogo, hospitalización, insumos y seguimiento. Ofrecemos financiamiento a 3, 6, 9 y 12 meses. Trabajamos ajustándonos a tabulado con aseguradoras como GNP, Axa, Metlife, Mapfre y Sofía. (*El precio desde $30,000 aplica en ciertas clínicas.)</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Los estudios preoperatorios están incluidos en el paquete?</button>
+                    <button class="faq-question" aria-expanded="false">¿Los estudios preoperatorios están incluidos en el paquete?</button>
                     <div class="faq-answer"><p><strong>No, los estudios preoperatorios no están incluidos en el paquete quirúrgico.</strong> Cada caso es diferente: los estudios que necesitas dependen de tu edad, de tus antecedentes y del padecimiento que se va a operar, así que no entran en un monto fijo. En la consulta de valoración te digo cuáles necesitas en tu caso.</p></div>
                 </div>
             </div>
@@ -760,15 +762,15 @@
             <div class="cta-contact">
                 <div class="cta-contact-grid">
                     <div class="cta-contact-item">
-                        <h4>Centro Quirúrgico Servicura</h4>
+                        <h3>Centro Quirúrgico Servicura</h3>
                         <p>Av. Cuauhtémoc, Eje 1 Pte 52<br>Col. Doctores, 06720<br>Ciudad de México</p>
                     </div>
                     <div class="cta-contact-item">
-                        <h4>Hospital Punta Médica</h4>
+                        <h3>Hospital Punta Médica</h3>
                         <p>Av. de la Herradura 10<br>Country Club, 53930<br>Naucalpan de Juárez, Méx.</p>
                     </div>
                     <div class="cta-contact-item">
-                        <h4>Horarios</h4>
+                        <h3>Horarios</h3>
                         <p>Lunes a Viernes<br>9:00 - 11:00 am · 4:00 - 8:00 pm<br>Sábado: 9:00 am - 2:00 pm</p>
                     </div>
                 </div>
@@ -791,7 +793,7 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h5>Cirugías</h5>
+                    <h4>Cirugías</h4>
                     <a href="/cirugia-hernia-inguinal-cdmx/">Hernia Inguinal</a>
                     <a href="/cirugia-vesicula-cdmx/">Vesícula</a>
                     <a href="/cirugia-reflujo-gastroesofagico-cdmx/">Reflujo Gastroesofágico</a>
@@ -800,7 +802,7 @@
                     <a href="/otros-servicios/">Otros servicios</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Navegación</h5>
+                    <h4>Navegación</h4>
                     <a href="/">Inicio</a>
                     <a href="/sobre-mi/">Sobre Mí</a>
                     <a href="/blog/">Blog</a>
@@ -808,7 +810,7 @@
                     <a href="/contacto/">Contacto</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Contacto</h5>
+                    <h4>Contacto</h4>
                     <a href="https://wa.link/3rll01" target="_blank" data-wa-cta="pie">WhatsApp</a>
                     <a href="/contacto/">Ubicación</a>
                 </div>
@@ -824,6 +826,6 @@
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.649-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.17 0-4.207-.578-5.963-1.588l-.427-.254-2.759.867.828-2.67-.279-.444A9.72 9.72 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
     </a>
 
-    <script src="/js/main.js?v=3"></script>
+    <script src="/js/main.js?v=4"></script>
 </body>
 </html>

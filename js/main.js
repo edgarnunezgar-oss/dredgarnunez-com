@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!wasActive) {
                 item.classList.add('active');
             }
+            // Cada boton anuncia si su respuesta esta abierta o cerrada
+            document.querySelectorAll('.faq-question').forEach(function(b) {
+                b.setAttribute('aria-expanded', b.closest('.faq-item').classList.contains('active') ? 'true' : 'false');
+            });
         });
     });
 
@@ -72,6 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (firstFaq) {
         firstFaq.classList.add('active');
     }
+    document.querySelectorAll('.faq-question').forEach(function(b) {
+        b.setAttribute('aria-expanded', b.closest('.faq-item').classList.contains('active') ? 'true' : 'false');
+    });
 
     // === Nav background on scroll ===
     const nav = document.querySelector('.nav');

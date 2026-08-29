@@ -38,10 +38,11 @@
     <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=36">
-    <link rel="stylesheet" href="/css/cirugia.css?v=35">
-    <link rel="stylesheet" href="/css/home.css?v=25">
+    <link rel="stylesheet" href="/css/global.css?v=37">
+    <link rel="stylesheet" href="/css/cirugia.css?v=37">
+    <link rel="stylesheet" href="/css/home.css?v=37">
 
     <!-- Schema MedicalWebPage -->
     <script type="application/ld+json">
@@ -428,6 +429,7 @@
     </script>
 </head>
 <body>
+    <a class="salto-contenido" href="#contenido">Ir al contenido</a>
 
     <!-- NAV -->
     <nav class="nav">
@@ -528,7 +530,7 @@
     </section>
 
 <!-- SOCIAL PROOF BAR -->
-    <section class="social-proof-bar">
+    <section id="contenido" class="social-proof-bar">
         <div class="container">
             <div class="logos-row">
                 <span class="logos-row-label">Formado en:</span>
@@ -689,27 +691,27 @@
             </div>
             <div class="faq-list">
                 <div class="faq-item active">
-                    <button class="faq-question">¿Cómo sé si es gastritis o algo más serio?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cómo sé si es gastritis o algo más serio?</button>
                     <div class="faq-answer"><p><strong>El ardor en la boca del estómago es el síntoma clásico de la gastritis</strong>, pero también puede venir de piedras en la vesícula, de <a href="/cirugia-reflujo-gastroesofagico-cdmx/">reflujo por hernia de hiato</a> o de otras causas.</p><p>Por eso el primer paso es una historia clínica completa y una exploración, no otra pastilla. En la consulta te digo con claridad qué estudios necesitas, si es que necesitas alguno.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">Llevo meses con gastritis y no se me quita con omeprazol, ¿qué hago?</button>
+                    <button class="faq-question" aria-expanded="false">Llevo meses con gastritis y no se me quita con omeprazol, ¿qué hago?</button>
                     <div class="faq-answer"><p>Si el omeprazol no te hace efecto o el malestar regresa cada vez que lo dejas, <strong>lo que falta no es una dosis más alta: es encontrar la causa.</strong> Puede ser una bacteria (Helicobacter pylori), piedras en la vesícula, una hernia de hiato o un intestino irritable, y cada una se trata diferente.</p><p>Ese es exactamente el tipo de caso que veo en consulta. Si quieres entender por qué el omeprazol de largo plazo no es la solución, lo explico en <a href="/blog/efectos-adversos-omeprazol/">este artículo del blog</a>.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Necesito endoscopia o estudios?</button>
+                    <button class="faq-question" aria-expanded="false">¿Necesito endoscopia o estudios?</button>
                     <div class="faq-answer"><p><strong>No siempre.</strong> Pido estudios cuando la historia clínica lo amerita o cuando hay señales de alarma: pérdida de peso sin explicación, sangrado, anemia, dificultad para tragar o síntomas nuevos después de los 45 años. Si no hacen falta, no te los pido.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué pasa si mi problema resulta ser quirúrgico?</button>
+                    <button class="faq-question" aria-expanded="false">¿Qué pasa si mi problema resulta ser quirúrgico?</button>
                     <div class="faq-answer"><p><strong>Algunos problemas que parecen gastritis en realidad son piedras en la vesícula</strong> o reflujo por hernia de hiato, y esos sí pueden necesitar cirugía. Soy cirujano del aparato digestivo: si tu caso es quirúrgico, te explico las opciones con pros y contras. Y si tu caso lo debe llevar otro especialista, te refiero con la persona correcta.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Qué doctor trata la gastritis y la colitis?</button>
+                    <button class="faq-question" aria-expanded="false">¿Qué doctor trata la gastritis y la colitis?</button>
                     <div class="faq-answer"><p><strong>Tanto el gastroenterólogo como el cirujano del aparato digestivo tratan gastritis, colitis y colon irritable.</strong> Yo soy cirujano especializado en el sistema digestivo: diagnostico y trato estos padecimientos en consulta, y la mayoría se resuelve sin cirugía.</p><p>La ventaja es que si detrás del síntoma hay algo quirúrgico, como piedras en la vesícula o una hernia de hiato, puedo llevar tu caso completo. Y si tu caso lo debe llevar otro especialista, te refiero con la persona correcta.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">¿Cuánto cuesta la consulta?</button>
+                    <button class="faq-question" aria-expanded="false">¿Cuánto cuesta la consulta?</button>
                     <div class="faq-answer"><p><strong>La consulta tiene una inversión de $1,000 MXN.</strong> Incluye historia clínica completa, exploración y un plan claro: qué tienes, qué estudios necesitas si aplica, y cuál es el tratamiento.</p></div>
                 </div>
             </div>
@@ -731,15 +733,15 @@
             <div class="cta-contact">
                 <div class="cta-contact-grid">
                     <div class="cta-contact-item">
-                        <h4>Centro Quirúrgico Servicura</h4>
+                        <h3>Centro Quirúrgico Servicura</h3>
                         <p>Av. Cuauhtémoc, Eje 1 Pte 52<br>Col. Doctores, 06720<br>Ciudad de México</p>
                     </div>
                     <div class="cta-contact-item">
-                        <h4>Hospital Punta Médica</h4>
+                        <h3>Hospital Punta Médica</h3>
                         <p>Av. de la Herradura 10<br>Country Club, 53930<br>Naucalpan de Juárez, Méx.</p>
                     </div>
                     <div class="cta-contact-item">
-                        <h4>Horarios</h4>
+                        <h3>Horarios</h3>
                         <p>Lunes a Viernes<br>9:00 - 11:00 am · 4:00 - 8:00 pm<br>Sábado: 9:00 am - 2:00 pm</p>
                     </div>
                 </div>
@@ -762,7 +764,7 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h5>Cirugías</h5>
+                    <h4>Cirugías</h4>
                     <a href="/cirugia-hernia-inguinal-cdmx/">Hernia Inguinal</a>
                     <a href="/cirugia-vesicula-cdmx/">Vesícula</a>
                     <a href="/cirugia-reflujo-gastroesofagico-cdmx/">Reflujo Gastroesofágico</a>
@@ -771,7 +773,7 @@
                     <a href="/otros-servicios/">Otros servicios</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Navegación</h5>
+                    <h4>Navegación</h4>
                     <a href="/">Inicio</a>
                     <a href="/sobre-mi/">Sobre Mí</a>
                     <a href="/blog/">Blog</a>
@@ -779,7 +781,7 @@
                     <a href="/contacto/">Contacto</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Contacto</h5>
+                    <h4>Contacto</h4>
                     <a href="https://wa.link/3rll01" target="_blank" data-wa-cta="pie">WhatsApp</a>
                     <a href="/contacto/">Ubicación</a>
                 </div>
@@ -795,6 +797,6 @@
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.649-1.46A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.17 0-4.207-.578-5.963-1.588l-.427-.254-2.759.867.828-2.67-.279-.444A9.72 9.72 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
     </a>
 
-    <script src="/js/main.js?v=3"></script>
+    <script src="/js/main.js?v=4"></script>
 </body>
 </html>

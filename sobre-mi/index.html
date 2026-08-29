@@ -38,9 +38,10 @@
     <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=36">
-    <link rel="stylesheet" href="/css/pages.css?v=34">
+    <link rel="stylesheet" href="/css/global.css?v=37">
+    <link rel="stylesheet" href="/css/pages.css?v=37">
 
     <script type="application/ld+json">
     {
@@ -255,6 +256,7 @@
     </script>
 </head>
 <body>
+    <a class="salto-contenido" href="#contenido">Ir al contenido</a>
 
     <!-- NAV -->
     <nav class="nav">
@@ -332,7 +334,7 @@
     </section>
 
     <!-- BIO SECTION -->
-    <section class="about-section">
+    <section id="contenido" class="about-section">
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
@@ -352,17 +354,17 @@
                     <div class="timeline">
                         <div class="timeline-item">
                             <span class="timeline-year">Universidad La Salle</span>
-                            <h4>Médico Cirujano</h4>
+                            <h3>Médico Cirujano</h3>
                             <p>2° lugar de la generación, formado con enfoque en ciencias clínicas y quirúrgicas.</p>
                         </div>
                         <div class="timeline-item">
                             <span class="timeline-year">Centro Médico ABC / UNAM</span>
-                            <h4>Especialidad en Cirugía General</h4>
+                            <h3>Especialidad en Cirugía General</h3>
                             <p>Especialidad en Cirugía Gastrointestinal y de mínima invasión en una de las instituciones más prestigiosas de México, avalado por la UNAM.</p>
                         </div>
                         <div class="timeline-item">
                             <span class="timeline-year">Consejo Mexicano de Cirugía General</span>
-                            <h4>Certificación vigente</h4>
+                            <h3>Certificación vigente</h3>
                             <p>Certificación que avala competencias, actualización continua y calidad en la práctica quirúrgica.</p>
                         </div>
                     </div>
@@ -388,11 +390,11 @@
             </div>
             <div class="hospital-cards" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); max-width: 760px; margin: 0 auto;">
                 <div class="hospital-card-item">
-                    <h4>Centro Quirúrgico Servicura</h4>
+                    <h3>Centro Quirúrgico Servicura</h3>
                     <p>Av. Cuauhtémoc, Eje 1 Pte 52<br>Col. Doctores, 06720<br>Ciudad de México</p>
                 </div>
                 <div class="hospital-card-item">
-                    <h4>Punta Médica</h4>
+                    <h3>Punta Médica</h3>
                     <p>Av. de la Herradura 10<br>Country Club, 53930<br>Naucalpan de Juárez, Méx.</p>
                 </div>
             </div>
@@ -407,39 +409,39 @@
             </div>
             <div class="philosophy-grid">
                 <div class="philosophy-card">
-                    <h4>
+                    <h3>
                         <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(42,138,126,0.1); border-radius: 8px; color: var(--color-teal);">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
                         </span>
                         Explicación antes que tratamiento
-                    </h4>
+                    </h3>
                     <p>Te explico tu diagnóstico con palabras que entiendas, no con tecnicismos. Muchos pacientes dicen que mis explicaciones son como clases de medicina. Quiero que te vuelvas experto en tu propio padecimiento, porque así tomas mejores decisiones.</p>
                 </div>
                 <div class="philosophy-card">
-                    <h4>
+                    <h3>
                         <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(42,138,126,0.1); border-radius: 8px; color: var(--color-teal);">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
                         </span>
                         Todas las opciones, con pros y contras
-                    </h4>
+                    </h3>
                     <p>Te explico todas las opciones con sus pros y contras, incluso las que yo no realizo. Decidimos juntos cuál es la mejor para tu caso y tu contexto.</p>
                 </div>
                 <div class="philosophy-card">
-                    <h4>
+                    <h3>
                         <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(42,138,126,0.1); border-radius: 8px; color: var(--color-teal);">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                         </span>
                         Precios claros desde el principio
-                    </h4>
+                    </h3>
                     <p>Antes de cualquier cirugía sabrás exactamente qué incluye, cuánto cuesta y qué no está incluido. Sin el "ya veremos qué encontramos" al final.</p>
                 </div>
                 <div class="philosophy-card">
-                    <h4>
+                    <h3>
                         <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(42,138,126,0.1); border-radius: 8px; color: var(--color-teal);">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                         </span>
                         Seguimiento incluido
-                    </h4>
+                    </h3>
                     <p>Mi responsabilidad no termina en el quirófano. Las consultas postoperatorias son parte del paquete, no un cargo adicional. Te acompaño hasta que estés recuperado(a).</p>
                 </div>
             </div>
@@ -484,7 +486,7 @@
                     <p class="footer-cedulas">Cédula Profesional: 6944303<br>Cédula de Especialidad: 09181211</p>
                 </div>
                 <div class="footer-col">
-                    <h5>Cirugías</h5>
+                    <h4>Cirugías</h4>
                     <a href="/cirugia-hernia-inguinal-cdmx/">Hernia Inguinal</a>
                     <a href="/cirugia-vesicula-cdmx/">Vesícula</a>
                     <a href="/cirugia-reflujo-gastroesofagico-cdmx/">Reflujo Gastroesofágico</a>
@@ -493,7 +495,7 @@
                     <a href="/otros-servicios/">Otros servicios</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Navegación</h5>
+                    <h4>Navegación</h4>
                     <a href="/">Inicio</a>
                     <a href="/sobre-mi/">Sobre Mí</a>
                     <a href="/blog/">Blog</a>
@@ -501,7 +503,7 @@
                     <a href="/contacto/">Contacto</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Contacto</h5>
+                    <h4>Contacto</h4>
                     <a href="https://wa.link/3rll01" target="_blank" data-wa-cta="pie">WhatsApp</a>
                     <a href="/contacto/">Ubicación</a>
                 </div>
@@ -517,6 +519,6 @@
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.584-1.167A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.239 0-4.308-.724-5.993-1.953l-.42-.306-2.716.691.72-2.628-.336-.438A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
     </a>
 
-    <script src="/js/main.js?v=3"></script>
+    <script src="/js/main.js?v=4"></script>
 </body>
 </html>

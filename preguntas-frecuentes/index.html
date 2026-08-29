@@ -38,9 +38,10 @@
     <meta name="twitter:image" content="https://dredgarnunez.com/img/og-default.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/global.css?v=36">
-    <link rel="stylesheet" href="/css/pages.css?v=34">
+    <link rel="stylesheet" href="/css/global.css?v=37">
+    <link rel="stylesheet" href="/css/pages.css?v=37">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -636,6 +637,7 @@
     </script>
 </head>
 <body>
+    <a class="salto-contenido" href="#contenido">Ir al contenido</a>
 
     <!-- NAV -->
     <nav class="nav">
@@ -715,7 +717,7 @@
     </section>
 
     <!-- FAQ POR TEMAS -->
-    <section class="section section-alt faq-page-section">
+    <section id="contenido" class="section section-alt faq-page-section">
         <div class="container">
 
             <div class="faq-search">
@@ -741,59 +743,59 @@
                 <div class="faq-topic-body">
                     <div class="faq-list">
                         <div class="faq-item">
-                            <button class="faq-question">¿Cuáles son los síntomas de la gastritis?</button>
+                            <button class="faq-question" aria-expanded="false">¿Cuáles son los síntomas de la gastritis?</button>
                             <div class="faq-answer"><p>El síntoma clásico es ardor o dolor en la boca del estómago (la zona alta y central del abdomen, justo debajo de las costillas). Puede acompañarse de náusea, sensación de llenarte muy rápido, eructos e inflamación después de comer.</p><p>Ojo: otros padecimientos se sienten muy parecido, como las piedras en la vesícula o el reflujo, y se tratan completamente diferente. Por eso el diagnóstico importa más que la pastilla.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿La gastritis se cura o es para siempre?</button>
+                            <button class="faq-question" aria-expanded="false">¿La gastritis se cura o es para siempre?</button>
                             <div class="faq-answer"><p><strong>La gastritis sí se cura cuando se identifica y se trata su causa:</strong> una bacteria (Helicobacter pylori), el uso frecuente de antiinflamatorios, el alcohol o el estrés sostenido.</p><p>Incluso la gastritis crónica (la que lleva meses o años) mejora cuando se ataca la causa y no solo el síntoma. Lo que no funciona es tomar protectores de estómago por años sin saber qué la está causando.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué es la gastritis nerviosa?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué es la gastritis nerviosa?</button>
                             <div class="faq-answer"><p><strong>Es el nombre coloquial de la gastritis que se dispara o empeora con el estrés y la ansiedad.</strong> El estrés aumenta la producción de ácido y altera el movimiento del estómago, y eso inflama la mucosa.</p><p>El manejo combina el control del ácido, cambios de hábitos y trabajar el factor emocional. Antes de etiquetarla como nerviosa hay que descartar las otras causas, empezando por Helicobacter pylori.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Por qué la gastritis no se me quita con omeprazol?</button>
+                            <button class="faq-question" aria-expanded="false">¿Por qué la gastritis no se me quita con omeprazol?</button>
                             <div class="faq-answer"><p><strong>Porque el omeprazol baja el ácido, pero no corrige la causa.</strong> Si tienes una bacteria, piedras en la vesícula, una hernia de hiato o un intestino irritable, el malestar regresa cada vez que sueltas la pastilla.</p><p>Si llevas meses tomando omeprazol y sigues igual, ese es justamente el momento de estudiar el caso en lugar de subir la dosis. Escribí un artículo sobre <a href="/blog/efectos-adversos-omeprazol/">los efectos adversos de tomar omeprazol por años</a>.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué es la colitis nerviosa y dónde duele?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué es la colitis nerviosa y dónde duele?</button>
                             <div class="faq-answer"><p><strong>Colitis nerviosa es el nombre común que usamos en México para el colon que se irrita y se dispara con el estrés.</strong> </p><p>Suele doler en el vientre bajo, con frecuencia del lado izquierdo, en forma de cólico que va y viene, acompañado de inflamación, gases y cambios al ir al baño (temporadas de estreñimiento, de diarrea o alternando). Muchas veces corresponde al síndrome de intestino irritable.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Cuál es el mejor medicamento para la colitis nerviosa?</button>
+                            <button class="faq-question" aria-expanded="false">¿Cuál es el mejor medicamento para la colitis nerviosa?</button>
                             <div class="faq-answer"><p><strong>No hay un medicamento ideal para la colitis nerviosa.</strong> Existen varios que atacan síntomas distintos, y por eso es importante valorar cada caso: no es lo mismo cuando predomina el cólico que cuando predomina el estreñimiento o la diarrea.</p><p>Con qué se quita la colitis nerviosa no depende de dar con la pastilla correcta, sino de confirmar primero el diagnóstico y de trabajar los alimentos que te disparan los síntomas y el componente de estrés. Desconfía de quien te prometa que una sola pastilla la quita.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿La colitis nerviosa se cura o se controla?</button>
+                            <button class="faq-question" aria-expanded="false">¿La colitis nerviosa se cura o se controla?</button>
                             <div class="faq-answer"><p><strong>Se controla, y muy bien.</strong> Con diagnóstico confirmado, ajustes de alimentación, manejo del estrés y medicamento cuando hace falta, la gran mayoría de los pacientes hace vida normal.</p><p>Lo que no existe es la cura instantánea de una sola pastilla: es un padecimiento que se maneja a lo largo del tiempo, con temporadas buenas y otras que requieren ajustar el plan.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿La colitis y el colon irritable son lo mismo?</button>
+                            <button class="faq-question" aria-expanded="false">¿La colitis y el colon irritable son lo mismo?</button>
                             <div class="faq-answer"><p><strong>En México le decimos colitis a casi cualquier inflamación o cólico abdominal.</strong> El colon irritable (síndrome de intestino irritable) es un diagnóstico específico: dolor o cólico que se relaciona con cambios al ir al baño, con temporadas de estreñimiento o de diarrea. Mucha colitis nerviosa es en realidad colon irritable. Distinguirlos importa porque el tratamiento cambia.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué puedo comer si tengo colon irritable?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué puedo comer si tengo colon irritable?</button>
                             <div class="faq-answer"><p><strong>No hay una dieta única para todos:</strong> cada intestino tiene sus propios disparadores. </p><p>Lo habitual es empezar identificando los alimentos que te inflaman, con un diario de síntomas, y en casos seleccionados usar por temporadas una dieta baja en FODMAP (ciertos azúcares fermentables que producen gas e inflamación), idealmente guiada por un profesional. Los irritantes clásicos son el exceso de café, el alcohol, la grasa y las comidas muy condimentadas.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Por qué se me inflama el estómago después de comer?</button>
+                            <button class="faq-question" aria-expanded="false">¿Por qué se me inflama el estómago después de comer?</button>
                             <div class="faq-answer"><p>Las causas más frecuentes son gases por la forma de comer (rápido, con refresco, con popote), intolerancias alimentarias como la lactosa, colon irritable y gastritis.</p><p>Es de los síntomas más comunes en consulta y casi siempre tiene solución. La señal para no dejarlo pasar: cuando la inflamación viene con dolor que te despierta de noche, pérdida de peso o cambios marcados al ir al baño.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué es el Helicobacter pylori y cómo se detecta?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué es el Helicobacter pylori y cómo se detecta?</button>
                             <div class="faq-answer"><p><strong>Es una bacteria que vive en el estómago y es la causa más frecuente de gastritis y úlceras.</strong> Es muy común (en México más de la mitad de los adultos la ha tenido) y sí se contagia, generalmente por alimentos o agua contaminados.</p><p>Se detecta con prueba de aliento, estudio de heces o biopsia durante una endoscopia, y cuando se confirma sí tiene tratamiento, que se define en consulta según tu caso. Tratarla cuando causa síntomas importa porque a largo plazo aumenta el riesgo de úlcera y de cáncer gástrico.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Cuándo debo preocuparme por un dolor de estómago?</button>
+                            <button class="faq-question" aria-expanded="false">¿Cuándo debo preocuparme por un dolor de estómago?</button>
                             <div class="faq-answer"><p><strong>Hay señales que ameritan valoración pronta en lugar de autotratarse:</strong> pérdida de peso sin explicación, sangrado al evacuar o vómito con sangre, anemia, dificultad para tragar, dolor que te despierta por la noche, o síntomas nuevos y persistentes después de los 45 años.</p><p>También el dolor en la boca del estómago que se corre hacia la espalda después de comer grasoso, porque puede ser de piedras en la vesícula y no gastritis.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Por qué siento el estómago inflamado y duro?</button>
+                            <button class="faq-question" aria-expanded="false">¿Por qué siento el estómago inflamado y duro?</button>
                             <div class="faq-answer"><p>La sensación de estómago inflamado, hinchado o distendido después de comer es de los motivos de consulta más frecuentes, y casi nunca tiene una sola causa. Puede venir del gas que se produce al digerir ciertos alimentos, del colon irritable, de la gastritis o de un problema de la vesícula.</p><p>Si la inflamación aparece siempre después de comer, si viene con dolor que no cede, o si bajaste de peso sin buscarlo, hay que estudiarla y no solo tomar algo para desinflamar.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿El Helicobacter pylori es contagioso?</button>
+                            <button class="faq-question" aria-expanded="false">¿El Helicobacter pylori es contagioso?</button>
                             <div class="faq-answer"><p><strong>Sí.</strong> Se transmite de persona a persona, y también por agua o alimentos contaminados. En México es una infección muy común. Cuando alguien sale positivo y tiene síntomas, es razonable valorar también a quienes viven en la misma casa.</p><p>Se detecta con prueba de aliento, en heces o por endoscopia, y cuando se erradica bien, muchos casos de gastritis que llevaban años sin resolverse por fin ceden.</p></div>
                         </div>
                     </div>
@@ -809,39 +811,39 @@
                 <div class="faq-topic-body">
                     <div class="faq-list">
                         <div class="faq-item">
-                            <button class="faq-question">¿La vesícula produce la bilis?</button>
+                            <button class="faq-question" aria-expanded="false">¿La vesícula produce la bilis?</button>
                             <div class="faq-answer"><p><strong>No.</strong> Es un mito común. El hígado es el órgano que produce la bilis, aproximadamente entre 800 ml y 1 litro diarios. La vesícula solo la almacena durante los periodos de ayuno para que, cuando comemos, sobre todo grasas y proteína, se contraiga y la bilis salga al intestino a ayudar a digerir.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Por qué se forman las piedras en la vesícula?</button>
+                            <button class="faq-question" aria-expanded="false">¿Por qué se forman las piedras en la vesícula?</button>
                             <div class="faq-answer"><p><strong>Cuando la bilis es más espesa de lo normal y tiene más colesterol, la vesícula forma piedras.</strong> Primero se forma lodo y después ese lodo, que usualmente es de colesterol, se precipita y se forman las piedras. Los factores de riesgo más comunes son obesidad, sexo femenino, edad en etapa fértil y genética.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Se pueden disolver las piedras de la vesícula con medicamento?</button>
+                            <button class="faq-question" aria-expanded="false">¿Se pueden disolver las piedras de la vesícula con medicamento?</button>
                             <div class="faq-answer"><p><strong>No de forma efectiva.</strong> Actualmente no existe un tratamiento médico que destruya las piedras una vez formadas. Antes de que se formen, se pueden hacer cambios en hábitos o factores de riesgo, pero una vez que están ahí, la única opción definitiva es quitar la vesícula.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Por qué no solo quitar las piedras y dejar la vesícula?</button>
+                            <button class="faq-question" aria-expanded="false">¿Por qué no solo quitar las piedras y dejar la vesícula?</button>
                             <div class="faq-answer"><p><strong>Porque no funciona:</strong> se vuelven a formar. Desde hace mucho sabemos que el problema está en parte en la bilis y en parte en la vesícula. Una vesícula que forma piedras es una vesícula que ya no funciona bien.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué es un cólico biliar y qué es una colecistitis?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué es un cólico biliar y qué es una colecistitis?</button>
                             <div class="faq-answer"><p><strong>Generalmente las piedras dan síntomas cuando una se atora en el conducto cístico, que comunica la vesícula con el intestino.</strong> Si se desatora y se regresa a la vesícula, le llamamos cólico biliar. Si se atora y ya no se regresa, se vuelve una urgencia y se conoce como colecistitis aguda.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Cómo es la recuperación de la cirugía de vesícula?</button>
+                            <button class="faq-question" aria-expanded="false">¿Cómo es la recuperación de la cirugía de vesícula?</button>
                             <div class="faq-answer"><p><strong>La recuperación suele ser tranquila.</strong> Los primeros días estás en casa con poco movimiento, aunque caminando un poco. Usualmente los pacientes regresan a sus actividades normales a los 7 o 10 días, excepto ejercicio o cargar objetos pesados, que se retoman pasando un mes después de la cirugía.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué puedo comer después de la cirugía de vesícula?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué puedo comer después de la cirugía de vesícula?</button>
                             <div class="faq-answer"><p><strong>Durante los primeros dos meses es importante una dieta baja en grasas, tanto animales como vegetales.</strong> Al inicio el cuerpo no se ha adaptado a no tener vesícula, y la comida grasosa, desde huevo hasta barbacoa, puede provocar diarrea.</p><p>Después de 2 a 3 meses, el colédoco se dilata y el cuerpo se adapta; eventualmente podrás comer de todo, pero lo ideal es consumir grasas en cantidades moderadas.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Se puede vivir sin vesícula?</button>
+                            <button class="faq-question" aria-expanded="false">¿Se puede vivir sin vesícula?</button>
                             <div class="faq-answer"><p><strong>Sí, con una vida normal.</strong> La vesícula almacena la bilis, pero el hígado la sigue produciendo igual y esa bilis pasa directo al intestino. La mayoría de las personas vuelve a comer de todo después de la recuperación.</p><p>Algunas notan en las primeras semanas que las comidas muy grasosas les caen pesado o les aflojan el intestino, y eso suele ir cediendo conforme el cuerpo se ajusta.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿El dolor en la boca del estómago que se corre a la espalda es la vesícula?</button>
+                            <button class="faq-question" aria-expanded="false">¿El dolor en la boca del estómago que se corre a la espalda es la vesícula?</button>
                             <div class="faq-answer"><p><strong>Puede serlo.</strong> El cólico por piedras en la vesícula se siente típicamente en la boca del estómago o del lado derecho, debajo de las costillas, y con frecuencia se corre hacia la espalda o hacia el omóplato derecho.</p><p>Suele aparecer después de comer, sobre todo comidas grasosas, y dura de minutos a algunas horas. Ese mismo dolor se confunde seguido con gastritis, y por eso hay pacientes que llevan meses tomando omeprazol sin mejorar.</p></div>
                         </div>
                     </div>
@@ -857,51 +859,51 @@
                 <div class="faq-topic-body">
                     <div class="faq-list">
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué es el reflujo gastroesofágico?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué es el reflujo gastroesofágico?</button>
                             <div class="faq-answer"><p><strong>Es una enfermedad en la que el ácido del estómago, los líquidos o la comida se regresan del estómago hacia el esófago.</strong> Pasa cuando el esfínter esofágico inferior (la válvula natural entre el esófago y el estómago) se abre cuando no debería. En México, entre el 20% y el 40% de los adultos sufren de algún grado de reflujo.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué síntomas causa el reflujo?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué síntomas causa el reflujo?</button>
                             <div class="faq-answer"><p>Los más comunes son ardor o dolor en el pecho, regurgitación (sentir que la comida o el ácido se te regresan a la boca), mal aliento, sensación de plenitud o pesadez después de comer, eructos frecuentes, y a veces tos crónica o ronquera por la noche.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Por qué da reflujo?</button>
+                            <button class="faq-question" aria-expanded="false">¿Por qué da reflujo?</button>
                             <div class="faq-answer"><p><strong>Hay varios factores de riesgo:</strong> obesidad, fumar, comer porciones grandes, alimentos muy grasosos o condimentados, cafeína y nicotina (que abren mecánicamente el esfínter), y acostarse inmediatamente después de comer. En muchas personas se combinan varios factores.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué riesgos tiene el reflujo crónico si no se trata?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué riesgos tiene el reflujo crónico si no se trata?</button>
                             <div class="faq-answer"><p><strong>Más allá de las molestias, el reflujo crónico puede cambiar el epitelio del esófago y aumentar el riesgo de cáncer.</strong> Sin displasia, el riesgo de progresión a cáncer es de 0.16% a 0.3% por año. Si en biopsias hay displasia de alto grado, el riesgo sube a entre 6% y 19% por año. Por eso vale la pena evaluarlo.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué es el esófago de Barrett?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué es el esófago de Barrett?</button>
                             <div class="faq-answer"><p><strong>Es una condición donde el epitelio del esófago cambia y se parece más al del intestino, como respuesta al reflujo crónico.</strong> Quienes lo tienen requieren vigilancia con endoscopias periódicas para detectar cualquier cambio temprano.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿En qué consiste la cirugía antirreflujo (funduplicatura)?</button>
+                            <button class="faq-question" aria-expanded="false">¿En qué consiste la cirugía antirreflujo (funduplicatura)?</button>
                             <div class="faq-answer"><p><strong>Se llama funduplicatura.</strong> Tomamos el fondo del estómago y creamos una especie de dona que rodea el esfínter esofágico inferior, justo en la unión entre el esófago y el estómago. Esa dona aprieta esa zona cuando comes y evita que el contenido se regrese al esófago.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué estudios se necesitan antes de la cirugía antirreflujo?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué estudios se necesitan antes de la cirugía antirreflujo?</button>
                             <div class="faq-answer"><p><strong>Antes de operar siempre pedimos endoscopia, manometría y pH-metría.</strong> Estos estudios evalúan el estado del esófago, del esfínter y la cantidad real de reflujo, y nos permiten verificar que seas un buen candidato a cirugía.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Cómo se hace la cirugía de reflujo?</button>
+                            <button class="faq-question" aria-expanded="false">¿Cómo se hace la cirugía de reflujo?</button>
                             <div class="faq-answer"><p><strong>Por laparoscopía.</strong> Hacemos pequeñas incisiones en el abdomen (de 5 milímetros o 1 centímetro), metemos los trócares y a través de ellos pasamos la cámara y los instrumentos. La cirugía dura aproximadamente 60 a 90 minutos bajo anestesia general.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿La cirugía antirreflujo es para siempre?</button>
+                            <button class="faq-question" aria-expanded="false">¿La cirugía antirreflujo es para siempre?</button>
                             <div class="faq-answer"><p><strong>Si te cuidas (buena alimentación, ejercicio, mantener tu peso), la cirugía puede tener una vida útil de 20 a 30 años.</strong> Si la persona sube mucho de peso o descuida los hábitos, la dona se puede aflojar.</p><p>Las estadísticas señalan que a 10 años cerca del 40% de los pacientes podrían llegar a necesitar antiácidos ocasionales nuevamente. Por eso, mantener los hábitos es clave para conservar el resultado.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Se puede dejar el omeprazol después de la cirugía antirreflujo?</button>
+                            <button class="faq-question" aria-expanded="false">¿Se puede dejar el omeprazol después de la cirugía antirreflujo?</button>
                             <div class="faq-answer"><p><strong>La gran mayoría de los pacientes que son buenos candidatos puede suspender los antirreflujos después de la cirugía.</strong> La idea precisamente es resolver el problema mecánicamente para que ya no necesites medicamentos crónicos. Escribí un artículo sobre <a href="/blog/efectos-adversos-omeprazol/">los efectos adversos de tomar omeprazol por años</a>.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Por qué algunas personas prefieren no operarse del reflujo?</button>
+                            <button class="faq-question" aria-expanded="false">¿Por qué algunas personas prefieren no operarse del reflujo?</button>
                             <div class="faq-answer"><p><strong>Es una decisión muy válida.</strong> Toda cirugía tiene riesgos inherentes (anestesia, infecciones, etcétera) y muchas personas prefieren mantenerse con buenos hábitos y medicamentos. Mi trabajo es darte la información honesta para que tomes la decisión que mejor se adapte a tu vida.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué es la hernia de hiato y por qué se forma?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué es la hernia de hiato y por qué se forma?</button>
                             <div class="faq-answer"><p><strong>El hiato es el orificio del diafragma por donde el esófago pasa del tórax al abdomen.</strong> Cuando ese orificio se agranda, una parte del estómago sube al tórax, y a eso le llamamos hernia de hiato o hernia hiatal.</p><p>Al subir, la válvula que impide que el ácido regrese deja de trabajar bien, y ahí aparece el reflujo. El orificio se va agrandando con los años, con el sobrepeso, con el esfuerzo repetido y con la tos crónica. No toda hernia de hiato necesita operarse: se opera cuando el reflujo no se controla o cuando la hernia es grande.</p></div>
                         </div>
                     </div>
@@ -917,35 +919,35 @@
                 <div class="faq-topic-body">
                     <div class="faq-list">
                         <div class="faq-item">
-                            <button class="faq-question">¿Por qué salen las hernias inguinales?</button>
+                            <button class="faq-question" aria-expanded="false">¿Por qué salen las hernias inguinales?</button>
                             <div class="faq-answer"><p>En general, las personas que desarrollan hernias suelen tener tejidos más débiles, ya sea por factores genéticos, tabaquismo, envejecimiento, cirugías previas o factores mecánicos como toser mucho o cargar peso frecuentemente. Sin embargo, en muchos casos no existe una causa única que explique por qué se formó la hernia.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Cuál es la diferencia entre cirugía abierta y laparoscopía para hernia inguinal?</button>
+                            <button class="faq-question" aria-expanded="false">¿Cuál es la diferencia entre cirugía abierta y laparoscopía para hernia inguinal?</button>
                             <div class="faq-answer"><p>En la cirugía abierta se hace una incisión de 5-7 cm en la región inguinal para reparar el defecto y colocar una malla. Por laparoscopía se hacen 3 incisiones pequeñas y se trabaja con cámara e instrumentos especiales.</p><p>Ambas tienen excelentes resultados; la laparoscopía suele tener una recuperación un poco más rápida y es especialmente útil en pacientes con obesidad o con hernias de ambos lados.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿La malla para hernia es segura?</button>
+                            <button class="faq-question" aria-expanded="false">¿La malla para hernia es segura?</button>
                             <div class="faq-answer"><p><strong>Sí.</strong> Las mallas de polipropileno se usan de forma rutinaria a nivel mundial. Se integran progresivamente a los tejidos del cuerpo y refuerzan de forma importante la pared abdominal, disminuyendo la probabilidad de que la hernia regrese.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué pasa si no me opero una hernia inguinal?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué pasa si no me opero una hernia inguinal?</button>
                             <div class="faq-answer"><p><strong>La hernia no se resuelve sola y tiende a crecer con el tiempo.</strong> El riesgo principal es que se complique: una hernia encarcelada o estrangulada se convierte en una urgencia quirúrgica donde aumentan los riesgos y los costos. Por eso se recomienda no postergar la valoración.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Se puede confundir un ganglio inflamado en la ingle con una hernia?</button>
+                            <button class="faq-question" aria-expanded="false">¿Se puede confundir un ganglio inflamado en la ingle con una hernia?</button>
                             <div class="faq-answer"><p><strong>Sí, y pasa seguido.</strong> En la ingle hay ganglios que se inflaman cuando el cuerpo está peleando una infección, muchas veces una lesión en la pierna o en el pie que ya ni recuerdas.</p><p>Se sienten como bolitas firmes, a veces varias juntas, y no cambian de tamaño al toser o al acostarte. La hernia, en cambio, suele salir al estar de pie o al hacer esfuerzo y meterse al acostarte. Esa diferencia se aclara en la exploración, no en el ultrasonido.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Por qué me duele la ingle si no tengo una hernia?</button>
+                            <button class="faq-question" aria-expanded="false">¿Por qué me duele la ingle si no tengo una hernia?</button>
                             <div class="faq-answer"><p><strong>Porque no todo dolor en la ingle viene de una hernia.</strong> Las causas que más veo son musculares y de los tendones que se insertan en esa zona, sobre todo en quienes entrenan o cargan peso.</p><p>También puede venir de la cadera, de ganglios inflamados o de un dolor que se refleja desde la columna. Me llegan pacientes con un ultrasonido que reporta hernia inguinal y al explorarlos no hay hernia palpable. En esos casos busco la causa real, y muchas veces el problema se resuelve sin cirugía.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿El dolor en la ingle es igual en hombres que en mujeres?</button>
+                            <button class="faq-question" aria-expanded="false">¿El dolor en la ingle es igual en hombres que en mujeres?</button>
                             <div class="faq-answer"><p>Las hernias inguinales son bastante más frecuentes en hombres, pero las mujeres también las tienen, y a veces cuestan más de detectar porque el abultamiento es más pequeño.</p><p>En mujeres hay además causas propias de dolor en esa zona, ginecológicas o de la cadera, que conviene considerar antes de dar por hecho que se trata de una hernia. Que la molestia esté en la ingle derecha o en la izquierda no cambia el estudio: se exploran las dos.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿El dolor de la ingle que baja hacia la pierna es una hernia?</button>
+                            <button class="faq-question" aria-expanded="false">¿El dolor de la ingle que baja hacia la pierna es una hernia?</button>
                             <div class="faq-answer"><p><strong>Puede serlo.</strong> Una hernia inguinal a veces da molestia que se extiende hacia la parte alta del muslo, y hay quien lo describe como un calambre o un ardor.</p><p>Pero el dolor que baja por la pierna también aparece cuando el origen está en la columna o en la cadera, y en esos casos operar una hernia no resuelve nada. Por eso vale la pena revisar bien antes de decidir cirugía.</p></div>
                         </div>
                     </div>
@@ -961,27 +963,27 @@
                 <div class="faq-topic-body">
                     <div class="faq-list">
                         <div class="faq-item">
-                            <button class="faq-question">¿Por qué sale una hernia umbilical?</button>
+                            <button class="faq-question" aria-expanded="false">¿Por qué sale una hernia umbilical?</button>
                             <div class="faq-answer"><p><strong>Todos tenemos un orificio en la zona del ombligo por donde pasaba el cordón umbilical cuando éramos bebés.</strong> En algunas personas este anillo umbilical no se cierra por completo al nacer, y con el tiempo factores como embarazo, obesidad, tos crónica o esfuerzos repetidos aumentan la presión del abdomen y hacen que ese pequeño orificio se separe cada vez más.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Una hernia umbilical puede cerrarse sola?</button>
+                            <button class="faq-question" aria-expanded="false">¿Una hernia umbilical puede cerrarse sola?</button>
                             <div class="faq-answer"><p><strong>En adultos, no.</strong> A diferencia de los bebés (en quienes algunas hernias cierran espontáneamente), en adultos el defecto no se repara solo. De hecho, las hernias tienden a crecer con el tiempo.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué es la bolita que sale en el ombligo?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué es la bolita que sale en el ombligo?</button>
                             <div class="faq-answer"><p><strong>Cuando las hernias se ven pequeñas, usualmente protruye grasa del interior del abdomen.</strong> Cuando son hernias más grandes, puede protruir un pedazo de intestino. En una tomografía se puede ver con claridad el orificio y qué está protruyendo.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué significa que una hernia se encarcele o se estrangule?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué significa que una hernia se encarcele o se estrangule?</button>
                             <div class="faq-answer"><p><strong>Si la grasita que se está saliendo se atora, a eso le llamamos que está encarcelada.</strong> Si además deja de llegarle sangre, hablamos de estrangulamiento. Afortunadamente es muy poco frecuente: menos del 5% de los pacientes necesitan una cirugía de urgencia por esto. Pero sí pasa, y por eso se recomienda la cirugía electiva antes de que ocurra.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué es la malla y por qué se usa?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué es la malla y por qué se usa?</button>
                             <div class="faq-answer"><p><strong>Las mallas son elementos de polipropileno.</strong> Son como un mosquitero, pero de un plástico médico especial. Se integran a los músculos: tu propio cuerpo forma tejido a través de esos poros, lo que hace que esa zona se vuelva muy fuerte y evita que la hernia vuelva a salir.</p></div>
                         </div>
                         <div class="faq-item">
-                            <button class="faq-question">¿Qué pasa si no me opero una hernia umbilical?</button>
+                            <button class="faq-question" aria-expanded="false">¿Qué pasa si no me opero una hernia umbilical?</button>
                             <div class="faq-answer"><p><strong>La hernia seguirá creciendo.</strong> El riesgo principal es que en algún momento se atore o se estrangule, lo que convierte una cirugía programada y sencilla en una urgencia con mayores riesgos. Siempre que hago una cirugía de urgencia pienso: esto se debió de haber evitado con una cirugía programada electiva.</p></div>
                         </div>
                     </div>
@@ -997,7 +999,7 @@
                 <div class="faq-topic-body">
                     <div class="faq-list">
                         <div class="faq-item">
-                            <button class="faq-question">¿Cuál es la causa más común de pancreatitis?</button>
+                            <button class="faq-question" aria-expanded="false">¿Cuál es la causa más común de pancreatitis?</button>
                             <div class="faq-answer"><p><strong>La causa más común de pancreatitis aguda son las piedras de la vesícula.</strong> Una piedra puede salir de la vesícula, avanzar por la vía biliar y tapar la salida del conducto pancreático; el páncreas se inflama y se produce lo que llamamos pancreatitis biliar.</p><p>Esta es una de las principales razones por las que se recomienda operar la vesícula de forma electiva cuando ya se formaron piedras.</p></div>
                         </div>
                     </div>
@@ -1030,7 +1032,7 @@
                     <p class="footer-cedulas">Cédula Profesional: 6944303<br>Cédula de Especialidad: 09181211</p>
                 </div>
                 <div class="footer-col">
-                    <h5>Cirugías</h5>
+                    <h4>Cirugías</h4>
                     <a href="/cirugia-hernia-inguinal-cdmx/">Hernia Inguinal</a>
                     <a href="/cirugia-vesicula-cdmx/">Vesícula</a>
                     <a href="/cirugia-reflujo-gastroesofagico-cdmx/">Reflujo Gastroesofágico</a>
@@ -1039,7 +1041,7 @@
                     <a href="/otros-servicios/">Otros servicios</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Navegación</h5>
+                    <h4>Navegación</h4>
                     <a href="/">Inicio</a>
                     <a href="/sobre-mi/">Sobre Mí</a>
                     <a href="/blog/">Blog</a>
@@ -1047,7 +1049,7 @@
                     <a href="/contacto/">Contacto</a>
                 </div>
                 <div class="footer-col">
-                    <h5>Contacto</h5>
+                    <h4>Contacto</h4>
                     <a href="https://wa.link/3rll01" target="_blank" data-wa-cta="pie">WhatsApp</a>
                     <a href="/contacto/">Ubicación</a>
                 </div>
@@ -1062,7 +1064,7 @@
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.584-1.167A11.955 11.955 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.239 0-4.308-.724-5.993-1.953l-.42-.306-2.716.691.72-2.628-.336-.438A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
     </a>
 
-    <script src="/js/main.js?v=3"></script>
+    <script src="/js/main.js?v=4"></script>
     <script>
     (function() {
         document.querySelectorAll('.faq-topic-toggle').forEach(function(toggle) {
