@@ -1,0 +1,33 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Resultado de laboratorio positivo junto a un estómago sano">
+  <!-- 1. Lienzo -->
+  <rect width="800" height="450" fill="#E8F5F3"/>
+
+  <!-- 2. Ambiente -->
+  <circle cx="712" cy="64" r="73" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="86" cy="392" r="92" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="70" cy="76" r="18" fill="#2A8A7E" opacity="0.15"/>
+  <circle cx="736" cy="380" r="15" fill="#2E6B9C" opacity="0.15"/>
+
+  <!-- 3. Sombra de piso -->
+  <ellipse cx="275" cy="392" rx="110" ry="13" fill="#1B3D5C" opacity="0.10"/>
+  <ellipse cx="545" cy="392" rx="105" ry="13" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- 4a. Sujeto: hoja de resultado de laboratorio -->
+  <rect x="185" y="96" width="180" height="290" rx="10" fill="#FFFFFF" stroke="#2E6B9C" stroke-width="7"/>
+  <line x1="215" y1="140" x2="335" y2="140" stroke="#2E6B9C" stroke-width="7" stroke-linecap="round"/>
+  <line x1="215" y1="256" x2="335" y2="256" stroke="#2E6B9C" stroke-width="7" stroke-linecap="round" opacity="0.5"/>
+  <line x1="215" y1="284" x2="335" y2="284" stroke="#2E6B9C" stroke-width="7" stroke-linecap="round" opacity="0.5"/>
+  <line x1="215" y1="312" x2="305" y2="312" stroke="#2E6B9C" stroke-width="7" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- 4b. Sujeto: estómago sano -->
+  <path d="M482 122 L512 122 L512 166 C516 182 526 192 544 198 C604 218 630 256 630 300 C630 352 590 384 536 384 C498 384 464 368 442 342 L418 368 C410 376 396 374 390 364 C384 354 386 344 394 336 L420 310 C452 322 456 268 466 222 C470 204 476 184 482 166 Z"
+        fill="#FFFFFF" stroke="#2E6B9C" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M556 236 c22 14 34 34 34 60" fill="none" stroke="#2E6B9C" stroke-width="7" stroke-linecap="round" opacity="0.5"/>
+  <path d="M516 250 c14 10 22 24 24 42" fill="none" stroke="#2E6B9C" stroke-width="7" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- 5. Foco dorado: el positivo en el papel -->
+  <circle cx="275" cy="198" r="46" fill="#C69C6D" opacity="0.16"/>
+  <circle cx="275" cy="198" r="26" fill="#C69C6D" opacity="0.30"/>
+  <line x1="275" y1="178" x2="275" y2="218" stroke="#C69C6D" stroke-width="11" stroke-linecap="round"/>
+  <line x1="255" y1="198" x2="295" y2="198" stroke="#C69C6D" stroke-width="11" stroke-linecap="round"/>
+</svg>

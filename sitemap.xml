@@ -131,7 +131,7 @@
   <!-- Blog -->
   <url>
     <loc>https://dredgarnunez.com/blog/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -156,6 +156,12 @@
   <url>
     <loc>https://dredgarnunez.com/blog/amibas-coproparasitoscopico-cuando-tratar/</loc>
     <lastmod>2026-08-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/blog/h-pylori-positivo-en-sangre-que-significa/</loc>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
