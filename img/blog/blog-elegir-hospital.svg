@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="676" cy="92" r="74" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="108" cy="372" r="94" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="150" cy="112" r="18" fill="#2E6B9C" opacity="0.14"/>
+  <circle cx="716" cy="330" r="13" fill="#2A8A7E" opacity="0.16"/>
+
+  <!-- sombra -->
+  <ellipse cx="400" cy="382" rx="230" ry="14" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- edificio del hospital -->
+  <rect x="150" y="150" width="230" height="228" rx="14" fill="#FFFFFF"/>
+  <rect x="150" y="150" width="230" height="44" rx="14" fill="#2E6B9C" opacity="0.18"/>
+  <rect x="150" y="176" width="230" height="18" fill="#2E6B9C" opacity="0.18"/>
+
+  <!-- cruz -->
+  <rect x="248" y="212" width="34" height="12" rx="4" fill="#2A8A7E"/>
+  <rect x="259" y="201" width="12" height="34" rx="4" fill="#2A8A7E"/>
+
+  <!-- ventanas -->
+  <rect x="180" y="258" width="34" height="30" rx="5" fill="#2E6B9C" opacity="0.20"/>
+  <rect x="230" y="258" width="34" height="30" rx="5" fill="#2E6B9C" opacity="0.20"/>
+  <rect x="280" y="258" width="34" height="30" rx="5" fill="#2E6B9C" opacity="0.20"/>
+  <rect x="330" y="258" width="34" height="30" rx="5" fill="#2E6B9C" opacity="0.20"/>
+  <rect x="180" y="304" width="34" height="30" rx="5" fill="#2E6B9C" opacity="0.20"/>
+  <rect x="230" y="304" width="34" height="30" rx="5" fill="#2E6B9C" opacity="0.20"/>
+  <rect x="330" y="304" width="34" height="30" rx="5" fill="#2E6B9C" opacity="0.20"/>
+
+  <!-- puerta -->
+  <rect x="278" y="304" width="40" height="74" rx="6" fill="#2A8A7E" opacity="0.30"/>
+
+  <!-- lista de verificacion -->
+  <rect x="432" y="128" width="228" height="250" rx="16" fill="#FFFFFF"/>
+  <rect x="482" y="112" width="128" height="32" rx="10" fill="#2E6B9C" opacity="0.22"/>
+
+  <!-- renglones con palomas -->
+  <circle cx="472" cy="192" r="14" fill="#2A8A7E"/>
+  <path d="M466 192 l5 5 l9 -10" stroke="#FFFFFF" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="498" y="185" width="132" height="13" rx="6" fill="#1B3D5C" opacity="0.16"/>
+
+  <circle cx="472" cy="240" r="14" fill="#2A8A7E"/>
+  <path d="M466 240 l5 5 l9 -10" stroke="#FFFFFF" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="498" y="233" width="112" height="13" rx="6" fill="#1B3D5C" opacity="0.16"/>
+
+  <circle cx="472" cy="288" r="14" fill="#2A8A7E"/>
+  <path d="M466 288 l5 5 l9 -10" stroke="#FFFFFF" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="498" y="281" width="126" height="13" rx="6" fill="#1B3D5C" opacity="0.16"/>
+
+  <!-- el ultimo renglon sigue sin responder -->
+  <circle cx="472" cy="336" r="14" fill="none" stroke="#C69C6D" stroke-width="3"/>
+  <rect x="498" y="329" width="94" height="13" rx="6" fill="#C69C6D" opacity="0.30"/>
+</svg>
