@@ -1,0 +1,39 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Persona caminando en recuperación después de una cirugía de hernia">
+  <!-- 1. Lienzo -->
+  <rect width="800" height="450" fill="#E8F5F3"/>
+
+  <!-- 2. Ambiente -->
+  <circle cx="94" cy="70" r="74" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="716" cy="388" r="91" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="712" cy="82" r="20" fill="#2A8A7E" opacity="0.15"/>
+  <circle cx="92" cy="376" r="14" fill="#2E6B9C" opacity="0.15"/>
+
+  <!-- 3. Sombra de piso -->
+  <ellipse cx="440" cy="392" rx="120" ry="13" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- 4. Sujeto: figura caminando de perfil -->
+  <!-- movimiento (teal), detrás de la figura -->
+  <path d="M330 200 c-24 14 -38 34 -42 58" fill="none" stroke="#2A8A7E" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+  <path d="M312 168 c-34 20 -54 48 -60 82" fill="none" stroke="#2A8A7E" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- piernas -->
+  <path d="M428 300 L378 384" fill="none" stroke="#FFFFFF" stroke-width="46" stroke-linecap="round"/>
+  <path d="M448 300 L506 378" fill="none" stroke="#FFFFFF" stroke-width="46" stroke-linecap="round"/>
+
+  <!-- brazos -->
+  <path d="M420 194 L386 262" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round"/>
+  <path d="M452 194 L494 252" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round"/>
+
+  <!-- torso -->
+  <rect x="398" y="166" width="78" height="152" rx="38" fill="#FFFFFF"/>
+
+  <!-- cabeza -->
+  <circle cx="438" cy="120" r="40" fill="#FFFFFF"/>
+  <circle cx="456" cy="114" r="8" fill="#1B3D5C"/>
+  <path d="M456 138 h12" fill="none" stroke="#1B3D5C" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- 5. Foco dorado: la zona operada, a escala -->
+  <circle cx="462" cy="282" r="34" fill="#C69C6D" opacity="0.16"/>
+  <circle cx="462" cy="282" r="19" fill="#C69C6D" opacity="0.30"/>
+  <circle cx="462" cy="282" r="9" fill="#C69C6D"/>
+</svg>

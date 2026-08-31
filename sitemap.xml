@@ -131,7 +131,7 @@
   <!-- Blog -->
   <url>
     <loc>https://dredgarnunez.com/blog/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -210,6 +210,12 @@
   <url>
     <loc>https://dredgarnunez.com/blog/que-preguntar-del-hospital-antes-de-operarte/</loc>
     <lastmod>2026-08-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dredgarnunez.com/blog/recuperacion-despues-de-cirugia-de-hernia/</loc>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
