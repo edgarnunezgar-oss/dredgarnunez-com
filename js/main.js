@@ -181,3 +181,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     start();
 })();
+
+// === Aviso simplificado de cookies (art. 16 fr. II de la ley de datos personales) ===
+(function () {
+    var CLAVE = 'avisoCookiesVisto';
+    try { if (localStorage.getItem(CLAVE) === '1') return; } catch (e) {}
+    if (location.pathname.indexOf('/aviso-de-privacidad') === 0) return;
+    var bar = document.createElement('div');
+    bar.className = 'aviso-cookies';
+    bar.setAttribute('role', 'region');
+    bar.setAttribute('aria-label', 'Aviso de cookies');
+    bar.innerHTML = '<p>El Dr. Edgar Núñez García usa cookies de Google Analytics para medir las visitas a este sitio, sin identificarte. Consulta el <a href="/aviso-de-privacidad/">aviso de privacidad</a> para saber cómo desactivarlas.</p><button type="button">Entendido</button>';
+    bar.querySelector('button').addEventListener('click', function () {
+        try { localStorage.setItem(CLAVE, '1'); } catch (e) {}
+        bar.parentNode.removeChild(bar);
+    });
+    document.body.appendChild(bar);
+})();

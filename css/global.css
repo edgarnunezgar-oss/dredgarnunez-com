@@ -567,3 +567,26 @@ img, svg, video { max-width: 100%; }
     margin: 0 auto; border-radius: 14px;
 }
 @media (max-width: 640px) { .sede-mapa iframe { height: 300px; } }
+
+/* === AVISO SIMPLIFICADO DE COOKIES (lo inserta main.js en todas las paginas) === */
+.aviso-cookies {
+    position: fixed; left: 16px; bottom: 16px; z-index: 998;
+    max-width: 520px; padding: 16px 18px;
+    background: var(--color-bg-dark); color: var(--color-white);
+    border: 1px solid rgba(255,255,255,0.1); border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(15,30,45,0.35);
+    display: flex; gap: 14px; align-items: center;
+}
+.aviso-cookies p { margin: 0; font-size: 13px; line-height: 1.5; color: rgba(255,255,255,0.85); }
+.aviso-cookies a { color: #5EC4B6; text-decoration: underline; }
+.aviso-cookies button {
+    flex-shrink: 0; padding: 9px 16px; border: 0; border-radius: 8px;
+    background: var(--color-teal); color: var(--color-white);
+    font-family: var(--font-body); font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.aviso-cookies button:hover { background: var(--color-teal-hover); }
+@media (max-width: 640px) {
+    .aviso-cookies { left: 12px; right: 96px; bottom: 12px; max-width: none; flex-direction: column; align-items: stretch; gap: 10px; }
+}
+.nota-privacidad { margin-top: 12px; font-size: 13px; color: var(--color-text-muted); }
+.nota-privacidad a { color: var(--color-teal); }
