@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (mobileBtn && mobilePanel) {
         mobileBtn.addEventListener('click', function() {
             mobilePanel.classList.toggle('active');
+            mobileBtn.setAttribute('aria-expanded', mobilePanel.classList.contains('active') ? 'true' : 'false');
             // Animate hamburger
             const spans = mobileBtn.querySelectorAll('span');
             if (mobilePanel.classList.contains('active')) {
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mobilePanel.querySelectorAll('a').forEach(function(link) {
             link.addEventListener('click', function() {
                 mobilePanel.classList.remove('active');
+                mobileBtn.setAttribute('aria-expanded', 'false');
                 const spans = mobileBtn.querySelectorAll('span');
                 spans[0].style.transform = '';
                 spans[1].style.opacity = '';
@@ -35,6 +37,28 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // === Desplegable Cirugías (mouse, teclado y lector de pantalla) ===
+    document.querySelectorAll('.nav-dropdown').forEach(function(dd) {
+        const toggle = dd.querySelector('.nav-dropdown-toggle');
+        if (!toggle) return;
+        function setOpen(open) {
+            dd.classList.toggle('open', open);
+            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+        toggle.addEventListener('click', function() {
+            setOpen(!dd.classList.contains('open'));
+        });
+        dd.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') { setOpen(false); toggle.focus(); }
+        });
+        dd.addEventListener('focusout', function(e) {
+            if (!dd.contains(e.relatedTarget)) setOpen(false);
+        });
+        document.addEventListener('click', function(e) {
+            if (!dd.contains(e.target)) setOpen(false);
+        });
+    });
 
     // === Smooth Scroll for anchor links ===
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
