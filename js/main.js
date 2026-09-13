@@ -206,6 +206,92 @@ document.addEventListener('DOMContentLoaded', function() {
     start();
 })();
 
+/* === CARRUSEL DE RESEÑAS (Sobre mí) ===
+   Las tarjetas ya vienen en el HTML (asi el texto existe sin JavaScript).
+   Aqui se triplican para el loop infinito y se anima igual que el de hospitales,
+   pero mas lento porque hay que leer, y con flechas para ir a la anterior. */
+(function () {
+    var track = document.getElementById('rcTrack');
+    var carousel = document.getElementById('reviewsCarousel');
+    if (!track || !carousel) return;
+
+    var originales = track.innerHTML;
+    var SET = track.querySelectorAll('.rc-item').length;
+    if (SET < 2) return;
+    track.innerHTML = originales + originales + originales;
+    carousel.classList.add('is-js');
+
+    var items = track.querySelectorAll('.rc-item');
+    var index = SET;
+
+    function layout(animate) {
+        if (!animate) track.style.transition = 'none';
+        var slot = items[0].offsetWidth;
+        var offset = (carousel.offsetWidth / 2) - (slot / 2);
+        track.style.transform = 'translateX(' + (offset - index * slot) + 'px)';
+        for (var i = 0; i < items.length; i++) {
+            items[i].classList.toggle('is-active', i === index);
+        }
+        if (!animate) {
+            void track.offsetWidth;
+            track.style.transition = '';
+        }
+    }
+
+    // Al salir de la copia central se brinca una copia entera; la tarjeta es identica
+    track.addEventListener('transitionend', function (e) {
+        if (e.propertyName !== 'transform') return;
+        if (index < SET) { index += SET; layout(false); }
+        if (index >= SET * 2) { index -= SET; layout(false); }
+    });
+
+    layout(false);
+
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var timer = null;
+
+    function siguiente() {
+        if (index >= SET * 2) { index -= SET; layout(false); }
+        index++;
+        layout(true);
+    }
+    function anterior() {
+        if (index <= 0) { index += SET; layout(false); }
+        index--;
+        layout(true);
+    }
+    function start() {
+        if (reduce || timer) return;
+        timer = setInterval(siguiente, 6000);
+    }
+    function stop() { clearInterval(timer); timer = null; }
+    function reiniciar() { stop(); start(); }
+
+    var prev = document.getElementById('rcPrev');
+    var next = document.getElementById('rcNext');
+    if (prev) prev.addEventListener('click', function () { anterior(); reiniciar(); });
+    if (next) next.addEventListener('click', function () { siguiente(); reiniciar(); });
+
+    // Deslizar con el dedo
+    var x0 = null;
+    carousel.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; stop(); }, { passive: true });
+    carousel.addEventListener('touchend', function (e) {
+        if (x0 === null) return;
+        var dx = e.changedTouches[0].clientX - x0;
+        if (dx < -40) siguiente(); else if (dx > 40) anterior();
+        x0 = null; start();
+    }, { passive: true });
+
+    carousel.addEventListener('mouseenter', stop);
+    carousel.addEventListener('mouseleave', start);
+    window.addEventListener('resize', function () { layout(false); });
+    document.addEventListener('visibilitychange', function () {
+        if (document.hidden) { stop(); } else { start(); }
+    });
+
+    start();
+})();
+
 // === Aviso simplificado de cookies (art. 16 fr. II de la ley de datos personales) ===
 (function () {
     var CLAVE = 'avisoCookiesVisto';

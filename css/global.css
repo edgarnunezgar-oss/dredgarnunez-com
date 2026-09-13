@@ -417,6 +417,46 @@ a { text-decoration: none; }
     color: var(--color-text-muted);
 }
 
+/* === CARRUSEL DE RESEÑAS (Sobre mí) ===
+   Misma mecanica que el de hospitales: la del centro al frente y las vecinas
+   asomando por las orillas. Sin JavaScript queda como tira desplazable. */
+.section.reviews-section { background: var(--color-white); }
+.reviews-section .section-header { margin-bottom: 36px; }
+.reviews-carousel { max-width: 1100px; margin: 0 auto; overflow-x: auto; }
+.reviews-carousel.is-js {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 12%, #000 88%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 12%, #000 88%, transparent 100%);
+}
+.rc-track { display: flex; align-items: center; }
+.reviews-carousel.is-js .rc-track {
+    transition: transform .55s cubic-bezier(.33, 0, .2, 1);
+    will-change: transform;
+}
+.rc-item { flex: 0 0 380px; padding: 12px; box-sizing: border-box; }
+.reviews-carousel.is-js .rc-item {
+    opacity: .45; transform: scale(.9);
+    transition: opacity .55s ease, transform .55s cubic-bezier(.33, 0, .2, 1);
+}
+.reviews-carousel.is-js .rc-item.is-active { opacity: 1; transform: scale(1); }
+.rc-item .testimonial-card { padding: 28px; }
+.rc-item .testimonial-text { margin-bottom: 16px; }
+.rc-controls { display: flex; justify-content: center; gap: 12px; margin-top: 20px; }
+.rc-btn {
+    width: 44px; height: 44px; border-radius: 50%;
+    border: 1px solid var(--color-border); background: var(--color-white);
+    color: var(--color-teal); font-size: 20px; cursor: pointer;
+    transition: background .2s ease, color .2s ease;
+}
+.rc-btn:hover, .rc-btn:focus-visible { background: var(--color-teal); color: var(--color-white); }
+@media (max-width: 760px) {
+    .rc-item { flex: 0 0 82vw; padding: 8px; }
+    .reviews-carousel.is-js {
+        -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+        mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+    }
+}
+
 /* Salto al contenido: solo aparece al navegar con teclado */
 .salto-contenido {
     position: absolute; left: 12px; top: -60px; z-index: 2000;
