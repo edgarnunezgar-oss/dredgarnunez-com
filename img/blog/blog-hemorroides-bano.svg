@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="676" cy="90" r="72" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="100" cy="368" r="92" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="142" cy="112" r="20" fill="#2A8A7E" opacity="0.14"/>
+  <circle cx="716" cy="336" r="14" fill="#2E6B9C" opacity="0.15"/>
+
+  <!-- sombra -->
+  <ellipse cx="290" cy="382" rx="118" ry="13" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- inodoro, mismo canon que la pieza de diarrea -->
+  <g transform="translate(-110,10) scale(0.88)">
+    <rect x="472" y="128" width="104" height="140" rx="12" fill="#FFFFFF"/>
+    <rect x="458" y="108" width="132" height="30" rx="12" fill="#2E6B9C"/>
+    <rect x="318" y="252" width="266" height="24" rx="12" fill="#2E6B9C"/>
+    <path d="M340 276 C340 336 388 366 444 366 L466 366 C522 366 564 330 564 276 Z" fill="#FFFFFF"/>
+    <rect x="428" y="360" width="82" height="22" rx="8" fill="#DDEEEB"/>
+    <rect x="410" y="378" width="118" height="14" rx="7" fill="#FFFFFF"/>
+  </g>
+
+  <!-- el tiempo que corre, que es el problema -->
+  <circle cx="574" cy="238" r="112" fill="#C69C6D" opacity="0.12"/>
+  <path d="M574 158 A80 80 0 1 1 494 238" stroke="#C69C6D" stroke-width="13" stroke-linecap="round" fill="none"/>
+  <circle cx="494" cy="238" r="11" fill="#C69C6D"/>
+
+  <!-- celular, lo que alarga la sesion -->
+  <rect x="538" y="180" width="72" height="116" rx="14" fill="#FFFFFF" stroke="#2E6B9C" stroke-width="6"/>
+  <rect x="550" y="196" width="48" height="72" rx="5" fill="#DDEEEB"/>
+  <rect x="558" y="208" width="32" height="7" rx="3.5" fill="#2A8A7E" opacity="0.6"/>
+  <rect x="558" y="224" width="32" height="7" rx="3.5" fill="#2E6B9C" opacity="0.4"/>
+  <rect x="558" y="240" width="20" height="7" rx="3.5" fill="#2E6B9C" opacity="0.4"/>
+  <circle cx="574" cy="281" r="6" fill="#2E6B9C" opacity="0.35"/>
+</svg>
