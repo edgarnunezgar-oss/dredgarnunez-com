@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="676" cy="90" r="72" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="102" cy="368" r="92" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="142" cy="112" r="20" fill="#2A8A7E" opacity="0.14"/>
+  <circle cx="712" cy="336" r="14" fill="#2E6B9C" opacity="0.15"/>
+
+  <!-- sombra -->
+  <ellipse cx="300" cy="352" rx="132" ry="13" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- la sandia es el disparador: la pulpa va en dorado -->
+  <circle cx="300" cy="222" r="150" fill="#C69C6D" opacity="0.13"/>
+  <path d="M180 214 A120 120 0 0 0 420 214 Z" fill="#2A8A7E"/>
+  <path d="M194 214 A106 106 0 0 0 406 214 Z" fill="#FFFFFF"/>
+  <path d="M206 214 A94 94 0 0 0 394 214 Z" fill="#C69C6D"/>
+  <g fill="#1B3D5C">
+    <ellipse cx="262" cy="242" rx="5" ry="9" transform="rotate(-22 262 242)"/>
+    <ellipse cx="300" cy="262" rx="5" ry="9"/>
+    <ellipse cx="338" cy="242" rx="5" ry="9" transform="rotate(22 338 242)"/>
+    <ellipse cx="282" cy="288" rx="5" ry="9" transform="rotate(-12 282 288)"/>
+    <ellipse cx="320" cy="288" rx="5" ry="9" transform="rotate(12 320 288)"/>
+  </g>
+
+  <!-- lo que no se absorbe llega al colon -->
+  <path d="M432 236 C466 230 494 230 520 238" stroke="#C69C6D" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M548 244 L512 226 L510 260 Z" fill="#C69C6D" opacity="0.5"/>
+
+  <!-- intestino -->
+  <path d="M586 92
+           C640 96 660 134 636 164
+           C612 194 566 190 552 220
+           C538 250 582 270 618 268
+           C656 266 672 300 652 332
+           C632 362 592 364 572 388
+           C560 402 562 414 574 420"
+        stroke="#2E6B9C" stroke-width="24" stroke-linecap="round" fill="none" opacity="0.85"/>
+
+  <!-- el gas que produce la fermentacion -->
+  <circle cx="600" cy="204" r="13" fill="#C69C6D"/>
+  <circle cx="632" cy="300" r="11" fill="#C69C6D" opacity="0.8"/>
+  <circle cx="590" cy="352" r="9" fill="#C69C6D" opacity="0.65"/>
+  <circle cx="612" cy="150" r="8" fill="#C69C6D" opacity="0.5"/>
+</svg>
