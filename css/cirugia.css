@@ -390,7 +390,27 @@ a.prueba-item:hover { background: rgba(42,138,126,0.18); border-color: rgba(42,1
 
 /* Pantallas anchas: mismo criterio que en global.css (bloque mas ancho, letra
    un punto mayor, misma medida de linea). */
-@media (min-width: 1440px) {
-    .problem-content { max-width: 860px; }
+@media (min-width: 1280px) {
+    .problem-content { max-width: 940px; }
     .problem-content p, .problem-content li { font-size: 17px; }
+}
+
+/* === SOBRE EL DOCTOR, VARIANTE CLARA ===
+   Prueba en vesícula (sep 2026): foto con fondo claro sobre sección clara,
+   para que el bloque no se vea tan oscuro. Sobrescribe la variante navy de home.css. */
+.about-section.about-light { background: var(--color-bg-section); }
+.about-section.about-light .about-photo img { object-position: center 18%; }
+.about-section.about-light .about-photo::after {
+    background: linear-gradient(90deg, #F5F8FA 0%, rgba(245,248,250,0.42) 26%, rgba(245,248,250,0) 58%);
+}
+.about-section.about-light .about-label { color: var(--color-teal); }
+.about-section.about-light .about-bio { color: var(--color-text); }
+.about-section.about-light .about-bio strong { color: var(--color-blue-dark); }
+.about-section.about-light .about-credentials li {
+    color: var(--color-text-light); border-bottom-color: var(--color-border);
+}
+@media (max-width: 768px) {
+    .about-section.about-light .about-photo::after {
+        background: linear-gradient(0deg, #F5F8FA 0%, rgba(245,248,250,0) 60%);
+    }
 }
