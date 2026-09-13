@@ -15,7 +15,9 @@
     content: ''; position: absolute; inset: 0;
     background: linear-gradient(90deg, #0B1A28 0%, rgba(11,26,40,0.45) 26%, rgba(11,26,40,0) 58%);
 }
-.home-hero .container { position: relative; z-index: 2; }
+/* width 100%: el hero es flex y sin esto el contenedor encoge al ancho del
+   texto y queda centrado con un hueco a la izquierda en pantallas anchas. */
+.home-hero .container { position: relative; z-index: 2; width: 100%; }
 .home-hero-content { max-width: 560px; text-align: left; }
 .home-hero-eyebrow {
     font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.85);
@@ -213,7 +215,7 @@
     content: ''; position: absolute; inset: 0;
     background: linear-gradient(90deg, #0B1A28 0%, rgba(11,26,40,0.42) 26%, rgba(11,26,40,0) 58%);
 }
-.about-section .container { position: relative; z-index: 2; }
+.about-section .container { position: relative; z-index: 2; width: 100%; }
 .about-content { max-width: 560px; color: #FFFFFF; }
 .about-label {
     font-size: 13px; color: #5EC4B6; letter-spacing: 2px;

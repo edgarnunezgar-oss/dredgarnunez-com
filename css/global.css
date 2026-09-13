@@ -636,3 +636,15 @@ img, svg, video { max-width: 100%; }
 }
 .nota-privacidad { margin-top: 12px; font-size: 13px; color: var(--color-text-muted); }
 .nota-privacidad a { color: var(--color-teal); }
+
+/* === PANTALLAS ANCHAS ===
+   En monitores grandes los bloques de lectura se ensanchan un poco y la letra
+   sube un punto, asi la linea conserva el mismo numero de caracteres y el texto
+   deja de verse como una columna angosta en medio de la pantalla. Movil y
+   tablet no cambian. */
+@media (min-width: 1440px) {
+    .section-header { max-width: 780px; }
+    .section-header.section-texto { max-width: 720px; }
+    .section-subtitle { font-size: 18px; }
+    .faq-list { max-width: 860px; }
+}

@@ -7,6 +7,9 @@
     position: relative; min-height: 100vh; display: flex; align-items: center;
     background: #0B1A28; overflow: hidden; padding: 120px 0 80px;
 }
+/* El hero es flex: sin width 100% el contenedor encoge al ancho del texto y
+   queda centrado con un hueco a la izquierda en pantallas anchas. */
+.cirugia-hero .container { width: 100%; }
 .cirugia-hero-content { position: relative; z-index: 2; max-width: 720px; text-shadow: 0 2px 14px rgba(0,0,0,0.4); }
 .cirugia-hero-eyebrow {
     display: inline-flex; align-items: center; gap: 8px;
@@ -138,6 +141,18 @@ a.prueba-item:hover { background: rgba(42,138,126,0.18); border-color: rgba(42,1
     color: var(--color-text-light); font-size: 15px; line-height: 1.7; margin-bottom: 10px;
 }
 .technique-body li::marker { color: var(--color-teal); }
+
+/* Landing con una sola tecnica (reflujo, vesicula). En escritorio la tarjeta
+   va horizontal, foto a la izquierda y texto a la derecha, para no dejar una
+   tarjeta angosta en medio de la pantalla. En movil conserva el formato
+   vertical de las demas landings. */
+.techniques-grid-uno { grid-template-columns: 1fr; max-width: 1000px; margin: 0 auto; }
+@media (min-width: 769px) {
+    .techniques-grid-uno .technique-card { display: grid; grid-template-columns: 2fr 3fr; }
+    .techniques-grid-uno .technique-image { position: relative; height: auto; min-height: 460px; }
+    .techniques-grid-uno .technique-image img { position: absolute; inset: 0; }
+    .techniques-grid-uno .technique-body { padding: 36px 40px; align-self: center; }
+}
 
 /* Featured technique (single, vertical layout) */
 .technique-featured {
@@ -371,4 +386,11 @@ a.prueba-item:hover { background: rgba(42,138,126,0.18); border-color: rgba(42,1
 }
 @media (max-width: 560px) {
     .antes-despues-par { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+}
+
+/* Pantallas anchas: mismo criterio que en global.css (bloque mas ancho, letra
+   un punto mayor, misma medida de linea). */
+@media (min-width: 1440px) {
+    .problem-content { max-width: 860px; }
+    .problem-content p, .problem-content li { font-size: 17px; }
 }
