@@ -255,6 +255,26 @@
 .contact-map iframe { width: 100%; height: 100%; border: 0; }
 
 /* === RESPONSIVE === */
+/* Publicaciones (Sobre mí): sección plegada, se abre al hacer clic en el título */
+.pubs-section { padding-top: 0; }
+.pubs { max-width: 800px; margin: 0 auto; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); padding: 24px 0; }
+.pubs-summary h2 { font-family: var(--font-heading); font-size: 32px; color: var(--color-blue-dark); }
+.pubs-summary { list-style: none; cursor: pointer; display: flex; flex-direction: column; gap: 8px; position: relative; padding-right: 40px; }
+.pubs-summary::-webkit-details-marker { display: none; }
+.pubs-summary::after {
+    content: '+'; position: absolute; right: 4px; top: 0; font-size: 32px; line-height: 1;
+    color: var(--color-teal); font-weight: 400;
+}
+.pubs[open] .pubs-summary::after { content: '−'; }
+.pubs-summary h2 { margin-bottom: 0; }
+.pubs-hint { font-size: 15px; color: var(--color-text-light); line-height: 1.6; }
+.pubs-body { padding-top: 24px; }
+.pubs-body h3 { font-size: 17px; font-weight: 700; color: var(--color-blue-dark); margin: 24px 0 12px; }
+.pubs-body h3:first-child { margin-top: 0; }
+.pubs-list { padding-left: 22px; margin: 0; }
+.pubs-list li { font-size: 15px; color: var(--color-text-light); line-height: 1.7; margin-bottom: 12px; }
+.pubs-list a { color: var(--color-teal); font-weight: 700; white-space: nowrap; }
+
 @media (max-width: 768px) {
     .about-grid { grid-template-columns: 1fr; gap: 32px; }
     .about-image { position: static; max-width: 230px; margin: 0 auto; }
