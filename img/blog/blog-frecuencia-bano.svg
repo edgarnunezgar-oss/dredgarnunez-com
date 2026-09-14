@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="676" cy="90" r="72" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="104" cy="368" r="92" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="140" cy="110" r="20" fill="#2A8A7E" opacity="0.14"/>
+  <circle cx="712" cy="336" r="14" fill="#2E6B9C" opacity="0.15"/>
+
+  <!-- sombra -->
+  <ellipse cx="400" cy="318" rx="236" ry="13" fill="#1B3D5C" opacity="0.10"/>
+
+  <!-- calendario de dos semanas -->
+  <rect x="166" y="96" width="468" height="204" rx="18" fill="#FFFFFF"/>
+  <rect x="166" y="96" width="468" height="42" rx="18" fill="#2E6B9C" opacity="0.85"/>
+  <rect x="166" y="120" width="468" height="18" fill="#2E6B9C" opacity="0.85"/>
+  <g>
+    <rect x="212" y="78" width="12" height="34" rx="6" fill="#1B3D5C"/>
+    <rect x="576" y="78" width="12" height="34" rx="6" fill="#1B3D5C"/>
+  </g>
+  <rect x="172" y="144" width="456" height="150" rx="12" fill="#DDEEEB"/>
+    <rect x="178" y="150" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="242" y="150" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="306" y="150" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="370" y="150" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="434" y="150" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="498" y="150" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="562" y="150" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="178" y="212" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="242" y="212" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="306" y="212" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="370" y="212" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="434" y="212" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="498" y="212" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <rect x="562" y="212" width="60" height="58" rx="9" fill="#FFFFFF"/>
+  <circle cx="208" cy="179" r="10" fill="#2A8A7E" opacity="0.7"/>
+  <circle cx="336" cy="179" r="10" fill="#2A8A7E" opacity="0.7"/>
+  <circle cx="464" cy="179" r="10" fill="#2A8A7E" opacity="0.7"/>
+  <circle cx="592" cy="179" r="10" fill="#2A8A7E" opacity="0.7"/>
+  <circle cx="272" cy="241" r="10" fill="#2A8A7E" opacity="0.7"/>
+  <circle cx="400" cy="241" r="10" fill="#2A8A7E" opacity="0.7"/>
+  <circle cx="528" cy="241" r="10" fill="#2A8A7E" opacity="0.7"/>
+
+  <!-- lo que si importa no es el dia, es la senal -->
+  <circle cx="464" cy="241" r="46" fill="#C69C6D" opacity="0.16"/>
+  <circle cx="464" cy="241" r="26" fill="#C69C6D" opacity="0.30"/>
+  <path d="M464 225 C475 239 477 247 477 251 A13 13 0 0 1 451 251 C451 247 453 239 464 225 Z" fill="#C69C6D"/>
+</svg>
