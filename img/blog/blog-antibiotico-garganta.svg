@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="676" cy="90" r="72" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="104" cy="368" r="92" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="140" cy="110" r="20" fill="#2A8A7E" opacity="0.14"/>
+  <circle cx="712" cy="336" r="14" fill="#2E6B9C" opacity="0.15"/>
+
+  <!-- capsula, canon de la pieza de omeprazol -->
+  <g transform="translate(196,118) rotate(-22)">
+    <rect x="0" y="0" width="150" height="60" rx="30" fill="#FFFFFF"/>
+    <path d="M30 0 L75 0 L75 60 L30 60 A30 30 0 0 1 30 0 Z" fill="#C69C6D"/>
+  </g>
+
+  <!-- donde duele: la garganta recibe una parte -->
+  <path d="M330 200 C352 190 372 182 392 178" stroke="#C69C6D" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.45"/>
+  <path d="M412 174 L386 168 L392 190 Z" fill="#C69C6D" opacity="0.45"/>
+  <circle cx="440" cy="168" r="30" fill="#FFFFFF"/>
+  <circle cx="440" cy="168" r="10" fill="#2A8A7E" opacity="0.6"/>
+
+  <!-- donde no duele: el intestino recibe el resto -->
+  <path d="M318 226 C360 262 420 300 470 308" stroke="#C69C6D" stroke-width="13" stroke-linecap="round" fill="none"/>
+  <path d="M500 312 L466 292 L462 326 Z" fill="#C69C6D"/>
+
+  <!-- intestino, canon de la pieza de sandia -->
+  <circle cx="602" cy="292" r="128" fill="#C69C6D" opacity="0.12"/>
+  <path d="M586 152
+           C640 156 660 194 636 224
+           C612 254 566 250 552 280
+           C538 310 582 330 618 328
+           C656 326 672 360 652 392
+           C632 422 592 424 572 448"
+        stroke="#2E6B9C" stroke-width="24" stroke-linecap="round" fill="none" opacity="0.85"/>
+
+  <!-- la flora que habia: unas quedan, otras no vuelven -->
+  <g fill="#2A8A7E">
+    <circle cx="612" cy="196" r="9" opacity="0.7"/>
+    <circle cx="566" cy="262" r="8" opacity="0.22"/>
+    <circle cx="628" cy="300" r="9" opacity="0.7"/>
+    <circle cx="600" cy="352" r="8" opacity="0.22"/>
+    <circle cx="640" cy="390" r="7" opacity="0.22"/>
+    <circle cx="590" cy="418" r="8" opacity="0.7"/>
+  </g>
+</svg>
