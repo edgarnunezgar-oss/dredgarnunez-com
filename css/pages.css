@@ -110,6 +110,17 @@
 }
 .about-content p { color: var(--color-text-light); line-height: 1.8; margin-bottom: 20px; font-size: 16px; }
 
+/* Credenciales con certificado del consejo */
+.credentials-block { display: flex; align-items: flex-end; gap: 40px; }
+.credentials-cert { margin: 0; flex: 0 0 150px; text-align: center; }
+.credentials-cert img {
+    width: 100%; height: auto; display: block; border-radius: 6px;
+    border: 1px solid var(--color-border); box-shadow: 0 4px 14px rgba(19, 43, 66, 0.12);
+    transition: transform 0.2s ease;
+}
+.credentials-cert a:hover img { transform: scale(1.03); }
+.credentials-cert figcaption { font-size: 13px; color: var(--color-text-muted); margin-top: 8px; }
+
 /* Timeline */
 .timeline { margin: 48px 0; position: relative; padding-left: 32px; }
 .timeline::before {
@@ -278,6 +289,8 @@
 @media (max-width: 768px) {
     .about-grid { grid-template-columns: 1fr; gap: 32px; }
     .about-image { position: static; max-width: 230px; margin: 0 auto; }
+    .credentials-block { flex-direction: column; align-items: flex-start; gap: 24px; }
+    .credentials-cert { flex-basis: auto; width: 160px; }
     .page-hero-brand { padding: 120px 0 56px; }
     .page-hero-brand::before { width: 420px; height: 420px; top: -22%; right: -22%; }
     .page-hero-brand::after { display: none; }
