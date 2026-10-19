@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#E8F5F3"/>
+  <circle cx="676" cy="90" r="72" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="104" cy="368" r="92" fill="#2A8A7E" opacity="0.08"/>
+  <circle cx="140" cy="110" r="20" fill="#2A8A7E" opacity="0.14"/>
+  <circle cx="712" cy="336" r="14" fill="#2E6B9C" opacity="0.15"/>
+
+  <!-- el intestino, canon del sistema; el delgado despierta primero, el colon al final -->
+  <path d="M300 92
+           C354 96 374 134 350 164
+           C326 194 280 190 266 220
+           C252 250 296 270 332 268
+           C370 266 386 300 366 332
+           C346 362 306 364 286 388"
+        stroke="#2E6B9C" stroke-width="24" stroke-linecap="round" fill="none" opacity="0.85"/>
+  <!-- el colon, el ultimo en moverse -->
+  <circle cx="292" cy="386" r="52" fill="#C69C6D" opacity="0.16"/>
+  <circle cx="292" cy="386" r="30" fill="#C69C6D" opacity="0.3"/>
+  <circle cx="292" cy="386" r="14" fill="#C69C6D"/>
+  <!-- gas que ya sale: senal de que va bien -->
+  <circle cx="356" cy="130" r="9" fill="#2A8A7E" opacity="0.7"/>
+  <circle cx="246" cy="236" r="8" fill="#2A8A7E" opacity="0.6"/>
+  <circle cx="392" cy="312" r="7" fill="#2A8A7E" opacity="0.5"/>
+
+  <!-- los dias que tarda: el colon llega al quinto -->
+  <g>
+    <rect x="470" y="196" width="48" height="52" rx="9" fill="#FFFFFF"/>
+    <rect x="526" y="196" width="48" height="52" rx="9" fill="#FFFFFF"/>
+    <rect x="582" y="196" width="48" height="52" rx="9" fill="#FFFFFF"/>
+    <rect x="638" y="196" width="48" height="52" rx="9" fill="#FFFFFF"/>
+    <rect x="694" y="196" width="48" height="52" rx="9" fill="#FFFFFF"/>
+    <circle cx="494" cy="222" r="8" fill="#2A8A7E" opacity="0.5"/>
+    <circle cx="550" cy="222" r="8" fill="#2A8A7E" opacity="0.5"/>
+    <circle cx="606" cy="222" r="8" fill="#2A8A7E" opacity="0.5"/>
+    <circle cx="662" cy="222" r="8" fill="#DDEEEB"/>
+    <circle cx="718" cy="222" r="19" fill="#C69C6D" opacity="0.22"/>
+    <circle cx="718" cy="222" r="9" fill="#C69C6D"/>
+  </g>
+  <path d="M470 262 L742 262" stroke="#2E6B9C" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+</svg>
